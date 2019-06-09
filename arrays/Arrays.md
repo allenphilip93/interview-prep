@@ -11,8 +11,7 @@
 | 5 | Max Non Negative SubArray | Find out the maximum sub-array of non negative numbers from an array. The sub-array should be continuous. That is, a sub-array created by choosing the second and fourth element and skipping the third element is invalid. Maximum sub-array is defined in terms of the sum of the elements in the sub-array. Sub-array A is greater than sub-array B if sum(A) > sum(B). | [Java](#max-nonneg-subarray) |
 | 6 | Spiral Matrix II | Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order. | [Java](#spiral-matrix-2) |
 | 7 | Pascal Triangle | Given numRows, generate the first numRows of Pascal’s triangle. Pascal’s triangle : To generate A[C] in row R, sum up A’[C] and A’[C-1] from previous row R - 1. | [Java](#pascal-triangle) |
-| 8 | Noble Number | Given an integer array, find if an integer p exists in the array such that the number of integers greater than p in the array equals to p
-If such an integer is found return 1 else return -1. | [Java](#noble-number) |
+| 8 | Noble Number | Given an integer array, find if an integer p exists in the array such that the number of integers greater than p in the array equals to p. If such an integer is found return 1 else return -1. | [Java](#noble-number) |
 | 9 | Largest Number | Given a list of non negative integers, arrange them such that they form the largest number. | [Java](#largest-number) |
 | 10 | Wave Array | Given an array of integers, sort the array into a wave like array and return it, In other words, arrange the elements into a sequence such that a1 >= a2 <= a3 >= a4 <= a5..... | [Java](#wave-array) |
 | 11 | Max Distance | Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j]. If there is no solution possible, return -1. | [Java](#max-distance) |
@@ -61,7 +60,7 @@ public class SpiralOrder {
     }   
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="max-sum-cont-array"></a>
 **Max Sum Contiguous Subarray**
 ```java
@@ -81,7 +80,7 @@ public class MaxSubArray {
 }
 
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="max-sum-cont-array"></a>
 **Min Steps in Infinite Grid**
 ```java
@@ -97,7 +96,7 @@ public class MinStepsInfiniteGrid {
     }
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="add-one-to-number"></a>
 **Min Steps in Infinite Grid**
 ```java
@@ -138,7 +137,7 @@ public class Solution {
     }
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="max-nonneg-subarray"></a>
 **Max Non Negative SubArray**
 ```java
@@ -165,7 +164,7 @@ public class Solution {
 	}
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="spiral-matrix-2"></a>
 **Spiral Matrix II**
 ```java
@@ -215,7 +214,7 @@ public class Solution {
     }
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="pascal-triangle"></a>
 **Pascal Triangle**
 ```java
@@ -236,7 +235,7 @@ public class Solution {
     }
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="noble-number"></a>
 **Noble Number**
 ```java
@@ -260,7 +259,7 @@ public class Solution {
     }
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="largest-number"></a>
 **Largest Number**
 ```java
@@ -300,7 +299,7 @@ public class Solution {
     }
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="wave-array"></a>
 **Wave Array**
 ```java
@@ -316,7 +315,7 @@ public class Solution {
 	}	
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="max-distance"></a>
 **Max Distance**
 ```java
@@ -352,7 +351,7 @@ public class Solution {
     }
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
 <a name="find-duplicates-array"></a>
 **Find Duplicates in Array**
 ```java
@@ -371,4 +370,4 @@ public class Solution {
     }
 }
 ```
-[Back](#questions)
+[Back](#questions) <br>
