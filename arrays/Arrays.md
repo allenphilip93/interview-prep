@@ -19,7 +19,7 @@
 
 ## Solutions
 <a name="spiral-matrix"></a>
-**Spiral Matrix**
+**Spiral Matrix** [Back](#questions) <br>
 ```java
 public class SpiralOrder {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -60,9 +60,8 @@ public class SpiralOrder {
     }   
 }
 ```
-[Back](#questions) <br>
 <a name="max-sum-cont-array"></a>
-**Max Sum Contiguous Subarray**
+**Max Sum Contiguous Subarray** [Back](#questions) <br>
 ```java
 public class MaxSubArray {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -80,9 +79,8 @@ public class MaxSubArray {
 }
 
 ```
-[Back](#questions) <br>
 <a name="max-sum-cont-array"></a>
-**Min Steps in Infinite Grid**
+**Min Steps in Infinite Grid** [Back](#questions) <br>
 ```java
 public class MinStepsInfiniteGrid {
     // X and Y co-ordinates of the points in order.
@@ -96,9 +94,8 @@ public class MinStepsInfiniteGrid {
     }
 }
 ```
-[Back](#questions) <br>
 <a name="add-one-to-number"></a>
-**Min Steps in Infinite Grid**
+**Min Steps in Infinite Grid** [Back](#questions) <br>
 ```java
 public class Solution {
     public ArrayList<Integer> plusOne(ArrayList<Integer> A) {
@@ -137,9 +134,8 @@ public class Solution {
     }
 }
 ```
-[Back](#questions) <br>
 <a name="max-nonneg-subarray"></a>
-**Max Non Negative SubArray**
+**Max Non Negative SubArray** [Back](#questions) <br>
 ```java
 public class Solution {
 	public ArrayList<Integer> maxset(ArrayList<Integer> a) {
@@ -164,9 +160,8 @@ public class Solution {
 	}
 }
 ```
-[Back](#questions) <br>
 <a name="spiral-matrix-2"></a>
-**Spiral Matrix II**
+**Spiral Matrix II** [Back](#questions) <br>
 ```java
 public class Solution {
     public ArrayList<ArrayList<Integer>> generateMatrix(int A) {
@@ -214,9 +209,8 @@ public class Solution {
     }
 }
 ```
-[Back](#questions) <br>
 <a name="pascal-triangle"></a>
-**Pascal Triangle**
+**Pascal Triangle** [Back](#questions) <br>
 ```java
 public class Solution {
     public ArrayList<ArrayList<Integer>> solve(int A) {
@@ -235,9 +229,8 @@ public class Solution {
     }
 }
 ```
-[Back](#questions) <br>
 <a name="noble-number"></a>
-**Noble Number**
+**Noble Number** [Back](#questions) <br>
 ```java
 public class Solution {
     public int solve(ArrayList<Integer> A) {
@@ -259,9 +252,8 @@ public class Solution {
     }
 }
 ```
-[Back](#questions) <br>
 <a name="largest-number"></a>
-**Largest Number**
+**Largest Number** [Back](#questions) <br>
 ```java
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -299,9 +291,8 @@ public class Solution {
     }
 }
 ```
-[Back](#questions) <br>
 <a name="wave-array"></a>
-**Wave Array**
+**Wave Array** [Back](#questions) <br>
 ```java
 public class Solution {
 	public ArrayList<Integer> wave(ArrayList<Integer> a) {
@@ -315,9 +306,8 @@ public class Solution {
 	}	
 }
 ```
-[Back](#questions) <br>
 <a name="max-distance"></a>
-**Max Distance**
+**Max Distance** [Back](#questions) <br>
 ```java
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -351,9 +341,8 @@ public class Solution {
     }
 }
 ```
-[Back](#questions) <br>
 <a name="find-duplicates-array"></a>
-**Find Duplicates in Array**
+**Find Duplicates in Array** [Back](#questions) <br>
 ```java
 public class Solution {
     // DO NOT MODIFY THE LIST
@@ -369,5 +358,3 @@ public class Solution {
         return -1;
     }
 }
-```
-[Back](#questions) <br>
