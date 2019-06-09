@@ -16,6 +16,11 @@
 | 10 | Wave Array | Given an array of integers, sort the array into a wave like array and return it, In other words, arrange the elements into a sequence such that a1 >= a2 <= a3 >= a4 <= a5..... | [Java](#wave-array) |
 | 11 | Max Distance | Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j]. If there is no solution possible, return -1. | [Java](#max-distance) |
 | 12 | Find Duplicates in Array | Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times. | [Java](#find-duplicates-array) |
+| 13 | MAXSPPROD | You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following: LeftSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](i>j). If multiple A[j]’s are present in multiple positions, the LeftSpecialValue is the maximum value of j. RightSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](j>i). If multiple A[j]s are present in multiple positions, the RightSpecialValue is the minimum value of j. Write a program to find the maximum special product of any integer in the array. | [Java](#ques-13) |
+| 14 | Rotate Matrix | You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise). | [Java](#ques-14) |
+| 15 | Merge Intervals | Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). | [Java](#ques-15) |
+| 16 | Merge Overlapping Intervals | Given a collection of intervals, merge all overlapping intervals. | [Java](#ques-16) |
+| 17 | Set Matrix Zeros | Given an m x n matrix of 0s and 1s, if an element is 0, set its entire row and column to 0. Do it in place. | [Java](#ques-17) |
 
 ## Solutions
 <a name="spiral-matrix"></a>
@@ -358,3 +363,201 @@ public class Solution {
         return -1;
     }
 }
+```
+<a name="ques-13"></a>
+**MAXSPPROD** [Back](#questions) <br>
+```java
+public class Solution {
+    public int maxSpecialProduct(ArrayList<Integer> A) {
+        int n = A.size();
+        int[] left = new int[n];
+        int[] right = new int[n];
+        
+        Deque<Integer> q = new ArrayDeque<>();
+        q.addLast(0);
+        
+        for(int i = 1; i < n; i++){
+            while(!q.isEmpty()){
+                if(A.get(q.getLast()) > A.get(i)) break;
+                q.removeLast();
+            }
+            left[i] = (q.isEmpty()) ? 0 : q.getLast();
+            q.addLast(i);
+        }
+        q = new ArrayDeque<>();
+        q.addLast(n - 1);
+        for(int i = n - 2; i >= 0; i--){
+            while(!q.isEmpty()){
+                if(A.get(q.getLast()) > A.get(i)) break;
+                q.removeLast();
+            }
+            right[i] = (q.isEmpty()) ? 0 : q.getLast();
+            q.addLast(i);
+        }
+        long mx = -1;
+        for(int i = 0; i < n; i++){
+            mx = Long.max(mx, 1L * left[i] * right[i]);
+        }
+        return (int)(mx % 1000000007);
+    }
+}
+```
+<a name="ques-14"></a>
+**Rotate Matrix** [Back](#questions) <br>
+```java
+public class Solution {
+    public void rotate(ArrayList<ArrayList<Integer>> a) {
+        // Bounds 
+        int x=0, X=a.size();
+        
+        while (x < X) {
+            for (int i=0; i < X-1; i++) {
+                int currX = x + i; // row 
+                int currY = x; // col
+                int temp = a.get(currX).get(currY);
+                // System.out.println("DO WHILE");
+                do {
+                    int nextX = currY;  // row -> prev col
+                    int nextY = X - 1 - currX; // col -> total - row
+                    int newtemp = a.get(nextX).get(nextY);
+                    a.get(nextX).set(nextY, temp);
+                    temp = newtemp;
+                    // System.out.println("Curr X : " + currX + " Y : " + currY);
+                    // System.out.println("Next X : " + nextX + " Y : " + nextY);
+                    // System.out.println("Exit X : " + (x+i) + " Y : " + x);
+                    // System.out.println("Setting A[" + nextX + "][" + nextY + "] : " + temp);
+                    currX = nextX;
+                    currY = nextY;
+                } while (currX != (x+i) || currY != x);
+            }
+            X = X - 2;
+            x = x + 1;
+        }
+    }
+}
+```
+<a name="ques-15"></a>
+**Merge Intervals** [Back](#questions) <br>
+```java
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+public class Solution {
+    public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
+        for (Interval i : intervals) {
+            if (i.start > i.end) {
+                int temp = i.start;
+                i.start = i.end;
+                i.end = temp;
+            }
+        }
+        if (newInterval.start > newInterval.end) {
+            int temp = newInterval.start;
+            newInterval.start = newInterval.end;
+            newInterval.end = temp;
+        }
+        
+        PriorityQueue<Interval> minheap = new PriorityQueue<>(
+            new Comparator<Interval>() {
+                public int compare(Interval i1, Interval i2) {
+                    if (i1.start > i2.start) {
+                        return 1;
+                    } else if (i1.start < i2.start) {
+                        return -1;
+                    } else {
+                        if (i1.end >= i2.end) {
+                            return 1;
+                        } else {
+                            return -1;
+                        }
+                    }
+                }
+            });
+        minheap.add(newInterval);
+        for (Interval interval : intervals) {
+            minheap.add(interval);
+        }
+        
+        ArrayList<Interval> res = new ArrayList<>();
+        int maxEnd = 0;
+        while (minheap.size() > 0) {
+            Interval interval = minheap.poll();
+            maxEnd = Math.max(maxEnd, interval.end);
+            // System.out.println("OUTER || START : " + interval.start + " END : " + interval.end);
+            while (minheap.size() > 0 && minheap.peek().start <= maxEnd) {
+                Interval inter = minheap.poll();
+                maxEnd = Math.max(maxEnd, inter.end);
+                // System.out.println("INNER || START : " + inter.start + " END : " + inter.end);
+            }
+            if (minheap.size() == 0 || minheap.peek().start > maxEnd) {
+                res.add(new Interval(interval.start, maxEnd));
+            }
+        }
+        return res;
+    }
+}
+```
+<a name="ques-16"></a>
+**Merge Overlapping Intervals** [Back](#questions) <br>
+```java
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+public class Solution {
+    public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
+        if (intervals == null) return null;
+        
+        Collections.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));
+        ArrayList<Interval> merged = new ArrayList<>();
+        
+        for (Interval current : intervals) {
+            if (merged.isEmpty() || merged.get(merged.size() -1).end < current.start) {
+                merged.add(current);
+            } else {
+                merged.get(merged.size() -1).end = Math.max(current.end, 
+                                                   merged.get(merged.size() -1).end);
+            }
+        }
+        return merged;
+    }
+}
+```
+<a name="ques-17"></a>
+**Set Matrix Zeros** [Back](#questions) <br>
+```java
+public class Solution {
+    public void setZeroes(ArrayList<ArrayList<Integer>> a) {
+        Set<Integer> row = new HashSet<>();
+        Set<Integer> col = new HashSet<>();
+        
+        for (int i=0; i < a.size(); i++) {
+            for (int j=0; j < a.get(i).size(); j++) {
+                if (a.get(i).get(j) == 0) {
+                    row.add(i);
+                    col.add(j);
+                }
+            }
+        }
+        
+        for (int i=0; i < a.size(); i++) {
+            for (int j=0; j < a.get(i).size(); j++) {
+                if (row.contains(i) || col.contains(j)) {
+                    a.get(i).set(j, 0);
+                }
+            }
+        }
+    }
+}
+```
