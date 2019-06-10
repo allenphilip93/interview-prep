@@ -326,7 +326,7 @@ Solutions to the common DSA problems in Java
 ## Solutions
 ### Arrays
 <a name="ques-1"></a>
-**Spiral Order Matrix** [Back](#array) <br>
+**Spiral Array Matrix** [Back](#array) <br>
 ```java
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -424,7 +424,7 @@ public class Solution {
 }
 ```
 <a name="ques-4"></a>
-**** [Back](#arrays) <br>
+**Max Sum Contiguous Subarray** [Back](#arrays) <br>
 ```java
 public class MaxSubArray {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -442,15 +442,15 @@ public class MaxSubArray {
 }
 ```
 <a name="ques-5"></a>
-**** [Back](#arrays) <br>
+**Maximum Absolute Difference** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-6"></a>
-**** [Back](#arrays) <br>
+**Repeat and Missing Number Array** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-7"></a>
-**** [Back](#arrays) <br>
+**Flip** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-8"></a>
@@ -549,11 +549,11 @@ public class Solution {
 }
 ```
 <a name="ques-11"></a>
-**** [Back](#arrays) <br>
+**Kth Row of Pascal's Triangle** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-12"></a>
-**** [Back](#arrays) <br>
+**Anti Diagonals** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-13"></a>
@@ -580,7 +580,7 @@ public class Solution {
 }
 ```
 <a name="ques-14"></a>
-**** [Back](#arrays) <br>
+**Triplets with Sum between given range** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-15"></a>
@@ -638,7 +638,7 @@ public class Solution {
 }
 ```
 <a name="ques-17"></a>
-**** [Back](#arrays) <br>
+**Hotel Bookings Possible** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-18"></a>
@@ -695,11 +695,11 @@ public class Solution {
 }
 ```
 <a name="ques-20"></a>
-**** [Back](#arrays) <br>
+**Min Unsorted Subarray** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-21"></a>
-**** [Back](#arrays) <br>
+**Maximum Consecutive Gap** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-22"></a>
@@ -775,11 +775,11 @@ public class Solution {
 }
 ```
 <a name="ques-24"></a>
-**** [Back](#arrays) <br>
+**Next Permutation** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-25"></a>
-**** [Back](#arrays) <br>
+**Find Permutation** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-26"></a>
@@ -810,7 +810,7 @@ public class Solution {
 }
 ```
 <a name="ques-27"></a>
-**** [Back](#arrays) <br>
+**First Missing Integer** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-28"></a>
@@ -912,694 +912,694 @@ public class Solution {
 }
 ```
 <a name="ques-30"></a>
-**** [Back](#arrays) <br>
+**N/3 Repeat Number** [Back](#arrays) <br>
 ```java
 ```
 
 ### Math
 <a name="ques-31"></a>
-**** [Back](#maths) <br>
+**All Factors** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-32"></a>
-**** [Back](#maths) <br>
+**Binary Representation** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-33"></a>
-**** [Back](#maths) <br>
+**Prime** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-34"></a>
-**** [Back](#maths) <br>
+**Verify Prime** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-35"></a>
-**** [Back](#maths) <br>
+**Prime Sum** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-36"></a>
-**** [Back](#maths) <br>
+**Sum of pairwise Hamming Distance** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-37"></a>
-**** [Back](#maths) <br>
+**FizzBuzz** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-38"></a>
-**** [Back](#maths) <br>
+**Power Of Two Integers** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-39"></a>
-**** [Back](#maths) <br>
+**Excel Column Number** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-40"></a>
-**** [Back](#maths) <br>
+**Excel Column Title** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-41"></a>
-**** [Back](#maths) <br>
+**Palindrome Integer** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-42"></a>
-**** [Back](#maths) <br>
+**Reverse Integer** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-43"></a>
-**** [Back](#maths) <br>
+**GCD** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-44"></a>
-**** [Back](#maths) <br>
+**Trailing Zeroes** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-45"></a>
-**** [Back](#maths) <br>
+**Sorted Permutation Rank** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-46"></a>
-**** [Back](#maths) <br>
+**Largest Coprime Divisor** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-47"></a>
-**** [Back](#maths) <br>
+**Sorted Permutation Rank with Repeats** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-48"></a>
-**** [Back](#maths) <br>
+**ReArrange Array** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-49"></a>
-**** [Back](#maths) <br>
+**Grid Unique Paths** [Back](#maths) <br>
 ```java
 ```
 <a name="ques-50"></a>
-**** [Back](#maths) <br>
+**Numbers of length N and value less than K** [Back](#maths) <br>
 ```java
 ```
 
 ### Binary Search
 <a name="ques-51"></a>
-**** [Back](#binarysearch) <br>
+**SQRT** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-52"></a>
-**** [Back](#binarysearch) <br>
+**Count Element Occurence** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-53"></a>
-**** [Back](#binarysearch) <br>
+**Rotated Array** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-54"></a>
-**** [Back](#binarysearch) <br>
+**Matrix Median** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-55"></a>
-**** [Back](#binarysearch) <br>
+**Matrix Search** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-56"></a>
-**** [Back](#binarysearch) <br>
+**Sorted Insert Position** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-57"></a>
-**** [Back](#binarysearch) <br>
+**Implement Power Function** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-58"></a>
-**** [Back](#binarysearch) <br>
+**Rotated Sorted Array Search** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-59"></a>
-**** [Back](#binarysearch) <br>
+**Search for a Range** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-60"></a>
-**** [Back](#binarysearch) <br>
+**Painter's Partition Problem** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-61"></a>
-**** [Back](#binarysearch) <br>
+**Allocate Books** [Back](#binarysearch) <br>
 ```java
 ```
 <a name="ques-62"></a>
-**** [Back](#binarysearch) <br>
+**Median of Array** [Back](#binarysearch) <br>
 ```java
 ```
 
 ### Strings
 <a name="ques-63"></a>
-**** [Back](#strings) <br>
+**Palindrome String** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-64"></a>
-**** [Back](#strings) <br>
+**Longest Common Prefix** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-65"></a>
-**** [Back](#strings) <br>
+**Count And Say** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-66"></a>
-**** [Back](#strings) <br>
+**Minimum Characters required to make a String Palindromic** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-67"></a>
-**** [Back](#strings) <br>
+**Longest Palindromic Substring** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-68"></a>
-**** [Back](#strings) <br>
+**StrStr** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-69"></a>
-**** [Back](#strings) <br>
+**Compare Version Numbers** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-70"></a>
-**** [Back](#strings) <br>
+**Atoi** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-71"></a>
-**** [Back](#strings) <br>
+**Length of Last Word** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-72"></a>
-**** [Back](#strings) <br>
+**Reverse the String** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-73"></a>
-**** [Back](#strings) <br>
+**Valid Number** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-74"></a>
-**** [Back](#strings) <br>
+**Valid Ip Addresses** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-75"></a>
-**** [Back](#strings) <br>
+**Roman To Integer** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-76"></a>
-**** [Back](#strings) <br>
+**Integer To Roman** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-77"></a>
-**** [Back](#strings) <br>
+**Add Binary Strings** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-78"></a>
-**** [Back](#strings) <br>
+**Power of 2** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-79"></a>
-**** [Back](#strings) <br>
+**Multiply Strings** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-80"></a>
-**** [Back](#strings) <br>
+**Justified Text** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-81"></a>
-**** [Back](#strings) <br>
+**ZigZag String** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-82"></a>
-**** [Back](#strings) <br>
+**Pretty Json** [Back](#strings) <br>
 ```java
 ```
 <a name="ques-83"></a>
-**** [Back](#strings) <br>
+**Stringoholics** [Back](#strings) <br>
 ```java
 ```
 
 ### Bit Manipulation
 <a name="ques-84"></a>
-**** [Back](#bitmanipulation) <br>
+**Min XOR Value** [Back](#bitmanipulation) <br>
 ```java
 ```
 <a name="ques-85"></a>
-**** [Back](#bitmanipulation) <br>
+**Single Number** [Back](#bitmanipulation) <br>
 ```java
 ```
 <a name="ques-86"></a>
-**** [Back](#bitmanipulation) <br>
+**Number of 1 Bits** [Back](#bitmanipulation) <br>
 ```java
 ```
 <a name="ques-87"></a>
-**** [Back](#bitmanipulation) <br>
+**Reverse Bits** [Back](#bitmanipulation) <br>
 ```java
 ```
 <a name="ques-88"></a>
-**** [Back](#bitmanipulation) <br>
+**Single Number II** [Back](#bitmanipulation) <br>
 ```java
 ```
 <a name="ques-89"></a>
-**** [Back](#bitmanipulation) <br>
+**Divide Integers** [Back](#bitmanipulation) <br>
 ```java
 ```
 <a name="ques-90"></a>
-**** [Back](#bitmanipulation) <br>
+**Different Bits Sum Pairwise** [Back](#bitmanipulation) <br>
 ```java
 ```
 
 ### Two Pointers
 <a name="ques-91"></a>
-**** [Back](#twopointers) <br>
+**Merge Two Sorted Lists II** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-92"></a>
-**** [Back](#twopointers) <br>
+**Intersection Of Sorted Arrays** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-93"></a>
-**** [Back](#twopointers) <br>
+**Minimize the absolute difference** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-94"></a>
-**** [Back](#twopointers) <br>
+**Remove Duplicates from Sorted Array** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-95"></a>
-**** [Back](#twopointers) <br>
+**Remove Duplicates from Sorted Array 2** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-96"></a>
-**** [Back](#twopointers) <br>
+**Remove Element from Array** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-97"></a>
-**** [Back](#twopointers) <br>
+**Remove Element from Array** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-98"></a>
-**** [Back](#twopointers) <br>
+**Sort by Color** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-99"></a>
-**** [Back](#twopointers) <br>
+**Diffk** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-100"></a>
-**** [Back](#twopointers) <br>
+**3 Sum** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-101"></a>
-**** [Back](#twopointers) <br>
+**3 Sum Zero** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-102"></a>
-**** [Back](#twopointers) <br>
+**Max Continuous Series of 1s** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-103"></a>
-**** [Back](#twopointers) <br>
+**Array 3 Pointers** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-104"></a>
-**** [Back](#twopointers) <br>
+**Counting Triangles** [Back](#twopointers) <br>
 ```java
 ```
 <a name="ques-105"></a>
-**** [Back](#twopointers) <br>
+**Container With Most Water** [Back](#twopointers) <br>
 ```java
 ```
 
 ### Linked List
 <a name="ques-106"></a>
-**** [Back](#linkedlist) <br>
+**Intersection of Linked Lists** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-107"></a>
-**** [Back](#linkedlist) <br>
+**Reverse Linked List** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-108"></a>
-**** [Back](#linkedlist) <br>
+**Palindrome List** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-109"></a>
-**** [Back](#linkedlist) <br>
+**Remove Duplicates from Sorted List** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-110"></a>
-**** [Back](#linkedlist) <br>
+**Remove Duplicates from Sorted List 2** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-111"></a>
-**** [Back](#linkedlist) <br>
+**Merge Two Sorted Lists** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-112"></a>
-**** [Back](#linkedlist) <br>
+**Merge Two Sorted Lists** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-113"></a>
-**** [Back](#linkedlist) <br>
+**Remove Nth Node from List End** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-114"></a>
-**** [Back](#linkedlist) <br>
+**Rotate List** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-115"></a>
-**** [Back](#linkedlist) <br>
+**Reverse Lists 2** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-116"></a>
-**** [Back](#linkedlist) <br>
+**Reorder List** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-117"></a>
-**** [Back](#linkedlist) <br>
+**Swap List Nodes in pairs** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-118"></a>
-**** [Back](#linkedlist) <br>
+**K reverse linked list** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-119"></a>
-**** [Back](#linkedlist) <br>
+**Add Two Numbers as Lists** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-120"></a>
-**** [Back](#linkedlist) <br>
+**List Cycle** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-121"></a>
-**** [Back](#linkedlist) <br>
+**Partition List** [Back](#linkedlist) <br>
 ```java
 ```
 <a name="ques-122"></a>
-**** [Back](#linkedlist) <br>
+**Sort List** [Back](#linkedlist) <br>
 ```java
 ```
 
 ### Stack
 <a name="ques-123"></a>
-**** [Back](#stack) <br>
+**Simplify Directory Path** [Back](#stack) <br>
 ```java
 ```
 <a name="ques-124"></a>
-**** [Back](#stack) <br>
+**Redundant Braces** [Back](#stack) <br>
 ```java
 ```
 <a name="ques-125"></a>
-**** [Back](#stack) <br>
+**Nearest Smaller Element** [Back](#stack) <br>
 ```java
 ```
 <a name="ques-126"></a>
-**** [Back](#stack) <br>
+**Evaluate Expression** [Back](#stack) <br>
 ```java
 ```
 <a name="ques-127"></a>
-**** [Back](#stack) <br>
+**Min Stack** [Back](#stack) <br>
 ```java
 ```
 <a name="ques-128"></a>
-**** [Back](#stack) <br>
+**Largest Rectangle in Histogram** [Back](#stack) <br>
 ```java
 ```
 <a name="ques-129"></a>
-**** [Back](#stack) <br>
+**Rain Water Trapped** [Back](#stack) <br>
 ```java
 ```
 
 ### Queue
 <a name="ques-130"></a>
-**** [Back](#queue) <br>
+**Sliding Window Maximum** [Back](#queue) <br>
 ```java
 ```
 
 ### Backtracking
 <a name="ques-131"></a>
-**** [Back](#backtracking) <br>
+**ReverseLinkedList** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-132"></a>
-**** [Back](#backtracking) <br>
+**Modular Expression** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-133"></a>
-**** [Back](#backtracking) <br>
+**Subset** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-134"></a>
-**** [Back](#backtracking) <br>
+**Combinations** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-135"></a>
-**** [Back](#backtracking) <br>
+**Combination Sum** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-136"></a>
-**** [Back](#backtracking) <br>
+**Combination Sum 2** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-137"></a>
-**** [Back](#backtracking) <br>
+**SubSets 2** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-138"></a>
-**** [Back](#backtracking) <br>
+**Letter Phone** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-139"></a>
-**** [Back](#backtracking) <br>
+**Palindrome Partitioning** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-140"></a>
-**** [Back](#backtracking) <br>
+**Generate all Parentheses II** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-141"></a>
-**** [Back](#backtracking) <br>
+**Permutations** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-142"></a>
-**** [Back](#backtracking) <br>
+**Gray Code** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-143"></a>
-**** [Back](#backtracking) <br>
+**Kth Permutation Sequence** [Back](#backtracking) <br>
 ```java
 ```
 <a name="ques-144"></a>
-**** [Back](#backtracking) <br>
+**NQueens** [Back](#backtracking) <br>
 ```java
 ```
 
 ### Hashing
 <a name="ques-145"></a>
-**** [Back](#hashing) <br>
+**Colorful Number** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-146"></a>
-**** [Back](#hashing) <br>
+**Largest Continuous Sequence Zero Sum** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-147"></a>
-**** [Back](#hashing) <br>
+**2 Sum** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-148"></a>
-**** [Back](#hashing) <br>
+**4 Sum** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-149"></a>
-**** [Back](#hashing) <br>
+**Valid Sudoku** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-150"></a>
-**** [Back](#hashing) <br>
+**Diffk II** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-151"></a>
-**** [Back](#hashing) <br>
+**Anagrams** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-152"></a>
-**** [Back](#hashing) <br>
+**Equal** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-153"></a>
-**** [Back](#hashing) <br>
+**Copy List** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-154"></a>
-**** [Back](#hashing) <br>
+**Longest Substring Without Repeat** [Back](#hashing) <br>
 ```java
 ```
 
 <a name="ques-155"></a>
-**** [Back](#hashing) <br>
+**Window String** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-156"></a>
-**** [Back](#hashing) <br>
+**Fraction** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-157"></a>
-**** [Back](#hashing) <br>
+**Points on the Straight Line** [Back](#hashing) <br>
 ```java
 ```
 <a name="ques-158"></a>
-**** [Back](#hashing) <br>
+**Substring Concatenation** [Back](#hashing) <br>
 ```java
 ```
 
 ### Heaps
 <a name="ques-159"></a>
-**** [Back](#heaps) <br>
+**N max pair combinations** [Back](#heaps) <br>
 ```java
 ```
 <a name="ques-160"></a>
-**** [Back](#heaps) <br>
+**Magician and Chocolates** [Back](#heaps) <br>
 ```java
 ```
 <a name="ques-161"></a>
-**** [Back](#heaps) <br>
+**Merge K Sorted Lists** [Back](#heaps) <br>
 ```java
 ```
 
 ### HashMaps
 <a name="ques-162"></a>
-**** [Back](#hashmaps) <br>
+**Distinct Numbers in Window** [Back](#hashmaps) <br>
 ```java
 ```
 <a name="ques-163"></a>
-**** [Back](#hashmaps) <br>
+**LRU** [Back](#hashmaps) <br>
 ```java
 ```
 <a name="ques-164"></a>
-**** [Back](#hashmaps) <br>
+**Ways to form Max Heap** [Back](#hashmaps) <br>
 ```java
 ```
 
 ### Trees
 <a name="ques-165"></a>
-**** [Back](#trees) <br>
+**Valid Binary Search Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-166"></a>
-**** [Back](#trees) <br>
+**Next Greater Number BST** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-167"></a>
-**** [Back](#trees) <br>
+**Max Depth of Binary Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-168"></a>
-**** [Back](#trees) <br>
+**Vertical Order traversal of Binary Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-169"></a>
-**** [Back](#trees) <br>
+**Inorder Traversal** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-170"></a>
-**** [Back](#trees) <br>
+**PreOrder Traversal** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-171"></a>
-**** [Back](#trees) <br>
+**PreOrder Traversal** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-172"></a>
-**** [Back](#trees) <br>
+**PostOrder Traversal** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-173"></a>
-**** [Back](#trees) <br>
+**Hotel Reviews** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-174"></a>
-**** [Back](#trees) <br>
+**Balanced Binary Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-175"></a>
-**** [Back](#trees) <br>
+**Identical Binary Trees** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-176"></a>
-**** [Back](#trees) <br>
+**Symmetric Binary Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-177"></a>
-**** [Back](#trees) <br>
+**Inorder Traversal of Cartesian Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-178"></a>
-**** [Back](#trees) <br>
+**Sorted Array To Balanced BST** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-179"></a>
-**** [Back](#trees) <br>
+**Binary Tree From Inorder And Postorder** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-180"></a>
-**** [Back](#trees) <br>
+**Construct Binary Tree From Inorder And Preorder** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-181"></a>
-**** [Back](#trees) <br>
+**Kth Smallest Element In Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-182"></a>
-**** [Back](#trees) <br>
+**2-Sum Binary Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-183"></a>
-**** [Back](#trees) <br>
+**BST Iterator** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-184"></a>
-**** [Back](#trees) <br>
+**Recover Binary Search Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-185"></a>
-**** [Back](#trees) <br>
+**Invert the Binary Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-186"></a>
-**** [Back](#trees) <br>
+**ZigZag Level Order Traversal BT** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-187"></a>
-**** [Back](#trees) <br>
+**Min Depth of Binary Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-188"></a>
-**** [Back](#trees) <br>
+**Path Sum** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-189"></a>
-**** [Back](#trees) <br>
+**Sum Root to Leaf Numbers** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-190"></a>
-**** [Back](#trees) <br>
+**Root to Leaf Paths With Sum** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-191"></a>
-**** [Back](#trees) <br>
+**Populate Next Right Pointers Tree** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-192"></a>
-**** [Back](#trees) <br>
+**Least Common Ancestor** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-193"></a>
-**** [Back](#trees) <br>
+**Shortest Unique Prefix** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-194"></a>
-**** [Back](#trees) <br>
+**Flatten Binary Tree to Linked List** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-195"></a>
-**** [Back](#trees) <br>
+**Order of People Heights** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-196"></a>
