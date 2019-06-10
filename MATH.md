@@ -43,7 +43,7 @@ public class Solution {
 }
 ```
 <a name="ques-2"></a>
-** Power of two integers** [Back](#questions) <br>
+**Power of two integers** [Back](#questions) <br>
 ```java
 public class Solution {
     public boolean isPower(int a) {
