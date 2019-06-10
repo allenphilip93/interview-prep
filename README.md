@@ -3,25 +3,25 @@
 Solutions to the common DSA problems in Java
 
 ## Programming
-* [Bit Manipulation](https://github.com/architsingla13/InterviewBit-Solutions#bitmanipulation)
-* [Array](https://github.com/architsingla13/InterviewBit-Solutions#array)
-* [String](https://github.com/architsingla13/InterviewBit-Solutions#string)
-* [Linked List](https://github.com/architsingla13/InterviewBit-Solutions#linkedlist)
-* [Stack](https://github.com/architsingla13/InterviewBit-Solutions#stack)
-* [Queue](https://github.com/architsingla13/InterviewBit-Solutions#queue)
-* [Heap](https://github.com/architsingla13/InterviewBit-Solutions#heaps)
-* [Trees](https://github.com/architsingla13/InterviewBit-Solutions#trees)
-* [Hash Map](https://github.com/architsingla13/InterviewBit-Solutions#hashmap)
-* [Hashing](https://github.com/architsingla13/InterviewBit-Solutions#hashing)
-* [Math](https://github.com/architsingla13/InterviewBit-Solutions#math)
-* [Two Pointers](https://github.com/architsingla13/InterviewBit-Solutions#twopointers)
+* [Bit Manipulation](https://github.com/allenphilip93/interview-prep#bitmanipulation)
+* [Array](https://github.com/allenphilip93/interview-prep#arrays)
+* [String](https://github.com/allenphilip93/interview-prep#string)
+* [Linked List](https://github.com/allenphilip93/interview-prep#linkedlist)
+* [Stack](https://github.com/allenphilip93/interview-prep#stack)
+* [Queue](https://github.com/allenphilip93/interview-prep#queue)
+* [Heap](https://github.com/allenphilip93/interview-prep#heaps)
+* [Trees](https://github.com/allenphilip93/interview-prep#trees)
+* [Hash Map](https://github.com/allenphilip93/interview-prep#hashmap)
+* [Hashing](https://github.com/allenphilip93/interview-prep#hashing)
+* [Math](https://github.com/allenphilip93/interview-prep#math)
+* [Two Pointers](https://github.com/allenphilip93/interview-prep#twopointers)
 * Sort
 * Recursion
-* [Binary Search](https://github.com/architsingla13/InterviewBit-Solutions#binarysearch)
+* [Binary Search](https://github.com/allenphilip93/interview-prep#binarysearch)
 * Binary Search Tree
 * Breadth-First Search
 * Depth-First Search
-* [Backtracking](https://github.com/architsingla13/InterviewBit-Solutions#backtracking)
+* [Backtracking](https://github.com/allenphilip93/interview-prep#backtracking)
 * Dynamic Programming
 * Greedy
 * Graph
@@ -94,7 +94,7 @@ Solutions to the common DSA problems in Java
 |20| [Numbers of length N and value less than K](https://www.interviewbit.com/problems/numbers-of-length-n-and-value-less-than-k/) Given a set of digits (A) in sorted order, find how many numbers of length B are possible whose value is less than number C.     | [Java](#ques-50)  | _O(B)_         | _O(1)_          | Medium         | |
 
 <a name="binarysearch"></a>
-## BinarySearch
+## Binary Search
 
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
@@ -198,7 +198,7 @@ Solutions to the common DSA problems in Java
 |14| [List Cycle](https://www.interviewbit.com/problems/list-cycle/) Find the cycle in the linkedlist if it exists.     | [Java](#ques-119)  | _O(n)_         | _O(1)_          | Medium         |  |
 |15| [Partition List](https://www.interviewbit.com/problems/partition-list/) Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.     | [Java](#ques-120)  | _O(n)_         | _O(1)_          | Easy         |   |
 |16| [Sort List](https://www.interviewbit.com/problems/sort-list/) Merge sort     | [Java](#ques-121)  | _O(nlogn)_         | _O(1)_          | Medium         |   |
-|17| [Insertion Sort List](https://www.interviewbit.com/problems/insertion-sort-list/) Insertion sort     | [Java](#ques-122)  | _O(nlogn)_         | _O(1)_          | Medium         |   |
+|17| [Insertion Sort List](https://www.interviewbit.com/problems/insertion-sort-list/) Insertion sort     | [Java](#ques-122)  | _O(n^2)_         | _O(1)_          | Medium         |   |
 
 <a name="stack"></a>
 ## Stack
