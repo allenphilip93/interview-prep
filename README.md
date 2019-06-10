@@ -167,14 +167,14 @@ Solutions to the common DSA problems in Java
 |4| [Remove Duplicates from Sorted Array](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array/)      | [Java](#ques-95)  | _O(n)_         | _O(1)_          | Easy         | Removing Element increases complexity, just set elements with 2nd pointer  |
 |5| [Remove Duplicates from Sorted Array 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array-ii/) Given a sorted array, remove the duplicates in place such that each element can appear atmost twice and return the new length.     | [Java](#ques-96)  | _O(n)_         | _O(1)_          | Easy         |  |
 |6| [Remove Element from Array](https://www.interviewbit.com/problems/remove-element-from-array/)      | [Java](#ques-97)  | _O(n)_         | _O(1)_          | Easy         |   |
-|7| [Sort by Color](https://www.interviewbit.com/problems/sort-by-color/)      | [Java](#ques-99)  | _O(n)_         | _O(1)_          | Easy         |   |
-|8| [Diffk](https://www.interviewbit.com/problems/diffk/) Given an array ‘A’ of sorted integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.     | [Java](#ques-100)  | _O(n)_         | _O(1)_          | Easy         |  Start both pointers from 0 and not from opp. extreme ends|
-|9| [3 Sum](https://www.interviewbit.com/problems/3-sum/)      | [Java](#ques-101)  | _O(n^2 + nlogn)_         | _O(1)_          | Easy         |  
-|10| [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)      | [Java](#ques-102)  | _O(n^2 + nlogn)_         | _O(1)_          | Medium         |  Handle Duplicates|
-|11| [Max Continuous Series of 1s](https://www.interviewbit.com/problems/max-continuous-series-of-1s/)      | [Java](#ques-103)  | _O(n)_         | _O(1)_          | Medium         |  Keeping window size having zeroes <= B|
-|12| [Array 3 Pointers](https://www.interviewbit.com/problems/array-3-pointers/) You are given 3 arrays A, B and C. All 3 of the arrays are sorted. Find i, j, k such that : max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i])) is minimized. Return the minimum max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i]))     | [Java](#ques-104)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Abs diff can be minimized either decreasing max element or increasing min element   |
-|13| [Counting Triangles](https://www.interviewbit.com/problems/counting-triangles/)      | [Java](#ques-105)  | _O(n^2)_         | _O(1)_          | Medium         | A+B) > C by sorting the array   |
-|14| [Container With Most Water](https://www.interviewbit.com/problems/container-with-most-water/) Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). 'n' vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.     | [Java](#ques-106)  | _O(n)_         | _O(1)_          | Medium         |   |
+|7| [Sort by Color](https://www.interviewbit.com/problems/sort-by-color/)      | [Java](#ques-98)  | _O(n)_         | _O(1)_          | Easy         |   |
+|8| [Diffk](https://www.interviewbit.com/problems/diffk/) Given an array ‘A’ of sorted integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.     | [Java](#ques-99)  | _O(n)_         | _O(1)_          | Easy         |  Start both pointers from 0 and not from opp. extreme ends|
+|9| [3 Sum](https://www.interviewbit.com/problems/3-sum/)      | [Java](#ques-100)  | _O(n^2 + nlogn)_         | _O(1)_          | Easy         |  
+|10| [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)      | [Java](#ques-101)  | _O(n^2 + nlogn)_         | _O(1)_          | Medium         |  Handle Duplicates|
+|11| [Max Continuous Series of 1s](https://www.interviewbit.com/problems/max-continuous-series-of-1s/)      | [Java](#ques-102)  | _O(n)_         | _O(1)_          | Medium         |  Keeping window size having zeroes <= B|
+|12| [Array 3 Pointers](https://www.interviewbit.com/problems/array-3-pointers/) You are given 3 arrays A, B and C. All 3 of the arrays are sorted. Find i, j, k such that : max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i])) is minimized. Return the minimum max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i]))     | [Java](#ques-103)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Abs diff can be minimized either decreasing max element or increasing min element   |
+|13| [Counting Triangles](https://www.interviewbit.com/problems/counting-triangles/)      | [Java](#ques-104)  | _O(n^2)_         | _O(1)_          | Medium         | A+B) > C by sorting the array   |
+|14| [Container With Most Water](https://www.interviewbit.com/problems/container-with-most-water/) Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). 'n' vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.     | [Java](#ques-105)  | _O(n)_         | _O(1)_          | Medium         |   |
 
 <a name="linkedlist"></a>
 ## LinkedList
@@ -182,23 +182,23 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Intersection of Linked Lists](https://www.interviewbit.com/problems/intersection-of-linked-lists/)      | [Java](#ques-107)  | _O(n+m)_         | _O(1)_          | Easy         |   |
-|2| [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/)      | [Java](#ques-108)  | _O(n)_         | _O(1)_          | Easy         |   |
-|3| [Palindrome List](https://www.interviewbit.com/problems/palindrome-list/)      | [Java](#ques-109)  | _O(n)_         | _O(n)_          | Easy         |  Use Stack or reverse half linked list |
-|4| [Remove Duplicates from Sorted List](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list/)      | [Java](#ques-110)  | _O(n)_         | _O(1)_          | Easy         |   |
-|5| [Remove Duplicates from Sorted List 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list-ii/)      | [Java](#ques-111)  | _O(n)_         | _O(1)_          | Easy         |   |
-|6| [Merge Two Sorted Lists](https://www.interviewbit.com/problems/merge-two-sorted-lists/)      | [Java](#ques-112)  | _O(n)_         | _O(1)_          | Easy         |   |
-|6| [Merge Two Sorted Lists](https://www.interviewbit.com/problems/merge-two-sorted-lists/)      | [Java](#ques-113)  | _O(n)_         | _O(1)_          | Easy         |   |
-|7| [Remove Nth Node from List End](https://www.interviewbit.com/problems/remove-nth-node-from-list-end/)      | [Java](#ques-114)  | _O(n)_         | _O(1)_          | Easy         |   |
-|8| [Rotate List](https://www.interviewbit.com/problems/rotate-list/)      | [Java](#ques-115)  | _O(n)_         | _O(1)_          | Easy         |   |
-|9| [Reverse Lists 2](https://www.interviewbit.com/problems/reverse-link-list-ii/)      | [Java](#ques-116)  | _O(n)_         | _O(1)_          | Easy         |  |
-|10| [Reorder List](https://www.interviewbit.com/problems/reorder-list/)      | [Java](#ques-117)  | _O(n)_         | _O(1)_          | Medium         |  Reverse Half and merge alternate |
-|11| [Swap List Nodes in pairs](https://www.interviewbit.com/problems/swap-list-nodes-in-pairs/)      | [Java](#ques-118)  | _O(n)_         | _O(1)_          | Medium         |   |
-|12| [K reverse linked list](https://www.interviewbit.com/problems/k-reverse-linked-list/)      | [Java](#ques-119)  | _O(n)_         | _O(1)_          | Medium         |   |
-|13| [Add Two Numbers as Lists](https://www.interviewbit.com/problems/add-two-numbers-as-lists/)      | [Java](#ques-120)  | _O(n)_         | _O(1)_          | Easy         |   |
-|14| [List Cycle](https://www.interviewbit.com/problems/list-cycle/)      | [Java](#ques-121)  | _O(n)_         | _O(1)_          | Medium         |  |
-|15| [Partition List](https://www.interviewbit.com/problems/partition-list/)      | [Java](#ques-122)  | _O(n)_         | _O(1)_          | Easy         |   |
-|16| [Sort List](https://www.interviewbit.com/problems/sort-list/)      | [Java](#ques-123)  | _O(nlogn)_         | _O(1)_          | Medium         |   |
+|1| [Intersection of Linked Lists](https://www.interviewbit.com/problems/intersection-of-linked-lists/)      | [Java](#ques-106)  | _O(n+m)_         | _O(1)_          | Easy         |   |
+|2| [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/)      | [Java](#ques-107)  | _O(n)_         | _O(1)_          | Easy         |   |
+|3| [Palindrome List](https://www.interviewbit.com/problems/palindrome-list/)      | [Java](#ques-108)  | _O(n)_         | _O(n)_          | Easy         |  Use Stack or reverse half linked list |
+|4| [Remove Duplicates from Sorted List](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list/)      | [Java](#ques-109)  | _O(n)_         | _O(1)_          | Easy         |   |
+|5| [Remove Duplicates from Sorted List 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list-ii/)      | [Java](#ques-110)  | _O(n)_         | _O(1)_          | Easy         |   |
+|6| [Merge Two Sorted Lists](https://www.interviewbit.com/problems/merge-two-sorted-lists/)      | [Java](#ques-111)  | _O(n)_         | _O(1)_          | Easy         |   |
+|7| [Remove Nth Node from List End](https://www.interviewbit.com/problems/remove-nth-node-from-list-end/)      | [Java](#ques-112)  | _O(n)_         | _O(1)_          | Easy         |   |
+|8| [Rotate List](https://www.interviewbit.com/problems/rotate-list/)      | [Java](#ques-113)  | _O(n)_         | _O(1)_          | Easy         |   |
+|9| [Reverse Lists 2](https://www.interviewbit.com/problems/reverse-link-list-ii/) Reverse a linked list from position m to n. Do it in-place and in one-pass.     | [Java](#ques-114)  | _O(n)_         | _O(1)_          | Easy         |  |
+|10| [Reorder List](https://www.interviewbit.com/problems/reorder-list/)      | [Java](#ques-115)  | _O(n)_         | _O(1)_          | Medium         |  Reverse Half and merge alternate |
+|11| [Swap List Nodes in pairs](https://www.interviewbit.com/problems/swap-list-nodes-in-pairs/)      | [Java](#ques-116)  | _O(n)_         | _O(1)_          | Medium         |   |
+|12| [K reverse linked list](https://www.interviewbit.com/problems/k-reverse-linked-list/)      | [Java](#ques-117)  | _O(n)_         | _O(1)_          | Medium         |   |
+|13| [Add Two Numbers as Lists](https://www.interviewbit.com/problems/add-two-numbers-as-lists/)      | [Java](#ques-118)  | _O(n)_         | _O(1)_          | Easy         |   |
+|14| [List Cycle](https://www.interviewbit.com/problems/list-cycle/) Find the cycle in the linkedlist if it exists.     | [Java](#ques-119)  | _O(n)_         | _O(1)_          | Medium         |  |
+|15| [Partition List](https://www.interviewbit.com/problems/partition-list/) Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.     | [Java](#ques-120)  | _O(n)_         | _O(1)_          | Easy         |   |
+|16| [Sort List](https://www.interviewbit.com/problems/sort-list/) Merge sort     | [Java](#ques-121)  | _O(nlogn)_         | _O(1)_          | Medium         |   |
+|17| [Insertion Sort List](https://www.interviewbit.com/problems/insertion-sort-list/) Insertion sort     | [Java](#ques-122)  | _O(nlogn)_         | _O(1)_          | Medium         |   |
 
 <a name="stack"></a>
 ## Stack
@@ -206,13 +206,13 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Simplify Directory Path](https://www.interviewbit.com/problems/simplify-directory-path/)      | [Java](#ques-124)  | _O(n)_         | _O(n)_          | Easy         |   |
-|2| [Redundant Braces](https://www.interviewbit.com/problems/redundant-braces/)      | [Java](#ques-125)  | _O(n)_         | _O(n)_          | Easy         |   |
-|3| [Nearest Smaller Element](https://www.interviewbit.com/problems/nearest-smaller-element/)      | [Java](#ques-126)  | _O(n)_         | _O(n)_          | Easy         |   |
-|4| [Evaluate Expression](https://www.interviewbit.com/problems/evaluate-expression/)      | [Java](#ques-127)  | _O(n)_         | _O(n)_          | Easy         |   |
-|5| [Min Stack](https://www.interviewbit.com/problems/min-stack/)      | [Java](#ques-128)  | _O(1)_         | _O(1)_          | Easy         |  Doing Min in O(1) space is good one|
-|6| [Largest Rectangle in Histogram](https://www.interviewbit.com/problems/largest-rectangle-in-histogram/)      | [Java](#ques-129)  | _O(n)_         | _O(n)_          | Medium         |  Do read brute force and think in terms of stack|
-|7| [Rain Water Trapped](https://www.interviewbit.com/problems/rain-water-trapped/)      | [Java](#ques-130)  | _O(n)_         | _O(n)_          | Medium         |  |
+|1| [Simplify Directory Path](https://www.interviewbit.com/problems/simplify-directory-path/)      | [Java](#ques-123)  | _O(n)_         | _O(n)_          | Easy         |   |
+|2| [Redundant Braces](https://www.interviewbit.com/problems/redundant-braces/)      | [Java](#ques-124)  | _O(n)_         | _O(n)_          | Easy         |   |
+|3| [Nearest Smaller Element](https://www.interviewbit.com/problems/nearest-smaller-element/)      | [Java](#ques-125)  | _O(n)_         | _O(n)_          | Easy         |   |
+|4| [Evaluate Expression](https://www.interviewbit.com/problems/evaluate-expression/)      | [Java](#ques-126)  | _O(n)_         | _O(n)_          | Easy         |   |
+|5| [Min Stack](https://www.interviewbit.com/problems/min-stack/)      | [Java](#ques-127)  | _O(1)_         | _O(1)_          | Easy         |  Doing Min in O(1) space is good one|
+|6| [Largest Rectangle in Histogram](https://www.interviewbit.com/problems/largest-rectangle-in-histogram/)      | [Java](#ques-128)  | _O(n)_         | _O(n)_          | Medium         |  Do read brute force and think in terms of stack|
+|7| [Rain Water Trapped](https://www.interviewbit.com/problems/rain-water-trapped/)      | [Java](#ques-129)  | _O(n)_         | _O(n)_          | Medium         |  |
 
 
 <a name="queue"></a>
@@ -220,7 +220,7 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Sliding Window Maximum](https://www.interviewbit.com/problems/sliding-window-maximum/)      | [Java](#ques-131)  | _O(n)_         | _O(n)_          | Medium         |  Finding Min is reverse of current logic|
+|1| [Sliding Window Maximum](https://www.interviewbit.com/problems/sliding-window-maximum/)      | [Java](#ques-130)  | _O(n)_         | _O(n)_          | Medium         |  Finding Min is reverse of current logic|
 
 
 <a name="backtracking"></a>
@@ -228,20 +228,20 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [ReverseLinkedList](https://www.interviewbit.com/problems/reverse-link-list-recursion/)      | [Java](#ques-132)  | _O(n)_         | _O(n)_          | Easy         |  |
-|2| [Modular Expression](https://www.interviewbit.com/problems/modular-expression/)      | [Java](#ques-133)  | _O(log(power))_         | _O(1)_          | Easy         |  Modular Exponentiation |
-|3| [Subset](https://www.interviewbit.com/problems/subset/)      | [Java](#ques-134)  | _O(2^n)_         | _O(n)_          | Easy         |  Backtracking general algo |
-|4| [Combinations](https://www.interviewbit.com/problems/combinations/)      | [Java](#ques-135)  | _O(nCk)_         | _O(n)_          | Easy         |  Backtracking general algo |
-|5| [Combination Sum](https://www.interviewbit.com/problems/combination-sum/)      | [Java](#ques-136)  | _O(2^n)_         | _O(targetSum)_          | Easy         |  Backtracking general algo, Use Map for checking duplicates |
-|6| [Combination Sum 2](https://www.interviewbit.com/problems/combination-sum-ii/)      | [Java](#ques-137)  | _O(2^n)_         | _O(targetSum)_          | Easy         |   |
-|7| [SubSets 2](https://www.interviewbit.com/problems/subsets-ii/)      | [Java](#ques-138)  | _O(2^n)_         | _O(n)_          | Easy         |  Either use hashmap or skip continuous elements in recursion function |
-|8| [Letter Phone](https://www.interviewbit.com/problems/letter-phone/)      | [Java](#ques-139)  | _O(3^n)_         | _O(n)_          | Easy         |   |
-|9| [Palindrome Partitioning](https://www.interviewbit.com/problems/palindrome-partitioning/)      | [Java](#ques-140)  | _O(2^n)_         | _O(n)_          | Easy         |  can maintain 2-D array to keep true/false whether start-end is palindrome or not (DP) |
-|10| [Generate all Parentheses II](https://www.interviewbit.com/problems/generate-all-parentheses-ii/)      | [Java](#ques-141)  | _O(2^n)_         | _O(2n)_          | Easy         |   |
-|11| [Permutations](https://www.interviewbit.com/problems/permutations/)      | [Java](#ques-142)  | _O(n!)_         | _O(n)_          | Medium         | Either use visited array or remove integer from input array then add back while backtracking  |
-|12| [Gray Code](https://www.interviewbit.com/problems/gray-code/)      | [Java](#ques-143)  | _O(2^n)_         | _O(n)_          | Medium         | Other Solution of using reverse of (N-1) and prefixing 1 is good  |
-|13| [Kth Permutation Sequence](https://www.interviewbit.com/problems/kth-permutation-sequence/)      | [Java](#ques-144)  | _O(nk)_         | _O(n)_          | Medium         | Use Maths plus recursion, first digit = k/(n-1)!+1  |
-|14| [NQueens](https://www.interviewbit.com/problems/nqueens/)      | [Java](#ques-145)  | _O(n*n)_         | _O(n)_          | Medium         |  |
+|1| [ReverseLinkedList](https://www.interviewbit.com/problems/reverse-link-list-recursion/)      | [Java](#ques-131)  | _O(n)_         | _O(n)_          | Easy         |  |
+|2| [Modular Expression](https://www.interviewbit.com/problems/modular-expression/)      | [Java](#ques-132)  | _O(log(power))_         | _O(1)_          | Easy         |  Modular Exponentiation |
+|3| [Subset](https://www.interviewbit.com/problems/subset/)      | [Java](#ques-133)  | _O(2^n)_         | _O(n)_          | Easy         |  Backtracking general algo |
+|4| [Combinations](https://www.interviewbit.com/problems/combinations/)      | [Java](#ques-134)  | _O(nCk)_         | _O(n)_          | Easy         |  Backtracking general algo |
+|5| [Combination Sum](https://www.interviewbit.com/problems/combination-sum/)      | [Java](#ques-135)  | _O(2^n)_         | _O(targetSum)_          | Easy         |  Backtracking general algo, Use Map for checking duplicates |
+|6| [Combination Sum 2](https://www.interviewbit.com/problems/combination-sum-ii/)      | [Java](#ques-136)  | _O(2^n)_         | _O(targetSum)_          | Easy         |   |
+|7| [SubSets 2](https://www.interviewbit.com/problems/subsets-ii/)      | [Java](#ques-137)  | _O(2^n)_         | _O(n)_          | Easy         |  Either use hashmap or skip continuous elements in recursion function |
+|8| [Letter Phone](https://www.interviewbit.com/problems/letter-phone/)      | [Java](#ques-138)  | _O(3^n)_         | _O(n)_          | Easy         |   |
+|9| [Palindrome Partitioning](https://www.interviewbit.com/problems/palindrome-partitioning/)      | [Java](#ques-139)  | _O(2^n)_         | _O(n)_          | Easy         |  can maintain 2-D array to keep true/false whether start-end is palindrome or not (DP) |
+|10| [Generate all Parentheses II](https://www.interviewbit.com/problems/generate-all-parentheses-ii/)      | [Java](#ques-140)  | _O(2^n)_         | _O(2n)_          | Easy         |   |
+|11| [Permutations](https://www.interviewbit.com/problems/permutations/)      | [Java](#ques-141)  | _O(n!)_         | _O(n)_          | Medium         | Either use visited array or remove integer from input array then add back while backtracking  |
+|12| [Gray Code](https://www.interviewbit.com/problems/gray-code/)      | [Java](#ques-142)  | _O(2^n)_         | _O(n)_          | Medium         | Other Solution of using reverse of (N-1) and prefixing 1 is good  |
+|13| [Kth Permutation Sequence](https://www.interviewbit.com/problems/kth-permutation-sequence/)      | [Java](#ques-143)  | _O(nk)_         | _O(n)_          | Medium         | Use Maths plus recursion, first digit = k/(n-1)!+1  |
+|14| [NQueens](https://www.interviewbit.com/problems/nqueens/)      | [Java](#ques-144)  | _O(n*n)_         | _O(n)_          | Medium         |  |
 
 
 <a name="hashing"></a>
@@ -249,20 +249,20 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Colorful Number](https://www.interviewbit.com/problems/colorful-number/)      | [Java](#ques-146)  | _O(n*n)_         | _O(n)_          | Easy         |   |
-|2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/)      | [Java](#ques-147)  | _O(n)_         | _O(n)_          | Easy         |  3 conditions - element 0, sum 0 or sum repeated |
-|3| [2 Sum](https://www.interviewbit.com/problems/2-sum/)      | [Java](#ques-148)  | _O(n)_         | _O(1)_          | Easy         |   |
-|4| [4 Sum](https://www.interviewbit.com/problems/4-sum/)      | [Java](#ques-149)  | _O(n*n+nlogn)_         | _O(n)_          | Medium         |  Either use n^3 solution using 2 pointers and hashSet for unique sets or or use customised sorting plus hashSet |
-|5| [Valid Sudoku](https://www.interviewbit.com/problems/valid-sudoku/)      | [Java](#ques-150)  | _O(n*n)_         | _O(n*n)_          | Medium         |  check row, col and box, keep different maps |
-|6| [Diffk II](https://www.interviewbit.com/problems/diffk-ii/)      | [Java](#ques-151)  | _O(n)_         | _O(n)_          | Easy         |   |
-|7| [Anagrams](https://www.interviewbit.com/problems/anagrams/)      | [Java](#ques-152)  | _O(n*m)_ , where m = average length of string       | _O(n)_          | Medium         |  Good Concept |
-|8| [Equal](https://www.interviewbit.com/problems/equal/)      | [Java](#ques-153)  | _O(n*n)_        | _O(n)_          | Medium         |  |
-|9| [Copy List](https://www.interviewbit.com/problems/copy-list/)      | [Java](#ques-154)  | _O(n)_        | _O(n)_          | Medium         |   |
-|10| [Longest Substring Without Repeat](https://www.interviewbit.com/problems/longest-substring-without-repeat/)      | [Java](#ques-155)  | _O(n)_        | _O(n)_          | Medium         |  |
-|11| [Window String](https://www.interviewbit.com/problems/window-string/)      | [Java](#ques-156)  | _O(n)_        | _O(n)_          | Medium         | Use 2 pointers and map to keep count of characters included - plus and minus   |
-|12| [Fraction](https://www.interviewbit.com/problems/fraction/)      | [Java](#ques-157)  | _O(n)_        | _O(n)_          | Medium         |   |
-|13| [Points on the Straight Line](https://www.interviewbit.com/problems/points-on-the-straight-line/)      | [Java](#ques-158)  | _O(n*n)_        | _O(n)_          | Medium         | Slope should be same, Consider first point as start and rest as end and create map and repeat; Keep edge cases like which slopes are valid and others keep in diff variables   |
-|14| [Substring Concatenation](https://www.interviewbit.com/problems/substring-concatenation/)      | [Java](#ques-159)  | _O(n*n)_        | _O(n)_          | Medium         | Brute force but just using hashmap for string match   |
+|1| [Colorful Number](https://www.interviewbit.com/problems/colorful-number/)      | [Java](#ques-145)  | _O(n*n)_         | _O(n)_          | Easy         |   |
+|2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/)      | [Java](#ques-146)  | _O(n)_         | _O(n)_          | Easy         |  3 conditions - element 0, sum 0 or sum repeated |
+|3| [2 Sum](https://www.interviewbit.com/problems/2-sum/)      | [Java](#ques-147)  | _O(n)_         | _O(1)_          | Easy         |   |
+|4| [4 Sum](https://www.interviewbit.com/problems/4-sum/)      | [Java](#ques-148)  | _O(n*n+nlogn)_         | _O(n)_          | Medium         |  Either use n^3 solution using 2 pointers and hashSet for unique sets or or use customised sorting plus hashSet |
+|5| [Valid Sudoku](https://www.interviewbit.com/problems/valid-sudoku/)      | [Java](#ques-149)  | _O(n*n)_         | _O(n*n)_          | Medium         |  check row, col and box, keep different maps |
+|6| [Diffk II](https://www.interviewbit.com/problems/diffk-ii/)      | [Java](#ques-150)  | _O(n)_         | _O(n)_          | Easy         |   |
+|7| [Anagrams](https://www.interviewbit.com/problems/anagrams/)      | [Java](#ques-151)  | _O(n*m)_ , where m = average length of string       | _O(n)_          | Medium         |  Good Concept |
+|8| [Equal](https://www.interviewbit.com/problems/equal/)      | [Java](#ques-152)  | _O(n*n)_        | _O(n)_          | Medium         |  |
+|9| [Copy List](https://www.interviewbit.com/problems/copy-list/)      | [Java](#ques-153)  | _O(n)_        | _O(n)_          | Medium         |   |
+|10| [Longest Substring Without Repeat](https://www.interviewbit.com/problems/longest-substring-without-repeat/)      | [Java](#ques-154)  | _O(n)_        | _O(n)_          | Medium         |  |
+|11| [Window String](https://www.interviewbit.com/problems/window-string/)      | [Java](#ques-155)  | _O(n)_        | _O(n)_          | Medium         | Use 2 pointers and map to keep count of characters included - plus and minus   |
+|12| [Fraction](https://www.interviewbit.com/problems/fraction/)      | [Java](#ques-156)  | _O(n)_        | _O(n)_          | Medium         |   |
+|13| [Points on the Straight Line](https://www.interviewbit.com/problems/points-on-the-straight-line/)      | [Java](#ques-157)  | _O(n*n)_        | _O(n)_          | Medium         | Slope should be same, Consider first point as start and rest as end and create map and repeat; Keep edge cases like which slopes are valid and others keep in diff variables   |
+|14| [Substring Concatenation](https://www.interviewbit.com/problems/substring-concatenation/)      | [Java](#ques-158)  | _O(n*n)_        | _O(n)_          | Medium         | Brute force but just using hashmap for string match   |
 
 
 <a name="heaps"></a>
@@ -270,9 +270,9 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [N max pair combinations](https://www.interviewbit.com/problems/n-max-pair-combinations/)      | [Java](#ques-160)  | _O(nlogn)_         | _O(n)_          | Medium         |  Create a min heap and loop through n^2 pairs  |
-|2| [Magician and Chocolates](https://www.interviewbit.com/problems/magician-and-chocolates/)      | [Java](#ques-161)  | _O(klogn)_         | _O(n)_          | Easy         |    |
-|3| [Merge K Sorted Lists](https://www.interviewbit.com/problems/merge-k-sorted-lists/)      | [Java](#ques-162)  | _O(Nlogk)_, where k = initial lists and N = total sum of nodes from all lists         | _O(k)_          | Medium         |    |
+|1| [N max pair combinations](https://www.interviewbit.com/problems/n-max-pair-combinations/)      | [Java](#ques-159)  | _O(nlogn)_         | _O(n)_          | Medium         |  Create a min heap and loop through n^2 pairs  |
+|2| [Magician and Chocolates](https://www.interviewbit.com/problems/magician-and-chocolates/)      | [Java](#ques-160)  | _O(klogn)_         | _O(n)_          | Easy         |    |
+|3| [Merge K Sorted Lists](https://www.interviewbit.com/problems/merge-k-sorted-lists/)      | [Java](#ques-161)  | _O(Nlogk)_, where k = initial lists and N = total sum of nodes from all lists         | _O(k)_          | Medium         |    |
 
 
 <a name="hashmaps"></a>
@@ -280,9 +280,9 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Distinct Numbers in Window](https://www.interviewbit.com/problems/distinct-numbers-in-window/)      | [Java](#ques-163)  | _O(n)_         | _O(n)_          | Easy         |    |
-|2| [LRU](https://www.interviewbit.com/problems/lru-cache/)      | [Java](#ques-164)  | _O(1)_ for get and O(n) for set         | _O(n)_          | Easy         |    |
-|3| [Ways to form Max Heap](https://www.interviewbit.com/problems/ways-to-form-max-heap/)      | [Java](#ques-165)  | _O(log2n^2)_          | _O(log2n)_          | Hard         |  T(n) = n-1Cl*T(l)*T(r), where r = n-1-l  |
+|1| [Distinct Numbers in Window](https://www.interviewbit.com/problems/distinct-numbers-in-window/)      | [Java](#ques-162)  | _O(n)_         | _O(n)_          | Easy         |    |
+|2| [LRU](https://www.interviewbit.com/problems/lru-cache/)      | [Java](#ques-163)  | _O(1)_ for get and O(n) for set         | _O(n)_          | Easy         |    |
+|3| [Ways to form Max Heap](https://www.interviewbit.com/problems/ways-to-form-max-heap/)      | [Java](#ques-164)  | _O(log2n^2)_          | _O(log2n)_          | Hard         |  T(n) = n-1Cl*T(l)*T(r), where r = n-1-l  |
 
 
 <a name="trees"></a>
@@ -290,37 +290,37 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Valid Binary Search Tree](https://www.interviewbit.com/problems/valid-binary-search-tree/)      | [Java](#ques-166)  | _O(n)_         | _O(log2n)_          | Easy         |    |
-|2| [Next Greater Number BST](https://www.interviewbit.com/problems/next-greater-number-bst/)      | [Java](#ques-167)  | _O(logn)_         | _O(1)_          | Easy         |  Good Question plus also know inorder using 1 stack  |
-|3| [Max Depth of Binary Tree](https://www.interviewbit.com/problems/max-depth-of-binary-tree/)      | [Java](#ques-168)  | _O(n)_         | _O(n)_          | Easy         |    |
-|4| [Vertical Order traversal of Binary Tree](https://www.interviewbit.com/problems/vertical-order-traversal-of-binary-tree/)      | [Java](#ques-169)  | _O(n)_         | _O(n)_          | Easy         |    |
-|5| [Inorder Traversal](https://www.interviewbit.com/problems/inorder-traversal/)      | [Java](#ques-170)  | _O(n)_         | _O(n)_          | Easy         |   |
+|1| [Valid Binary Search Tree](https://www.interviewbit.com/problems/valid-binary-search-tree/)      | [Java](#ques-165)  | _O(n)_         | _O(log2n)_          | Easy         |    |
+|2| [Next Greater Number BST](https://www.interviewbit.com/problems/next-greater-number-bst/)      | [Java](#ques-166)  | _O(logn)_         | _O(1)_          | Easy         |  Good Question plus also know inorder using 1 stack  |
+|3| [Max Depth of Binary Tree](https://www.interviewbit.com/problems/max-depth-of-binary-tree/)      | [Java](#ques-167)  | _O(n)_         | _O(n)_          | Easy         |    |
+|4| [Vertical Order traversal of Binary Tree](https://www.interviewbit.com/problems/vertical-order-traversal-of-binary-tree/)      | [Java](#ques-168)  | _O(n)_         | _O(n)_          | Easy         |    |
+|5| [Inorder Traversal](https://www.interviewbit.com/problems/inorder-traversal/)      | [Java](#ques-169)  | _O(n)_         | _O(n)_          | Easy         |   |
+|6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-170)  | _O(n)_         | _O(n)_          | Easy         |   |
 |6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-171)  | _O(n)_         | _O(n)_          | Easy         |   |
-|6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-172)  | _O(n)_         | _O(n)_          | Easy         |   |
-|7| [PostOrder Traversal](https://www.interviewbit.com/problems/postorder-traversal/)      | [Java](#ques-173)  | _O(n)_         | _O(n)_          | Medium         |  Using 2 stacks is easy  |
-|8| [Hotel Reviews](https://www.interviewbit.com/problems/hotel-reviews/)      | [Java](#ques-174)  | _O(Sum of all input strings length)_         | _O(n)_          | Medium         |  Use tries or Hashset   |
-|9| [Balanced Binary Tree](https://www.interviewbit.com/problems/balanced-binary-tree/)      | [Java](#ques-175)  | _O(n)_         | _O(n)_          | Easy         |     |
-|10| [Identical Binary Trees](https://www.interviewbit.com/problems/identical-binary-trees/)      | [Java](#ques-176)  | _O(n)_         | _O(n)_          | Easy         |     |
-|11| [Symmetric Binary Tree](https://www.interviewbit.com/problems/symmetric-binary-tree/)      | [Java](#ques-177)  | _O(n)_         | _O(n)_          | Easy         |     |
-|12| [Inorder Traversal of Cartesian Tree](https://www.interviewbit.com/problems/inorder-traversal-of-cartesian-tree/)      | [Java](#ques-178)  | _O(n)_         | _O(n)_          | Easy         |     |
-|13| [Sorted Array To Balanced BST](https://www.interviewbit.com/problems/sorted-array-to-balanced-bst/)      | [Java](#ques-179)  | _O(n)_         | _O(n)_          | Easy         |     |
-|14| [Binary Tree From Inorder And Postorder](https://www.interviewbit.com/problems/binary-tree-from-inorder-and-postorder/)      | [Java](#ques-180)  | _O(n)_         | _O(n)_          | Easy         |    |
-|15| [Construct Binary Tree From Inorder And Preorder](https://www.interviewbit.com/problems/construct-binary-tree-from-inorder-and-preorder/)      | [Java](#ques-181)  | _O(n)_         | _O(n)_          | Easy         |     |
-|16| [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/)      | [Java](#ques-182)  | _O(n)_         | _O(n)_          | Easy         |  Can be done without extra space as well   |
-|17| [2-Sum Binary Tree](https://www.interviewbit.com/problems/2sum-binary-tree/)      | [Java](#ques-183)  | _O(n)_         | _O(logn)_          | Medium         |  Can be done in O(n) space with sorted array   |
-|18| [BST Iterator](https://www.interviewbit.com/problems/bst-iterator/)      | [Java](#ques-184)  | _O(1)_         | _O(logn)_          | Easy         |  Can be done in O(n) space with array   |
-|19| [Recover Binary Search Tree](https://www.interviewbit.com/problems/recover-binary-search-tree/)      | [Java](#ques-185)  | _O(n)_         | _O(1)_          | Medium         |   Morris Algo - attaching current to inorder predecessor, Can be done in O(n) space with array, rest concept is same  |
-|20| [Invert the Binary Tree](https://www.interviewbit.com/problems/invert-the-binary-tree/)      | [Java](#ques-186)  | _O(n)_         | _O(n)_          | Easy         |   |
-|21| [ZigZag Level Order Traversal BT](https://www.interviewbit.com/problems/zigzag-level-order-traversal-bt/)      | [Java](#ques-187)  | _O(n)_         | _O(n)_          | Easy         |  Can be solved using 2 stacks or queue  |
-|22| [Min Depth of Binary Tree](https://www.interviewbit.com/problems/min-depth-of-binary-tree/)      | [Java](#ques-188)  | _O(n)_         | _O(n)_          | Easy         |    |
-|23| [Path Sum](https://www.interviewbit.com/problems/path-sum/)      | [Java](#ques-189)  | _O(n)_         | _O(n)_          | Easy         |    |
-|24| [Sum Root to Leaf Numbers](https://www.interviewbit.com/problems/sum-root-to-leaf-numbers/)      | [Java](#ques-190)  | _O(n)_         | _O(n)_          | Medium         |  mod can be used even before number is formed |
-|25| [Root to Leaf Paths With Sum](https://www.interviewbit.com/problems/root-to-leaf-paths-with-sum/)      | [Java](#ques-191)  | _O(n)_         | _O(n)_          | Medium         |  |
-|26| [Populate Next Right Pointers Tree](https://www.interviewbit.com/problems/populate-next-right-pointers-tree/)      | [Java](#ques-192)  | _O(n)_         | _O(1)_          | Medium         |  If Space was not constant then using queue is very easy |
-|27| [Least Common Ancestor](https://www.interviewbit.com/problems/least-common-ancestor/)      | [Java](#ques-193)  | _O(n)_         | _O(n)_          | Medium         |  |
-|28| [Shortest Unique Prefix](https://www.interviewbit.com/problems/shortest-unique-prefix/)      | [Java](#ques-194)  | _O(n*m)_         | _O(total unique characters)_          | Medium         |  either use count of unique flag at each node, update the child's property and not current node |
-|29| [Flatten Binary Tree to Linked List](https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/)      | [Java](#ques-195)  | _O(n)_         | _O(1)_          | Medium         |  Can be solved using stack or recursion |
-|30| [Order of People Heights](https://www.interviewbit.com/problems/order-of-people-heights/)      | [Java](#ques-196)  | _O(nlogn)_         | _O(n)_          | Medium         |  Solve it like a puzzle, good question |
+|7| [PostOrder Traversal](https://www.interviewbit.com/problems/postorder-traversal/)      | [Java](#ques-172)  | _O(n)_         | _O(n)_          | Medium         |  Using 2 stacks is easy  |
+|8| [Hotel Reviews](https://www.interviewbit.com/problems/hotel-reviews/)      | [Java](#ques-173)  | _O(Sum of all input strings length)_         | _O(n)_          | Medium         |  Use tries or Hashset   |
+|9| [Balanced Binary Tree](https://www.interviewbit.com/problems/balanced-binary-tree/)      | [Java](#ques-174)  | _O(n)_         | _O(n)_          | Easy         |     |
+|10| [Identical Binary Trees](https://www.interviewbit.com/problems/identical-binary-trees/)      | [Java](#ques-175)  | _O(n)_         | _O(n)_          | Easy         |     |
+|11| [Symmetric Binary Tree](https://www.interviewbit.com/problems/symmetric-binary-tree/)      | [Java](#ques-176)  | _O(n)_         | _O(n)_          | Easy         |     |
+|12| [Inorder Traversal of Cartesian Tree](https://www.interviewbit.com/problems/inorder-traversal-of-cartesian-tree/)      | [Java](#ques-177)  | _O(n)_         | _O(n)_          | Easy         |     |
+|13| [Sorted Array To Balanced BST](https://www.interviewbit.com/problems/sorted-array-to-balanced-bst/)      | [Java](#ques-178)  | _O(n)_         | _O(n)_          | Easy         |     |
+|14| [Binary Tree From Inorder And Postorder](https://www.interviewbit.com/problems/binary-tree-from-inorder-and-postorder/)      | [Java](#ques-179)  | _O(n)_         | _O(n)_          | Easy         |    |
+|15| [Construct Binary Tree From Inorder And Preorder](https://www.interviewbit.com/problems/construct-binary-tree-from-inorder-and-preorder/)      | [Java](#ques-180)  | _O(n)_         | _O(n)_          | Easy         |     |
+|16| [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/)      | [Java](#ques-181)  | _O(n)_         | _O(n)_          | Easy         |  Can be done without extra space as well   |
+|17| [2-Sum Binary Tree](https://www.interviewbit.com/problems/2sum-binary-tree/)      | [Java](#ques-182)  | _O(n)_         | _O(logn)_          | Medium         |  Can be done in O(n) space with sorted array   |
+|18| [BST Iterator](https://www.interviewbit.com/problems/bst-iterator/)      | [Java](#ques-183)  | _O(1)_         | _O(logn)_          | Easy         |  Can be done in O(n) space with array   |
+|19| [Recover Binary Search Tree](https://www.interviewbit.com/problems/recover-binary-search-tree/)      | [Java](#ques-184)  | _O(n)_         | _O(1)_          | Medium         |   Morris Algo - attaching current to inorder predecessor, Can be done in O(n) space with array, rest concept is same  |
+|20| [Invert the Binary Tree](https://www.interviewbit.com/problems/invert-the-binary-tree/)      | [Java](#ques-185)  | _O(n)_         | _O(n)_          | Easy         |   |
+|21| [ZigZag Level Order Traversal BT](https://www.interviewbit.com/problems/zigzag-level-order-traversal-bt/)      | [Java](#ques-186)  | _O(n)_         | _O(n)_          | Easy         |  Can be solved using 2 stacks or queue  |
+|22| [Min Depth of Binary Tree](https://www.interviewbit.com/problems/min-depth-of-binary-tree/)      | [Java](#ques-187)  | _O(n)_         | _O(n)_          | Easy         |    |
+|23| [Path Sum](https://www.interviewbit.com/problems/path-sum/)      | [Java](#ques-188)  | _O(n)_         | _O(n)_          | Easy         |    |
+|24| [Sum Root to Leaf Numbers](https://www.interviewbit.com/problems/sum-root-to-leaf-numbers/)      | [Java](#ques-189)  | _O(n)_         | _O(n)_          | Medium         |  mod can be used even before number is formed |
+|25| [Root to Leaf Paths With Sum](https://www.interviewbit.com/problems/root-to-leaf-paths-with-sum/)      | [Java](#ques-190)  | _O(n)_         | _O(n)_          | Medium         |  |
+|26| [Populate Next Right Pointers Tree](https://www.interviewbit.com/problems/populate-next-right-pointers-tree/)      | [Java](#ques-191)  | _O(n)_         | _O(1)_          | Medium         |  If Space was not constant then using queue is very easy |
+|27| [Least Common Ancestor](https://www.interviewbit.com/problems/least-common-ancestor/)      | [Java](#ques-192)  | _O(n)_         | _O(n)_          | Medium         |  |
+|28| [Shortest Unique Prefix](https://www.interviewbit.com/problems/shortest-unique-prefix/)      | [Java](#ques-193)  | _O(n*m)_         | _O(total unique characters)_          | Medium         |  either use count of unique flag at each node, update the child's property and not current node |
+|29| [Flatten Binary Tree to Linked List](https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/)      | [Java](#ques-194)  | _O(n)_         | _O(1)_          | Medium         |  Can be solved using stack or recursion |
+|30| [Order of People Heights](https://www.interviewbit.com/problems/order-of-people-heights/)      | [Java](#ques-195)  | _O(nlogn)_         | _O(n)_          | Medium         |  Solve it like a puzzle, good question |
 
 
 ## Solutions
@@ -2309,25 +2309,6 @@ public class Solution {
 }
 ```
 <a name="ques-98"></a>
-**Remove Element from Array** [Back](#twopointers) <br>
-```java
-public class Solution {
-    public int removeElement(ArrayList<Integer> a, int b) {
-        int start = 0;
-        for (int index = 0; index < a.size(); index++) {
-            if (a.get(index) == b) {
-                continue;
-            } else {
-                a.set(start, a.get(index));
-                start++;
-            }
-        }
-        a.subList(start, a.size()).clear();
-        return a.size();
-    }
-}
-```
-<a name="ques-99"></a>
 **Sort by Color** [Back](#twopointers) <br>
 ```java
 public class Solution {
@@ -2357,7 +2338,7 @@ public class Solution {
     }
 }
 ```
-<a name="ques-100"></a>
+<a name="ques-99"></a>
 **Diffk** [Back](#twopointers) <br>
 ```java
 public class Solution {
@@ -2381,7 +2362,7 @@ public class Solution {
     }
 }
 ```
-<a name="ques-101"></a>
+<a name="ques-100"></a>
 **3 Sum** [Back](#twopointers) <br>
 ```java
 public class Solution {
@@ -2424,7 +2405,7 @@ public class Solution {
     }
 }
 ```
-<a name="ques-102"></a>
+<a name="ques-101"></a>
 **3 Sum Zero** [Back](#twopointers) <br>
 ```java
 public class Solution {
@@ -2469,11 +2450,11 @@ public class Solution {
     }
 }
 ```
-<a name="ques-103"></a>
+<a name="ques-102"></a>
 **Max Continuous Series of 1s** [Back](#twopointers) <br>
 ```java
 ```
-<a name="ques-104"></a>
+<a name="ques-103"></a>
 **Array 3 Pointers** [Back](#twopointers) <br>
 ```java
 public class Solution {
@@ -2508,11 +2489,11 @@ public class Solution {
     }
 }
 ```
-<a name="ques-105"></a>
+<a name="ques-104"></a>
 **Counting Triangles** [Back](#twopointers) <br>
 ```java
 ```
-<a name="ques-106"></a>
+<a name="ques-105"></a>
 **Container With Most Water** [Back](#twopointers) <br>
 ```java
 public class Solution {
@@ -2534,275 +2515,720 @@ public class Solution {
 ```
 
 ### Linked List
-<a name="ques-107"></a>
+<a name="ques-106"></a>
 **Intersection of Linked Lists** [Back](#linkedlist) <br>
 ```java
 ```
-<a name="ques-108"></a>
+<a name="ques-107"></a>
 **Reverse Linked List** [Back](#linkedlist) <br>
 ```java
 ```
-<a name="ques-109"></a>
+<a name="ques-108"></a>
 **Palindrome List** [Back](#linkedlist) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public int lPalin(ListNode A) {
+        ListNode slow = A;
+        ListNode fast = A;
+        // find middle
+        while (fast != null && fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        // reverse the second half
+        ListNode current = slow.next; 
+        // System.out.println(print(current));
+        current = reverse(current);
+        // System.out.println(print(current));
+        // compare the two
+        ListNode right = current;
+        ListNode left = A;
+        int res = 1;
+        while (left != null && right != null) {
+            if (left.val != right.val) {
+                res = 0;
+                break;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        // restore the linked list
+        // System.out.println(print(current));
+        current = reverse(current);
+        // System.out.println(print(current));
+        slow.next = current;
+        // System.out.println(print(A));
+        return res;
+    }
+    
+    private ListNode reverse(ListNode head) {
+        ListNode prev = null; 
+        ListNode current = head; 
+        ListNode next = null; 
+        while (current != null) { 
+            next = current.next; 
+            current.next = prev; 
+            prev = current; 
+            current = next; 
+        }
+        return prev; 
+    }
+    
+    private String print(ListNode head) {
+        String s = "HEAD => ";
+        ListNode temp = head;
+        while (temp != null) {
+            s = s + temp.val + " => ";
+            temp = temp.next;
+        }
+        s = s + "END";
+        return s;
+    }
+}
 ```
-<a name="ques-110"></a>
+<a name="ques-109"></a>
 **Remove Duplicates from Sorted List** [Back](#linkedlist) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode deleteDuplicates(ListNode A) {
+        ListNode prev = A;
+        ListNode curr = A.next;
+        while (curr != null) {
+            if (curr.val == prev.val) {
+                prev.next = curr.next;
+            } else {
+                prev = curr;
+            }
+            curr = curr.next;
+        }
+        return A;
+    }
+}
 ```
-<a name="ques-111"></a>
+<a name="ques-110"></a>
 **Remove Duplicates from Sorted List 2** [Back](#linkedlist) <br>
 ```java
 ```
+<a name="ques-111"></a>
+**Merge Two Sorted Lists** [Back](#linkedlist) <br>
+```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode mergeTwoLists(ListNode A, ListNode B) {
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
+        while (A != null && B != null) {
+            ListNode temp = null;
+            if (A.val <= B.val) {
+                temp = A;
+                A = A.next;
+            } else {
+                temp = B;
+                B = B.next;
+            }
+            tail.next = temp;
+            tail = tail.next;
+            tail.next = null;
+        }
+        if (A != null)
+            tail.next = A;
+        else
+            tail.next = B;
+        return dummy.next;
+    }
+}
+```
 <a name="ques-112"></a>
-**Merge Two Sorted Lists** [Back](#linkedlist) <br>
-```java
-```
-<a name="ques-113"></a>
-**Merge Two Sorted Lists** [Back](#linkedlist) <br>
-```java
-```
-<a name="ques-114"></a>
 **Remove Nth Node from List End** [Back](#linkedlist) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode removeNthFromEnd(ListNode a, int b) {
+        if (a == null)
+            return null;
+
+        ListNode fast = a;
+        ListNode slow = a;
+
+        for (int i = 0; i < b; i++) {
+
+            fast = fast.next;
+
+            // if remove the first node
+            if (fast == null) {
+                a = a.next;
+                return a;
+            }
+
+        }
+
+        while (fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        slow.next = slow.next.next;
+
+        return a;
+    }
+}
 ```
-<a name="ques-115"></a>
+<a name="ques-113"></a>
 **Rotate List** [Back](#linkedlist) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode rotateRight(ListNode A, int B) {
+        int size = 0;
+        ListNode prev = null;
+        ListNode tail = A;
+        while (tail != null) {
+            prev = tail;
+            tail = tail.next;
+            size++;
+        }
+        tail = prev;
+        int rot = B % size;
+        ListNode top = A;
+        ListNode curr = null;
+        // System.out.println("ROT : " + rot);
+        for (int index=0; index < (size-rot); index++) {
+            if (curr == null)
+                curr = A;
+            else
+                curr = curr.next;
+        }
+        tail.next = top;
+        top = curr.next;
+        curr.next = null;
+        return top;
+    }
+}
 ```
-<a name="ques-116"></a>
+<a name="ques-114"></a>
 **Reverse Lists 2** [Back](#linkedlist) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode reverseBetween(ListNode A, int B, int C) {
+        ListNode curr = A;
+        int count = 1;
+        // make curr stop at B-1
+        while (curr != null) {
+            if (B == 1 || count == B-1)
+                break;
+            curr = curr.next;
+            count++;
+        }
+        if (B == 1)
+            count--;
+        ListNode left = curr; // B-1 th node
+        if (B > 1)
+            curr = curr.next;
+        // reverse from curr to count == C
+        ListNode prev = null;
+        ListNode current = curr;
+        ListNode next = null; 
+        while (current != null && count < C) { 
+            next = current.next; 
+            current.next = prev; 
+            prev = current; 
+            current = next; 
+            count++;
+        }
+        count--;
+        if (B > 1)
+            left.next = prev;
+        else
+            A = prev;
+        curr.next = next;
+        return A;
+    }
+    
+    private String print(ListNode head) {
+        String s = "HEAD => ";
+        ListNode temp = head;
+        while (temp != null) {
+            s = s + temp.val + " => ";
+            temp = temp.next;
+        }
+        s = s + "END";
+        return s;
+    }
+}
 ```
-<a name="ques-117"></a>
+<a name="ques-115"></a>
 **Reorder List** [Back](#linkedlist) <br>
 ```java
 ```
-<a name="ques-118"></a>
+<a name="ques-116"></a>
 **Swap List Nodes in pairs** [Back](#linkedlist) <br>
 ```java
 ```
-<a name="ques-119"></a>
+<a name="ques-117"></a>
 **K reverse linked list** [Back](#linkedlist) <br>
 ```java
 ```
-<a name="ques-120"></a>
+<a name="ques-118"></a>
 **Add Two Numbers as Lists** [Back](#linkedlist) <br>
 ```java
 ```
-<a name="ques-121"></a>
+<a name="ques-119"></a>
 **List Cycle** [Back](#linkedlist) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode detectCycle(ListNode a) {
+        ListNode slow = a;
+        ListNode fast = a;
+        do {
+            slow = slow.next;
+            fast = fast.next;
+            if (fast == null) 
+                break;
+            fast = fast.next;
+        } while (fast != null && slow != fast);
+        // no loop
+        if (fast == null)
+            return null;
+        // Reset slow
+        slow = a;
+        while (slow != fast) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        return slow;
+    }
+}
 ```
-<a name="ques-122"></a>
+<a name="ques-120"></a>
 **Partition List** [Back](#linkedlist) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode partition(ListNode a, int x) {
+        if(a == null) return null;
+        
+        ListNode fakeHead1 = new ListNode(0);
+        ListNode fakeHead2 = new ListNode(0);
+        fakeHead1.next = a;
+        
+        ListNode curr = a;
+        ListNode prev = fakeHead1;
+        ListNode p2 = fakeHead2;
+        
+        while(curr != null){
+            if(curr.val < x){
+                curr = curr.next;
+                prev = prev.next;
+            }
+            else{
+                p2.next = curr;
+                prev.next = curr.next;
+                
+                curr = prev.next;
+                p2 = p2.next;
+            }
+        }
+        p2.next = null;
+        
+        prev.next = fakeHead2.next;
+        return fakeHead1.next;
+    }
+    
+    private void print(ListNode node) {
+        String s = "HEAD -> ";
+        while (node != null) {
+            s = s + node.val + " -> ";
+            node = node.next;
+        }
+        s = s + "TAIL";
+        System.out.println(s);
+    }
+}
 ```
-<a name="ques-123"></a>
+<a name="ques-121"></a>
 **Sort List** [Back](#linkedlist) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode sortList(ListNode A) {
+        print(A);
+        if (A.next == null) {
+            System.out.println("RESULT");
+            print(A);
+            return A;
+        }
+        ListNode fast = A, slow = A;
+        while (fast != null && fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next;
+            fast = fast.next;
+        }
+        
+        ListNode right = slow.next;
+        slow.next = null;
+        ListNode left = A;
+
+        left = sortList(left);
+        right = sortList(right);
+        
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
+        System.out.println("LEFT");
+        print(left);
+        System.out.println("RIGHT");
+        print(right);
+        while (left != null && right != null) {
+            ListNode temp = null;
+            if (left.val <= right.val) {
+                temp = left;
+                left = left.next;
+            } else {
+                temp = right;
+                right = right.next;
+            }
+            tail.next = temp;
+            temp.next = null;
+        }
+        if (left != null)
+            tail.next = left;
+        else
+            tail.next = right;
+        System.out.println("RESULT");
+        print(dummy.next);
+        return dummy.next;
+    }
+    
+    private void print(ListNode node) {
+        String s = "HEAD -> ";
+        while (node != null) {
+            s = s + node.val + " -> ";
+            node = node.next;
+        }
+        s = s + "TAIL";
+        System.out.println(s);
+    }
+}
+```
+<a name="ques-122"></a>
+**Insertion Sort List** [Back](#linkedlist) <br>
+```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode insertionSortList(ListNode A) {
+        ListNode curr = A;
+        while (curr != null) {
+            ListNode temp = curr;
+            ListNode swap = null;
+            int minVal = Integer.MAX_VALUE;
+            
+            while (temp != null) {
+                if (temp.val < minVal) {
+                    minVal = temp.val;
+                    swap = temp;
+                }
+                
+                temp = temp.next;
+            }
+            
+            swap.val = curr.val;
+            curr.val = minVal;
+            
+            curr = curr.next;
+        }
+        
+        return A;
+    }
+    
+    private void print(ListNode node) {
+        String s = "HEAD -> ";
+        while (node != null) {
+            s = s + node.val + " -> ";
+            node = node.next;
+        }
+        s = s + "TAIL";
+        System.out.println(s);
+    }
+}
 ```
 
 ### Stack
-<a name="ques-124"></a>
+<a name="ques-123"></a>
 **Simplify Directory Path** [Back](#stack) <br>
 ```java
 ```
-<a name="ques-125"></a>
+<a name="ques-124"></a>
 **Redundant Braces** [Back](#stack) <br>
 ```java
 ```
-<a name="ques-126"></a>
+<a name="ques-125"></a>
 **Nearest Smaller Element** [Back](#stack) <br>
 ```java
 ```
-<a name="ques-127"></a>
+<a name="ques-126"></a>
 **Evaluate Expression** [Back](#stack) <br>
 ```java
 ```
-<a name="ques-128"></a>
+<a name="ques-127"></a>
 **Min Stack** [Back](#stack) <br>
 ```java
 ```
-<a name="ques-129"></a>
+<a name="ques-128"></a>
 **Largest Rectangle in Histogram** [Back](#stack) <br>
 ```java
 ```
-<a name="ques-130"></a>
+<a name="ques-129"></a>
 **Rain Water Trapped** [Back](#stack) <br>
 ```java
 ```
 
 ### Queue
-<a name="ques-131"></a>
+<a name="ques-130"></a>
 **Sliding Window Maximum** [Back](#queue) <br>
 ```java
 ```
 
 ### Backtracking
-<a name="ques-132"></a>
+<a name="ques-131"></a>
 **ReverseLinkedList** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-133"></a>
+<a name="ques-132"></a>
 **Modular Expression** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-134"></a>
+<a name="ques-133"></a>
 **Subset** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-135"></a>
+<a name="ques-134"></a>
 **Combinations** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-136"></a>
+<a name="ques-135"></a>
 **Combination Sum** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-137"></a>
+<a name="ques-136"></a>
 **Combination Sum 2** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-138"></a>
+<a name="ques-137"></a>
 **SubSets 2** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-139"></a>
+<a name="ques-138"></a>
 **Letter Phone** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-140"></a>
+<a name="ques-139"></a>
 **Palindrome Partitioning** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-141"></a>
+<a name="ques-140"></a>
 **Generate all Parentheses II** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-142"></a>
+<a name="ques-141"></a>
 **Permutations** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-143"></a>
+<a name="ques-142"></a>
 **Gray Code** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-144"></a>
+<a name="ques-143"></a>
 **Kth Permutation Sequence** [Back](#backtracking) <br>
 ```java
 ```
-<a name="ques-145"></a>
+<a name="ques-144"></a>
 **NQueens** [Back](#backtracking) <br>
 ```java
 ```
 
 ### Hashing
-<a name="ques-146"></a>
+<a name="ques-145"></a>
 **Colorful Number** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-147"></a>
+<a name="ques-146"></a>
 **Largest Continuous Sequence Zero Sum** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-148"></a>
+<a name="ques-147"></a>
 **2 Sum** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-149"></a>
+<a name="ques-148"></a>
 **4 Sum** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-150"></a>
+<a name="ques-149"></a>
 **Valid Sudoku** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-151"></a>
+<a name="ques-150"></a>
 **Diffk II** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-152"></a>
+<a name="ques-151"></a>
 **Anagrams** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-153"></a>
+<a name="ques-152"></a>
 **Equal** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-154"></a>
+<a name="ques-153"></a>
 **Copy List** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-155"></a>
+<a name="ques-154"></a>
 **Longest Substring Without Repeat** [Back](#hashing) <br>
 ```java
 ```
 
-<a name="ques-156"></a>
+<a name="ques-155"></a>
 **Window String** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-157"></a>
+<a name="ques-156"></a>
 **Fraction** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-158"></a>
+<a name="ques-157"></a>
 **Points on the Straight Line** [Back](#hashing) <br>
 ```java
 ```
-<a name="ques-159"></a>
+<a name="ques-158"></a>
 **Substring Concatenation** [Back](#hashing) <br>
 ```java
 ```
 
 ### Heaps
-<a name="ques-160"></a>
+<a name="ques-159"></a>
 **N max pair combinations** [Back](#heaps) <br>
 ```java
 ```
-<a name="ques-161"></a>
+<a name="ques-160"></a>
 **Magician and Chocolates** [Back](#heaps) <br>
 ```java
 ```
-<a name="ques-162"></a>
+<a name="ques-161"></a>
 **Merge K Sorted Lists** [Back](#heaps) <br>
 ```java
 ```
 
 ### HashMaps
-<a name="ques-163"></a>
+<a name="ques-162"></a>
 **Distinct Numbers in Window** [Back](#hashmaps) <br>
 ```java
 ```
-<a name="ques-164"></a>
+<a name="ques-163"></a>
 **LRU** [Back](#hashmaps) <br>
 ```java
 ```
-<a name="ques-165"></a>
+<a name="ques-164"></a>
 **Ways to form Max Heap** [Back](#hashmaps) <br>
 ```java
 ```
 
 ### Trees
-<a name="ques-166"></a>
+<a name="ques-165"></a>
 **Valid Binary Search Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-167"></a>
+<a name="ques-166"></a>
 **Next Greater Number BST** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-168"></a>
+<a name="ques-167"></a>
 **Max Depth of Binary Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-169"></a>
+<a name="ques-168"></a>
 **Vertical Order traversal of Binary Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-170"></a>
+<a name="ques-169"></a>
 **Inorder Traversal** [Back](#trees) <br>
+```java
+```
+<a name="ques-170"></a>
+**PreOrder Traversal** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-171"></a>
@@ -2810,103 +3236,103 @@ public class Solution {
 ```java
 ```
 <a name="ques-172"></a>
-**PreOrder Traversal** [Back](#trees) <br>
-```java
-```
-<a name="ques-173"></a>
 **PostOrder Traversal** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-174"></a>
+<a name="ques-173"></a>
 **Hotel Reviews** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-175"></a>
+<a name="ques-174"></a>
 **Balanced Binary Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-176"></a>
+<a name="ques-175"></a>
 **Identical Binary Trees** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-177"></a>
+<a name="ques-176"></a>
 **Symmetric Binary Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-178"></a>
+<a name="ques-177"></a>
 **Inorder Traversal of Cartesian Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-179"></a>
+<a name="ques-178"></a>
 **Sorted Array To Balanced BST** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-180"></a>
+<a name="ques-179"></a>
 **Binary Tree From Inorder And Postorder** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-181"></a>
+<a name="ques-180"></a>
 **Construct Binary Tree From Inorder And Preorder** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-182"></a>
+<a name="ques-181"></a>
 **Kth Smallest Element In Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-183"></a>
+<a name="ques-182"></a>
 **2-Sum Binary Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-184"></a>
+<a name="ques-183"></a>
 **BST Iterator** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-185"></a>
+<a name="ques-184"></a>
 **Recover Binary Search Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-186"></a>
+<a name="ques-185"></a>
 **Invert the Binary Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-187"></a>
+<a name="ques-186"></a>
 **ZigZag Level Order Traversal BT** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-188"></a>
+<a name="ques-187"></a>
 **Min Depth of Binary Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-189"></a>
+<a name="ques-188"></a>
 **Path Sum** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-190"></a>
+<a name="ques-189"></a>
 **Sum Root to Leaf Numbers** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-191"></a>
+<a name="ques-190"></a>
 **Root to Leaf Paths With Sum** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-192"></a>
+<a name="ques-191"></a>
 **Populate Next Right Pointers Tree** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-193"></a>
+<a name="ques-192"></a>
 **Least Common Ancestor** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-194"></a>
+<a name="ques-193"></a>
 **Shortest Unique Prefix** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-195"></a>
+<a name="ques-194"></a>
 **Flatten Binary Tree to Linked List** [Back](#trees) <br>
 ```java
 ```
-<a name="ques-196"></a>
+<a name="ques-195"></a>
 **Order of People Heights** [Back](#trees) <br>
+```java
+```
+<a name="ques-196"></a>
+**** [Back](#trees) <br>
 ```java
 ```
 <a name="ques-197"></a>
@@ -3042,7 +3468,7 @@ public class Solution {
 ```java
 ```
 <a name="ques-230"></a>
-**** [Back](#trees) <br>
+**** [Back](#questions) <br>
 ```java
 ```
 <a name="ques-231"></a>
@@ -3070,10 +3496,6 @@ public class Solution {
 ```java
 ```
 <a name="ques-237"></a>
-**** [Back](#questions) <br>
-```java
-```
-<a name="ques-238"></a>
 **** [Back](#questions) <br>
 ```java
 ```
