@@ -29,8 +29,8 @@ Solutions to the common DSA problems in Java
 * Simulation
 * Design
 
-<a name="arrays"></a>
-## Array
+<a name="array"></a>
+## Arrays
 
 
 |  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
@@ -324,9 +324,9 @@ Solutions to the common DSA problems in Java
 
 
 ## Solutions
-# Arrays
+### Arrays
 <a name="ques-1"></a>
-**** [Back](#arrays) <br>
+**Spiral Order Matrix** [Back](#array) <br>
 ```java
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -369,7 +369,7 @@ public class Solution {
 }
 ```
 <a name="ques-2"></a>
-**** [Back](#arrays) <br>
+**Min Steps in Infinite Grid** [Back](#arrays) <br>
 ```java
 public class MinStepsInfiniteGrid {
     // X and Y co-ordinates of the points in order.
@@ -496,7 +496,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Math
+### Math
 <a name="ques-31"></a>
 **** [Back](#maths) <br>
 ```java
@@ -578,7 +578,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Binary Search
+### Binary Search
 <a name="ques-51"></a>
 **** [Back](#binarysearch) <br>
 ```java
@@ -628,7 +628,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Strings
+### Strings
 <a name="ques-63"></a>
 **** [Back](#strings) <br>
 ```java
@@ -714,7 +714,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Bit Manipulation
+### Bit Manipulation
 <a name="ques-84"></a>
 **** [Back](#bitmanipulation) <br>
 ```java
@@ -744,7 +744,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Two Pointers
+### Two Pointers
 <a name="ques-91"></a>
 **** [Back](#twopointers) <br>
 ```java
@@ -806,7 +806,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Linked List
+### Linked List
 <a name="ques-106"></a>
 **** [Back](#linkedlist) <br>
 ```java
@@ -876,7 +876,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Stack
+### Stack
 <a name="ques-123"></a>
 **** [Back](#stack) <br>
 ```java
@@ -906,13 +906,13 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Queue
+### Queue
 <a name="ques-130"></a>
 **** [Back](#queue) <br>
 ```java
 ```
 
-# Backtracking
+### Backtracking
 <a name="ques-131"></a>
 **** [Back](#backtracking) <br>
 ```java
@@ -970,7 +970,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Hashing
+### Hashing
 <a name="ques-145"></a>
 **** [Back](#hashing) <br>
 ```java
@@ -1029,7 +1029,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Heaps
+### Heaps
 <a name="ques-159"></a>
 **** [Back](#heaps) <br>
 ```java
@@ -1043,7 +1043,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# HashMaps
+### HashMaps
 <a name="ques-162"></a>
 **** [Back](#hashmaps) <br>
 ```java
@@ -1057,7 +1057,7 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 
-# Trees
+### Trees
 <a name="ques-165"></a>
 **** [Back](#trees) <br>
 ```java
