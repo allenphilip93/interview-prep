@@ -1,8 +1,6 @@
-# Interview Programming Questions
+# Interview Preparation
 
-Solutions to the common DSA problems in Java
-
-## Programming
+## Content
 * [Bit Manipulation](https://github.com/allenphilip93/interview-prep#bitmanipulation)
 * [Array](https://github.com/allenphilip93/interview-prep#arrays)
 * [String](https://github.com/allenphilip93/interview-prep#string)
@@ -15,19 +13,13 @@ Solutions to the common DSA problems in Java
 * [Hashing](https://github.com/allenphilip93/interview-prep#hashing)
 * [Math](https://github.com/allenphilip93/interview-prep#math)
 * [Two Pointers](https://github.com/allenphilip93/interview-prep#twopointers)
-* Sort
-* Recursion
 * [Binary Search](https://github.com/allenphilip93/interview-prep#binarysearch)
-* Binary Search Tree
-* Breadth-First Search
-* Depth-First Search
 * [Backtracking](https://github.com/allenphilip93/interview-prep#backtracking)
 * Dynamic Programming
 * Greedy
 * Graph
-* Geometry
-* Simulation
-* Design
+* Low Level Design
+* High Level Design
 
 <a name="array"></a>
 ## Arrays
