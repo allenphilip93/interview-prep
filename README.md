@@ -3029,36 +3029,368 @@ public class Solution {
 <a name="ques-123"></a>
 **Simplify Directory Path** [Back](#stack) <br>
 ```java
+public class Solution {
+    public String simplifyPath(String A) {
+        String[] op = A.trim().split("/");
+        Deque<String> stack = new ArrayDeque<>();
+        for (String s : op) {
+            if (!s.isEmpty()) {
+                if (".".equals(s)) {
+                    continue;
+                } else if ("..".equals(s)) {
+                    if (stack.size() > 0)
+                        stack.removeLast();
+                } else {
+                    stack.addLast(s);
+                }
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        if (stack.size() == 0) {
+            sb.append("/");
+        } else {
+            while (stack.size() > 0) {
+                sb.append("/");
+                String s = stack.removeFirst();
+                sb.append(s);
+            }
+        }
+        return sb.toString();
+    }
+}
 ```
 <a name="ques-124"></a>
 **Redundant Braces** [Back](#stack) <br>
 ```java
+public class Solution {
+    public int braces(String A) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : A.toCharArray()) {
+            if (c == ')') {
+                char top = stack.peek();
+                stack.pop();
+                
+                if (top == '(') return 1;
+                else {
+                    int count = 0;
+                    while (top != '(') {
+                        top = stack.peek();
+                        stack.pop();
+                        count++;
+                    }
+                    
+                    if (count == 1) return 1;
+                }
+            }
+            else {
+                stack.add(c);
+            }
+        }
+        return 0;
+    }
+}
 ```
 <a name="ques-125"></a>
 **Nearest Smaller Element** [Back](#stack) <br>
 ```java
+public class Solution {
+    public ArrayList<Integer> prevSmaller(ArrayList<Integer> A) {
+        ArrayList<Integer> res = new ArrayList<>();
+        res.add(-1);
+        int start = 1;
+        while (start < A.size()) {
+            if (A.get(start) > A.get(start-1)) {
+                res.add(start-1);
+            } else {
+                int curr = start-1;
+                while (curr >= 0) {
+                    int nextLowerIdx = res.get(curr);
+                    if (nextLowerIdx == -1 || A.get(nextLowerIdx) < A.get(start)) {
+                        res.add(nextLowerIdx);
+                        break;
+                    }
+                    curr = nextLowerIdx;
+                }
+                if (curr == -1)
+                    res.add(-1);
+            }
+            start++;
+        }
+        for(int index=0; index < res.size(); index++) {
+            if (res.get(index) != -1)
+                res.set(index, A.get(res.get(index)));
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-126"></a>
 **Evaluate Expression** [Back](#stack) <br>
 ```java
+public class Solution {
+    public int evalRPN(ArrayList<String> A) {
+        Deque<String> stack = new ArrayDeque<>();
+        Set<String> ops = new HashSet<>();
+        ops.add("+");
+        ops.add("-");
+        ops.add("*");
+        ops.add("/");
+        for (String op : A) {
+            if (!ops.contains(op)) {
+                // System.out.println("Pushing " + op);
+                stack.push(op);
+            } else {
+                int b = Integer.valueOf(stack.pop());
+                int a = Integer.valueOf(stack.pop());
+                if ("+".equals(op)) {
+                    a = a + b;
+                } else if ("-".equals(op)) {
+                    a = a - b;
+                } else if ("*".equals(op)) {
+                    a = a * b;
+                } else if ("/".equals(op)) {
+                    a = a / b;
+                }
+                // System.out.println("Pushing " + a);
+                stack.push(a + "");
+            }
+        }
+        return Integer.valueOf(stack.pop());
+    }
+}
 ```
 <a name="ques-127"></a>
 **Min Stack** [Back](#stack) <br>
 ```java
+// O(n) space
+class Solution {
+    class Node {
+        int val;
+        Node next;
+        public Node(int val) {
+            this.val = val;
+        }
+    }
+    
+    private Node head = null;
+    private Node minhead = null;
+    
+    public void push(int x) {
+        Node node = new Node(x);
+        Node minnode = new Node(x);
+        if (head == null) {
+            head = node;
+            minhead = minnode;
+        } else {
+            node.next = head;
+            head = node;
+            if (minhead.val < minnode.val) {
+                minnode.val = minhead.val;
+            }
+            minnode.next = minhead;
+            minhead = minnode;
+        }
+    }
+
+    public void pop() {
+        if (head != null) {
+            head = head.next;
+            minhead = minhead.next;
+        }
+    }
+
+    public int top() {
+        if (head == null)
+            return -1;
+        return head.val;
+    }
+
+    public int getMin() {
+        if (minhead == null)
+            return -1;
+        return minhead.val;
+    }
+}
+// O(1) space
+public class MinStack {
+
+    private Stack<Integer> values = new Stack<>();
+    private int minValue = -1;
+
+    public void push(int x) {
+        if(values.empty()){
+            values.push(x);
+            minValue = x;
+        }
+        else{
+            if( x < minValue){
+                values.push(2*x - minValue);
+                minValue = x;
+            }
+            else{
+                values.push(x);
+            }
+        }
+    }
+
+    public void pop() {
+
+        if(values.empty()){
+            return;
+        }
+        int temp = values.peek();
+        values.pop();
+        if(temp < minValue){
+            minValue = 2*minValue - temp;
+        }
+    }
+
+    public int top() {
+        if(values.empty()){
+            return -1;
+        }
+        if(values.peek()<minValue){
+            return minValue;
+        }
+        return values.peek();
+    }
+
+    public int getMin() {
+        if(values.empty()){
+            return -1;
+        }
+
+        return minValue;
+    }
+}
 ```
 <a name="ques-128"></a>
 **Largest Rectangle in Histogram** [Back](#stack) <br>
 ```java
+public class Solution {
+    public int largestRectangleArea(ArrayList<Integer> A) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        if (A.size() == 1)
+            return A.get(0);
+        int maxArea = 0;
+        for (int next=0; next < A.size(); next++) {
+            int height = A.get(next);
+            if (stack.size() == 0 || A.get(stack.peek()) <= height) {
+                System.out.println("Pushing " + next);
+                stack.push(next);
+            } else {
+                while (stack.size() > 0 && A.get(stack.peek()) > height) {
+                    int curr = stack.pop();
+                    int prev = ((stack.size() == 0) ? 0 : (stack.peek()+1));
+                    int area = (next - prev) * A.get(curr);
+                    System.out.println("Calculating height from " + prev + " to " + next + " at " + curr + " | AREA : " + area);
+                    maxArea = Math.max(area, maxArea);
+                }
+                System.out.println("Pushing " + next);
+                stack.push(next);
+            }
+        }
+        while (stack.size() > 0) {
+            int curr = stack.pop();
+            int prev = ((stack.size() == 0) ? 0 : (stack.peek()+1));
+            int area = (A.size() - prev) * A.get(curr);
+            System.out.println("Calculating height from " + prev + " to " + A.size() + " at " + curr + " | AREA : " + area);
+            maxArea = Math.max(area, maxArea);
+        }
+        return maxArea;
+    }
+}
 ```
 <a name="ques-129"></a>
 **Rain Water Trapped** [Back](#stack) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int trap(final List<Integer> A) {
+        int lbd = 0, rbd = A.size()-1;
+        int l=lbd+1, r= rbd-1;
+        int water = 0;
+        while (l <= r) {
+            // System.out.println("Comparing @ " + lbd + " " + A.get(lbd) + " and " + A.get(lbd+1));
+            if (A.get(lbd) < A.get(lbd+1)) {
+                while (lbd < A.size()-1 && A.get(lbd) < A.get(lbd+1)) {
+                    lbd++;
+                }
+                l = lbd + 1;
+            }
+            // System.out.println("Comparing @ " + rbd + " " + A.get(rbd) + " and " + A.get(rbd-1));
+            if (A.get(rbd) < A.get(rbd-1)) {
+                while (rbd > 0 && A.get(rbd) < A.get(rbd-1)) {
+                    rbd--;
+                }
+                r = rbd - 1;
+            }
+            // System.out.println("LB : " + lbd + " LP : " + l + " RB : " + rbd + " RP : " + r);
+            if (lbd < rbd && l <= r) {
+                if (A.get(lbd) <= A.get(rbd) && l < A.size()) {
+                    water = water + (A.get(lbd) - A.get(l));
+                    l++;
+                    if (A.get(l) > A.get(lbd)) {
+                        lbd = l;
+                        l++;
+                    }
+                } else if (r >= 0) {
+                    water = water + (A.get(rbd) - A.get(r));
+                    r--;
+                    if (A.get(r) > A.get(rbd)) {
+                        rbd = r;
+                        r--;
+                    }
+                }
+            }
+            // System.out.println("LB : " + lbd + " LP : " + l + " RB : " + rbd + " RP : " + r);
+            // System.out.println("WATER : " + water);
+        }
+        return water;
+    }
+}
 ```
 
 ### Queue
 <a name="ques-130"></a>
 **Sliding Window Maximum** [Back](#queue) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public ArrayList<Integer> slidingMaximum(final List<Integer> A, int B) {
+        ArrayList<Integer> res = new ArrayList<>();
+        if (B >= A.size()) {
+            int max = 0;
+            for (Integer val : A)
+                max = Math.max(max, val);
+            res.add(max);
+            return res;
+        }
+        Deque<Integer> queue = new ArrayDeque<>();
+        for (int index=0; index < A.size(); index++) {
+            // Clear invalid max
+            while (queue.size() > 0 && (index - queue.peekFirst()) >= B) {
+                queue.removeFirst();
+            }
+            if (queue.size() == 0) {
+                queue.addFirst(index);
+            } else {
+                // decide to add to first or last
+                if (A.get(index) >= A.get(queue.peekFirst())) {
+                    queue.addFirst(index);
+                } else {
+                    while (queue.size() > 0 && A.get(index) >= A.get(queue.peekLast())) {
+                        queue.removeLast();
+                    }
+                    queue.addLast(index);
+                }
+            }
+            if (index >= B-1)
+                res.add(A.get(queue.peekFirst()));
+        }
+        return res;
+    }
+}
 ```
 
 ### Backtracking
