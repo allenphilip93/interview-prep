@@ -99,18 +99,18 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [SQRT](https://www.interviewbit.com/problems/square-root-of-integer/)      | [Java](#ques-51)  | _O(log(n))_         | _O(1)_          | Easy         | Keep check for out of range in case of Multiplication else use division  |
+|1| [SQRT](https://www.interviewbit.com/problems/square-root-of-integer/) Implement int sqrt(int x). Compute and return the square root of x. If x is not a perfect square, return floor(sqrt(x))     | [Java](#ques-51)  | _O(log(n))_         | _O(1)_          | Easy         | Keep check for out of range in case of Multiplication else use division  |
 |2| [Count Element Occurence](https://www.interviewbit.com/problems/count-element-occurence/)      | [Java](#ques-52)  | _O(log(n))_         | _O(1)_          | Easy         |   |
-|3| [Rotated Array](https://www.interviewbit.com/problems/rotated-array/)      | [Java](#ques-53)  | _O(log(n))_         | _O(1)_          | Easy         |  Bookmarked |
+|3| [Rotated Array](https://www.interviewbit.com/problems/rotated-array/) Suppose a sorted array is rotated at some pivot unknown to you beforehand. You are given a target value to search. If found in the array, return its index, otherwise return -1.     | [Java](#ques-53)  | _O(log(n))_         | _O(1)_          | Easy         |  Bookmarked |
 |4| [Matrix Median](https://www.interviewbit.com/problems/matrix-median/)      | [Java](#ques-54)  | _O(log(2^32)*r*log(c))_ = O(32 * r * log(c))         | _O(1)_          | Medium         |  Bookmarked |
-|5| [Matrix Search](https://www.interviewbit.com/problems/matrix-search/)      | [Java](#ques-55)  | _O(log(rc))_ = O(log(r) + log(c))         | _O(1)_          | Easy         |  Bookmarked |
+|5| [Matrix Search](https://www.interviewbit.com/problems/matrix-search/) Write an efficient algorithm that searches for a value in an m x n matrix.     | [Java](#ques-55)  | _O(log(rc))_ = O(log(r) + log(c))         | _O(1)_          | Easy         |  Bookmarked |
 |6| [Sorted Insert Position](https://www.interviewbit.com/problems/sorted-insert-position/)      | [Java](#ques-56)  | _O(log(n))_          | _O(1)_          | Easy         |   |
-|7| [Implement Power Function](https://www.interviewbit.com/problems/implement-power-function/)      | [Java](#ques-57)  | _O(log(power))_          | _O(1)_          | Easy         |  Handle Negative value carefully, Bookmarked |
+|7| [Implement Power Function](https://www.interviewbit.com/problems/implement-power-function/) Implement pow(x, n) % d. In other words, given x, n and d, find (x^n % d)     | [Java](#ques-57)  | _O(log(power))_          | _O(1)_          | Easy         |  Handle Negative value carefully, Bookmarked |
 |8| [Rotated Sorted Array Search](https://www.interviewbit.com/problems/rotated-sorted-array-search/)      | [Java](#ques-58)  | _O(log(n))_          | _O(1)_          | Easy         |   |
 |9| [Search for a Range](https://www.interviewbit.com/problems/search-for-a-range/)      | [Java](#ques-59)  | _O(log(n))_          | _O(1)_          | Easy         |   |
-|10| [Painter's Partition Problem](https://www.interviewbit.com/problems/painters-partition-problem/)      | [Java](#ques-60)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Bookmarked, Example to use BS in monotonic functions   |
+|10| [Painter's Partition Problem](https://www.interviewbit.com/problems/painters-partition-problem/) You have to paint N boards of length {A0, A1, A2, A3 … AN-1}. There are K painters available and you are also given how much time a painter takes to paint 1 unit of board. You have to get this job done as soon as possible under the constraints that any painter will only paint contiguous sections of board.     | [Java](#ques-60)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Bookmarked, Example to use BS in monotonic functions   |
 |11| [Allocate Books](https://www.interviewbit.com/problems/allocate-books/)      | [Java](#ques-61)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Bookmarked, Example to use BS in monotonic functions   |
-|12| [Median of Array](https://www.interviewbit.com/problems/median-of-array/)      | [Java](#ques-62)  | _O(log(m+n))_          | _O(1)_          | Hard         | Bookmarked   |
+|12| [Median of Array](https://www.interviewbit.com/problems/median-of-array/) There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays ( The median of the array formed by merging both the arrays ).The overall run time complexity should be O(log (m+n)).     | [Java](#ques-62)  | _O(log(m+n))_          | _O(1)_          | Hard         | Bookmarked   |
 
 <a name="strings"></a>
 ## String
@@ -1217,6 +1217,26 @@ public class Solution {
 <a name="ques-51"></a>
 **SQRT** [Back](#binarysearch) <br>
 ```java
+public class Solution {
+	public int sqrt(int a) {
+	    long low = 1;
+	    long high = a;
+	    while (low<=high) {
+	        long mid = (high + low) / 2;
+	        if (mid*mid == a) {
+	            return (int) mid;
+	        }
+	        if (mid*mid > a) {
+	            high = mid - 1;
+	        } else {
+	            low = mid + 1;
+	        }
+	    }
+	    // if we did not find an exact match the high variable is smaller than low
+	    // and therefore contains the floor value of sqrt.
+	    return (int) high;
+	}
+}
 ```
 <a name="ques-52"></a>
 **Count Element Occurence** [Back](#binarysearch) <br>
@@ -1233,6 +1253,29 @@ public class Solution {
 <a name="ques-55"></a>
 **Matrix Search** [Back](#binarysearch) <br>
 ```java
+public class Solution {
+    public int searchMatrix(ArrayList<ArrayList<Integer>> a, int b) {
+        int N = a.size() * a.get(0).size();
+        int rows = a.size();
+        int cols = a.get(0).size();
+        int start = 0, end = N-1;
+        while (start <= end) {
+            int mid = (start + end)/2;
+            int row = mid / cols;
+            int col = mid % cols;
+            // System.out.println("MID : " + mid + " VAL : " + a.get(row).get(col) + " TARGET " + b);
+            if (a.get(row).get(col) == b) {
+                return 1;
+            } else if (a.get(row).get(col) < b) { 
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+            // System.out.println("START : " + start + " | " + "END : " + end);
+        }
+        return 0;
+    }
+}
 ```
 <a name="ques-56"></a>
 **Sorted Insert Position** [Back](#binarysearch) <br>
@@ -1241,10 +1284,67 @@ public class Solution {
 <a name="ques-57"></a>
 **Implement Power Function** [Back](#binarysearch) <br>
 ```java
+public class Solution {
+    public int pow(int x, int n, int d) {
+        int power = 1;
+        int val = 1;
+        int temp = x % d;
+        while (n > 0) {
+            if ((power + power) <= n) {
+                power = power + power;
+                temp = ( ((temp)%d) * ((temp)%d) ) % d;
+            } else {
+                n = n - power;
+                val = ( ((val)%d) * ((temp)%d) ) % d;
+                power = 1;
+                temp = x % d;
+            }
+        }
+        return (val+d) % d;
+    }
+}
 ```
 <a name="ques-58"></a>
 **Rotated Sorted Array Search** [Back](#binarysearch) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST
+    public int search(final List<Integer> a, int b) {
+        int start = 0, end = a.size()-1;
+        while (start <= end) {
+            int mid = (start + end) >>> 1;
+            // System.out.println("START : " + start + " END : " + end + " MID : " + mid);
+            if (b == a.get(mid)) {
+                return mid;
+            }
+            if (a.get(start) < a.get(end)) {
+                // proper linear structure
+                if (b > a.get(mid)) {
+                    start = mid + 1;
+                } else {
+                    end = mid - 1;
+                }
+            } else {
+                // System.out.println("START : " + a.get(start) + " END : " + a.get(end) + " MID : " + a.get(mid));
+                if (a.get(mid) > a.get(start)) {
+                    if (b < a.get(mid) && b > a.get(end)) {
+                        end = mid - 1;
+                    } else {
+                        start = mid + 1;
+                    }
+                } else {
+                    if (b > a.get(mid) && b < a.get(start)) {
+                        start = mid + 1;
+                    } else {
+                        end = mid - 1;
+                    }
+                }
+            }
+        }
+        return -1;
+    }
+}
+
 ```
 <a name="ques-59"></a>
 **Search for a Range** [Back](#binarysearch) <br>
@@ -1253,6 +1353,35 @@ public class Solution {
 <a name="ques-60"></a>
 **Painter's Partition Problem** [Back](#binarysearch) <br>
 ```java
+public class Solution {
+    public int paint(int A, int B, ArrayList<Integer> C) {
+        long total = 0, max = Long.MIN_VALUE;
+        for(Integer c : C){
+            total += c;
+            max = Math.max(max,c);
+        }
+        long l = max, h = total;
+        while(l<h){
+            long mid = (l + (h-l)/2);
+            long reqPainters = getRequiredPainters(C,mid);
+            if(reqPainters <= A) h = mid;
+            else l = mid + 1;
+        }
+        long ans = ((l%10000003)*(B%10000003))%10000003;
+        return (int)ans;
+    }
+    public long getRequiredPainters(ArrayList<Integer> A , long k){
+        long total = 0, reqPainters = 1;
+        for(Integer a : A){
+            total += a;
+            if(total > k){
+                total = a;
+                reqPainters++;
+            }
+        }
+        return reqPainters;
+    }
+}
 ```
 <a name="ques-61"></a>
 **Allocate Books** [Back](#binarysearch) <br>
@@ -1261,6 +1390,28 @@ public class Solution {
 <a name="ques-62"></a>
 **Median of Array** [Back](#binarysearch) <br>
 ```java
+public class Solution {
+    public double findMedianSortedArrays(final List<Integer> A, final List<Integer> B) {
+	    int len = A.size() + B.size();
+	    if(len % 2 == 1) return findKth(A, 0, B, 0, len / 2 + 1);
+	    else return (findKth(A, 0, B, 0, len / 2) + findKth(A, 0, B, 0, len / 2 + 1)) / 2.0;
+	}
+	
+	public int findKth(List<Integer> A, int A_start, List<Integer> B, int B_start, int k){
+	    if(A_start >= A.size()) return B.get(B_start + k - 1);
+	    if(B_start >= B.size()) return A.get(A_start + k - 1);
+	    if(k == 1) return Math.min(A.get(A_start), B.get(B_start));
+	    
+	    int A_key = A_start + k / 2 - 1 < A.size() ? A.get(A_start + k / 2 - 1) : Integer.MAX_VALUE;
+	    int B_key = B_start + k / 2 - 1 < B.size() ? B.get(B_start + k / 2 - 1) : Integer.MAX_VALUE;
+	    
+	    if(A_key < B_key){
+	        return findKth(A, A_start + k / 2, B, B_start, k - k / 2);
+	    }
+	    else
+	       return findKth(A, A_start, B, B_start + k / 2, k - k / 2);
+	}
+}
 ```
 
 ### Strings
