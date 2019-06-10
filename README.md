@@ -1415,7 +1415,7 @@ public class Solution {
 }
 ```
 
-### Strings
+### String
 <a name="ques-63"></a>
 **Palindrome String** [Back](#strings) <br>
 ```java
