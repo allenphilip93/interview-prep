@@ -118,14 +118,14 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Palindrome String](https://www.interviewbit.com/problems/palindrome-string/)      | [Java](#ques-63)  | _O(n)_         | _O(1)_          | Easy         |   |
-|2| [Longest Common Prefix](https://www.interviewbit.com/problems/longest-common-prefix/)      | [Java](#ques-64)  | _O(n*min(String Length))_         | _O(1)_          | Easy         |   |
-|3| [Count And Say](https://www.interviewbit.com/problems/count-and-say/)      | [Java](#ques-65)  | _O(n*max(String Length))_         | _O(1)_          | Easy         |   |
+|1| [Palindrome String](https://www.interviewbit.com/problems/palindrome-string/) Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.     | [Java](#ques-63)  | _O(n)_         | _O(1)_          | Easy         |   |
+|2| [Longest Common Prefix](https://www.interviewbit.com/problems/longest-common-prefix/) Write a function to find the longest common prefix string amongst an array of strings. Longest common prefix for a pair of strings S1 and S2 is the longest string S which is the prefix of both S1 and S2.     | [Java](#ques-64)  | _O(n*min(String Length))_         | _O(1)_          | Easy         |   |
+|3| [Count And Say](https://www.interviewbit.com/problems/count-and-say/) The count-and-say sequence is the sequence of integers beginning as follows: 1, 11, 21, 1211, 111221, ...     | [Java](#ques-65)  | _O(n*max(String Length))_         | _O(1)_          | Easy         |   |
 |4| [Minimum Characters required to make a String Palindromic](https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/)      | [Java](#ques-66)  | _O(n)_         | _O(1)_          | Easy         |   |
 |5| [Longest Palindromic Substring](https://www.interviewbit.com/problems/longest-palindromic-substring/)      | [Java](#ques-67)  | _O(n*n)_         | _O(1)_          | Medium         |  Bookmarked, 1 length is always palindrome |
-|6| [StrStr](https://www.interviewbit.com/problems/implement-strstr/)      | [Java](#ques-68)  | _O(n)_         | _O(m)_          | Medium         |  Bookmarked, KMP Algo |
+|6| [StrStr](https://www.interviewbit.com/problems/implement-strstr/) Locate a substring ( needle ) in a string ( haystack )     | [Java](#ques-68)  | _O(n)_         | _O(m)_          | Medium         |  Bookmarked, KMP Algo |
 |7| [Compare Version Numbers](https://www.interviewbit.com/problems/compare-version-numbers/)      | [Java](#ques-69)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked|
-|8| [Atoi](https://www.interviewbit.com/problems/atoi/)      | [Java](#ques-70)  | _O(n)_         | _O(1)_          | Easy         |  Bookmarked|
+|8| [Atoi](https://www.interviewbit.com/problems/atoi/) Implement atoi to convert a string to an integer.     | [Java](#ques-70)  | _O(n)_         | _O(1)_          | Easy         |  Bookmarked|
 |9| [Length of Last Word](https://www.interviewbit.com/problems/length-of-last-word/)      | [Java](#ques-71)  | _O(n)_         | _O(1)_          | Easy         |  |
 |10| [Reverse the String](https://www.interviewbit.com/problems/reverse-the-string/)      | [Java](#ques-72)  | _O(n)_         | _O(n)_          | Easy         | Bookmarked, Ask if split function can be used|
 |11| [Valid Number](https://www.interviewbit.com/problems/valid-number/)      | [Java](#ques-73)  | _O(n)_         | _O(1)_          | Easy         | Bookmarked, Lots of corner cases|
@@ -139,6 +139,7 @@ Solutions to the common DSA problems in Java
 |19| [ZigZag String](https://www.interviewbit.com/problems/zigzag-string/)      | [Java](#ques-81)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked|
 |20| [Pretty Json](https://www.interviewbit.com/problems/pretty-json/)      | [Java](#ques-82)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked|
 |21| [Stringoholics](https://www.interviewbit.com/problems/stringoholics/)      | [Java](#ques-83)  | _O(n*m, n*maxNum)_         | _O(n+m)_ n is input array length, m is average size of each string          | HARD         | Bookmarked, Covers many concepts - KMP, LCM|
+|22| [Amazing Substring]() You are given a string S, and you have to find all the amazing substrings of S. Amazing Substring is one that starts with a vowel (a, e, i, o, u, A, E, I, O, U).     | [Java](#ques-82)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked|
 
 <a name="bitmanipulation"></a>
 ## BitManipulation
@@ -1418,26 +1419,189 @@ public class Solution {
 <a name="ques-63"></a>
 **Palindrome String** [Back](#strings) <br>
 ```java
+public class Solution {
+    public int isPalindrome(String A) {
+        int front = 0;
+        int tail = A.length()-1;
+        while (front < tail) {
+            String frontStr = A.charAt(front) + "";
+            String tailStr = A.charAt(tail) + "";
+            // System.out.println("Checking @ " + front + " " + frontStr + " and @ " + tail + " " + tailStr);
+            if (frontStr.equalsIgnoreCase(tailStr)) {
+                front++;
+                tail--;
+                continue;
+            } else if (!Character.isLetter(frontStr.charAt(0)) && !Character.isDigit(frontStr.charAt(0))) {
+                front++;
+            } else if (!Character.isLetter(tailStr.charAt(0)) && !Character.isDigit(tailStr.charAt(0))) {
+                tail--;
+            } else {
+                return 0;
+            }
+        }
+        return 1;
+    }
+}
 ```
 <a name="ques-64"></a>
 **Longest Common Prefix** [Back](#strings) <br>
 ```java
+public class Solution {
+    public String longestCommonPrefix(ArrayList<String> A) {
+        StringBuilder sb = new StringBuilder();
+        int minLength = Integer.MAX_VALUE;
+        for (String s : A) {
+            minLength = Math.min(minLength, s.length());
+        }
+        for (int index=0; index < minLength; index++) {
+            char c = A.get(0).charAt(index);
+            boolean match = true;
+            for (String str : A) {
+                if (str.charAt(index) != c) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) {
+                sb.append(c);
+            } else {
+                break;
+            }
+        }
+        return sb.toString();
+    }
+}
 ```
 <a name="ques-65"></a>
 **Count And Say** [Back](#strings) <br>
 ```java
+public class Solution {
+    public String countAndSay(int A) {
+        int res = 1;
+        StringBuilder sb = new StringBuilder();
+        StringBuilder sb_next = new StringBuilder();
+        sb.append(1);
+        for (int index = 0; index < A-1; index++) {
+            int digit = Integer.valueOf(sb.charAt(0) + "");
+            int count = 1;
+            for (int pos = 1; pos < sb.length(); pos++) {
+                if (sb.charAt(pos-1) == sb.charAt(pos)) {
+                    count++;
+                } else {
+                    sb_next.append(count);
+                    sb_next.append(digit);
+                    count = 1;
+                    digit = Integer.valueOf(sb.charAt(pos)+ "");
+                }
+                // System.out.println(sb_next);
+            }
+            sb_next.append(count);
+            sb_next.append(digit);
+            // System.out.println("SB : " + sb + " NEXT : " + sb_next);
+            sb = sb_next;
+            sb_next = new StringBuilder();
+        }
+        return sb.toString();
+    }
+}
 ```
 <a name="ques-66"></a>
 **Minimum Characters required to make a String Palindromic** [Back](#strings) <br>
 ```java
+public class Solution {
+    public int solve(String A) {
+        int n = A.length();
+        int ans = n;
+        while(n>1 && !isPalindrome(A, n)) {
+            n--;
+        }
+        return ans-n;
+    }
+    public boolean isPalindrome(String A, int len) {
+        int i=0, j=len-1;
+        while(i<=j && (A.charAt(i) == A.charAt(j))) {
+            i++;j--;
+        }
+        if(i>j) {
+            return true;
+        }
+        return false;
+    }
+}
 ```
 <a name="ques-67"></a>
 **Longest Palindromic Substring** [Back](#strings) <br>
 ```java
+public class Solution {
+
+    private int start, end, maxLength;
+
+    // finds the longest palindrome with [left, right] as center
+    private void checkPalindrome(String A, int left, int right) {
+        while (left >= 0 && right < A.length() && A.charAt(left) == A.charAt(right)) {
+            if (right - left + 1 > maxLength) {
+                start = left;
+                end = right + 1;
+                maxLength = right - left + 1;
+            }
+            left--;
+            right++;
+        }
+    }
+
+    public String longestPalindrome(String A) {
+        start = 0; end = 0; maxLength = 0;
+        for (int i = 0; i < A.length(); i++) {
+            checkPalindrome(A, i, i); // odd length, center in i
+            checkPalindrome(A, i, i + 1); // even length, center between i and i + 1
+        }
+        return A.substring(start, end);
+    }
+}
 ```
 <a name="ques-68"></a>
 **StrStr** [Back](#strings) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int strStr(final String A, final String B) {
+        if (B.isEmpty() || A.isEmpty()) {
+            return -1;
+        }
+        int[] kmp = new int[B.length()];
+        int start = 0;
+        String s = "0 ";
+        for (int index=1; index < B.length(); index++) {
+            if (B.charAt(start) == B.charAt(index)) {
+                start++;
+                kmp[index] = start;
+            } else {
+                start = 0;
+            }
+            s = s + kmp[index] + " ";
+        }
+        // kmp[2] = 1;
+        System.out.println("KMP : " + s);
+        int patternIdx = 0;
+        int index = 0;
+        while(index < A.length()) {
+            System.out.println("Checking A @ " + index + " B @ " + patternIdx);
+            if (A.charAt(index) == B.charAt(patternIdx)) {
+                patternIdx++;
+                if (patternIdx == B.length()) {
+                    return (index - B.length() + 1);
+                }
+                index++;
+            } else {
+                if (patternIdx != 0)
+                    patternIdx = kmp[patternIdx-1];
+                else
+                    index++;
+            }
+        }
+        return -1;
+    }
+}
 ```
 <a name="ques-69"></a>
 **Compare Version Numbers** [Back](#strings) <br>
@@ -1446,14 +1610,96 @@ public class Solution {
 <a name="ques-70"></a>
 **Atoi** [Back](#strings) <br>
 ```java
+public class Solution {
+	public int atoi(final String A) {
+	    int idx;
+	    long num;
+	    int n = A.length();
+	    boolean sign = true;
+	    
+	    idx = 0;
+	    
+	    while (idx < n && A.charAt(idx) == ' ')
+	        idx++;
+	        
+	    if (idx == n)
+	        return 0;
+	    
+	    if (A.charAt(idx) == '-') {
+	        sign = false;
+	        idx++;
+	    } else if (A.charAt(idx) == '+') {
+	        idx++;
+	    }
+	    
+	    num = 0;
+	    
+	    while (idx < n && A.charAt(idx) >= '0' && A.charAt(idx) <= '9') {
+	        
+	        num = Math.abs(num);
+	        num = num * 10 + A.charAt(idx) - '0';
+	        
+	        if (!sign)
+	            num = -num;
+	        
+	        if (num > Integer.MAX_VALUE)
+	            return Integer.MAX_VALUE;
+	            
+	        else if (num < Integer.MIN_VALUE)
+	            return Integer.MIN_VALUE;
+	            
+	        idx++;
+	            
+
+	    }
+	    
+	    return (int) num;
+	    
+	}
+}
 ```
 <a name="ques-71"></a>
 **Length of Last Word** [Back](#strings) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int lengthOfLastWord(final String s) {
+        int len = 0;
+        
+        int i = s.length()-1;
+        while (i >= 0 && s.charAt(i) == ' ') {
+            i--;
+        }
+        
+        for (i=i; i>=0; i--) {
+            if (s.charAt(i) == ' ') {
+                return len;
+            }
+            len++;
+        }
+        
+        return len;
+    }
+}
 ```
 <a name="ques-72"></a>
 **Reverse the String** [Back](#strings) <br>
 ```java
+public class Solution {
+    public String reverseWords(String a) {
+        String[] arr = a.split(" ");
+        for (int index=0; index < arr.length/2; index++) {
+            String temp = arr[index];
+            arr[index] = arr[arr.length-1-index];
+            arr[arr.length-1-index] = temp;
+        }
+        String res = "";
+        for (String s : arr) {
+            res = res + s + " ";
+        }
+        return res.trim();
+    }
+}
 ```
 <a name="ques-73"></a>
 **Valid Number** [Back](#strings) <br>
@@ -1466,6 +1712,28 @@ public class Solution {
 <a name="ques-75"></a>
 **Roman To Integer** [Back](#strings) <br>
 ```java
+public class Solution {
+    public int romanToInt(String A) {
+        int res = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('L', 50);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+        char prev = ' ';
+        for (int index=0; index < A.length(); index++) {
+            char curr = A.charAt(index);
+            if (prev != ' ' && map.get(prev) < map.get(curr))
+                res = res - 2 * map.get(prev);
+            res = res + map.get(curr);
+            prev = curr;
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-76"></a>
 **Integer To Roman** [Back](#strings) <br>
@@ -1478,6 +1746,35 @@ public class Solution {
 <a name="ques-78"></a>
 **Power of 2** [Back](#strings) <br>
 ```java
+public class Solution {
+    public int power(String A) {
+        StringBuilder sb = new StringBuilder();
+        if ("0".equals(A) || "1".equals(A))
+            return 0;
+        int curr = 0;
+        while (!"1".equals(A)) {
+            for (int index=0; index < A.length(); index++) {
+                Integer digit = Integer.valueOf(A.charAt(index) + "");
+                curr = curr + digit;
+                if (curr < 2) {
+                    if (!sb.toString().isEmpty())
+                        sb.append("0");
+                } else {
+                    sb.append(curr/2);
+                    curr = curr % 2;
+                }
+                if (index != A.length()-1)
+                    curr = curr * 10;
+            }
+            // System.out.println(sb);
+            if (curr % 2 == 1)
+                return 0;
+            A = sb.toString();
+            sb = new StringBuilder();
+        }
+        return 1;
+    }
+}
 ```
 <a name="ques-79"></a>
 **Multiply Strings** [Back](#strings) <br>
@@ -1486,6 +1783,69 @@ public class Solution {
 <a name="ques-80"></a>
 **Justified Text** [Back](#strings) <br>
 ```java
+public class Solution {
+    public ArrayList<String> fullJustify(ArrayList<String> A, int B) {
+        ArrayList<String> res = new ArrayList<>();
+        int numwords = 0, wordsize = 0;
+        StringBuilder sb = new StringBuilder();
+        for (int index=0; index < A.size(); index++) {
+            wordsize = wordsize + A.get(index).length();
+            numwords++;
+            int nextwordsize = 0;
+            if ((index+1) < A.size()) {
+                nextwordsize = wordsize + A.get(index+1).length();
+            }
+            int spaces = numwords - 1;
+            if ((wordsize + spaces) <= B && ((nextwordsize + spaces + 1) > B || nextwordsize == 0)) {
+                int blanks = B - wordsize;
+                sb.append(A.get(index));
+                if (index < A.size() - 1)
+                    res.add(formatString(sb.toString(), wordsize, numwords, B));
+                else {
+                    int b = B - sb.toString().length();
+                    for (int i=0; i < b; i++)
+                        sb.append(" ");
+                    res.add(sb.toString());
+                }
+                wordsize = 0;
+                numwords = 0;
+                sb = new StringBuilder();
+            } else {
+                sb.append(A.get(index) + " ");
+            }
+        }
+        return res;
+    }
+    
+    public String formatString(String str, int wordsize, int numwords, int B) {
+        String[] s = str.split(" ");
+        int spaces = B - wordsize;
+        int eachspace = 0, remspace = 0;
+        if (numwords > 1) {
+            eachspace = spaces / (numwords - 1);
+            remspace = spaces % (numwords - 1);
+        }
+        StringBuilder sb = new StringBuilder();
+        // System.out.println("Formatting : " + sb);
+        // System.out.println("Words : " + numwords + " Spaces : " + spaces + " Each : " + eachspace + " Rem : " + remspace);
+        for (int index=0; index < s.length-1; index++) {
+            sb.append(s[index]);
+            for (int i =0; i < eachspace; i++) {
+                sb.append(" ");
+            }
+            if (remspace > 0)
+                sb.append(" ");
+            remspace--;
+        }
+        sb.append(s[s.length-1]);
+        if (numwords == 1) {
+            int b = B - sb.toString().length();
+            for (int i=0; i < b; i++)
+                sb.append(" ");
+        }
+        return sb.toString();
+    }
+}
 ```
 <a name="ques-81"></a>
 **ZigZag String** [Back](#strings) <br>
@@ -1498,6 +1858,150 @@ public class Solution {
 <a name="ques-83"></a>
 **Stringoholics** [Back](#strings) <br>
 ```java
+public class Solution {
+
+    final int M = (int) 1e9+7;
+
+    int maxLenSubString(String t){
+        int[] lps = new int[t.length()];
+        lps[0] = 0;
+        int len = 0;
+        int n = t.length();
+        int i =1;
+        int max= 0;
+
+        while(i<n){
+            if(t.charAt(i) == t.charAt(len)){
+                len++;
+                lps[i] = len;
+                i++;
+                max = Math.max(max,len);
+            }
+            else{
+                if(len == 0){
+                    lps[i] = 0;
+                    i++;
+                }
+                else{
+                    len = lps[len-1];
+                }
+            }
+        }
+
+        return max;
+    }
+
+    long pow(long a, long p){
+
+        long ans = 1;
+        while(p>0){
+            if(p%2L == 1L){
+                ans = (ans * a)%M;
+            }
+            a = (a*a)%M;
+            p /= 2;
+        }
+
+        return ans%M;
+    }
+
+    void updateLcmMap(Map<Integer, Integer> m, Integer num){
+
+        int i = 2;
+
+        while(i<=num && i > 1){
+            int count = 0;
+
+            while(num % i == 0){
+                count++;
+                num /= i;
+            }
+
+            if(count == 0){
+                i++;
+                continue;
+            }
+
+            if(m.containsKey(i)){
+                int v = m.get(i);
+                if(v < count){
+                    m.put(i,count);
+                }
+            }
+            else{
+                m.put(i,count);
+            }
+
+            i++;
+        }
+    }
+
+    long getLcm(ArrayList<Integer> lens){
+
+        Map<Integer, Integer> m = new HashMap<>();
+
+        for(Integer num : lens){
+            updateLcmMap(m, num);
+        }
+
+        long prod = 1;
+        for(Map.Entry<Integer, Integer> entry : m.entrySet()){
+
+            int k = entry.getKey();
+            int v = entry.getValue();
+
+            long p = pow(k,v) % M;
+
+            prod = (prod * p) % M;
+        }
+
+        return prod % M;
+    }
+
+    public int solve(ArrayList<String> A) {
+
+        ArrayList<Integer> lens = new ArrayList<>();
+
+        for(String t: A){
+            int maxLen = maxLenSubString(t);
+            int n = t.length();
+
+            if(n%(n-maxLen) == 0){
+                n -= maxLen;
+            }
+
+            long sum = 0;
+            int i =1;
+            do{
+                sum += i;
+                i++;
+            }while(sum % ((long) n) != 0L);
+
+            lens.add(i-1);
+        }
+
+        long lcm = getLcm(lens) % M;
+
+        return (int)lcm % M;
+    }
+}
+```
+<a name="ques-4"></a>
+**Amazing Substring** [Back](#questions) <br>
+```java
+public class Solution {
+    public int solve(String A) {
+        long  res = 0;
+        for (long outer=0; outer < A.length(); outer++) {
+            String str = A.charAt(outer) + "";
+            if ("A".equalsIgnoreCase(str) ||"E".equalsIgnoreCase(str) ||"I".equalsIgnoreCase(str) ||
+                "O".equalsIgnoreCase(str) ||"U".equalsIgnoreCase(str)) {
+                res = res + (A.length()-outer);
+            }
+        }
+        return (int) res % 10003;
+    }
+}
 ```
 
 ### Bit Manipulation
