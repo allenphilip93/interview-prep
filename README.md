@@ -33,44 +33,44 @@ Solutions to the common DSA problems in Java
 ## Arrays
 
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Spiral Array](https://www.interviewbit.com/problems/spiral-order-matrix-i/)      | [Java](#ques-1)  | _O(n*m)_         | _O(1)_          | Easy         |  |
-|2| [Min Steps](https://www.interviewbit.com/problems/min-steps-in-infinite-grid/)      | [Java](#ques-2)  | _O(n)_         | _O(1)_          | Easy         |  |
-|3| [Add One to Number](https://www.interviewbit.com/problems/add-one-to-number/)      | [Java](#ques-3)  | _O(n)_         | _O(1)_          | Easy         |  |
+|2| [Min Steps](https://www.interviewbit.com/problems/min-steps-in-infinite-grid/) You are in an infinite 2D grid where you can move in any of the 8 directions. You are given a sequence of points and  **the order in which you need to cover the points**. Give the minimum number of steps in which you can achieve it. You start from the first point.     | [Java](#ques-2)  | _O(n)_         | _O(1)_          | Easy         |  |
+|3| [Add One to Number](https://www.interviewbit.com/problems/add-one-to-number/) Given a non-negative number represented as an array of digits, add 1 to the number ( increment the number represented by the digits ). The digits are stored such that the most significant digit is at the head of the list.     | [Java](#ques-3)  | _O(n)_         | _O(1)_          | Easy         |  |
 |4| [Max Sum Contiguous Subarray](https://www.interviewbit.com/problems/max-sum-contiguous-subarray/)      | [Java](#ques-4)  | _O(n)_         | _O(1)_          | Medium         | Kadane's Algo :- previous MSS should be positive for optimal subarray|
 |5| [Maximum Absolute Difference](https://www.interviewbit.com/problems/maximum-absolute-difference/)      | [Java](#ques-5)  | _O(n)_         | _O(1)_          | Medium         | Carefully look the given exp and how it can be written down|
 |6| [Repeat and Missing Number Array](https://www.interviewbit.com/problems/repeat-and-missing-number-array/)      | [Java](#ques-6)  | _O(n)_         | _O(1)_          | Medium         | Look for overflows and equations|
 |7| [Flip](https://www.interviewbit.com/problems/flip/)      | [Java](#ques-7)  | _O(n)_         | _O(1)_          | Medium         | |
-|7| [Max Non Negative SubArray](https://www.interviewbit.com/problems/max-non-negative-subarray/)      | [Java](#ques-8)  | _O(n)_         | _O(1)_          | Easy         | Check for overflows and tie constraints properly|
-|8| [Spiral Order Matrix II](https://www.interviewbit.com/problems/spiral-order-matrix-ii/)      | [Java](#ques-9)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
-|9| [Pascal Triangle](https://www.interviewbit.com/problems/pascal-triangle/)      | [Java](#ques-10)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
+|7| [Max Non Negative SubArray](https://www.interviewbit.com/problems/max-non-negative-subarray/) Find out the maximum sub-array of non negative numbers from an array. The sub-array should be continuous. That is, a sub-array created by choosing the second and fourth element and skipping the third element is invalid. Maximum sub-array is defined in terms of the sum of the elements in the sub-array. Sub-array A is greater than sub-array B if sum(A) > sum(B).     | [Java](#ques-8)  | _O(n)_         | _O(1)_          | Easy         | Check for overflows and tie constraints properly|
+|8| [Spiral Order Matrix II](https://www.interviewbit.com/problems/spiral-order-matrix-ii/) Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.     | [Java](#ques-9)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
+|9| [Pascal Triangle](https://www.interviewbit.com/problems/pascal-triangle/) Given numRows, generate the first numRows of Pascal’s triangle. Pascal’s triangle : To generate A[C] in row R, sum up A’[C] and A’[C-1] from previous row R - 1.     | [Java](#ques-10)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
 |10| [Kth Row of Pascal's Triangle](https://www.interviewbit.com/problems/kth-row-of-pascals-triangle/)      | [Java](#ques-11)  | _O(n*n)_         | _O(n)_          | Easy         | Think in terms of if previous calculated list is needed or not |
 |11| [Anti Diagonals](https://www.interviewbit.com/problems/anti-diagonals/)      | [Java](#ques-12)  | _O(n)_         | _O(1)_          | Easy         |  |
-|12| [Noble Integer](https://www.interviewbit.com/problems/noble-integer/)      | [Java](#ques-13)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
+|12| [Noble Integer](https://www.interviewbit.com/problems/noble-integer/) Given an integer array, find if an integer p exists in the array such that the number of integers greater than p in the array equals to p. If such an integer is found return 1 else return -1.     | [Java](#ques-13)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
 |13| [Triplets with Sum between given range](https://www.interviewbit.com/problems/triplets-with-sum-between-given-range/)      | [Java](#ques-14)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked |
-|14| [Largest Number](https://www.interviewbit.com/problems/largest-number/)      | [Java](#ques-15)  | _O(n)_         | _O(n)_          | Medium         | Comparator |
-|15| [Wave Array](https://www.interviewbit.com/problems/wave-array/)      | [Java](#ques-16)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
+|14| [Largest Number](https://www.interviewbit.com/problems/largest-number/) Given a list of non negative integers, arrange them such that they form the largest number.     | [Java](#ques-15)  | _O(n)_         | _O(n)_          | Medium         | Comparator |
+|15| [Wave Array](https://www.interviewbit.com/problems/wave-array/) Given an array of integers, sort the array into a wave like array and return it, In other words, arrange the elements into a sequence such that a1 >= a2 <= a3 >= a4 <= a5.....     | [Java](#ques-16)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
 |16| [Hotel Bookings Possible](https://www.interviewbit.com/problems/hotel-bookings-possible/)      | [Java](#ques-17)  | _O(nlogn)_         | _O(1)_          | Medium         |  Bookmarked|
-|17| [Find Duplicate in Array](https://www.interviewbit.com/problems/find-duplicate-in-array/)      | [Java](#ques-18)  | _O(n)_         | _O(1)_          | Easy         |  |
-|18| [Max Distance](https://www.interviewbit.com/problems/max-distance/)      | [Java](#ques-19)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked|
+|17| [Find Duplicate in Array](https://www.interviewbit.com/problems/find-duplicate-in-array/) Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.    | [Java](#ques-18)  | _O(n)_         | _O(1)_          | Easy         |  |
+|18| [Max Distance](https://www.interviewbit.com/problems/max-distance/) Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j]. If there is no solution possible, return -1.     | [Java](#ques-19)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked|
 |19| [Min Unsorted Subarray](https://www.interviewbit.com/problems/maximum-unsorted-subarray/)      | [Java](#ques-20)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked|
 |20| [Maximum Consecutive Gap](https://www.interviewbit.com/problems/maximum-consecutive-gap/)      | [Java](#ques-21)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked, PigeonHole Sorting using bucket method|
 |21| [Rotate Matrix](https://www.interviewbit.com/problems/rotate-matrix/)      | [Java](#ques-22)  | _O(n*n)_         | _O(1)_          | Medium         |  Good Question|
-|22| [MAXSPPROD](https://www.interviewbit.com/problems/maxspprod/)      | [Java](#ques-23)  | _O(n)_         | _O(n)_          | Medium         |  Good Question|
+|22| [MAXSPPROD](https://www.interviewbit.com/problems/maxspprod/) You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following: LeftSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](i>j). If multiple A[j]’s are present in multiple positions, the LeftSpecialValue is the maximum value of j. RightSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](j>i). If multiple A[j]s are present in multiple positions, the RightSpecialValue is the minimum value of j. Write a program to find the maximum special product of any integer in the array.     | [Java](#ques-23)  | _O(n)_         | _O(n)_          | Medium         |  Good Question|
 |23| [Next Permutation](https://www.interviewbit.com/problems/next-permutation/)      | [Java](#ques-24)  | _O(nlogn)_(only if already highest perm, else O(n + logn))         | _O(1)_          | Medium         |  Good Question, Analyse diff examples, Bookmarked|
 |24| [Find Permutation](https://www.interviewbit.com/problems/find-permutation/)      | [Java](#ques-25)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Bookmarked|
-|25| [Set Matrix Zeros](https://www.interviewbit.com/problems/set-matrix-zeros/)      | [Java](#ques-26)  | _O(n*m)_         | _O(1)_          | Medium         |  Good Question|
+|25| [Set Matrix Zeros](https://www.interviewbit.com/problems/set-matrix-zeros/) Given an m x n matrix of 0s and 1s, if an element is 0, set its entire row and column to 0. Do it in place.     | [Java](#ques-26)  | _O(n*m)_         | _O(1)_          | Medium         |  Good Question|
 |26| [First Missing Integer](https://www.interviewbit.com/problems/first-missing-integer/)      | [Java](#ques-27)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Bookmarked|
 |27| [Merge Overlapping Intervals](https://www.interviewbit.com/problems/merge-overlapping-intervals/)      | [Java](#ques-28)  | _O(nlogn)_         | _O(1)_          | Medium         |  Good Question, Bookmarked|
-|28| [Merge Intervals](https://www.interviewbit.com/problems/merge-intervals/)      | [Java](#ques-29)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Good Edge Cases|
+|28| [Merge Intervals](https://www.interviewbit.com/problems/merge-intervals/) Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).     | [Java](#ques-29)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Good Edge Cases|
 |29| [N/3 Repeat Number](https://www.interviewbit.com/problems/n3-repeat-number/)      | [Java](#ques-30)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Moore's Voting Algo|
 
 <a name="maths"></a>
 ## Math
 
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [All Factors](https://www.interviewbit.com/problems/all-factors/)      | [Java](#ques-31)  | _O(sqrt(n))_         | _O(1)_          | Easy         | Keep notice of edge cases - like i^2 = A |
 |2| [Binary Representation](https://www.interviewbit.com/problems/binary-representation/)      | [Java](#ques-32)  | _O(log(n))_         | _O(1)_          | Easy         |  |
@@ -97,7 +97,7 @@ Solutions to the common DSA problems in Java
 ## BinarySearch
 
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [SQRT](https://www.interviewbit.com/problems/square-root-of-integer/)      | [Java](#ques-51)  | _O(log(n))_         | _O(1)_          | Easy         | Keep check for out of range in case of Multiplication else use division  |
 |2| [Count Element Occurence](https://www.interviewbit.com/problems/count-element-occurence/)      | [Java](#ques-52)  | _O(log(n))_         | _O(1)_          | Easy         |   |
@@ -116,7 +116,7 @@ Solutions to the common DSA problems in Java
 ## String
 
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Palindrome String](https://www.interviewbit.com/problems/palindrome-string/)      | [Java](#ques-63)  | _O(n)_         | _O(1)_          | Easy         |   |
 |2| [Longest Common Prefix](https://www.interviewbit.com/problems/longest-common-prefix/)      | [Java](#ques-64)  | _O(n*min(String Length))_         | _O(1)_          | Easy         |   |
@@ -144,7 +144,7 @@ Solutions to the common DSA problems in Java
 ## BitManipulation
 
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Min XOR Value](https://www.interviewbit.com/problems/min-xor-value/)      | [Java](#ques-84)  | _O(nlogn)_         | _O(1)_          | Easy         | Bookmarked  |
 |2| [Single Number](https://www.interviewbit.com/problems/single-number/)      | [Java](#ques-85)  | _O(n)_         | _O(1)_          | Easy         |  |
@@ -158,7 +158,7 @@ Solutions to the common DSA problems in Java
 ## TwoPointers
 
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Merge Two Sorted Lists II](https://www.interviewbit.com/problems/merge-two-sorted-lists-ii/)      | [Java](#ques-91)  | _O(n+m)_         | _O(1)_          | Easy         |   |
 |2| [Intersection Of Sorted Arrays](https://www.interviewbit.com/problems/intersection-of-sorted-arrays/)      | [Java](#ques-92)  | _O(n+m)_         | _O(1)_          | Easy         |   |
@@ -180,7 +180,7 @@ Solutions to the common DSA problems in Java
 ## LinkedList
 
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Intersection of Linked Lists](https://www.interviewbit.com/problems/intersection-of-linked-lists/)      | [Java](#ques-106)  | _O(n+m)_         | _O(1)_          | Easy         |   |
 |2| [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/)      | [Java](#ques-107)  | _O(n)_         | _O(1)_          | Easy         |   |
@@ -204,7 +204,7 @@ Solutions to the common DSA problems in Java
 ## Stack
 
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Simplify Directory Path](https://www.interviewbit.com/problems/simplify-directory-path/)      | [Java](#ques-123)  | _O(n)_         | _O(n)_          | Easy         |   |
 |2| [Redundant Braces](https://www.interviewbit.com/problems/redundant-braces/)      | [Java](#ques-124)  | _O(n)_         | _O(n)_          | Easy         |   |
@@ -218,7 +218,7 @@ Solutions to the common DSA problems in Java
 <a name="queue"></a>
 ## Queue
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Sliding Window Maximum](https://www.interviewbit.com/problems/sliding-window-maximum/)      | [Java](#ques-130)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked, Finding Min is reverse of current logic|
 
@@ -226,7 +226,7 @@ Solutions to the common DSA problems in Java
 <a name="backtracking"></a>
 ## Backtracking
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [ReverseLinkedList](https://www.interviewbit.com/problems/reverse-link-list-recursion/)      | [Java](#ques-131)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked |
 |2| [Modular Expression](https://www.interviewbit.com/problems/modular-expression/)      | [Java](#ques-132)  | _O(log(power))_         | _O(1)_          | Easy         |  Bookmarked, Modular Exponentiation |
@@ -247,7 +247,7 @@ Solutions to the common DSA problems in Java
 <a name="hashing"></a>
 ## Hashing
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Colorful Number](https://www.interviewbit.com/problems/colorful-number/)      | [Java](#ques-145)  | _O(n*n)_         | _O(n)_          | Easy         |   |
 |2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/)      | [Java](#ques-146)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked, 3 conditions - element 0, sum 0 or sum repeated |
@@ -268,7 +268,7 @@ Solutions to the common DSA problems in Java
 <a name="heaps"></a>
 ## Heaps
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [N max pair combinations](https://www.interviewbit.com/problems/n-max-pair-combinations/)      | [Java](#ques-159)  | _O(nlogn)_         | _O(n)_          | Medium         |  Bookmarked, Create a min heap and loop through n^2 pairs  |
 |2| [Magician and Chocolates](https://www.interviewbit.com/problems/magician-and-chocolates/)      | [Java](#ques-160)  | _O(klogn)_         | _O(n)_          | Easy         |    |
@@ -278,7 +278,7 @@ Solutions to the common DSA problems in Java
 <a name="hashmaps"></a>
 ## HashMap
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Distinct Numbers in Window](https://www.interviewbit.com/problems/distinct-numbers-in-window/)      | [Java](#ques-162)  | _O(n)_         | _O(n)_          | Easy         |    |
 |2| [LRU](https://www.interviewbit.com/problems/lru-cache/)      | [Java](#ques-163)  | _O(1)_ for get and O(n) for set         | _O(n)_          | Easy         |    |
@@ -288,7 +288,7 @@ Solutions to the common DSA problems in Java
 <a name="trees"></a>
 ## Trees
 
-|  Id  | Title           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Valid Binary Search Tree](https://www.interviewbit.com/problems/valid-binary-search-tree/)      | [Java](#ques-165)  | _O(n)_         | _O(log2n)_          | Easy         |    |
 |2| [Next Greater Number BST](https://www.interviewbit.com/problems/next-greater-number-bst/)      | [Java](#ques-166)  | _O(logn)_         | _O(1)_          | Easy         |  Bookmarked, Good Question plus also know inorder using 1 stack  |
@@ -384,12 +384,62 @@ public class MinStepsInfiniteGrid {
 }
 ```
 <a name="ques-3"></a>
-**** [Back](#arrays) <br>
+**Add one to number** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public ArrayList<Integer> plusOne(ArrayList<Integer> A) {
+        int N = A.size();
+        int carry = 0;
+        ArrayList<Integer> result = new ArrayList<>();
+        if (A.size() > 0) {
+            int startIdx = 0;
+            // Skip trailing zeros
+            for (; startIdx < N && A.get(startIdx) == 0; startIdx++);
+            // Add 1
+            if (startIdx > N-1)
+                result.add(1);
+            for (int idx=N-1; idx >= startIdx; idx--) {
+                int sum;
+                if (idx == N-1)
+                    sum = A.get(idx) + 1;
+                else
+                    sum = A.get(idx) + carry;
+                carry = ((sum > 9) ? 1 : 0);
+                result.add(sum%10);
+            }
+            if (carry == 1) {
+                result.add(1);
+            }
+            // Reverse the result
+            for (int index=0; index < result.size()/2; index++) {
+                int temp = result.get(index);
+                result.set(index, result.get(result.size()-1-index));
+                result.set(result.size()-1-index, temp);
+            }
+        } else {
+            result.add(1);
+        }
+        return result;
+    }
+}
 ```
 <a name="ques-4"></a>
 **** [Back](#arrays) <br>
 ```java
+public class MaxSubArray {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int maxSubArray(final List<Integer> A) {
+        int maxSumIncluding = 0;
+        int maxSumTotal = 0;
+        int maxSum = 0;
+        for (Integer val : A) {
+            maxSumIncluding = maxSumIncluding + val;
+            maxSumTotal = Math.max(maxSumIncluding, val);
+            maxSum = Math.max(maxSumTotal, maxSum);
+        }
+        return maxSum;
+    }
+}
 ```
 <a name="ques-5"></a>
 **** [Back](#arrays) <br>
@@ -404,16 +454,99 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 <a name="ques-8"></a>
-**** [Back](#arrays) <br>
+**Max Non Negative SubArray** [Back](#arrays) <br>
 ```java
+public class Solution {
+	public ArrayList<Integer> maxset(ArrayList<Integer> a) {
+	    long maxSum = 0;
+	    long newSum = 0;
+	    ArrayList<Integer> maxArray = new ArrayList<Integer>();
+	    ArrayList<Integer> newArray = new ArrayList<Integer>();
+	    for (Integer i : a) {
+	        if (i >= 0) {
+	            newSum += i;
+	            newArray.add(i);
+	        } else {
+	            newSum = 0;
+	            newArray = new ArrayList<Integer>();
+	        }
+	        if ((maxSum < newSum) || ((maxSum == newSum) && (newArray.size() > maxArray.size()))) {
+	            maxSum = newSum;
+	            maxArray = newArray;
+	        }
+	    }
+	    return maxArray;
+	}
+}
 ```
 <a name="ques-9"></a>
-**** [Back](#arrays) <br>
+**Spiral Order Matrix II** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> generateMatrix(int A) {
+        int max = A * A;
+        int val = 1;
+        // Create an empty result list
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        for (int i=0; i < A; i++) {
+            res.add(new ArrayList<Integer>());
+            for (int j=0; j < A; j++) {
+                res.get(i).add(0);
+            }
+        }
+        // Start and end indices
+        int x = 0, y = 0, X = A, Y = A;
+        // Spiral traversal
+        while (x < X && y < Y) {
+            // go right
+            for (int i = x; i < X; i++, val++) {
+                res.get(y).set(i, val);
+            }
+            y++;
+            
+            // go down
+            for (int i = y; i < Y; i++, val++) {
+                res.get(i).set(X-1, val);
+            }
+            X--;
+            
+            if (x < X && y < Y) {
+                // go left
+                for (int i = X-1; i >= x; i--, val++) {
+                    res.get(Y-1).set(i, val);
+                }
+                Y--;
+                
+                // go top
+                for (int i = Y-1; i >= y; i--, val++) {
+                    res.get(i).set(x, val);
+                }
+                x++;
+            }
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-10"></a>
-**** [Back](#arrays) <br>
+**Pascal Triangle** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> solve(int A) {
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        res.add(new ArrayList<>());
+        res.get(0).add(1);
+        for (int row=1; row < A; row++) {
+            res.add(new ArrayList<>());
+            res.get(row).add(1);
+            for (int index=0; index < row-1; index++) {
+                res.get(row).add(res.get(row-1).get(index) + res.get(row-1).get(index+1));
+            }
+            res.get(row).add(1);
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-11"></a>
 **** [Back](#arrays) <br>
@@ -424,32 +557,142 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 <a name="ques-13"></a>
-**** [Back](#arrays) <br>
+**Noble Integer** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public int solve(ArrayList<Integer> A) {
+        // Total runtime: O(n log n) due to sort
+        Collections.sort(A);
+        
+        for(int i = 0; i < A.size(); i++) {
+            // Handle duplicates (only check for rightmost duplicate), skip others
+            if(i < A.size() - 1 && A.get(i) == A.get(i + 1)) {
+                continue;
+            }
+            // Check if the remaining values to the right are equal to the current value
+            if(A.size() - i - 1 == A.get(i)) {
+                return 1;
+            }
+        }
+        
+        return -1;
+    }
+}
 ```
 <a name="ques-14"></a>
 **** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-15"></a>
-**** [Back](#arrays) <br>
+**Largest Number** [Back](#arrays) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public String largestNumber(final List<Integer> A) {
+        List<String> B = new ArrayList<>();
+        boolean hasNonZero = false;
+        for (Integer i : A) {
+            if (i != 0)
+                hasNonZero = true;
+            B.add(i.toString());
+        }
+        if (!hasNonZero)
+            return "0";
+        Collections.sort(B, new Comparator<String>(){ 
+            // A comparison function which is used by  
+            // sort() in printLargest() 
+            @Override
+            public int compare(String X, String Y) { 
+                // first append Y at the end of X 
+                String XY=X + Y; 
+                  
+                // then append X at the end of Y 
+                String YX=Y + X; 
+                  
+                // Now see which of the two formed numbers  
+                // is greater 
+                return XY.compareTo(YX) > 0 ? -1:1; 
+            } 
+        });
+        StringBuilder res = new StringBuilder();
+        Iterator it = B.iterator();
+        while(it.hasNext()) 
+            res.append(it.next());
+        return res.toString();
+    }
+}
 ```
 <a name="ques-16"></a>
-**** [Back](#arrays) <br>
+**Wave Array** [Back](#arrays) <br>
 ```java
+public class Solution {
+	public ArrayList<Integer> wave(ArrayList<Integer> a) {
+	    Collections.sort(a);
+	    for(int i = 0; i < a.size() - 1; i = i + 2) {
+	       int temp = a.get(i);
+	       a.set(i, a.get(i + 1));
+	       a.set(i+1, temp);
+	    }
+	    return a;
+	}	
+}
 ```
 <a name="ques-17"></a>
 **** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-18"></a>
-**** [Back](#arrays) <br>
+**Find Duplicate in Array** [Back](#arrays) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST
+    public int repeatedNumber(final List<Integer> a) {
+        Set<Integer> set = new HashSet<>();
+        for (int i=0; i < a.size(); i++) {
+            if (set.contains(a.get(i))) {
+                return i;
+            } else {
+                set.add(a.get(i));
+            }
+        }
+        return -1;
+    }
+}
 ```
 <a name="ques-19"></a>
-**** [Back](#arrays) <br>
+**Max Distance** [Back](#arrays) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int maximumGap(final List<Integer> A) {
+        int[] Lmin = new int[A.size()];
+        int[] Rmax = new int[A.size()];
+        int min = A.get(0);
+        for (int index = 0; index < A.size(); index++) {
+            min = Math.min(A.get(index), min);
+            Lmin[index] = min;
+        }
+        int max = A.get(A.size()-1);
+        for (int index = A.size()-1; index >= 0; index--) {
+            max = Math.max(A.get(index), max);
+            Rmax[index] = max;
+        }
+        
+        /* Traverse both arrays from left to right to find optimum j - i 
+           This process is similar to merge() of MergeSort */
+        int left = 0, right = 0, maxDiff = 0; 
+        while (left < A.size() && right < A.size()) { 
+            if (Lmin[left] <= Rmax[right]) { 
+                maxDiff = Math.max(maxDiff, right - left); 
+                right = right + 1; 
+            } else {
+                left = left + 1; 
+            }
+        } 
+  
+        return maxDiff; 
+    }
+}
 ```
 <a name="ques-20"></a>
 **** [Back](#arrays) <br>
@@ -460,12 +703,76 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 <a name="ques-22"></a>
-**** [Back](#arrays) <br>
+**Rotate Matrix** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public void rotate(ArrayList<ArrayList<Integer>> a) {
+        // Bounds 
+        int x=0, X=a.size();
+        
+        while (x < X) {
+            for (int i=0; i < X-1; i++) {
+                int currX = x + i; // row 
+                int currY = x; // col
+                int temp = a.get(currX).get(currY);
+                // System.out.println("DO WHILE");
+                do {
+                    int nextX = currY;  // row -> prev col
+                    int nextY = X - 1 - currX; // col -> total - row
+                    int newtemp = a.get(nextX).get(nextY);
+                    a.get(nextX).set(nextY, temp);
+                    temp = newtemp;
+                    // System.out.println("Curr X : " + currX + " Y : " + currY);
+                    // System.out.println("Next X : " + nextX + " Y : " + nextY);
+                    // System.out.println("Exit X : " + (x+i) + " Y : " + x);
+                    // System.out.println("Setting A[" + nextX + "][" + nextY + "] : " + temp);
+                    currX = nextX;
+                    currY = nextY;
+                } while (currX != (x+i) || currY != x);
+            }
+            X = X - 2;
+            x = x + 1;
+        }
+    }
+}
 ```
 <a name="ques-23"></a>
-**** [Back](#arrays) <br>
+**MAXSPPROD** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public int maxSpecialProduct(ArrayList<Integer> A) {
+        int n = A.size();
+        int[] left = new int[n];
+        int[] right = new int[n];
+        
+        Deque<Integer> q = new ArrayDeque<>();
+        q.addLast(0);
+        
+        for(int i = 1; i < n; i++){
+            while(!q.isEmpty()){
+                if(A.get(q.getLast()) > A.get(i)) break;
+                q.removeLast();
+            }
+            left[i] = (q.isEmpty()) ? 0 : q.getLast();
+            q.addLast(i);
+        }
+        q = new ArrayDeque<>();
+        q.addLast(n - 1);
+        for(int i = n - 2; i >= 0; i--){
+            while(!q.isEmpty()){
+                if(A.get(q.getLast()) > A.get(i)) break;
+                q.removeLast();
+            }
+            right[i] = (q.isEmpty()) ? 0 : q.getLast();
+            q.addLast(i);
+        }
+        long mx = -1;
+        for(int i = 0; i < n; i++){
+            mx = Long.max(mx, 1L * left[i] * right[i]);
+        }
+        return (int)(mx % 1000000007);
+    }
+}
 ```
 <a name="ques-24"></a>
 **** [Back](#arrays) <br>
@@ -476,20 +783,133 @@ public class MinStepsInfiniteGrid {
 ```java
 ```
 <a name="ques-26"></a>
-**** [Back](#arrays) <br>
+**Set Matrix Zeros** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public void setZeroes(ArrayList<ArrayList<Integer>> a) {
+        Set<Integer> row = new HashSet<>();
+        Set<Integer> col = new HashSet<>();
+        
+        for (int i=0; i < a.size(); i++) {
+            for (int j=0; j < a.get(i).size(); j++) {
+                if (a.get(i).get(j) == 0) {
+                    row.add(i);
+                    col.add(j);
+                }
+            }
+        }
+        
+        for (int i=0; i < a.size(); i++) {
+            for (int j=0; j < a.get(i).size(); j++) {
+                if (row.contains(i) || col.contains(j)) {
+                    a.get(i).set(j, 0);
+                }
+            }
+        }
+    }
+}
 ```
 <a name="ques-27"></a>
 **** [Back](#arrays) <br>
 ```java
 ```
 <a name="ques-28"></a>
-**** [Back](#arrays) <br>
+**Merge Overlapping Intervals** [Back](#arrays) <br>
 ```java
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+public class Solution {
+    public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
+        if (intervals == null) return null;
+        
+        Collections.sort(intervals, (a, b) -> Integer.compare(a.start, b.start));
+        ArrayList<Interval> merged = new ArrayList<>();
+        
+        for (Interval current : intervals) {
+            if (merged.isEmpty() || merged.get(merged.size() -1).end < current.start) {
+                merged.add(current);
+            } else {
+                merged.get(merged.size() -1).end = Math.max(current.end, 
+                                                   merged.get(merged.size() -1).end);
+            }
+        }
+        return merged;
+    }
+}
 ```
 <a name="ques-29"></a>
-**** [Back](#arrays) <br>
+**Merge Intervals** [Back](#arrays) <br>
 ```java
+/**
+ * Definition for an interval.
+ * public class Interval {
+ *     int start;
+ *     int end;
+ *     Interval() { start = 0; end = 0; }
+ *     Interval(int s, int e) { start = s; end = e; }
+ * }
+ */
+public class Solution {
+    public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
+        for (Interval i : intervals) {
+            if (i.start > i.end) {
+                int temp = i.start;
+                i.start = i.end;
+                i.end = temp;
+            }
+        }
+        if (newInterval.start > newInterval.end) {
+            int temp = newInterval.start;
+            newInterval.start = newInterval.end;
+            newInterval.end = temp;
+        }
+        
+        PriorityQueue<Interval> minheap = new PriorityQueue<>(
+            new Comparator<Interval>() {
+                public int compare(Interval i1, Interval i2) {
+                    if (i1.start > i2.start) {
+                        return 1;
+                    } else if (i1.start < i2.start) {
+                        return -1;
+                    } else {
+                        if (i1.end >= i2.end) {
+                            return 1;
+                        } else {
+                            return -1;
+                        }
+                    }
+                }
+            });
+        minheap.add(newInterval);
+        for (Interval interval : intervals) {
+            minheap.add(interval);
+        }
+        
+        ArrayList<Interval> res = new ArrayList<>();
+        int maxEnd = 0;
+        while (minheap.size() > 0) {
+            Interval interval = minheap.poll();
+            maxEnd = Math.max(maxEnd, interval.end);
+            // System.out.println("OUTER || START : " + interval.start + " END : " + interval.end);
+            while (minheap.size() > 0 && minheap.peek().start <= maxEnd) {
+                Interval inter = minheap.poll();
+                maxEnd = Math.max(maxEnd, inter.end);
+                // System.out.println("INNER || START : " + inter.start + " END : " + inter.end);
+            }
+            if (minheap.size() == 0 || minheap.peek().start > maxEnd) {
+                res.add(new Interval(interval.start, maxEnd));
+            }
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-30"></a>
 **** [Back](#arrays) <br>
