@@ -76,22 +76,22 @@ Solutions to the common DSA problems in Java
 |2| [Binary Representation](https://www.interviewbit.com/problems/binary-representation/)      | [Java](#ques-32)  | _O(log(n))_         | _O(1)_          | Easy         |  |
 |3| [Prime](https://www.interviewbit.com/problems/prime-numbers/)      | [Java](#ques-33)  | _O(sqrt(N)loglog(n))_         | _O(1)_          | Easy         | Sieve of Eratosthenes |
 |4| [Verify Prime](https://www.interviewbit.com/problems/verify-prime/)      | [Java](#ques-34)  | _O(sqrt(N))_         | _O(1)_          | Easy         |  |
-|5| [Prime Sum](https://www.interviewbit.com/problems/prime-sum/)      | [Java](#ques-35)  | _O(sqrt(N)loglog(n) + N)_         | _O(1)_          | Easy         |  |
+|5| [Prime Sum](https://www.interviewbit.com/problems/prime-sum/) Given an even number ( greater than 2 ), return two prime numbers whose sum will be equal to given number.     | [Java](#ques-35)  | _O(sqrt(N)loglog(n) + N)_         | _O(1)_          | Easy         |  |
 |6| [Sum of pairwise Hamming Distance](https://www.interviewbit.com/problems/sum-of-pairwise-hamming-distance/)      | [Java](#ques-36)  | _O(N)_         | _O(1)_          | Medium         | Good idea on how to use mod for large test cases, and good solution |
 |7| [FizzBuzz](https://www.interviewbit.com/problems/fizzbuzz/)      | [Java](#ques-37)  | _O(N)_         | _O(1)_          | Easy         |  |
-|8| [Power Of Two Integers](https://www.interviewbit.com/problems/power-of-two-integers/)      | [Java](#ques-38)  | _O(sqrt(N)*log(N))_         | _O(1)_          | Easy         | Think easy solution |
-|9| [Excel Column Number](https://www.interviewbit.com/problems/excel-column-number/)      | [Java](#ques-39)  | _O(N)_         | _O(1)_          | Easy         | |
-|10| [Excel Column Title](https://www.interviewbit.com/problems/excel-column-title/)      | [Java](#ques-40)  | _O(logn)_         | _O(1)_          | Easy         | Good Question|
-|11| [Palindrome Integer](https://www.interviewbit.com/problems/palindrome-integer/)      | [Java](#ques-41)  | _O(number of digits)_         | _O(1)_          | Easy         | |
+|8| [Power Of Two Integers](https://www.interviewbit.com/problems/power-of-two-integers/) Given a positive integer which fits in a 32 bit signed integer, find if it can be expressed as A^P where P > 1 and A > 0. A and P both should be integers.     | [Java](#ques-38)  | _O(sqrt(N)*log(N))_         | _O(1)_          | Easy         | Think easy solution |
+|9| [Excel Column Number](https://www.interviewbit.com/problems/excel-column-number/) Given a column title as appears in an Excel sheet, return its corresponding column number.     | [Java](#ques-39)  | _O(N)_         | _O(1)_          | Easy         | |
+|10| [Excel Column Title](https://www.interviewbit.com/problems/excel-column-title/) Given a positive integer, return its corresponding column title as appear in an Excel sheet.     | [Java](#ques-40)  | _O(logn)_         | _O(1)_          | Easy         | Good Question|
+|11| [Palindrome Integer](https://www.interviewbit.com/problems/palindrome-integer/) Determine whether an integer is a palindrome. Do this without extra space.     | [Java](#ques-41)  | _O(number of digits)_         | _O(1)_          | Easy         | |
 |12| [Reverse Integer](https://www.interviewbit.com/problems/reverse-integer/)      | [Java](#ques-42)  | _O(number of digits)_         | _O(1)_          | Easy         | |
 |13| [GCD](https://www.interviewbit.com/problems/greatest-common-divisor/)      | [Java](#ques-43)  | _O(log(min a,b))_         | _O(1)_          | Easy         | Eucledian Algo, Good Question|
 |14| [Trailing Zeroes](https://www.interviewbit.com/problems/trailing-zeros-in-factorial/)      | [Java](#ques-44)  | _O((A)^1/5)_         | _O(1)_          | Easy         | Good Question|
-|15| [Sorted Permutation Rank](https://www.interviewbit.com/problems/sorted-permutation-rank/)      | [Java](#ques-45)  | _O(A^2)_         | _O(1)_          | Medium         | Good Question, Consider usage of factorial in case of modulo|
+|15| [Sorted Permutation Rank](https://www.interviewbit.com/problems/sorted-permutation-rank/) Given a string, find the rank of the string amongst its permutations sorted lexicographically. Assume that no characters are repeated.     | [Java](#ques-45)  | _O(A^2)_         | _O(1)_          | Medium         | Good Question, Consider usage of factorial in case of modulo|
 |16| [Largest Coprime Divisor](https://www.interviewbit.com/problems/largest-coprime-divisor/)      | [Java](#ques-46)  | _O(A^2)_         | _O(1)_          | Medium         | Bookmarked|
 |17| [Sorted Permutation Rank with Repeats](https://www.interviewbit.com/problems/sorted-permutation-rank-with-repeats/)      | [Java](#ques-47)  | _O(A^2)_         | _O(1)_          | Medium         | Bookmarked, Multiplicative Inverse Modulo(use long in case of modulo) |
-|18| [ReArrange Array](https://www.interviewbit.com/problems/rearrange-array/)      | [Java](#ques-48)  | _O(A)_         | _O(1)_          | Medium         | Bookmarked, Encoding 2 values in one |
-|19| [Grid Unique Paths](https://www.interviewbit.com/problems/grid-unique-paths/)      | [Java](#ques-49)  | _O(min(row,col))_         | _O(1)_          | Easy         | Bookmarked, DP or Combinatorial |
-|20| [Numbers of length N and value less than K](https://www.interviewbit.com/problems/numbers-of-length-n-and-value-less-than-k/)      | [Java](#ques-50)  | _O(B)_         | _O(1)_          | Medium         | Bookmarked |
+|18| [ReArrange Array](https://www.interviewbit.com/problems/rearrange-array/) Rearrange a given array so that Arr[i] becomes Arr[Arr[i]] with O(1) extra space.     | [Java](#ques-48)  | _O(A)_         | _O(1)_          | Medium         | Bookmarked, Encoding 2 values in one |
+|19| [Grid Unique Paths](https://www.interviewbit.com/problems/grid-unique-paths/) A robot is located at the top-left corner of an A x B grid. The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below). How many possible unique paths are there?     | [Java](#ques-49)  | _O(min(row,col))_         | _O(1)_          | Easy         | Bookmarked, DP or Combinatorial |
+|20| [Numbers of length N and value less than K](https://www.interviewbit.com/problems/numbers-of-length-n-and-value-less-than-k/) Given a set of digits (A) in sorted order, find how many numbers of length B are possible whose value is less than number C.     | [Java](#ques-50)  | _O(B)_         | _O(1)_          | Medium         | Bookmarked |
 
 <a name="binarysearch"></a>
 ## BinarySearch
@@ -936,6 +936,28 @@ public class Solution {
 <a name="ques-35"></a>
 **Prime Sum** [Back](#maths) <br>
 ```java
+public class Solution {
+     public ArrayList<Integer> primesum(int A) {
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        for (int i = 2; i < A; i++) {
+            if (isPrime(i) && isPrime(A - i)) {
+                arr.add(i);
+                arr.add(A - i);
+                return arr;
+            }
+        }
+        return arr;
+    }
+
+    public boolean isPrime(int number) {
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
 ```
 <a name="ques-36"></a>
 **Sum of pairwise Hamming Distance** [Back](#maths) <br>
@@ -948,26 +970,110 @@ public class Solution {
 <a name="ques-38"></a>
 **Power Of Two Integers** [Back](#maths) <br>
 ```java
+public class Solution {
+    public boolean isPower(int a) {
+        if(a==1) return true;
+	    for (int i = 2; i*i <= a; i++) {
+	      int p = a;
+	      while(p%i == 0){
+	        p/=i;
+	      }
+	      if(p == 1) return true;
+	    }
+	    return false;       
+    }
+}
 ```
 <a name="ques-39"></a>
 **Excel Column Number** [Back](#maths) <br>
 ```java
+public class Solution {
+	public int titleToNumber(String a) {
+	    int num = 0;
+	    for (int i = a.length() - 1, j = 0; i >= 0; i--) {
+	        num += (int) Math.pow(26, j) * (a.charAt(i) - 'A' + 1);
+	        j++;
+	    }
+	    return num;
+	}
+}
 ```
 <a name="ques-40"></a>
 **Excel Column Title** [Back](#maths) <br>
 ```java
+public class Solution {
+    public String convertToTitle(int A) {
+        String res = "";
+        while (A > 0) {
+            char ref = 'A';
+            int c = ((A-1) % 26) + (int)ref;
+            A = (A-1) / 26;
+            // System.out.println((char) c);
+            res = (char)c + res;
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-41"></a>
 **Palindrome Integer** [Back](#maths) <br>
 ```java
+public class Solution {
+	public boolean isPalindrome(int a) {
+	    if(a == check(a))
+	        return true;
+	    else
+	        return false;
+	}
+	
+	public int check(int num){
+        int reverted = 0;
+        while (num > 0) {
+            reverted = reverted*10 + num%10;
+            num /= 10;
+        }
+      return reverted;
+	}
+}
 ```
 <a name="ques-42"></a>
 **Reverse Integer** [Back](#maths) <br>
 ```java
+public class Solution {
+    public int reverse(int A) {
+        boolean isNeg = (A < 0) ? true : false;
+        A = Math.abs(A);
+        int temp = A;
+        int dgts = 0;
+        while (temp > 0) {
+            temp = temp / 10;
+            dgts++;
+        }
+        dgts--;
+        double res = 0.;
+        while (A > 0) {
+            int rem = A % 10;
+            A = A / 10;
+            res = res + Math.pow(10, dgts) * rem;
+            dgts--;
+        }
+        if (res )
+        if (isNeg) { 
+            res = res * -1;
+        }
+        return (int) res;
+    }
+}
 ```
 <a name="ques-43"></a>
 **GCD** [Back](#maths) <br>
 ```java
+public class Solution {
+	public int gcd(int a, int b) {
+	    if(a == 0) return b;
+	    return gcd(b%a, a);
+	}
+}
 ```
 <a name="ques-44"></a>
 **Trailing Zeroes** [Back](#maths) <br>
@@ -976,6 +1082,43 @@ public class Solution {
 <a name="ques-45"></a>
 **Sorted Permutation Rank** [Back](#maths) <br>
 ```java
+public class Solution {
+    public int findRank(String A) {
+        Set<Character> countSet = new TreeSet<>();
+        for (int index=0; index < A.length(); index++) {
+            countSet.add(A.charAt(index));
+        }
+        long rank = 0;
+        // System.out.println(countSet);
+        for (int index=0; index < A.length(); index++) {
+            for (Character c : countSet) {
+                if (c != A.charAt(index)) {
+                    // System.out.println("No match for " + c);
+                    int perm=A.length()-index-1;
+                    rank = rank + factorial(perm);
+                    // System.out.println("Rank : " + rank);
+                } else {
+                    // System.out.println("Match for " + c);
+                    // System.out.println("Rank : " + rank);
+                    break;
+                }
+            }
+            countSet.remove(A.charAt(index));
+        }
+        return (int) ((rank+1) % 1000003);
+    }
+    
+    long[] fact = new long[100];
+    private long factorial(int f) {
+        if (f == 0 || f == 1) {
+            return 1;
+        }
+        if (fact[f] == 0l) {
+            fact[f] = f * (factorial(f-1) %1000003) %1000003;
+        }
+        return fact[f];
+    }
+}
 ```
 <a name="ques-46"></a>
 **Largest Coprime Divisor** [Back](#maths) <br>
@@ -988,14 +1131,86 @@ public class Solution {
 <a name="ques-48"></a>
 **ReArrange Array** [Back](#maths) <br>
 ```java
+public class Solution {
+	public void arrange(ArrayList<Integer> A) {
+	   	    int n = A.size();
+	    for (int i = 0; i < n; i++) A.set(i, A.get(i) + (A.get(A.get(i)) % n) * n );
+	    for (int i = 0; i < n; i++) A.set(i, A.get(i) / n);
+	}
+}
 ```
 <a name="ques-49"></a>
 **Grid Unique Paths** [Back](#maths) <br>
 ```java
+public class Solution {
+	public int uniquePaths(int a, int b) {
+	      /* If either 1 row or 1 column are there then the only way to end
+	         is to traverse through that row or column respectively.*/
+	    if(a==1 || b==1)
+	      return 1;
+	      /*If there are more than one row and column then u need to move 
+	        either right or down reducing one row or one column respectively
+	        and adding that way in answer*/
+	    else{
+	        int ans = 0;
+	        ans = uniquePaths(a-1,b)+uniquePaths(a,b-1);
+	        return ans;
+	    }
+	}
+}
 ```
 <a name="ques-50"></a>
 **Numbers of length N and value less than K** [Back](#maths) <br>
 ```java
+public class Solution {
+    public boolean zeroPresent(ArrayList<Integer> A,int num){
+        for(int i=0;i<A.size();i++){
+            if(A.get(i)==num){
+                return true;
+            }
+        }
+        return false;
+    }
+    public int calculate(ArrayList<Integer> A,ArrayList<Integer> number,int index,int B){
+        if(index==B){
+            return 0;
+        }
+        int lessthan = 0;
+        for(int i=0;i<A.size();i++){
+            if(A.get(i) < number.get(index)){
+                if(A.get(i)==0&&index==0&&B>1)
+                    lessthan--;
+                lessthan++;
+            }
+        }
+        int result = lessthan*((int)Math.pow(A.size(),B-index-1));
+        boolean isPresent = zeroPresent(A,number.get(index));
+        if(isPresent){
+            result = result+(calculate(A,number,index+1,B));
+        }
+        return result;
+    }
+    public int solve(ArrayList<Integer> A, int B, int C) {
+        ArrayList<Integer> number = new ArrayList<Integer>();
+        while(C!=0){
+            number.add(0,C%10);
+            C /= 10;
+        }
+        if(number.size()<B){
+            return 0;
+        }
+        else if(number.size()>B){
+            boolean isZero = zeroPresent(A,0);
+            if(isZero&&B>1){
+                return (A.size()-1)*((int)Math.pow(A.size(),B-1));
+            }else{
+                return (int)Math.pow(A.size(),B);
+            }
+        }else{
+            return calculate(A,number,0,B);
+        }
+    }
+}
 ```
 
 ### Binary Search
