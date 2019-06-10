@@ -55,7 +55,7 @@ Solutions to the common DSA problems in Java
 |17| [Find Duplicate in Array](https://www.interviewbit.com/problems/find-duplicate-in-array/) Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.    | [Java](#ques-18)  | _O(n)_         | _O(1)_          | Easy         |  |
 |18| [Max Distance](https://www.interviewbit.com/problems/max-distance/) Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j]. If there is no solution possible, return -1.     | [Java](#ques-19)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked|
 |19| [Min Unsorted Subarray](https://www.interviewbit.com/problems/maximum-unsorted-subarray/)      | [Java](#ques-20)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked|
-|20| [Maximum Consecutive Gap](https://www.interviewbit.com/problems/maximum-consecutive-gap/)      | [Java](#ques-21)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked, PigeonHole Sorting using bucket method|
+|20| [Maximum Consecutive Gap](https://www.interviewbit.com/problems/maximum-consecutive-gap/)      | [Java](#ques-21)  | _O(n)_         | _O(n)_          | Medium         |  PigeonHole Sorting using bucket method|
 |21| [Rotate Matrix](https://www.interviewbit.com/problems/rotate-matrix/)      | [Java](#ques-22)  | _O(n*n)_         | _O(1)_          | Medium         |  Good Question|
 |22| [MAXSPPROD](https://www.interviewbit.com/problems/maxspprod/) You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following: LeftSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](i>j). If multiple A[j]’s are present in multiple positions, the LeftSpecialValue is the maximum value of j. RightSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](j>i). If multiple A[j]s are present in multiple positions, the RightSpecialValue is the minimum value of j. Write a program to find the maximum special product of any integer in the array.     | [Java](#ques-23)  | _O(n)_         | _O(n)_          | Medium         |  Good Question|
 |23| [Next Permutation](https://www.interviewbit.com/problems/next-permutation/)      | [Java](#ques-24)  | _O(nlogn)_(only if already highest perm, else O(n + logn))         | _O(1)_          | Medium         |  Good Question, Analyse diff examples, Bookmarked|
@@ -88,9 +88,9 @@ Solutions to the common DSA problems in Java
 |14| [Trailing Zeroes](https://www.interviewbit.com/problems/trailing-zeros-in-factorial/)      | [Java](#ques-44)  | _O((A)^1/5)_         | _O(1)_          | Easy         | Good Question|
 |15| [Sorted Permutation Rank](https://www.interviewbit.com/problems/sorted-permutation-rank/) Given a string, find the rank of the string amongst its permutations sorted lexicographically. Assume that no characters are repeated.     | [Java](#ques-45)  | _O(A^2)_         | _O(1)_          | Medium         | Good Question, Consider usage of factorial in case of modulo|
 |16| [Largest Coprime Divisor](https://www.interviewbit.com/problems/largest-coprime-divisor/)      | [Java](#ques-46)  | _O(A^2)_         | _O(1)_          | Medium         | Bookmarked|
-|17| [Sorted Permutation Rank with Repeats](https://www.interviewbit.com/problems/sorted-permutation-rank-with-repeats/)      | [Java](#ques-47)  | _O(A^2)_         | _O(1)_          | Medium         | Bookmarked, Multiplicative Inverse Modulo(use long in case of modulo) |
-|18| [ReArrange Array](https://www.interviewbit.com/problems/rearrange-array/) Rearrange a given array so that Arr[i] becomes Arr[Arr[i]] with O(1) extra space.     | [Java](#ques-48)  | _O(A)_         | _O(1)_          | Medium         | Bookmarked, Encoding 2 values in one |
-|19| [Grid Unique Paths](https://www.interviewbit.com/problems/grid-unique-paths/) A robot is located at the top-left corner of an A x B grid. The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below). How many possible unique paths are there?     | [Java](#ques-49)  | _O(min(row,col))_         | _O(1)_          | Easy         | Bookmarked, DP or Combinatorial |
+|17| [Sorted Permutation Rank with Repeats](https://www.interviewbit.com/problems/sorted-permutation-rank-with-repeats/)      | [Java](#ques-47)  | _O(A^2)_         | _O(1)_          | Medium         | Multiplicative Inverse Modulo(use long in case of modulo) |
+|18| [ReArrange Array](https://www.interviewbit.com/problems/rearrange-array/) Rearrange a given array so that Arr[i] becomes Arr[Arr[i]] with O(1) extra space.     | [Java](#ques-48)  | _O(A)_         | _O(1)_          | Medium         | Encoding 2 values in one |
+|19| [Grid Unique Paths](https://www.interviewbit.com/problems/grid-unique-paths/) A robot is located at the top-left corner of an A x B grid. The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below). How many possible unique paths are there?     | [Java](#ques-49)  | _O(min(row,col))_         | _O(1)_          | Easy         | DP or Combinatorial |
 |20| [Numbers of length N and value less than K](https://www.interviewbit.com/problems/numbers-of-length-n-and-value-less-than-k/) Given a set of digits (A) in sorted order, find how many numbers of length B are possible whose value is less than number C.     | [Java](#ques-50)  | _O(B)_         | _O(1)_          | Medium         | Bookmarked |
 
 <a name="binarysearch"></a>
@@ -108,8 +108,8 @@ Solutions to the common DSA problems in Java
 |7| [Implement Power Function](https://www.interviewbit.com/problems/implement-power-function/) Implement pow(x, n) % d. In other words, given x, n and d, find (x^n % d)     | [Java](#ques-57)  | _O(log(power))_          | _O(1)_          | Easy         |  Handle Negative value carefully, Bookmarked |
 |8| [Rotated Sorted Array Search](https://www.interviewbit.com/problems/rotated-sorted-array-search/)      | [Java](#ques-58)  | _O(log(n))_          | _O(1)_          | Easy         |   |
 |9| [Search for a Range](https://www.interviewbit.com/problems/search-for-a-range/)      | [Java](#ques-59)  | _O(log(n))_          | _O(1)_          | Easy         |   |
-|10| [Painter's Partition Problem](https://www.interviewbit.com/problems/painters-partition-problem/) You have to paint N boards of length {A0, A1, A2, A3 … AN-1}. There are K painters available and you are also given how much time a painter takes to paint 1 unit of board. You have to get this job done as soon as possible under the constraints that any painter will only paint contiguous sections of board.     | [Java](#ques-60)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Bookmarked, Example to use BS in monotonic functions   |
-|11| [Allocate Books](https://www.interviewbit.com/problems/allocate-books/)      | [Java](#ques-61)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Bookmarked, Example to use BS in monotonic functions   |
+|10| [Painter's Partition Problem](https://www.interviewbit.com/problems/painters-partition-problem/) You have to paint N boards of length {A0, A1, A2, A3 … AN-1}. There are K painters available and you are also given how much time a painter takes to paint 1 unit of board. You have to get this job done as soon as possible under the constraints that any painter will only paint contiguous sections of board.     | [Java](#ques-60)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Example to use BS in monotonic functions   |
+|11| [Allocate Books](https://www.interviewbit.com/problems/allocate-books/)      | [Java](#ques-61)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Example to use BS in monotonic functions   |
 |12| [Median of Array](https://www.interviewbit.com/problems/median-of-array/) There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays ( The median of the array formed by merging both the arrays ).The overall run time complexity should be O(log (m+n)).     | [Java](#ques-62)  | _O(log(m+n))_          | _O(1)_          | Hard         | Bookmarked   |
 
 <a name="strings"></a>
@@ -122,23 +122,23 @@ Solutions to the common DSA problems in Java
 |2| [Longest Common Prefix](https://www.interviewbit.com/problems/longest-common-prefix/) Write a function to find the longest common prefix string amongst an array of strings. Longest common prefix for a pair of strings S1 and S2 is the longest string S which is the prefix of both S1 and S2.     | [Java](#ques-64)  | _O(n*min(String Length))_         | _O(1)_          | Easy         |   |
 |3| [Count And Say](https://www.interviewbit.com/problems/count-and-say/) The count-and-say sequence is the sequence of integers beginning as follows: 1, 11, 21, 1211, 111221, ...     | [Java](#ques-65)  | _O(n*max(String Length))_         | _O(1)_          | Easy         |   |
 |4| [Minimum Characters required to make a String Palindromic](https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/)      | [Java](#ques-66)  | _O(n)_         | _O(1)_          | Easy         |   |
-|5| [Longest Palindromic Substring](https://www.interviewbit.com/problems/longest-palindromic-substring/)      | [Java](#ques-67)  | _O(n*n)_         | _O(1)_          | Medium         |  Bookmarked, 1 length is always palindrome |
-|6| [StrStr](https://www.interviewbit.com/problems/implement-strstr/) Locate a substring ( needle ) in a string ( haystack )     | [Java](#ques-68)  | _O(n)_         | _O(m)_          | Medium         |  Bookmarked, KMP Algo |
+|5| [Longest Palindromic Substring](https://www.interviewbit.com/problems/longest-palindromic-substring/)      | [Java](#ques-67)  | _O(n*n)_         | _O(1)_          | Medium         |  1 length is always palindrome |
+|6| [StrStr](https://www.interviewbit.com/problems/implement-strstr/) Locate a substring ( needle ) in a string ( haystack )     | [Java](#ques-68)  | _O(n)_         | _O(m)_          | Medium         |  KMP Algo |
 |7| [Compare Version Numbers](https://www.interviewbit.com/problems/compare-version-numbers/)      | [Java](#ques-69)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked|
 |8| [Atoi](https://www.interviewbit.com/problems/atoi/) Implement atoi to convert a string to an integer.     | [Java](#ques-70)  | _O(n)_         | _O(1)_          | Easy         |  Bookmarked|
 |9| [Length of Last Word](https://www.interviewbit.com/problems/length-of-last-word/)      | [Java](#ques-71)  | _O(n)_         | _O(1)_          | Easy         |  |
-|10| [Reverse the String](https://www.interviewbit.com/problems/reverse-the-string/)      | [Java](#ques-72)  | _O(n)_         | _O(n)_          | Easy         | Bookmarked, Ask if split function can be used|
-|11| [Valid Number](https://www.interviewbit.com/problems/valid-number/)      | [Java](#ques-73)  | _O(n)_         | _O(1)_          | Easy         | Bookmarked, Lots of corner cases|
-|12| [Valid Ip Addresses](https://www.interviewbit.com/problems/valid-ip-addresses/)      | [Java](#ques-74)  | _O(n)_         | _O(1)_          | Easy         | Bookmarked, Placing 3 dots|
+|10| [Reverse the String](https://www.interviewbit.com/problems/reverse-the-string/)      | [Java](#ques-72)  | _O(n)_         | _O(n)_          | Easy         | Ask if split function can be used|
+|11| [Valid Number](https://www.interviewbit.com/problems/valid-number/)      | [Java](#ques-73)  | _O(n)_         | _O(1)_          | Easy         | Lots of corner cases|
+|12| [Valid Ip Addresses](https://www.interviewbit.com/problems/valid-ip-addresses/)      | [Java](#ques-74)  | _O(n)_         | _O(1)_          | Easy         | Placing 3 dots|
 |13| [Roman To Integer](https://www.interviewbit.com/problems/roman-to-integer/)      | [Java](#ques-75)  | _O(n)_         | _O(1)_          | Easy         | Bookmarked|
-|14| [Integer To Roman](https://www.interviewbit.com/problems/integer-to-roman/)      | [Java](#ques-76)  | _O(n)_         | _O(1)_          | Easy         | Bookmarked, Ask if you can have diff arrays to store value|
-|15| [Add Binary Strings](https://www.interviewbit.com/problems/add-binary-strings/)      | [Java](#ques-77)  | _O(n)_         | _O(1)_          | Easy         | Bookmarked, Shorter Solution|
-|16| [Power of 2](https://www.interviewbit.com/problems/power-of-2/)      | [Java](#ques-78)  | _O(logn)_         | _O(1)_          | Easy         | Bookmarked, Use of CompareTo function|
+|14| [Integer To Roman](https://www.interviewbit.com/problems/integer-to-roman/)      | [Java](#ques-76)  | _O(n)_         | _O(1)_          | Easy         | Ask if you can have diff arrays to store value|
+|15| [Add Binary Strings](https://www.interviewbit.com/problems/add-binary-strings/)      | [Java](#ques-77)  | _O(n)_         | _O(1)_          | Easy         | Shorter Solution|
+|16| [Power of 2](https://www.interviewbit.com/problems/power-of-2/)      | [Java](#ques-78)  | _O(logn)_         | _O(1)_          | Easy         | Use of CompareTo function|
 |17| [Multiply Strings](https://www.interviewbit.com/problems/multiply-strings/)      | [Java](#ques-79)  | _O(n*m)_         | _O(1)_          | Easy         | Bookmarked|
-|18| [Justified Text](https://www.interviewbit.com/problems/justified-text/)      | [Java](#ques-80)  | _O(n*n)_         | _O(n)_          | HARD         | Bookmarked, Used Greedy Approach|
+|18| [Justified Text](https://www.interviewbit.com/problems/justified-text/)      | [Java](#ques-80)  | _O(n*n)_         | _O(n)_          | HARD         | Used Greedy Approach|
 |19| [ZigZag String](https://www.interviewbit.com/problems/zigzag-string/)      | [Java](#ques-81)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked|
 |20| [Pretty Json](https://www.interviewbit.com/problems/pretty-json/)      | [Java](#ques-82)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked|
-|21| [Stringoholics](https://www.interviewbit.com/problems/stringoholics/)      | [Java](#ques-83)  | _O(n*m, n*maxNum)_         | _O(n+m)_ n is input array length, m is average size of each string          | HARD         | Bookmarked, Covers many concepts - KMP, LCM|
+|21| [Stringoholics](https://www.interviewbit.com/problems/stringoholics/)      | [Java](#ques-83)  | _O(n*m, n*maxNum)_         | _O(n+m)_ n is input array length, m is average size of each string          | HARD         | Covers many concepts - KMP, LCM|
 |22| [Amazing Substring]() You are given a string S, and you have to find all the amazing substrings of S. Amazing Substring is one that starts with a vowel (a, e, i, o, u, A, E, I, O, U).     | [Java](#ques-82)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked|
 
 <a name="bitmanipulation"></a>
@@ -149,10 +149,10 @@ Solutions to the common DSA problems in Java
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Min XOR Value](https://www.interviewbit.com/problems/min-xor-value/)      | [Java](#ques-84)  | _O(nlogn)_         | _O(1)_          | Easy         | Bookmarked  |
 |2| [Single Number](https://www.interviewbit.com/problems/single-number/)      | [Java](#ques-85)  | _O(n)_         | _O(1)_          | Easy         |  |
-|3| [Number of 1 Bits](https://www.interviewbit.com/problems/number-of-1-bits/)      | [Java](#ques-86)  | _O(1)_         | _O(1)_          | Easy         | Bookmarked, 2nd Solution with bits trick |
-|4| [Reverse Bits](https://www.interviewbit.com/problems/reverse-bits/)      | [Java](#ques-87)  | _O(1)_         | _O(1)_          | Easy         | Bookmarked, 2nd Solution |
-|5| [Single Number II](https://www.interviewbit.com/problems/single-number-ii/)      | [Java](#ques-88)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked, 3x+1 |
-|6| [Divide Integers](https://www.interviewbit.com/problems/divide-integers/)      | [Java](#ques-89)  | _O(log(dividend))_         | _O(1)_          | Medium         | Bookmarked, 1 approach is to subtract divisor, but takes O(dividend) time |
+|3| [Number of 1 Bits](https://www.interviewbit.com/problems/number-of-1-bits/)      | [Java](#ques-86)  | _O(1)_         | _O(1)_          | Easy         | 2nd Solution with bits trick |
+|4| [Reverse Bits](https://www.interviewbit.com/problems/reverse-bits/)      | [Java](#ques-87)  | _O(1)_         | _O(1)_          | Easy         | 2nd Solution |
+|5| [Single Number II](https://www.interviewbit.com/problems/single-number-ii/)      | [Java](#ques-88)  | _O(n)_         | _O(1)_          | Medium         | 3x+1 |
+|6| [Divide Integers](https://www.interviewbit.com/problems/divide-integers/)      | [Java](#ques-89)  | _O(log(dividend))_         | _O(1)_          | Medium         | 1 approach is to subtract divisor, but takes O(dividend) time |
 |7| [Different Bits Sum Pairwise](https://www.interviewbit.com/problems/different-bits-sum-pairwise/)      | [Java](#ques-90)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked |
 
 <a name="twopointers"></a>
@@ -163,18 +163,18 @@ Solutions to the common DSA problems in Java
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Merge Two Sorted Lists II](https://www.interviewbit.com/problems/merge-two-sorted-lists-ii/)      | [Java](#ques-91)  | _O(n+m)_         | _O(1)_          | Easy         |   |
 |2| [Intersection Of Sorted Arrays](https://www.interviewbit.com/problems/intersection-of-sorted-arrays/)      | [Java](#ques-92)  | _O(n+m)_         | _O(1)_          | Easy         |   |
-|3| [Minimize the absolute difference](https://www.interviewbit.com/problems/minimize-the-absolute-difference/)      | [Java](#ques-93)  | _O(maxArrayLength)_         | _O(1)_          | Easy         | Bookmarked, Abs diff can be minimized either decreasing max element or increasing min element  |
-|4| [Remove Duplicates from Sorted Array](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array/)      | [Java](#ques-94)  | _O(n)_         | _O(1)_          | Easy         | Bookmarked, Removing Element increases complexity, just set elements with 2nd pointer  |
+|3| [Minimize the absolute difference](https://www.interviewbit.com/problems/minimize-the-absolute-difference/)      | [Java](#ques-93)  | _O(maxArrayLength)_         | _O(1)_          | Easy         | Abs diff can be minimized either decreasing max element or increasing min element  |
+|4| [Remove Duplicates from Sorted Array](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array/)      | [Java](#ques-94)  | _O(n)_         | _O(1)_          | Easy         | Removing Element increases complexity, just set elements with 2nd pointer  |
 |5| [Remove Duplicates from Sorted Array 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array-ii/)      | [Java](#ques-95)  | _O(n)_         | _O(1)_          | Easy         | Bookmarked  |
 |6| [Remove Element from Array](https://www.interviewbit.com/problems/remove-element-from-array/)      | [Java](#ques-96)  | _O(n)_         | _O(1)_          | Easy         |   |
 |6| [Remove Element from Array](https://www.interviewbit.com/problems/remove-element-from-array/)      | [Java](#ques-97)  | _O(n)_         | _O(1)_          | Easy         |   |
 |7| [Sort by Color](https://www.interviewbit.com/problems/sort-by-color/)      | [Java](#ques-98)  | _O(n)_         | _O(1)_          | Easy         |   |
-|8| [Diffk](https://www.interviewbit.com/problems/diffk/)      | [Java](#ques-99)  | _O(n)_         | _O(1)_          | Easy         |  Bookmarked, Start both pointers from 0 and not from opp. extreme ends|
+|8| [Diffk](https://www.interviewbit.com/problems/diffk/)      | [Java](#ques-99)  | _O(n)_         | _O(1)_          | Easy         |  Start both pointers from 0 and not from opp. extreme ends|
 |9| [3 Sum](https://www.interviewbit.com/problems/3-sum/)      | [Java](#ques-100)  | _O(n^2 + nlogn)_         | _O(1)_          | Easy         |  Bookmarked|
-|10| [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)      | [Java](#ques-101)  | _O(n^2 + nlogn)_         | _O(1)_          | Medium         |  Bookmarked, Handle Duplicates|
-|11| [Max Continuous Series of 1s](https://www.interviewbit.com/problems/max-continuous-series-of-1s/)      | [Java](#ques-102)  | _O(n)_         | _O(1)_          | Medium         |  Bookmarked, Keeping window size having zeroes <= B|
-|12| [Array 3 Pointers](https://www.interviewbit.com/problems/array-3-pointers/)      | [Java](#ques-103)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Bookmarked, Abs diff can be minimized either decreasing max element or increasing min element   |
-|13| [Counting Triangles](https://www.interviewbit.com/problems/counting-triangles/)      | [Java](#ques-104)  | _O(n^2)_         | _O(1)_          | Medium         | Bookmarked, (A+B) > C by sorting the array   |
+|10| [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)      | [Java](#ques-101)  | _O(n^2 + nlogn)_         | _O(1)_          | Medium         |  Handle Duplicates|
+|11| [Max Continuous Series of 1s](https://www.interviewbit.com/problems/max-continuous-series-of-1s/)      | [Java](#ques-102)  | _O(n)_         | _O(1)_          | Medium         |  Keeping window size having zeroes <= B|
+|12| [Array 3 Pointers](https://www.interviewbit.com/problems/array-3-pointers/)      | [Java](#ques-103)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Abs diff can be minimized either decreasing max element or increasing min element   |
+|13| [Counting Triangles](https://www.interviewbit.com/problems/counting-triangles/)      | [Java](#ques-104)  | _O(n^2)_         | _O(1)_          | Medium         | A+B) > C by sorting the array   |
 |14| [Container With Most Water](https://www.interviewbit.com/problems/container-with-most-water/)      | [Java](#ques-105)  | _O(n)_         | _O(1)_          | Medium         | Bookmarked   |
 
 <a name="linkedlist"></a>
@@ -193,7 +193,7 @@ Solutions to the common DSA problems in Java
 |7| [Remove Nth Node from List End](https://www.interviewbit.com/problems/remove-nth-node-from-list-end/)      | [Java](#ques-113)  | _O(n)_         | _O(1)_          | Easy         |   |
 |8| [Rotate List](https://www.interviewbit.com/problems/rotate-list/)      | [Java](#ques-114)  | _O(n)_         | _O(1)_          | Easy         |   |
 |9| [Reverse Lists 2](https://www.interviewbit.com/problems/reverse-link-list-ii/)      | [Java](#ques-115)  | _O(n)_         | _O(1)_          | Easy         |  Bookmarked |
-|10| [Reorder List](https://www.interviewbit.com/problems/reorder-list/)      | [Java](#ques-116)  | _O(n)_         | _O(1)_          | Medium         |  Bookmarked, Reverse Half and merge alternate |
+|10| [Reorder List](https://www.interviewbit.com/problems/reorder-list/)      | [Java](#ques-116)  | _O(n)_         | _O(1)_          | Medium         |  Reverse Half and merge alternate |
 |11| [Swap List Nodes in pairs](https://www.interviewbit.com/problems/swap-list-nodes-in-pairs/)      | [Java](#ques-117)  | _O(n)_         | _O(1)_          | Medium         |   |
 |12| [K reverse linked list](https://www.interviewbit.com/problems/k-reverse-linked-list/)      | [Java](#ques-118)  | _O(n)_         | _O(1)_          | Medium         |   |
 |13| [Add Two Numbers as Lists](https://www.interviewbit.com/problems/add-two-numbers-as-lists/)      | [Java](#ques-119)  | _O(n)_         | _O(1)_          | Easy         |   |
@@ -211,8 +211,8 @@ Solutions to the common DSA problems in Java
 |2| [Redundant Braces](https://www.interviewbit.com/problems/redundant-braces/)      | [Java](#ques-124)  | _O(n)_         | _O(n)_          | Easy         |   |
 |3| [Nearest Smaller Element](https://www.interviewbit.com/problems/nearest-smaller-element/)      | [Java](#ques-125)  | _O(n)_         | _O(n)_          | Easy         |   |
 |4| [Evaluate Expression](https://www.interviewbit.com/problems/evaluate-expression/)      | [Java](#ques-126)  | _O(n)_         | _O(n)_          | Easy         |   |
-|5| [Min Stack](https://www.interviewbit.com/problems/min-stack/)      | [Java](#ques-127)  | _O(1)_         | _O(1)_          | Easy         |  Bookmarked, Doing Min in O(1) space is good one|
-|6| [Largest Rectangle in Histogram](https://www.interviewbit.com/problems/largest-rectangle-in-histogram/)      | [Java](#ques-128)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked, Do read brute force and think in terms of stack|
+|5| [Min Stack](https://www.interviewbit.com/problems/min-stack/)      | [Java](#ques-127)  | _O(1)_         | _O(1)_          | Easy         |  Doing Min in O(1) space is good one|
+|6| [Largest Rectangle in Histogram](https://www.interviewbit.com/problems/largest-rectangle-in-histogram/)      | [Java](#ques-128)  | _O(n)_         | _O(n)_          | Medium         |  Do read brute force and think in terms of stack|
 |7| [Rain Water Trapped](https://www.interviewbit.com/problems/rain-water-trapped/)      | [Java](#ques-129)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked |
 
 
@@ -221,7 +221,7 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Sliding Window Maximum](https://www.interviewbit.com/problems/sliding-window-maximum/)      | [Java](#ques-130)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked, Finding Min is reverse of current logic|
+|1| [Sliding Window Maximum](https://www.interviewbit.com/problems/sliding-window-maximum/)      | [Java](#ques-130)  | _O(n)_         | _O(n)_          | Medium         |  Finding Min is reverse of current logic|
 
 
 <a name="backtracking"></a>
@@ -230,18 +230,18 @@ Solutions to the common DSA problems in Java
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [ReverseLinkedList](https://www.interviewbit.com/problems/reverse-link-list-recursion/)      | [Java](#ques-131)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked |
-|2| [Modular Expression](https://www.interviewbit.com/problems/modular-expression/)      | [Java](#ques-132)  | _O(log(power))_         | _O(1)_          | Easy         |  Bookmarked, Modular Exponentiation |
-|3| [Subset](https://www.interviewbit.com/problems/subset/)      | [Java](#ques-133)  | _O(2^n)_         | _O(n)_          | Easy         |  Bookmarked, Backtracking general algo |
-|4| [Combinations](https://www.interviewbit.com/problems/combinations/)      | [Java](#ques-134)  | _O(nCk)_         | _O(n)_          | Easy         |  Bookmarked, Backtracking general algo |
-|5| [Combination Sum](https://www.interviewbit.com/problems/combination-sum/)      | [Java](#ques-135)  | _O(2^n)_         | _O(targetSum)_          | Easy         |  Bookmarked, Backtracking general algo, Use Map for checking duplicates |
+|2| [Modular Expression](https://www.interviewbit.com/problems/modular-expression/)      | [Java](#ques-132)  | _O(log(power))_         | _O(1)_          | Easy         |  Modular Exponentiation |
+|3| [Subset](https://www.interviewbit.com/problems/subset/)      | [Java](#ques-133)  | _O(2^n)_         | _O(n)_          | Easy         |  Backtracking general algo |
+|4| [Combinations](https://www.interviewbit.com/problems/combinations/)      | [Java](#ques-134)  | _O(nCk)_         | _O(n)_          | Easy         |  Backtracking general algo |
+|5| [Combination Sum](https://www.interviewbit.com/problems/combination-sum/)      | [Java](#ques-135)  | _O(2^n)_         | _O(targetSum)_          | Easy         |  Backtracking general algo, Use Map for checking duplicates |
 |6| [Combination Sum 2](https://www.interviewbit.com/problems/combination-sum-ii/)      | [Java](#ques-136)  | _O(2^n)_         | _O(targetSum)_          | Easy         |   |
-|7| [SubSets 2](https://www.interviewbit.com/problems/subsets-ii/)      | [Java](#ques-137)  | _O(2^n)_         | _O(n)_          | Easy         |  Bookmarked, Either use hashmap or skip continuous elements in recursion function |
+|7| [SubSets 2](https://www.interviewbit.com/problems/subsets-ii/)      | [Java](#ques-137)  | _O(2^n)_         | _O(n)_          | Easy         |  Either use hashmap or skip continuous elements in recursion function |
 |8| [Letter Phone](https://www.interviewbit.com/problems/letter-phone/)      | [Java](#ques-138)  | _O(3^n)_         | _O(n)_          | Easy         |   |
-|9| [Palindrome Partitioning](https://www.interviewbit.com/problems/palindrome-partitioning/)      | [Java](#ques-139)  | _O(2^n)_         | _O(n)_          | Easy         |  Bookmarked, can maintain 2-D array to keep true/false whether start-end is palindrome or not (DP) |
+|9| [Palindrome Partitioning](https://www.interviewbit.com/problems/palindrome-partitioning/)      | [Java](#ques-139)  | _O(2^n)_         | _O(n)_          | Easy         |  can maintain 2-D array to keep true/false whether start-end is palindrome or not (DP) |
 |10| [Generate all Parentheses II](https://www.interviewbit.com/problems/generate-all-parentheses-ii/)      | [Java](#ques-140)  | _O(2^n)_         | _O(2n)_          | Easy         |   |
-|11| [Permutations](https://www.interviewbit.com/problems/permutations/)      | [Java](#ques-141)  | _O(n!)_         | _O(n)_          | Medium         | Bookmarked, Either use visited array or remove integer from input array then add back while backtracking  |
-|12| [Gray Code](https://www.interviewbit.com/problems/gray-code/)      | [Java](#ques-142)  | _O(2^n)_         | _O(n)_          | Medium         | Bookmarked, Other Solution of using reverse of (N-1) and prefixing 1 is good  |
-|13| [Kth Permutation Sequence](https://www.interviewbit.com/problems/kth-permutation-sequence/)      | [Java](#ques-143)  | _O(nk)_         | _O(n)_          | Medium         | Bookmarked, Use Maths plus recursion, first digit = k/(n-1)!+1  |
+|11| [Permutations](https://www.interviewbit.com/problems/permutations/)      | [Java](#ques-141)  | _O(n!)_         | _O(n)_          | Medium         | Either use visited array or remove integer from input array then add back while backtracking  |
+|12| [Gray Code](https://www.interviewbit.com/problems/gray-code/)      | [Java](#ques-142)  | _O(2^n)_         | _O(n)_          | Medium         | Other Solution of using reverse of (N-1) and prefixing 1 is good  |
+|13| [Kth Permutation Sequence](https://www.interviewbit.com/problems/kth-permutation-sequence/)      | [Java](#ques-143)  | _O(nk)_         | _O(n)_          | Medium         | Use Maths plus recursion, first digit = k/(n-1)!+1  |
 |14| [NQueens](https://www.interviewbit.com/problems/nqueens/)      | [Java](#ques-144)  | _O(n*n)_         | _O(n)_          | Medium         | Bookmarked  |
 
 
@@ -251,19 +251,19 @@ Solutions to the common DSA problems in Java
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Colorful Number](https://www.interviewbit.com/problems/colorful-number/)      | [Java](#ques-145)  | _O(n*n)_         | _O(n)_          | Easy         |   |
-|2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/)      | [Java](#ques-146)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked, 3 conditions - element 0, sum 0 or sum repeated |
+|2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/)      | [Java](#ques-146)  | _O(n)_         | _O(n)_          | Easy         |  3 conditions - element 0, sum 0 or sum repeated |
 |3| [2 Sum](https://www.interviewbit.com/problems/2-sum/)      | [Java](#ques-147)  | _O(n)_         | _O(1)_          | Easy         |   |
-|4| [4 Sum](https://www.interviewbit.com/problems/4-sum/)      | [Java](#ques-148)  | _O(n*n+nlogn)_         | _O(n)_          | Medium         |  Bookmarked, Either use n^3 solution using 2 pointers and hashSet for unique sets or or use customised sorting plus hashSet |
-|5| [Valid Sudoku](https://www.interviewbit.com/problems/valid-sudoku/)      | [Java](#ques-149)  | _O(n*n)_         | _O(n*n)_          | Medium         |  Bookmarked, check row, col and box, keep different maps |
+|4| [4 Sum](https://www.interviewbit.com/problems/4-sum/)      | [Java](#ques-148)  | _O(n*n+nlogn)_         | _O(n)_          | Medium         |  Either use n^3 solution using 2 pointers and hashSet for unique sets or or use customised sorting plus hashSet |
+|5| [Valid Sudoku](https://www.interviewbit.com/problems/valid-sudoku/)      | [Java](#ques-149)  | _O(n*n)_         | _O(n*n)_          | Medium         |  check row, col and box, keep different maps |
 |6| [Diffk II](https://www.interviewbit.com/problems/diffk-ii/)      | [Java](#ques-150)  | _O(n)_         | _O(n)_          | Easy         |   |
-|7| [Anagrams](https://www.interviewbit.com/problems/anagrams/)      | [Java](#ques-151)  | _O(n*m)_ , where m = average length of string       | _O(n)_          | Medium         |  Bookmarked, Good Concept |
+|7| [Anagrams](https://www.interviewbit.com/problems/anagrams/)      | [Java](#ques-151)  | _O(n*m)_ , where m = average length of string       | _O(n)_          | Medium         |  Good Concept |
 |8| [Equal](https://www.interviewbit.com/problems/equal/)      | [Java](#ques-152)  | _O(n*n)_        | _O(n)_          | Medium         |  Bookmarked |
 |9| [Copy List](https://www.interviewbit.com/problems/copy-list/)      | [Java](#ques-153)  | _O(n)_        | _O(n)_          | Medium         |   |
 |10| [Longest Substring Without Repeat](https://www.interviewbit.com/problems/longest-substring-without-repeat/)      | [Java](#ques-154)  | _O(n)_        | _O(n)_          | Medium         | Bookmarked  |
-|11| [Window String](https://www.interviewbit.com/problems/window-string/)      | [Java](#ques-155)  | _O(n)_        | _O(n)_          | Medium         | Bookmarked, Use 2 pointers and map to keep count of characters included - plus and minus   |
+|11| [Window String](https://www.interviewbit.com/problems/window-string/)      | [Java](#ques-155)  | _O(n)_        | _O(n)_          | Medium         | Use 2 pointers and map to keep count of characters included - plus and minus   |
 |12| [Fraction](https://www.interviewbit.com/problems/fraction/)      | [Java](#ques-156)  | _O(n)_        | _O(n)_          | Medium         | Bookmarked   |
-|13| [Points on the Straight Line](https://www.interviewbit.com/problems/points-on-the-straight-line/)      | [Java](#ques-157)  | _O(n*n)_        | _O(n)_          | Medium         | Bookmarked, Slope should be same, Consider first point as start and rest as end and create map and repeat; Keep edge cases like which slopes are valid and others keep in diff variables   |
-|14| [Substring Concatenation](https://www.interviewbit.com/problems/substring-concatenation/)      | [Java](#ques-158)  | _O(n*n)_        | _O(n)_          | Medium         | Bookmarked, Brute force but just using hashmap for string match   |
+|13| [Points on the Straight Line](https://www.interviewbit.com/problems/points-on-the-straight-line/)      | [Java](#ques-157)  | _O(n*n)_        | _O(n)_          | Medium         | Slope should be same, Consider first point as start and rest as end and create map and repeat; Keep edge cases like which slopes are valid and others keep in diff variables   |
+|14| [Substring Concatenation](https://www.interviewbit.com/problems/substring-concatenation/)      | [Java](#ques-158)  | _O(n*n)_        | _O(n)_          | Medium         | Brute force but just using hashmap for string match   |
 
 
 <a name="heaps"></a>
@@ -271,7 +271,7 @@ Solutions to the common DSA problems in Java
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [N max pair combinations](https://www.interviewbit.com/problems/n-max-pair-combinations/)      | [Java](#ques-159)  | _O(nlogn)_         | _O(n)_          | Medium         |  Bookmarked, Create a min heap and loop through n^2 pairs  |
+|1| [N max pair combinations](https://www.interviewbit.com/problems/n-max-pair-combinations/)      | [Java](#ques-159)  | _O(nlogn)_         | _O(n)_          | Medium         |  Create a min heap and loop through n^2 pairs  |
 |2| [Magician and Chocolates](https://www.interviewbit.com/problems/magician-and-chocolates/)      | [Java](#ques-160)  | _O(klogn)_         | _O(n)_          | Easy         |    |
 |3| [Merge K Sorted Lists](https://www.interviewbit.com/problems/merge-k-sorted-lists/)      | [Java](#ques-161)  | _O(Nlogk)_, where k = initial lists and N = total sum of nodes from all lists         | _O(k)_          | Medium         |    |
 
@@ -283,7 +283,7 @@ Solutions to the common DSA problems in Java
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Distinct Numbers in Window](https://www.interviewbit.com/problems/distinct-numbers-in-window/)      | [Java](#ques-162)  | _O(n)_         | _O(n)_          | Easy         |    |
 |2| [LRU](https://www.interviewbit.com/problems/lru-cache/)      | [Java](#ques-163)  | _O(1)_ for get and O(n) for set         | _O(n)_          | Easy         |    |
-|3| [Ways to form Max Heap](https://www.interviewbit.com/problems/ways-to-form-max-heap/)      | [Java](#ques-164)  | _O(log2n^2)_          | _O(log2n)_          | Hard         |  Bookmarked, T(n) = n-1Cl*T(l)*T(r), where r = n-1-l  |
+|3| [Ways to form Max Heap](https://www.interviewbit.com/problems/ways-to-form-max-heap/)      | [Java](#ques-164)  | _O(log2n^2)_          | _O(log2n)_          | Hard         |  T(n) = n-1Cl*T(l)*T(r), where r = n-1-l  |
 
 
 <a name="trees"></a>
@@ -292,14 +292,14 @@ Solutions to the common DSA problems in Java
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Valid Binary Search Tree](https://www.interviewbit.com/problems/valid-binary-search-tree/)      | [Java](#ques-165)  | _O(n)_         | _O(log2n)_          | Easy         |    |
-|2| [Next Greater Number BST](https://www.interviewbit.com/problems/next-greater-number-bst/)      | [Java](#ques-166)  | _O(logn)_         | _O(1)_          | Easy         |  Bookmarked, Good Question plus also know inorder using 1 stack  |
+|2| [Next Greater Number BST](https://www.interviewbit.com/problems/next-greater-number-bst/)      | [Java](#ques-166)  | _O(logn)_         | _O(1)_          | Easy         |  Good Question plus also know inorder using 1 stack  |
 |3| [Max Depth of Binary Tree](https://www.interviewbit.com/problems/max-depth-of-binary-tree/)      | [Java](#ques-167)  | _O(n)_         | _O(n)_          | Easy         |    |
 |4| [Vertical Order traversal of Binary Tree](https://www.interviewbit.com/problems/vertical-order-traversal-of-binary-tree/)      | [Java](#ques-168)  | _O(n)_         | _O(n)_          | Easy         |    |
 |5| [Inorder Traversal](https://www.interviewbit.com/problems/inorder-traversal/)      | [Java](#ques-169)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked  |
 |6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-170)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked  |
 |6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-171)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked  |
-|7| [PostOrder Traversal](https://www.interviewbit.com/problems/postorder-traversal/)      | [Java](#ques-172)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked, Using 2 stacks is easy  |
-|8| [Hotel Reviews](https://www.interviewbit.com/problems/hotel-reviews/)      | [Java](#ques-173)  | _O(Sum of all input strings length)_         | _O(n)_          | Medium         |  Bookmarked, Use tries or Hashset   |
+|7| [PostOrder Traversal](https://www.interviewbit.com/problems/postorder-traversal/)      | [Java](#ques-172)  | _O(n)_         | _O(n)_          | Medium         |  Using 2 stacks is easy  |
+|8| [Hotel Reviews](https://www.interviewbit.com/problems/hotel-reviews/)      | [Java](#ques-173)  | _O(Sum of all input strings length)_         | _O(n)_          | Medium         |  Use tries or Hashset   |
 |9| [Balanced Binary Tree](https://www.interviewbit.com/problems/balanced-binary-tree/)      | [Java](#ques-174)  | _O(n)_         | _O(n)_          | Easy         |     |
 |10| [Identical Binary Trees](https://www.interviewbit.com/problems/identical-binary-trees/)      | [Java](#ques-175)  | _O(n)_         | _O(n)_          | Easy         |     |
 |11| [Symmetric Binary Tree](https://www.interviewbit.com/problems/symmetric-binary-tree/)      | [Java](#ques-176)  | _O(n)_         | _O(n)_          | Easy         |     |
@@ -307,21 +307,21 @@ Solutions to the common DSA problems in Java
 |13| [Sorted Array To Balanced BST](https://www.interviewbit.com/problems/sorted-array-to-balanced-bst/)      | [Java](#ques-178)  | _O(n)_         | _O(n)_          | Easy         |     |
 |14| [Binary Tree From Inorder And Postorder](https://www.interviewbit.com/problems/binary-tree-from-inorder-and-postorder/)      | [Java](#ques-179)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked   |
 |15| [Construct Binary Tree From Inorder And Preorder](https://www.interviewbit.com/problems/construct-binary-tree-from-inorder-and-preorder/)      | [Java](#ques-180)  | _O(n)_         | _O(n)_          | Easy         |     |
-|16| [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/)      | [Java](#ques-181)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked, Can be done without extra space as well   |
-|17| [2-Sum Binary Tree](https://www.interviewbit.com/problems/2sum-binary-tree/)      | [Java](#ques-182)  | _O(n)_         | _O(logn)_          | Medium         |  Bookmarked, Can be done in O(n) space with sorted array   |
-|18| [BST Iterator](https://www.interviewbit.com/problems/bst-iterator/)      | [Java](#ques-183)  | _O(1)_         | _O(logn)_          | Easy         |  Bookmarked, Can be done in O(n) space with array   |
+|16| [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/)      | [Java](#ques-181)  | _O(n)_         | _O(n)_          | Easy         |  Can be done without extra space as well   |
+|17| [2-Sum Binary Tree](https://www.interviewbit.com/problems/2sum-binary-tree/)      | [Java](#ques-182)  | _O(n)_         | _O(logn)_          | Medium         |  Can be done in O(n) space with sorted array   |
+|18| [BST Iterator](https://www.interviewbit.com/problems/bst-iterator/)      | [Java](#ques-183)  | _O(1)_         | _O(logn)_          | Easy         |  Can be done in O(n) space with array   |
 |19| [Recover Binary Search Tree](https://www.interviewbit.com/problems/recover-binary-search-tree/)      | [Java](#ques-184)  | _O(n)_         | _O(1)_          | Medium         |  Bookmarked; Morris Algo - attaching current to inorder predecessor, Can be done in O(n) space with array, rest concept is same  |
 |20| [Invert the Binary Tree](https://www.interviewbit.com/problems/invert-the-binary-tree/)      | [Java](#ques-185)  | _O(n)_         | _O(n)_          | Easy         |  Bookmarked  |
 |21| [ZigZag Level Order Traversal BT](https://www.interviewbit.com/problems/zigzag-level-order-traversal-bt/)      | [Java](#ques-186)  | _O(n)_         | _O(n)_          | Easy         |  Can be solved using 2 stacks or queue  |
 |22| [Min Depth of Binary Tree](https://www.interviewbit.com/problems/min-depth-of-binary-tree/)      | [Java](#ques-187)  | _O(n)_         | _O(n)_          | Easy         |    |
 |23| [Path Sum](https://www.interviewbit.com/problems/path-sum/)      | [Java](#ques-188)  | _O(n)_         | _O(n)_          | Easy         |    |
-|24| [Sum Root to Leaf Numbers](https://www.interviewbit.com/problems/sum-root-to-leaf-numbers/)      | [Java](#ques-189)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked,  mod can be used even before number is formed |
+|24| [Sum Root to Leaf Numbers](https://www.interviewbit.com/problems/sum-root-to-leaf-numbers/)      | [Java](#ques-189)  | _O(n)_         | _O(n)_          | Medium         |  mod can be used even before number is formed |
 |25| [Root to Leaf Paths With Sum](https://www.interviewbit.com/problems/root-to-leaf-paths-with-sum/)      | [Java](#ques-190)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked |
-|26| [Populate Next Right Pointers Tree](https://www.interviewbit.com/problems/populate-next-right-pointers-tree/)      | [Java](#ques-191)  | _O(n)_         | _O(1)_          | Medium         |  Bookmarked, If Space was not constant then using queue is very easy |
+|26| [Populate Next Right Pointers Tree](https://www.interviewbit.com/problems/populate-next-right-pointers-tree/)      | [Java](#ques-191)  | _O(n)_         | _O(1)_          | Medium         |  If Space was not constant then using queue is very easy |
 |27| [Least Common Ancestor](https://www.interviewbit.com/problems/least-common-ancestor/)      | [Java](#ques-192)  | _O(n)_         | _O(n)_          | Medium         |  Bookmarked |
-|28| [Shortest Unique Prefix](https://www.interviewbit.com/problems/shortest-unique-prefix/)      | [Java](#ques-193)  | _O(n*m)_         | _O(total unique characters)_          | Medium         |  Bookmarked, either use count of unique flag at each node, update the child's property and not current node |
-|29| [Flatten Binary Tree to Linked List](https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/)      | [Java](#ques-194)  | _O(n)_         | _O(1)_          | Medium         |  Bookmarked, Can be solved using stack or recursion |
-|30| [Order of People Heights](https://www.interviewbit.com/problems/order-of-people-heights/)      | [Java](#ques-195)  | _O(nlogn)_         | _O(n)_          | Medium         |  Bookmarked, Solve it like a puzzle, good question |
+|28| [Shortest Unique Prefix](https://www.interviewbit.com/problems/shortest-unique-prefix/)      | [Java](#ques-193)  | _O(n*m)_         | _O(total unique characters)_          | Medium         |  either use count of unique flag at each node, update the child's property and not current node |
+|29| [Flatten Binary Tree to Linked List](https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/)      | [Java](#ques-194)  | _O(n)_         | _O(1)_          | Medium         |  Can be solved using stack or recursion |
+|30| [Order of People Heights](https://www.interviewbit.com/problems/order-of-people-heights/)      | [Java](#ques-195)  | _O(nlogn)_         | _O(n)_          | Medium         |  Solve it like a puzzle, good question |
 
 
 ## Solutions
