@@ -151,9 +151,9 @@ Solutions to the common DSA problems in Java
 |2| [Single Number](https://www.interviewbit.com/problems/single-number/)      | [Java](#ques-86)  | _O(n)_         | _O(1)_          | Easy         |  |
 |3| [Number of 1 Bits](https://www.interviewbit.com/problems/number-of-1-bits/)      | [Java](#ques-87)  | _O(1)_         | _O(1)_          | Easy         | 2nd Solution with bits trick |
 |4| [Reverse Bits](https://www.interviewbit.com/problems/reverse-bits/)      | [Java](#ques-88)  | _O(1)_         | _O(1)_          | Easy         | 2nd Solution |
-|5| [Single Number II](https://www.interviewbit.com/problems/single-number-ii/)      | [Java](#ques-89)  | _O(n)_         | _O(1)_          | Medium         | 3x+1 |
+|5| [Single Number II](https://www.interviewbit.com/problems/single-number-ii/) Given an array of integers, every element appears thrice except for one which occurs once.     | [Java](#ques-89)  | _O(n)_         | _O(1)_          | Medium         | 3x+1 |
 |6| [Divide Integers](https://www.interviewbit.com/problems/divide-integers/)      | [Java](#ques-90)  | _O(log(dividend))_         | _O(1)_          | Medium         | 1 approach is to subtract divisor, but takes O(dividend) time |
-|7| [Different Bits Sum Pairwise](https://www.interviewbit.com/problems/different-bits-sum-pairwise/)      | [Java](#ques-91)  | _O(n)_         | _O(1)_          | Medium         | |
+|7| [Different Bits Sum Pairwise](https://www.interviewbit.com/problems/different-bits-sum-pairwise/) We define f(X, Y) as number of different corresponding bits in binary representation of X and Y. For example, f(2, 7) = 2, since binary representation of 2 and 7 are 010 and 111, respectively. The first and the third bit differ, so f(2, 7) = 2. You are given an array of N positive integers, A1, A2 ,…, AN. Find sum of f(Ai, Aj) for all pairs (i, j) such that 1 ≤ i, j ≤ N.     | [Java](#ques-91)  | _O(n)_         | _O(1)_          | Medium         | |
 
 <a name="twopointers"></a>
 ## TwoPointers
@@ -1987,7 +1987,7 @@ public class Solution {
 }
 ```
 <a name="ques-84"></a>
-**Amazing Substring** [Back](#questions) <br>
+**Amazing Substring** [Back](#strings) <br>
 ```java
 public class Solution {
     public int solve(String A) {
@@ -2008,30 +2008,140 @@ public class Solution {
 <a name="ques-85"></a>
 **Min XOR Value** [Back](#bitmanipulation) <br>
 ```java
+public class Solution {
+    public int findMinXor(ArrayList<Integer> A) {
+        Collections.sort(A);
+        int min = Integer.MAX_VALUE;
+        for (int i=0; i < A.size()-1; i++) {
+            min = Math.min(A.get(i) ^ A.get(i+1), min);
+        }
+        return min;
+    }
+}
 ```
 <a name="ques-86"></a>
 **Single Number** [Back](#bitmanipulation) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int singleNumber(final List<Integer> A) {
+        int res = 0;
+        for (Integer val : A) {
+            res = res ^ val;
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-87"></a>
 **Number of 1 Bits** [Back](#bitmanipulation) <br>
 ```java
+public class Solution {
+	public int numSetBits(long a) {
+	    int count = 0;
+	    while (a > 0){
+	        count+= a%2;
+	        a = a>> 1;
+	    }
+	    return count;
+	}
+}
 ```
 <a name="ques-88"></a>
 **Reverse Bits** [Back](#bitmanipulation) <br>
 ```java
+public class Solution {
+	public long reverse(long A) {
+	    long rev = 0;
+	    
+	    for (int i = 0; i < 32; i++) {
+	        rev <<= 1;
+	        if ((A & (1 << i)) != 0)
+	            rev |= 1;
+	    }
+	    
+	    return rev;
+	    
+	}
+}
 ```
 <a name="ques-89"></a>
 **Single Number II** [Back](#bitmanipulation) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int singleNumber(final List<Integer> A) {
+        int res = 0;
+        for(int i=0; i < 32; i++) {
+            int sum = 0;
+            for (Integer val : A) {
+                sum = sum + ((val >>> i) & 1);
+            }
+            // System.out.println("Index : " + i + " Sum : " + sum);
+            sum = sum % 3;
+            res = res | (sum << i);
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-90"></a>
 **Divide Integers** [Back](#bitmanipulation) <br>
 ```java
+public class Solution {
+    public int divide(int A, int B) { 
+        int res = 0;
+        int bits = 31;
+        int temp = 0;
+        int mult = 1;
+        if (A < 0 && B < 0) {
+            mult = 1;
+        } else if (A < 0 || B < 0) {
+            mult = -1;
+        }
+        // System.out.println("MULT : " + mult);
+        A = Math.abs(A);
+        B = Math.abs(B);
+        while (bits >= 0) {
+            temp = (temp << 1) | ((A >>> bits) & 1);
+            if (temp >= B) {
+                res = (res << 1) | 1;
+                // System.out.println("RES : " + res + " TEMP : " + temp);
+                temp = temp - B;
+            } else {
+                res = res << 1;
+            }
+            bits--;
+        }
+        if (res < 0 && mult > 0) {
+            res = Integer.MAX_VALUE;
+        }
+        return mult * res;
+    }
+}
 ```
 <a name="ques-91"></a>
 **Different Bits Sum Pairwise** [Back](#bitmanipulation) <br>
 ```java
+public class Solution {
+    public int cntBits(ArrayList<Integer> A) {
+        long sum = 0;
+        for (long i=0; i < 32; i++) {
+            long ref = 1l << i;
+            long ones = 0;
+            long zeros = 0;
+            for (Integer val : A) {
+                long temp = ref & val;
+                if (temp == 0)
+                    zeros++;
+                else
+                    ones++;
+            }
+            sum = sum + (ones * zeros) % 1000000007;
+        }
+        return (int) ((2 * sum) % 1000000007);
+    }
+}
 ```
 
 ### Two Pointers
