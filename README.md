@@ -162,20 +162,19 @@ Solutions to the common DSA problems in Java
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [Merge Two Sorted Lists II](https://www.interviewbit.com/problems/merge-two-sorted-lists-ii/)      | [Java](#ques-92)  | _O(n+m)_         | _O(1)_          | Easy         |   |
-|2| [Intersection Of Sorted Arrays](https://www.interviewbit.com/problems/intersection-of-sorted-arrays/)      | [Java](#ques-93)  | _O(n+m)_         | _O(1)_          | Easy         |   |
-|3| [Minimize the absolute difference](https://www.interviewbit.com/problems/minimize-the-absolute-difference/)      | [Java](#ques-94)  | _O(maxArrayLength)_         | _O(1)_          | Easy         | Abs diff can be minimized either decreasing max element or increasing min element  |
+|2| [Intersection Of Sorted Arrays](https://www.interviewbit.com/problems/intersection-of-sorted-arrays/) Find the intersection of two sorted arrays OR in other words, Given 2 sorted arrays, find all the elements which occur in both the arrays.     | [Java](#ques-93)  | _O(n+m)_         | _O(1)_          | Easy         |   |
+|3| [Minimize the absolute difference](https://www.interviewbit.com/problems/minimize-the-absolute-difference/) Given three sorted arrays A, B and C of not necessarily same sizes. Minimize | max(a,b,c) - min(a,b,c) |.     | [Java](#ques-94)  | _O(maxArrayLength)_         | _O(1)_          | Easy         | Abs diff can be minimized either decreasing max element or increasing min element  |
 |4| [Remove Duplicates from Sorted Array](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array/)      | [Java](#ques-95)  | _O(n)_         | _O(1)_          | Easy         | Removing Element increases complexity, just set elements with 2nd pointer  |
-|5| [Remove Duplicates from Sorted Array 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array-ii/)      | [Java](#ques-96)  | _O(n)_         | _O(1)_          | Easy         |  |
+|5| [Remove Duplicates from Sorted Array 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array-ii/) Given a sorted array, remove the duplicates in place such that each element can appear atmost twice and return the new length.     | [Java](#ques-96)  | _O(n)_         | _O(1)_          | Easy         |  |
 |6| [Remove Element from Array](https://www.interviewbit.com/problems/remove-element-from-array/)      | [Java](#ques-97)  | _O(n)_         | _O(1)_          | Easy         |   |
-|6| [Remove Element from Array](https://www.interviewbit.com/problems/remove-element-from-array/)      | [Java](#ques-98)  | _O(n)_         | _O(1)_          | Easy         |   |
 |7| [Sort by Color](https://www.interviewbit.com/problems/sort-by-color/)      | [Java](#ques-99)  | _O(n)_         | _O(1)_          | Easy         |   |
-|8| [Diffk](https://www.interviewbit.com/problems/diffk/)      | [Java](#ques-100)  | _O(n)_         | _O(1)_          | Easy         |  Start both pointers from 0 and not from opp. extreme ends|
+|8| [Diffk](https://www.interviewbit.com/problems/diffk/) Given an array ‘A’ of sorted integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.     | [Java](#ques-100)  | _O(n)_         | _O(1)_          | Easy         |  Start both pointers from 0 and not from opp. extreme ends|
 |9| [3 Sum](https://www.interviewbit.com/problems/3-sum/)      | [Java](#ques-101)  | _O(n^2 + nlogn)_         | _O(1)_          | Easy         |  
 |10| [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)      | [Java](#ques-102)  | _O(n^2 + nlogn)_         | _O(1)_          | Medium         |  Handle Duplicates|
 |11| [Max Continuous Series of 1s](https://www.interviewbit.com/problems/max-continuous-series-of-1s/)      | [Java](#ques-103)  | _O(n)_         | _O(1)_          | Medium         |  Keeping window size having zeroes <= B|
-|12| [Array 3 Pointers](https://www.interviewbit.com/problems/array-3-pointers/)      | [Java](#ques-104)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Abs diff can be minimized either decreasing max element or increasing min element   |
+|12| [Array 3 Pointers](https://www.interviewbit.com/problems/array-3-pointers/) You are given 3 arrays A, B and C. All 3 of the arrays are sorted. Find i, j, k such that : max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i])) is minimized. Return the minimum max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i]))     | [Java](#ques-104)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Abs diff can be minimized either decreasing max element or increasing min element   |
 |13| [Counting Triangles](https://www.interviewbit.com/problems/counting-triangles/)      | [Java](#ques-105)  | _O(n^2)_         | _O(1)_          | Medium         | A+B) > C by sorting the array   |
-|14| [Container With Most Water](https://www.interviewbit.com/problems/container-with-most-water/)      | [Java](#ques-106)  | _O(n)_         | _O(1)_          | Medium         |   |
+|14| [Container With Most Water](https://www.interviewbit.com/problems/container-with-most-water/) Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). 'n' vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.     | [Java](#ques-106)  | _O(n)_         | _O(1)_          | Medium         |   |
 
 <a name="linkedlist"></a>
 ## LinkedList
@@ -2148,46 +2147,327 @@ public class Solution {
 <a name="ques-92"></a>
 **Merge Two Sorted Lists II** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public void merge(ArrayList<Integer> a, ArrayList<Integer> b) {
+        ArrayList<Integer> res  = new ArrayList<>();
+        int index1 = 0, index2 = 0;
+        int A = a.size(), B = b.size();
+        while (index1 < A && index2 < B) {
+            if (a.get(index1) <= b.get(index2)) {
+                a.add(a.get(index1));
+                index1++;
+            } else {
+                a.add(b.get(index2));
+                index2++;
+            }
+        }
+        while (index1 < A){
+            a.add(a.get(index1));
+            index1++;
+        }
+        while (index2 < B) {
+            a.add(b.get(index2));
+            index2++;
+        }
+        for (int index=0; index < A; index++) {
+            a.remove(0);
+        }
+    }
+}
 ```
 <a name="ques-93"></a>
 **Intersection Of Sorted Arrays** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public ArrayList<Integer> intersect(final List<Integer> A, final List<Integer> B) {
+        Map<Integer, Integer> count = new HashMap<>();
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int index=0; index < A.size(); index++) {
+            if (count.containsKey(A.get(index))) {
+                count.put(A.get(index), count.get(A.get(index)) + 1);
+            } else {
+                count.put(A.get(index), 1);
+            }
+        }
+        for (int index=0; index < B.size(); index++) {
+            if (count.containsKey(B.get(index))) {
+                res.add(B.get(index));
+                count.put(B.get(index), count.get(B.get(index))-1);
+                if (count.get(B.get(index)) == 0)
+                    count.remove(B.get(index));
+            }
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-94"></a>
 **Minimize the absolute difference** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public int solve(ArrayList<Integer> A, ArrayList<Integer> B, ArrayList<Integer> C) {
+        int idxA = 0, idxB = 0, idxC = 0;
+        int An = A.size(), Bn = B.size(), Cn = C.size();
+        int minDiff = Integer.MAX_VALUE;
+        while (idxA < An || idxB < Bn || idxC < Cn) {
+            int validA = (idxA < An) ? idxA : (An-1);
+            int validB = (idxB < Bn) ? idxB : (Bn-1);
+            int validC = (idxC < Cn) ? idxC : (Cn-1);
+            int max  = Math.max(C.get(validC), 
+                       Math.max(A.get(validA), 
+                                B.get(validB)));
+            int min  = Math.min(C.get(validC), 
+                       Math.min(A.get(validA), 
+                                B.get(validB)));
+            minDiff = Math.min(minDiff, Math.abs(max-min));
+            if ((idxA < An) &&
+                (idxB == Bn || A.get(idxA) <= B.get(idxB)) && 
+                (idxC == Cn || A.get(idxA) <= C.get(idxC))) {
+                idxA++;
+            } else if ((idxB < Bn) &&
+                (idxA == An || B.get(idxB) <= A.get(idxA)) && 
+                (idxC == Cn || B.get(idxB) <= C.get(idxC))) {
+                idxB++;
+            } else {
+                idxC++;
+            }
+        }
+        return minDiff;
+    }
+}
 ```
 <a name="ques-95"></a>
 **Remove Duplicates from Sorted Array** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public int removeDuplicates(ArrayList<Integer> a) {
+        int start = 0;
+        for (int index=1; index < a.size(); index++) {
+            if (a.get(start) - a.get(index) == 0) {
+                continue;
+            } else {
+                start++;
+                a.set(start, a.get(index));
+            }
+        }
+        start = start + 1;
+        // System.out.println("START : " + start);
+        a.subList(start, a.size()).clear();
+        // for (int index=start; index < a.size(); index++) {
+        //     // System.out.println("Removing @ " + index);
+        //     a.remove(index);
+        // }
+        return start;
+    }
+}
 ```
 <a name="ques-96"></a>
 **Remove Duplicates from Sorted Array 2** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public int removeDuplicates(ArrayList<Integer> a) {
+        int start = 0, count = 1;
+        for (int index=1; index < a.size(); index++) {
+            // System.out.println("Comparing " + a.get(start) + " and " + a.get(index));
+            if (a.get(start) - a.get(index) == 0) {
+                count++;
+                if (count == 2) {
+                    start++;
+                    a.set(start, a.get(index));
+                }
+            } else {
+                start++;
+                a.set(start, a.get(index));
+                count = 1;
+            }
+            // System.out.println("START : " + start + " COUNT : " + count + " INDEX : " + index);
+        }
+        start = start + 1;
+        a.subList(start, a.size()).clear();
+        return start;
+    }
+}
 ```
 <a name="ques-97"></a>
 **Remove Element from Array** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public int removeElement(ArrayList<Integer> a, int b) {
+        int start = 0;
+        for (int index = 0; index < a.size(); index++) {
+            if (a.get(index) == b) {
+                continue;
+            } else {
+                a.set(start, a.get(index));
+                start++;
+            }
+        }
+        a.subList(start, a.size()).clear();
+        return a.size();
+    }
+}
 ```
 <a name="ques-98"></a>
 **Remove Element from Array** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public int removeElement(ArrayList<Integer> a, int b) {
+        int start = 0;
+        for (int index = 0; index < a.size(); index++) {
+            if (a.get(index) == b) {
+                continue;
+            } else {
+                a.set(start, a.get(index));
+                start++;
+            }
+        }
+        a.subList(start, a.size()).clear();
+        return a.size();
+    }
+}
 ```
 <a name="ques-99"></a>
 **Sort by Color** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public void sortColors(ArrayList<Integer> a) {
+        int zeros = 0, ones = 0, twos = 0;
+        for (int index=0; index < a.size(); index++) {
+            if (a.get(index) == 0) {
+                zeros++;
+            } else if (a.get(index) == 1) {
+                ones++;
+            } else if (a.get(index) == 2) {
+                twos++;
+            }
+        }
+        int start = 0;
+        for(int index = 0; index < zeros; index++) {
+            a.set(start + index, 0);
+        }
+        start = zeros;
+        for(int index = 0; index < ones; index++) {
+            a.set(start + index, 1);
+        }
+        start = ones + zeros;
+        for(int index = 0; index < twos; index++) {
+            a.set(start + index, 2);
+        }
+    }
+}
 ```
 <a name="ques-100"></a>
 **Diffk** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public int diffPossible(ArrayList<Integer> A, int B) {
+        int left = 0, right = 1;
+        if (A.size() == 1)
+            return 0;
+        while (right < A.size()) {
+            int diff = A.get(right) - A.get(left);
+            if (diff == B) {
+                return 1;
+            } else if (diff > B) {
+                left++;
+            } else {
+                right++;
+            }
+            if (left == right)
+                right++;
+        }
+        return 0;
+    }
+}
 ```
 <a name="ques-101"></a>
 **3 Sum** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public int threeSumClosest(ArrayList<Integer> A, int B) {
+        Collections.sort(A);
+        int minDist = Integer.MAX_VALUE, res = Integer.MAX_VALUE;
+        System.out.println(A);
+        // Assume A[outer] is part of the optimal solution
+        for (int outer=0; outer < A.size(); outer++) {
+            // Now problem becomes sum of two numbers in A - {outer} closest to B - A[outer]
+            int start = 0, end = A.size()-1;
+            if (outer > 25)
+                System.out.println("RES : " + res + " MINDIST : " + minDist + " B : " + B);
+            while (start < end) {
+                if (start == outer)
+                    start++;
+                else if (end == outer)
+                    end--;
+                int sum = A.get(start) + A.get(end) + A.get(outer);
+                int dist = Math.abs(B-sum);
+                if (dist < minDist) {
+                    minDist = dist;
+                    res = sum;
+                }
+                if (sum > B) {
+                    // end is too high, reduce
+                    start++;
+                } else if (sum < B) {
+                    // start is too low, increase
+                    end--;
+                } else {
+                    // found match
+                    System.out.println("## SUM : " + sum + " DIST : " + dist);
+                    return sum;
+                }
+            }
+        }
+        System.out.println("DONE!");
+        return res;
+    }
+}
 ```
 <a name="ques-102"></a>
 **3 Sum Zero** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> threeSum(ArrayList<Integer> A) {
+        Collections.sort(A);
+        // Map<Integer, Integer> count = new HashMap<>();
+        // for (int index=0; index < A.size(); index++) {
+        //     if (count.containsKey(A.get(index)) {
+        //         count.put(A.get(index), count.get(A.get(index)+1));
+        //     } else {
+        //         count.put(A.get(index), 1);
+        //     }
+        // }
+        // Assuming outer is part of soln
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        Set<String> sets = new HashSet<>();
+        for (int outer=0; outer < A.size(); outer++) {
+            int left = outer+1, right = A.size()-1;
+            while (left < right) {
+                int sum = A.get(outer) + A.get(left) + A.get(right);
+                if (sum == 0) {
+                    String str = A.get(outer) + "," + A.get(left) + "," + A.get(right);
+                    // System.out.println(str);
+                    if (!sets.contains(str)) {
+                        sets.add(str);
+                        res.add(new ArrayList<>());
+                        res.get(res.size()-1).add(A.get(outer));
+                        res.get(res.size()-1).add(A.get(left));
+                        res.get(res.size()-1).add(A.get(right));
+                    }
+                    left++;
+                } else if (sum > 0) {
+                    // too many high numbers, reduce
+                    right--;
+                } else {
+                    // too many low numbers, increase
+                    left++;
+                }
+            }
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-103"></a>
 **Max Continuous Series of 1s** [Back](#twopointers) <br>
@@ -2196,6 +2476,37 @@ public class Solution {
 <a name="ques-104"></a>
 **Array 3 Pointers** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public int minimize(final List<Integer> A, final List<Integer> B, final List<Integer> C) {
+        int idxA = 0, idxB = 0, idxC = 0;
+        int An = A.size(), Bn = B.size(), Cn = C.size();
+        int minDiff = Integer.MAX_VALUE;
+        while (idxA < An || idxB < Bn || idxC < Cn) {
+            int validA = (idxA < An) ? idxA : (An-1);
+            int validB = (idxB < Bn) ? idxB : (Bn-1);
+            int validC = (idxC < Cn) ? idxC : (Cn-1);
+            int max = Math.max(
+                        Math.abs(A.get(validA) - B.get(validB)), 
+                    Math.max(
+                        Math.abs(B.get(validB) - C.get(validC)),
+                        Math.abs(A.get(validA) - C.get(validC))));
+            minDiff = Math.min(minDiff, max);
+            if ((idxA < An) &&
+                (idxB == Bn || A.get(idxA) <= B.get(idxB)) && 
+                (idxC == Cn || A.get(idxA) <= C.get(idxC))) {
+                idxA++;
+            } else if ((idxB < Bn) &&
+                (idxA == An || B.get(idxB) <= A.get(idxA)) && 
+                (idxC == Cn || B.get(idxB) <= C.get(idxC))) {
+                idxB++;
+            } else {
+                idxC++;
+            }
+        }
+        return minDiff;
+    }
+}
 ```
 <a name="ques-105"></a>
 **Counting Triangles** [Back](#twopointers) <br>
@@ -2204,6 +2515,22 @@ public class Solution {
 <a name="ques-106"></a>
 **Container With Most Water** [Back](#twopointers) <br>
 ```java
+public class Solution {
+    public int maxArea(ArrayList<Integer> A) {
+        int start = 0, end = A.size()-1;
+        int max = 0;
+        while (start < end) {
+            int vol = Math.min(A.get(start), A.get(end)) * (end - start);
+            max = Math.max(vol, max);
+            if (A.get(start) <= A.get(end)) {
+                start++;
+            } else {
+                end--;
+            }
+        }
+        return max;
+    }
+}
 ```
 
 ### Linked List
