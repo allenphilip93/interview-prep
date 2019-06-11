@@ -263,8 +263,8 @@
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [N max pair combinations](https://www.interviewbit.com/problems/n-max-pair-combinations/)      | [Java](#ques-159)  | _O(nlogn)_         | _O(n)_          | Medium         |  Create a min heap and loop through n^2 pairs  |
-|2| [Magician and Chocolates](https://www.interviewbit.com/problems/magician-and-chocolates/)      | [Java](#ques-160)  | _O(klogn)_         | _O(n)_          | Easy         |    |
-|3| [Merge K Sorted Lists](https://www.interviewbit.com/problems/merge-k-sorted-lists/)      | [Java](#ques-161)  | _O(Nlogk)_, where k = initial lists and N = total sum of nodes from all lists         | _O(k)_          | Medium         |    |
+|2| [Magician and Chocolates](https://www.interviewbit.com/problems/magician-and-chocolates/) Given N bags, each bag contains Ai chocolates. There is a kid and a magician. In one unit of time, kid chooses a random bag i, eats Ai chocolates, then the magician fills the ith bag with floor(Ai/2) chocolates. Given Ai for 1 <= i <= N, find the maximum number of chocolates kid can eat in K units of time.     | [Java](#ques-160)  | _O(klogn)_         | _O(n)_          | Easy         |    |
+|3| [Merge K Sorted Lists](https://www.interviewbit.com/problems/merge-k-sorted-lists/) Merge k sorted linked lists and return it as one sorted list.     | [Java](#ques-161)  | _O(Nlogk)_, where k = initial lists and N = total sum of nodes from all lists         | _O(k)_          | Medium         |    |
 
 
 <a name="hashmaps"></a>
@@ -272,7 +272,7 @@
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Distinct Numbers in Window](https://www.interviewbit.com/problems/distinct-numbers-in-window/)      | [Java](#ques-162)  | _O(n)_         | _O(n)_          | Easy         |    |
+|1| [Distinct Numbers in Window](https://www.interviewbit.com/problems/distinct-numbers-in-window/) You are given an array of N integers, A1, A2 ,…, AN and an integer K. Return the of count of distinct numbers in all windows of size K. Formally, return an array of size N-K+1 where i’th element in this array contains number of distinct elements in sequence Ai, Ai+1 ,…, Ai+k-1.     | [Java](#ques-162)  | _O(n)_         | _O(n)_          | Easy         |    |
 |2| [LRU](https://www.interviewbit.com/problems/lru-cache/)      | [Java](#ques-163)  | _O(1)_ for get and O(n) for set         | _O(n)_          | Easy         |    |
 |3| [Ways to form Max Heap](https://www.interviewbit.com/problems/ways-to-form-max-heap/)      | [Java](#ques-164)  | _O(log2n^2)_          | _O(log2n)_          | Hard         |  T(n) = n-1Cl*T(l)*T(r), where r = n-1-l  |
 
@@ -4343,24 +4343,268 @@ public class Solution {
 <a name="ques-160"></a>
 **Magician and Chocolates** [Back](#heaps) <br>
 ```java
+public class Solution {
+    public int nchoc(int A, ArrayList<Integer> B) {
+        
+        final int MOD = 1000000007;
+        PriorityQueue<Integer> pq = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+
+        for (Integer choc : B) {
+            pq.add(choc);
+        }
+
+        long total = 0;
+
+        while (A-- > 0) {
+            int choc = pq.poll();
+            total += choc;
+            total %= MOD;
+            pq.add(choc/2);
+        }
+
+        return (int) total;
+    }
+}
 ```
 <a name="ques-161"></a>
 **Merge K Sorted Lists** [Back](#heaps) <br>
 ```java
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     public int val;
+ *     public ListNode next;
+ *     ListNode(int x) { val = x; next = null; }
+ * }
+ */
+public class Solution {
+    public ListNode mergeKLists(ArrayList<ListNode> a) {
+        ListNode top = new ListNode(0);
+        ListNode current = top;
+        
+        PriorityQueue<ListNode> queue = new PriorityQueue<>(a.size(), 
+            Comparator.comparing(node -> node.val));
+        
+        for (ListNode node: a) {
+            queue.add(node);
+        }
+        
+        
+        while (!queue.isEmpty()) {
+            current.next = queue.poll();
+            current = current.next;
+            if (current.next != null) {
+                queue.add(current.next);
+            }
+        }
+        
+        return top.next;
+    }
+}
 ```
 
 ### HashMaps
 <a name="ques-162"></a>
 **Distinct Numbers in Window** [Back](#hashmaps) <br>
 ```java
+public class Solution {
+    public ArrayList<Integer> dNums(ArrayList<Integer> A, int B) {
+        Map<Integer, Integer> count = new HashMap<>();
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int index=0; index < B; index++) {
+            if (count.containsKey(A.get(index))) {
+                count.put(A.get(index), count.get(A.get(index)) + 1);
+            } else {
+                count.put(A.get(index), 1);
+            }
+        }
+        res.add(count.size());
+        for (int index=B; index < A.size(); index++) {
+            int lastin = index-B;
+            int nextin = index;
+            // System.out.println("MAP : " + count + " RES : " + res + " NEXT : " + A.get(nextin) + " LAST : " + A.get(lastin));
+            if (count.get(A.get(lastin)) > 1) {
+                count.put(A.get(lastin), count.get(A.get(lastin)) - 1);
+            } else {
+                count.remove(A.get(lastin));
+            }
+            if (count.containsKey(A.get(nextin))) {
+                count.put(A.get(nextin), count.get(A.get(nextin)) + 1);
+            } else {
+                count.put(A.get(nextin), 1);
+            }
+            res.add(count.size());
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-163"></a>
 **LRU** [Back](#hashmaps) <br>
 ```java
+public class Solution {
+
+    Map<Integer, Node> map;
+    Node start;
+    Node end;
+    int capacity;
+    public Solution(int capacity) {
+        map = new HashMap<>();
+        start = new Node(0,0);
+        end = new Node(0,0);
+        this.capacity = capacity;
+        start.next = end;
+        end.prev = start;
+    }
+
+    public int get(int key) {
+        if (map.containsKey(key)) {
+            Node node = map.get(key);
+            removeNode(node);
+            addNode(node);
+
+            return node.val;
+        }
+        return -1;
+    }
+
+    private void addNode(Node node) {
+        node.next = start.next;
+        start.next = node;
+        node.prev = start;
+        node.next.prev = node;
+    }
+
+    private void removeNode(Node node) {
+        Node temp = node.next;
+        node.prev.next = temp;
+        temp.prev = node.prev;
+    }
+
+    public void set(int key, int value) {
+        Node node = new Node(key, value);
+
+        if (map.containsKey(key)) {
+            Node temp = map.get(key);
+            removeNode(temp);
+            addNode(node);
+        }
+        else {
+            if (capacity == map.size()) {
+                Node temp = end.prev;
+                removeNode(temp);
+                map.remove(temp.key);
+            }
+
+            addNode(node);
+        }
+        map.put(key, node);
+    }
+
+    class Node {
+        public int key;
+        public int val;
+        public Node prev;
+        public Node next;
+
+        public Node(int key, int val) {
+            this.key = key;
+            this.val = val;
+            prev = null;
+            next = null;
+        }
+    }
+}
 ```
 <a name="ques-164"></a>
 **Ways to form Max Heap** [Back](#hashmaps) <br>
 ```java
+public class  Solution {
+    
+    long[] dp;  	/* dp[i] = number of max heaps for i distinct integers */
+    long[][] nck;	/* nck[i][j] = i choose j if i>=j else 0 */
+    int[] log2;		/* log2[i] = int(log base 2 of i) */
+    
+    final long MOD = 1000000007;
+    
+    public long choose(int n,int k)
+    {
+        if(k>n)
+            return 0;
+	if(n<=1)
+	    return 1;
+	if(k==0)
+	    return 1;
+
+        if(nck[n][k]!=-1)
+            return nck[n][k];
+        long answer = choose(n-1,k-1) + choose(n-1,k);
+        answer%=MOD;
+        nck[n][k] = answer;
+        return answer;
+    }
+    
+    public int getL(int n)
+    {
+        if(n==1)
+            return 0;
+            
+        int h = log2[n];
+        int p = n - ((1<<(h)) - 1);
+        int m = (1<<h);
+        if(p>=(m/2))
+            return (1<<(h)) - 1;
+        else
+            return (1<<(h)) - 1 - ((m/2) - p);
+    }
+    
+    public int solve(int n)
+    {
+        dp = new long[n+1];
+        for(int i=0;i<=n;i++)
+            dp[i]=-1;
+            
+        nck = new long[n+1][n+1];
+        for(int i=0;i<=n;i++)
+            for(int j=0;j<=n;j++)
+                nck[i][j] = -1;
+                
+        log2 = new int[n+1];
+        int currLogAnswer = -1;
+        int currPower2 = 1;
+        for(int i=1;i<=n;i++)
+        {
+	    if(currPower2==i)
+            {
+                currLogAnswer++;
+                currPower2*=2;
+            }
+            log2[i] = currLogAnswer;
+        }
+        
+        return (int)getNumberOfMaxHeaps(n);
+    }
+    
+    public long getNumberOfMaxHeaps(int n)
+    {
+        if(n<=1)
+            return 1;
+            
+        if(dp[n]!=-1)
+            return dp[n];
+
+        int L = getL(n);
+        long ans = (choose(n-1,L)*getNumberOfMaxHeaps(L))%MOD*(getNumberOfMaxHeaps(n-1-L));
+        ans%=MOD;
+        dp[n] = ans;
+        return ans;
+    }
+}
 ```
 
 ### Trees
