@@ -222,18 +222,18 @@
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
 |1| [ReverseLinkedList](https://www.interviewbit.com/problems/reverse-link-list-recursion/)      | [Java](#ques-131)  | _O(n)_         | _O(n)_          | Easy         |  |
 |2| [Modular Expression](https://www.interviewbit.com/problems/modular-expression/)      | [Java](#ques-132)  | _O(log(power))_         | _O(1)_          | Easy         |  Modular Exponentiation |
-|3| [Subset](https://www.interviewbit.com/problems/subset/)      | [Java](#ques-133)  | _O(2^n)_         | _O(n)_          | Easy         |  Backtracking general algo |
-|4| [Combinations](https://www.interviewbit.com/problems/combinations/)      | [Java](#ques-134)  | _O(nCk)_         | _O(n)_          | Easy         |  Backtracking general algo |
-|5| [Combination Sum](https://www.interviewbit.com/problems/combination-sum/)      | [Java](#ques-135)  | _O(2^n)_         | _O(targetSum)_          | Easy         |  Backtracking general algo, Use Map for checking duplicates |
-|6| [Combination Sum 2](https://www.interviewbit.com/problems/combination-sum-ii/)      | [Java](#ques-136)  | _O(2^n)_         | _O(targetSum)_          | Easy         |   |
-|7| [SubSets 2](https://www.interviewbit.com/problems/subsets-ii/)      | [Java](#ques-137)  | _O(2^n)_         | _O(n)_          | Easy         |  Either use hashmap or skip continuous elements in recursion function |
-|8| [Letter Phone](https://www.interviewbit.com/problems/letter-phone/)      | [Java](#ques-138)  | _O(3^n)_         | _O(n)_          | Easy         |   |
-|9| [Palindrome Partitioning](https://www.interviewbit.com/problems/palindrome-partitioning/)      | [Java](#ques-139)  | _O(2^n)_         | _O(n)_          | Easy         |  can maintain 2-D array to keep true/false whether start-end is palindrome or not (DP) |
-|10| [Generate all Parentheses II](https://www.interviewbit.com/problems/generate-all-parentheses-ii/)      | [Java](#ques-140)  | _O(2^n)_         | _O(2n)_          | Easy         |   |
-|11| [Permutations](https://www.interviewbit.com/problems/permutations/)      | [Java](#ques-141)  | _O(n!)_         | _O(n)_          | Medium         | Either use visited array or remove integer from input array then add back while backtracking  |
-|12| [Gray Code](https://www.interviewbit.com/problems/gray-code/)      | [Java](#ques-142)  | _O(2^n)_         | _O(n)_          | Medium         | Other Solution of using reverse of (N-1) and prefixing 1 is good  |
+|3| [Subset](https://www.interviewbit.com/problems/subset/) Given a set of distinct integers, S, return all possible subsets in lexicographically sorted order.     | [Java](#ques-133)  | _O(2^n)_         | _O(n)_          | Easy         |  Backtracking general algo |
+|4| [Combinations](https://www.interviewbit.com/problems/combinations/) Given two integers n and k, return all possible combinations of k numbers out of 1 2 3 ... n. Make sure the combinations are sorted.     | [Java](#ques-134)  | _O(nCk)_         | _O(n)_          | Easy         |  Backtracking general algo |
+|5| [Combination Sum](https://www.interviewbit.com/problems/combination-sum/) Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. The same repeated number may be chosen from C unlimited number of times.     | [Java](#ques-135)  | _O(2^n)_         | _O(targetSum)_          | Easy         |  Backtracking general algo, Use Map for checking duplicates |
+|6| [Combination Sum 2](https://www.interviewbit.com/problems/combination-sum-ii/) Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.     | [Java](#ques-136)  | _O(2^n)_         | _O(targetSum)_          | Easy         |   |
+|7| [SubSets 2](https://www.interviewbit.com/problems/subsets-ii/) Given a collection of integers that might contain duplicates, S, return all possible subsets in lexicographically sorted fashion.     | [Java](#ques-137)  | _O(2^n)_         | _O(n)_          | Easy         |  Either use hashmap or skip continuous elements in recursion function |
+|8| [Letter Phone](https://www.interviewbit.com/problems/letter-phone/) Given a digit string, return all possible letter combinations that the number could represent.     | [Java](#ques-138)  | _O(3^n)_         | _O(n)_          | Easy         |   |
+|9| [Palindrome Partitioning](https://www.interviewbit.com/problems/palindrome-partitioning/) Given a string s, partition s such that every string of the partition is a palindrome. Return all possible palindrome partitioning of s.     | [Java](#ques-139)  | _O(2^n)_         | _O(n)_          | Easy         |  can maintain 2-D array to keep true/false whether start-end is palindrome or not (DP) |
+|10| [Generate all Parentheses II](https://www.interviewbit.com/problems/generate-all-parentheses-ii/) Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses of length 2*n.     | [Java](#ques-140)  | _O(2^n)_         | _O(2n)_          | Easy         |   |
+|11| [Permutations](https://www.interviewbit.com/problems/permutations/) Given a collection of numbers, return all possible permutations.     | [Java](#ques-141)  | _O(n!)_         | _O(n)_          | Medium         | Either use visited array or remove integer from input array then add back while backtracking  |
+|12| [Gray Code](https://www.interviewbit.com/problems/gray-code/) The gray code is a binary numeral system where two successive values differ in only one bit. Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.     | [Java](#ques-142)  | _O(2^n)_         | _O(n)_          | Medium         | Other Solution of using reverse of (N-1) and prefixing 1 is good  |
 |13| [Kth Permutation Sequence](https://www.interviewbit.com/problems/kth-permutation-sequence/)      | [Java](#ques-143)  | _O(nk)_         | _O(n)_          | Medium         | Use Maths plus recursion, first digit = k/(n-1)!+1  |
-|14| [NQueens](https://www.interviewbit.com/problems/nqueens/)      | [Java](#ques-144)  | _O(n*n)_         | _O(n)_          | Medium         |  |
+|14| [NQueens](https://www.interviewbit.com/problems/nqueens/) The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.     | [Java](#ques-144)  | _O(n*n)_         | _O(n)_          | Medium         |  |
 
 
 <a name="hashing"></a>
@@ -3397,42 +3397,316 @@ public class Solution {
 <a name="ques-133"></a>
 **Subset** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    
+    public ArrayList<ArrayList<Integer>> subsets(ArrayList<Integer> a) {
+        ArrayList<ArrayList<Integer>> output = new ArrayList<ArrayList<Integer>>();
+        output.add(new ArrayList<Integer>());
+        if (a.size() == 0) {
+            return output;
+        }
+        
+        Collections.sort(a);
+        generate(a, output, new ArrayList<Integer>(), 0);
+        return output;
+    }
+    
+    public void generate(ArrayList<Integer> a, ArrayList<ArrayList<Integer>> output, ArrayList<Integer> temp, int index) {
+        for (int i = index; i < a.size(); i++) {
+            temp.add(a.get(i));
+            output.add(new ArrayList<Integer>(temp));
+            generate(a, output, temp, i+1);
+            temp.remove(temp.size() - 1);
+        }
+    }
+}
 ```
 <a name="ques-134"></a>
 **Combinations** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> combine(int A, int B) {
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        select(A, B, 1, new ArrayList<>(), ans);
+        return ans;
+    }
+    
+    private void select(int A, int B, int currA, ArrayList<Integer> res, ArrayList<ArrayList<Integer>> ans) {
+        if (B == 1 && (A - currA) >= 0) {
+            for(int index=currA; index <= A; index++) {
+                ArrayList<Integer> temp = new ArrayList<>(res);
+                temp.add(index);
+                if (!ans.contains(temp))
+                    ans.add(temp);
+            }
+            return;
+        }
+        if (B > (A-currA+1) || currA > A)
+            return;
+        for (int index=currA; index <= A; index++) {
+            // we can choose to select it
+            ArrayList<Integer> temp = new ArrayList<>(res);
+            temp.add(index);
+            select(A, B-1, index+1, temp, ans);
+            
+            // we can choose not to select it
+            select(A, B, index+1, res, ans);
+        }
+    }
+}
 ```
 <a name="ques-135"></a>
 **Combination Sum** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> combinationSum(ArrayList<Integer> A, int B) {
+        ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+        Collections.sort(A);
+        combinations(0, A, B, new ArrayList<Integer>(), res);
+        return res;
+    }
+
+    private void combinations(int sum, ArrayList<Integer> A, int B, ArrayList<Integer> temp, ArrayList<ArrayList<Integer>> res) {
+        if (sum > B)
+            return;
+        for (int num : A) {
+            if (sum + num <= B) {
+                ArrayList<Integer> selected = new ArrayList<>(temp);
+                selected.add(num);
+                if (sum + num == B) {
+                    Collections.sort(selected);
+                    if (!res.contains(selected))
+                        res.add(selected);
+                }
+                combinations(sum + num, A, B, selected, res);
+            }
+        }
+    }
+}
 ```
 <a name="ques-136"></a>
 **Combination Sum 2** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> combinationSum(ArrayList<Integer> A, int B) {
+        ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+        Collections.sort(A);
+        combinations(0, A, B, 0, new ArrayList<Integer>(), res);
+        return res;
+    }
+
+    private void combinations(int sum, ArrayList<Integer> A, int B, int index, ArrayList<Integer> temp, ArrayList<ArrayList<Integer>> res) {
+        if (sum > B)
+            return;
+        for (int i = index; i < A.size(); i++) {
+            int num = A.get(i);
+            if (sum + num <= B) {
+                ArrayList<Integer> selected = new ArrayList<>(temp);
+                selected.add(num);
+                if (sum + num == B) {
+                    Collections.sort(selected);
+                    if (!res.contains(selected))
+                        res.add(selected);
+                }
+                combinations(sum + num, A, B, index+1, selected, res);
+            }
+        }
+    }
+}
 ```
 <a name="ques-137"></a>
 **SubSets 2** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> subsetsWithDup(ArrayList<Integer> A) {
+        Collections.sort(A);
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        res.add(new ArrayList<>());
+        subsets(A, 0, new ArrayList<Integer>(), res);
+        return res;
+    }
+
+    private void subsets(ArrayList<Integer> A, int index, ArrayList<Integer> temp, ArrayList<ArrayList<Integer>> res) {
+        // System.out.println("=====================");
+        // System.out.println("TEMP : " + temp);
+        // System.out.println("Index : " + index);
+        if (index == A.size()) {
+            return;
+        }
+        // System.out.println("SIZE : " + A.size());
+        for (int i=index; i < A.size(); i++) {
+            temp.add(A.get(i));
+            ArrayList<Integer> ans = new ArrayList<>(temp);
+            if (!res.contains(ans))
+                res.add(ans);
+            subsets(A, i+1, temp, res);
+            temp.remove(temp.size()-1);
+        }
+    }
+}
 ```
 <a name="ques-138"></a>
 **Letter Phone** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<String> letterCombinations(String A) {
+        Map<String, String> mapping = new HashMap<>();
+        mapping.put("0", "0");
+        mapping.put("1", "1");
+        mapping.put("2", "abc");
+        mapping.put("3", "def");
+        mapping.put("4", "ghi");
+        mapping.put("5", "jkl");
+        mapping.put("6", "mno");
+        mapping.put("7", "pqrs");
+        mapping.put("8", "tuv");
+        mapping.put("9", "xyz");
+        ArrayList<String> res = new ArrayList<>();
+        permute(A, 0, res, mapping, "");
+        return res;
+    }
+
+    public void permute(String A, int index, ArrayList<String> res, Map<String, String> mapping, String temp) {
+        if (index == A.length() || temp.length() == A.length()) {
+            res.add(temp);
+            return;
+        }
+        String num = A.charAt(index) + "";
+        for (char c : mapping.get(num).toCharArray()) {
+            permute(A, index+1, res, mapping, temp+c);
+        }
+    }
+}
 ```
 <a name="ques-139"></a>
 **Palindrome Partitioning** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<String>> partition(String a) {
+        ArrayList<ArrayList<String>> ans = new ArrayList<>();
+        helper(ans, new ArrayList<String>(), a, 0);
+        return ans;
+    }
+ 
+    private void helper(ArrayList<ArrayList<String>> ans, ArrayList<String> temp, String a, int idx) {
+        if (idx == a.length()) {
+            ans.add(new ArrayList<>(temp));
+            return;
+        }
+        for (int i=idx; i<a.length(); i++) {
+            String sb = a.substring(idx, i+1);
+ 
+            if (isPalindrome(sb)) {
+                temp.add(sb);
+                helper(ans, temp, a, i+1);
+                temp.remove(temp.size()-1);
+            }
+        }
+    }
+ 
+    private boolean isPalindrome(String s) {
+        return new StringBuilder(s).reverse().toString().equals(s);
+    }
+}
 ```
 <a name="ques-140"></a>
 **Generate all Parentheses II** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<String> generateParenthesis(int A) {
+        ArrayList<String> res = new ArrayList<>();
+        brackets(A, A, 0, "", res);
+        Collections.sort(res);
+        return res;
+    }
+
+    private void brackets(int left, int right, int open, String temp, ArrayList<String> res) {
+        if (left > right || left < 0 || right < 0 || open < 0) {
+            return;
+        }
+        if (left == 0 && right == 0 && open == 0) {
+            if (!res.contains(temp))
+                res.add(temp);
+        }
+        if (open == 0) {
+            brackets(left-1, right, open+1, temp + "(", res);
+        } else { // open > 0
+            if (left > 0)
+                brackets(left-1, right, open+1, temp + "(", res); // add one more left
+            brackets(left, right-1, open-1, temp + ")", res); // add one more right
+        }
+    }
+}
 ```
 <a name="ques-141"></a>
 **Permutations** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> permute(ArrayList<Integer> A) {
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        Collections.sort(A);
+        permute(new ArrayList<Integer>(A), new ArrayList<>(), res);
+        return res;
+    }
+    
+    private void permute(ArrayList<Integer> A, ArrayList<Integer> temp, ArrayList<ArrayList<Integer>> res) {
+        if (A.size() == 0) {
+            res.add(temp);
+            return;
+        }
+        for (int num : A) {
+            ArrayList<Integer> ans = new ArrayList<>(temp);
+            ans.add(num);
+            ArrayList<Integer> tovisit = new ArrayList<>(A);
+            tovisit.remove(new Integer(num));
+            permute(tovisit, ans, res);
+        }
+    }
+}
 ```
 <a name="ques-142"></a>
 **Gray Code** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<Integer> grayCode(int B) {
+        
+        //DP type approach
+        /*
+            000
+            001
+            011
+            010
+            ---  (mirror to see symmetry)
+            110
+            111
+            101
+            100
+            
+        */
+        
+        
+        ArrayList<Integer> arr=new ArrayList<>();
+        arr.add(0);
+        arr.add(1);
+        for(int i=1;i<B;i++){
+            //traversing array in reverse because of reflection pattern
+            for(int j=arr.size()-1;j>=0;j--){
+                
+                int curr=arr.get(j);
+                
+                //Copying arr(j) to te, will simply copy bits of arr(j) to te.
+                int te=curr;
+                
+                //Finally, setting final bit to 1.
+                te+=1<<i;
+                arr.add(te);
+            }
+            
+        }
+        
+        return arr;
+    }
+}
 ```
 <a name="ques-143"></a>
 **Kth Permutation Sequence** [Back](#backtracking) <br>
@@ -3441,6 +3715,80 @@ public class Solution {
 <a name="ques-144"></a>
 **NQueens** [Back](#backtracking) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<String>> solveNQueens(int a) {
+        ArrayList<ArrayList<String>> res = new ArrayList<>();
+        int[][] invalid = new int[a][a];
+        int[][] pos = new int[a][a];
+        nqueens(res, pos, invalid, 0, a);
+        return res;
+    }
+    
+    private void nqueens(ArrayList<ArrayList<String>> res, int[][] pos, int[][] invalid, int row, int a) {
+        for (int col=0; col < a && row < a; col++) {
+            // System.out.println("Checking at (" + row + ", " + col + ")");
+            if (invalid[row][col] == 0) {
+                // check if not invalid & update board
+                int[][] newPos = clone(pos);
+                int[][] newInvalid = clone(invalid);
+                placeQueen(newPos, newInvalid, row, col, a);
+                nqueens(res, newPos, newInvalid, row+1, a);
+                if (row == a-1) {
+                    addResult(res, newPos, a);   
+                }
+            }
+        }
+    }
+    
+    private void placeQueen(int[][] newPos, int[][] invalid, int row, int col, int a) {
+        // System.out.println("Placing queen at (" + row + ", " + col + ")");
+        newPos[row][col] = 1;
+        // mark the row and col elements
+        for (int index=0; index < a; index++) {
+            invalid[row][index] = 1;
+            invalid[index][col] = 1;
+        }
+        // mark the diagonal elements
+        for (int index=1; index < a && row + index < a && col + index < a; index++) {
+            invalid[row+index][col+index] = 1;
+        }
+        for (int index=1; index < a && row + index < a && col-index >= 0; index++) {
+            invalid[row+index][col-index] = 1;
+        }
+        for (int index=1; index < a && row - index >= 0 && col - index >= 0; index++) {
+            invalid[row-index][col-index] = 1;
+        }
+        for (int index=1; index < a && row - index >= 0 && col + index < a; index++) {
+            invalid[row-index][col+index] = 1;
+        }
+    }
+    
+    private int[][] clone(int[][] input) {
+        int[][] output = new int[input.length][input[0].length];
+        for (int i=0; i < input.length; i++) {
+            for (int j=0; j < input[0].length; j++) {
+                output[i][j] = input[i][j];
+            }
+        }
+        return output;
+    }
+    
+    private void addResult(ArrayList<ArrayList<String>> res, int[][] pos, int a) {
+        ArrayList<String> temp = new ArrayList<>();
+        for (int row=0; row < a; row++) {
+            StringBuilder sb = new StringBuilder();
+            for (int col=0; col < a; col++) {
+                if (pos[row][col] == 0){
+                    sb.append(".");
+                } else if (pos[row][col] == 1) {
+                    sb.append("Q");
+                }
+            }
+            temp.add(sb.toString());
+        }
+        res.add(temp);
+    }
+}
 ```
 
 ### Hashing
