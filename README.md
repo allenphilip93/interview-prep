@@ -290,29 +290,29 @@
 |6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-170)  | _O(n)_         | _O(n)_          | Easy         |   |
 |6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-171)  | _O(n)_         | _O(n)_          | Easy         |   |
 |7| [PostOrder Traversal](https://www.interviewbit.com/problems/postorder-traversal/)      | [Java](#ques-172)  | _O(n)_         | _O(n)_          | Medium         |  Using 2 stacks is easy  |
-|8| [Hotel Reviews](https://www.interviewbit.com/problems/hotel-reviews/)      | [Java](#ques-173)  | _O(Sum of all input strings length)_         | _O(n)_          | Medium         |  Use tries or Hashset   |
-|9| [Balanced Binary Tree](https://www.interviewbit.com/problems/balanced-binary-tree/)      | [Java](#ques-174)  | _O(n)_         | _O(n)_          | Easy         |     |
+|8| [Hotel Reviews](https://www.interviewbit.com/problems/hotel-reviews/) Given a set of reviews provided by the customers for different hotels and a string containing “Good Words”, you need to sort the reviews in descending order according to their “Goodness Value” (Higher goodness value first). We define the “Goodness Value” of a string as the number of “Good Words” in that string.     | [Java](#ques-173)  | _O(Sum of all input strings length)_         | _O(n)_          | Medium         |  Use tries or Hashset   |
+|9| [Balanced Binary Tree](https://www.interviewbit.com/problems/balanced-binary-tree/) Given two binary trees, write a function to check if they are equal or not. Two binary trees are considered equal if they are structurally identical and the nodes have the same value.     | [Java](#ques-174)  | _O(n)_         | _O(n)_          | Easy         |     |
 |10| [Identical Binary Trees](https://www.interviewbit.com/problems/identical-binary-trees/)      | [Java](#ques-175)  | _O(n)_         | _O(n)_          | Easy         |     |
-|11| [Symmetric Binary Tree](https://www.interviewbit.com/problems/symmetric-binary-tree/)      | [Java](#ques-176)  | _O(n)_         | _O(n)_          | Easy         |     |
+|11| [Symmetric Binary Tree](https://www.interviewbit.com/problems/symmetric-binary-tree/) Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).     | [Java](#ques-176)  | _O(n)_         | _O(n)_          | Easy         |     |
 |12| [Inorder Traversal of Cartesian Tree](https://www.interviewbit.com/problems/inorder-traversal-of-cartesian-tree/)      | [Java](#ques-177)  | _O(n)_         | _O(n)_          | Easy         |     |
 |13| [Sorted Array To Balanced BST](https://www.interviewbit.com/problems/sorted-array-to-balanced-bst/)      | [Java](#ques-178)  | _O(n)_         | _O(n)_          | Easy         |     |
 |14| [Binary Tree From Inorder And Postorder](https://www.interviewbit.com/problems/binary-tree-from-inorder-and-postorder/)      | [Java](#ques-179)  | _O(n)_         | _O(n)_          | Easy         |    |
 |15| [Construct Binary Tree From Inorder And Preorder](https://www.interviewbit.com/problems/construct-binary-tree-from-inorder-and-preorder/)      | [Java](#ques-180)  | _O(n)_         | _O(n)_          | Easy         |     |
-|16| [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/)      | [Java](#ques-181)  | _O(n)_         | _O(n)_          | Easy         |  Can be done without extra space as well   |
+|16| [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/) Given a binary search tree, write a function to find the kth smallest element in the tree.     | [Java](#ques-181)  | _O(n)_         | _O(n)_          | Easy         |  Can be done without extra space as well   |
 |17| [2-Sum Binary Tree](https://www.interviewbit.com/problems/2sum-binary-tree/)      | [Java](#ques-182)  | _O(n)_         | _O(logn)_          | Medium         |  Can be done in O(n) space with sorted array   |
-|18| [BST Iterator](https://www.interviewbit.com/problems/bst-iterator/)      | [Java](#ques-183)  | _O(1)_         | _O(logn)_          | Easy         |  Can be done in O(n) space with array   |
+|18| [BST Iterator](https://www.interviewbit.com/problems/bst-iterator/) Implement an iterator over a binary search tree (BST) with next() and hasnext() functions. Your iterator will be initialized with the root node of a BST.     | [Java](#ques-183)  | _O(1)_         | _O(logn)_          | Easy         |  Can be done in O(n) space with array   |
 |19| [Recover Binary Search Tree](https://www.interviewbit.com/problems/recover-binary-search-tree/)      | [Java](#ques-184)  | _O(n)_         | _O(1)_          | Medium         |   Morris Algo - attaching current to inorder predecessor, Can be done in O(n) space with array, rest concept is same  |
 |20| [Invert the Binary Tree](https://www.interviewbit.com/problems/invert-the-binary-tree/)      | [Java](#ques-185)  | _O(n)_         | _O(n)_          | Easy         |   |
 |21| [ZigZag Level Order Traversal BT](https://www.interviewbit.com/problems/zigzag-level-order-traversal-bt/)      | [Java](#ques-186)  | _O(n)_         | _O(n)_          | Easy         |  Can be solved using 2 stacks or queue  |
 |22| [Min Depth of Binary Tree](https://www.interviewbit.com/problems/min-depth-of-binary-tree/)      | [Java](#ques-187)  | _O(n)_         | _O(n)_          | Easy         |    |
-|23| [Path Sum](https://www.interviewbit.com/problems/path-sum/)      | [Java](#ques-188)  | _O(n)_         | _O(n)_          | Easy         |    |
-|24| [Sum Root to Leaf Numbers](https://www.interviewbit.com/problems/sum-root-to-leaf-numbers/)      | [Java](#ques-189)  | _O(n)_         | _O(n)_          | Medium         |  mod can be used even before number is formed |
+|23| [Path Sum](https://www.interviewbit.com/problems/path-sum/) Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.     | [Java](#ques-188)  | _O(n)_         | _O(n)_          | Easy         |    |
+|24| [Sum Root to Leaf Numbers](https://www.interviewbit.com/problems/sum-root-to-leaf-numbers/) Represent numbers as paths from root to all leaves and sum them all up.     | [Java](#ques-189)  | _O(n)_         | _O(n)_          | Medium         |  mod can be used even before number is formed |
 |25| [Root to Leaf Paths With Sum](https://www.interviewbit.com/problems/root-to-leaf-paths-with-sum/)      | [Java](#ques-190)  | _O(n)_         | _O(n)_          | Medium         |  |
 |26| [Populate Next Right Pointers Tree](https://www.interviewbit.com/problems/populate-next-right-pointers-tree/)      | [Java](#ques-191)  | _O(n)_         | _O(1)_          | Medium         |  If Space was not constant then using queue is very easy |
-|27| [Least Common Ancestor](https://www.interviewbit.com/problems/least-common-ancestor/)      | [Java](#ques-192)  | _O(n)_         | _O(n)_          | Medium         |  |
-|28| [Shortest Unique Prefix](https://www.interviewbit.com/problems/shortest-unique-prefix/)      | [Java](#ques-193)  | _O(n*m)_         | _O(total unique characters)_          | Medium         |  either use count of unique flag at each node, update the child's property and not current node |
-|29| [Flatten Binary Tree to Linked List](https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/)      | [Java](#ques-194)  | _O(n)_         | _O(1)_          | Medium         |  Can be solved using stack or recursion |
-|30| [Order of People Heights](https://www.interviewbit.com/problems/order-of-people-heights/)      | [Java](#ques-195)  | _O(nlogn)_         | _O(n)_          | Medium         |  Solve it like a puzzle, good question |
+|27| [Least Common Ancestor](https://www.interviewbit.com/problems/least-common-ancestor/) Find the lowest common ancestor in an unordered binary tree given two values in the tree.     | [Java](#ques-192)  | _O(n)_         | _O(n)_          | Medium         |  |
+|28| [Shortest Unique Prefix](https://www.interviewbit.com/problems/shortest-unique-prefix/) Find shortest unique prefix to represent each word in the list.     | [Java](#ques-193)  | _O(n*m)_         | _O(total unique characters)_          | Medium         |  either use count of unique flag at each node, update the child's property and not current node |
+|29| [Flatten Binary Tree to Linked List](https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/) Given a binary tree, flatten it to a linked list (right skewed binary tree) in-place.     | [Java](#ques-194)  | _O(n)_         | _O(1)_          | Medium         |  Can be solved using stack or recursion |
+|30| [Order of People Heights](https://www.interviewbit.com/problems/order-of-people-heights/) You are given the following : A positive number N, Heights : A list of heights of N persons standing in a queue, Infronts : A list of numbers corresponding to each person (P) that gives the number of persons who are taller than P and standing in front of P. You need to return list of actual order of persons’s height     | [Java](#ques-195)  | _O(nlogn)_         | _O(n)_          | Medium         |  Solve it like a puzzle, good question |
 
 
 ## Solutions
@@ -4627,34 +4627,301 @@ public class  Solution {
 <a name="ques-169"></a>
 **Inorder Traversal** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public ArrayList<Integer> inorderTraversal(TreeNode A) {
+        ArrayDeque<TreeNode> stack = new ArrayDeque<>();
+        ArrayList<Integer> res = new ArrayList<>();
+        TreeNode curr = A;
+        stack.push(A);
+        while (stack.size() > 0) {
+            while (curr != null) {
+                stack.push(curr);
+                curr = curr.left;
+            }
+            curr = stack.pop();
+            res.add(curr.val);
+            
+            System.out.println("Stack : " + stack);
+            System.out.println("Res : " + res);
+            System.out.println("Curr : " + curr.val);
+            curr = curr.right;
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-170"></a>
 **PreOrder Traversal** [Back](#trees) <br>
 ```java
-```
-<a name="ques-171"></a>
-**PreOrder Traversal** [Back](#trees) <br>
-```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public ArrayList<Integer> preorderTraversal(TreeNode A) {
+        ArrayDeque<TreeNode> stack = new ArrayDeque<>();
+        stack.push(A);
+        ArrayList<Integer> res = new ArrayList<>();
+        while (stack.size() > 0) {
+            TreeNode node = stack.pop();
+            res.add(node.val);
+            if (node.right != null)
+                stack.push(node.right);
+            if (node.left != null)
+                stack.push(node.left);
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-172"></a>
 **PostOrder Traversal** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public ArrayList<Integer> postorderTraversal(TreeNode a) {
+        
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        Stack<TreeNode> stack = new Stack <TreeNode>();
+        TreeNode lastNode = null;
+        while(!stack.isEmpty() || a != null){
+            if(a != null){
+                stack.push(a);
+                a = a.left;
+            }else{
+                TreeNode peekNode = stack.peek();
+                if(peekNode.right != null && lastNode != peekNode.right){
+                    a = peekNode.right;
+                }else{
+                    result.add(peekNode.val);
+                    lastNode = stack.pop();
+                }
+                
+            }
+        }
+        
+        return result;
+        
+    }
+}
 ```
 <a name="ques-173"></a>
 **Hotel Reviews** [Back](#trees) <br>
 ```java
+public class Solution {
+    
+    class TrieNode {
+        TrieNode[] next;
+        boolean isEnd;
+        public TrieNode() {
+            this.next = new TrieNode[26];
+            this.isEnd = false;
+        }
+    }
+    
+    class Trie {
+        TrieNode head = null;
+        public Trie() {
+            this.head = new TrieNode();
+        }
+        
+        public void add(char[] arr) {
+            TrieNode curr = head;
+            for (int index=0; index < arr.length; index++) {
+                int pos = (int)arr[index] - (int)'a';
+                if (curr.next[pos] == null) {
+                    TrieNode temp = new TrieNode();
+                    curr.next[pos] = temp;
+                }
+                curr = curr.next[pos];
+            }
+            curr.isEnd = true;
+        }
+        
+        public boolean findExact(char[] arr) {
+            TrieNode curr = head;
+            for (int index=0; index < arr.length; index++) {
+                int pos = (int) arr[index] - (int)'a';
+                if (curr.next != null && curr.next[pos] != null) {
+                    curr = curr.next[pos];
+                } else {
+                    return false;
+                }
+            }
+            return curr.isEnd;
+        }
+    }
+    
+    public ArrayList<Integer> solve(String A, ArrayList<String> B) {
+        // Build the trie for the input A
+        Trie trie = new Trie();
+        for (String s : A.split("_")) {
+            trie.add(s.toCharArray());
+        }
+        // Build count map for the hits
+        TreeMap<Integer, ArrayList<Integer>> count = new TreeMap<>(Collections.reverseOrder());
+        int index =0 ;
+        for (String s : B) {
+            int score = 0;
+            for (String word : s.split("_")) {
+                if (trie.findExact(word.toCharArray())) {
+                    score++;
+                }
+            }
+            if (count.containsKey(score)) {
+                count.get(score).add(index);
+            } else {
+                ArrayList<Integer> temp = new ArrayList<>();
+                temp.add(index);
+                count.put(score, temp);
+            }
+            index++;
+        }
+        // Build the result
+        ArrayList<Integer> res = new ArrayList<>();
+        for (Integer score : count.keySet()) {
+            for (Integer pos : count.get(score)) {
+                res.add(pos);
+            }
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-174"></a>
 **Balanced Binary Tree** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public int isBalanced(TreeNode A) {
+        TreeNode curr = A;
+        isBalanced = 1;
+        check(curr);
+        return isBalanced;
+    }
+    int isBalanced = 1;
+    private int check(TreeNode A) {
+        if (A == null)
+            return 0;
+        int left = check(A.left);
+        int right = check(A.right);
+        if (Math.abs(left-right) > 1)
+            isBalanced = 0;
+        return 1 + Math.max(left, right);
+    }
+}
 ```
 <a name="ques-175"></a>
 **Identical Binary Trees** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public int isSameTree(TreeNode A, TreeNode B) {
+        if (A == null && B == null) {
+            return 1;
+        } else if (A == null) {
+            return 0;
+        } else if (B == null) {
+            return 0;
+        } else if (A.val != B.val) {
+            return 0;
+        }
+        int left = isSameTree(A.left, B.left);
+        int right = isSameTree(A.right, B.right);
+        return left * right;
+    }
+}
 ```
 <a name="ques-176"></a>
 **Symmetric Binary Tree** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public int isSymmetric(TreeNode A) {
+        return check(A.left, A.right);
+    }
+    
+    public int check(TreeNode left, TreeNode right) {
+        if (left == null && right == null) {
+            return 1;
+        } else if (left == null || right == null || left.val != right.val) {
+            return 0;
+        }
+        int valL = check(left.left, right.right);
+        int valR = check(left.right, right.left);
+        return valL * valR;
+    }
+}
 ```
 <a name="ques-177"></a>
 **Inorder Traversal of Cartesian Tree** [Back](#trees) <br>
@@ -4663,18 +4930,201 @@ public class  Solution {
 <a name="ques-178"></a>
 **Sorted Array To Balanced BST** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public TreeNode sortedArrayToBST(final List<Integer> a) {
+        return build(a, 0, a.size()-1);
+    }
+    
+    public TreeNode build(final List<Integer> a, int start, int end) {
+        int mid = (start + end)/2;
+        TreeNode newNode = new TreeNode(a.get(mid));
+        TreeNode left=null, right=null;
+        if (start < mid)
+            left = build(a, start, mid-1);
+        if (mid < end)
+            right = build(a, mid+1, end);
+        newNode.left = left;
+        newNode.right = right;
+        return newNode;
+    }
+}
 ```
 <a name="ques-179"></a>
 **Binary Tree From Inorder And Postorder** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public TreeNode buildTree(ArrayList<Integer> A, ArrayList<Integer> B) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int index=0; index < A.size(); index++) {
+            map.put(A.get(index), index);
+        }
+        return buildTree(A, B, map, 0, A.size()-1, 0, B.size()-1);
+    }
+    
+    private TreeNode buildTree(ArrayList<Integer> A, ArrayList<Integer> B, HashMap<Integer, Integer> map, int Astart, int Aend, int Bstart, int Bend) {
+        if (Astart == Aend) {
+            return new TreeNode(A.get(Astart));
+        } else if (Bstart == Bend) {
+            return new TreeNode(A.get(Bstart));
+        } else if (Astart < 0 || Astart >= A.size() || Aend < 0 || Aend >= A.size()) {
+            return null;
+        } else if (Bstart < 0 || Bstart >= A.size() || Bend < 0 || Bend >= A.size()) {
+            return null;
+        }
+        int midElem = B.get(Bend);
+        TreeNode root = new TreeNode(midElem);
+        int inorderPos = map.get(midElem);
+        TreeNode left = null, right = null;
+        if (inorderPos == Astart) {
+            // no left subtree
+            right = buildTree(A, B, map, inorderPos+1, Aend, Bstart, Bend-1);
+        } else if (inorderPos == Aend) {
+            // no right subtree
+            left = buildTree(A, B, map, Astart, inorderPos-1, Bstart, Bend-1);
+        } else {
+            int leftSize = inorderPos - Astart;
+            int rightSize = Aend - inorderPos;
+            left = buildTree(A, B, map, Astart, inorderPos-1, Bstart, Bstart+leftSize-1);
+            right = buildTree(A, B, map, inorderPos+1, Aend, Bend-rightSize, Bend-1);
+        }
+        // int val = B.get(Bend);
+        // TreeNode root = new TreeNode(val);
+        // int ArightStart = Aend;
+        // while (A.get(ArightStart) != B.get(Bend)) {
+        //     ArightStart--;
+        // }
+        // ArightStart++;
+        // int rightTreeSize = Aend - ArightStart + 1;
+        // int AleftTreeEnd = ArightStart - 2;
+        // int leftTreeSize = AleftTreeEnd - Astart + 1;
+        // TreeNode left = buildTree(A, B, Astart, AleftTreeEnd, Bstart, Bstart + leftTreeSize -1);
+        // TreeNode right = buildTree(A, B, ArightStart, Aend, Bend - rightTreeSize - 1, Bend - 1);
+        root.left = left;
+        root.right = right;
+        return root;
+    }
+}
 ```
 <a name="ques-180"></a>
 **Construct Binary Tree From Inorder And Preorder** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public TreeNode buildTree(ArrayList<Integer> preorder, ArrayList<Integer> inorder) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int index=0; index < inorder.size(); index++) {
+            map.put(inorder.get(index), index);
+        }
+        return buildTree(inorder, preorder, map, 0, preorder.size()-1, 0, inorder.size()-1);
+    }
+    
+    private TreeNode buildTree(ArrayList<Integer> A, ArrayList<Integer> B, HashMap<Integer, Integer> map, int Astart, int Aend, int Bstart, int Bend) {
+        if (Astart == Aend) {
+            return new TreeNode(A.get(Astart));
+        } else if (Bstart == Bend) {
+            return new TreeNode(A.get(Bstart));
+        } else if (Astart < 0 || Astart >= A.size() || Aend < 0 || Aend >= A.size()) {
+            return null;
+        } else if (Bstart < 0 || Bstart >= A.size() || Bend < 0 || Bend >= A.size()) {
+            return null;
+        }
+        int midElem = B.get(Bstart);
+        TreeNode root = new TreeNode(midElem);
+        int inorderPos = map.get(midElem);
+        TreeNode left = null, right = null;
+        if (inorderPos == Astart) {
+            // no left subtree
+            right = buildTree(A, B, map, inorderPos+1, Aend, Bstart+1, Bend);
+        } else if (inorderPos == Aend) {
+            // no right subtree
+            left = buildTree(A, B, map, Astart, inorderPos-1, Bstart+1, Bend);
+        } else {
+            int leftSize = inorderPos - Astart;
+            int rightSize = Aend - inorderPos;
+            left = buildTree(A, B, map, Astart, inorderPos-1, Bstart+1, Bstart+leftSize);
+            right = buildTree(A, B, map, inorderPos+1, Aend, Bend-rightSize+1, Bend);
+        }
+        // int val = B.get(Bend);
+        // TreeNode root = new TreeNode(val);
+        // int ArightStart = Aend;
+        // while (A.get(ArightStart) != B.get(Bend)) {
+        //     ArightStart--;
+        // }
+        // ArightStart++;
+        // int rightTreeSize = Aend - ArightStart + 1;
+        // int AleftTreeEnd = ArightStart - 2;
+        // int leftTreeSize = AleftTreeEnd - Astart + 1;
+        // TreeNode left = buildTree(A, B, Astart, AleftTreeEnd, Bstart, Bstart + leftTreeSize -1);
+        // TreeNode right = buildTree(A, B, ArightStart, Aend, Bend - rightTreeSize - 1, Bend - 1);
+        root.left = left;
+        root.right = right;
+        return root;
+    }
+}
 ```
 <a name="ques-181"></a>
 **Kth Smallest Element In Tree** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    int min = 0;
+    public int kthsmallest(TreeNode A, int B) {
+        if (A.left == null && A.right == null) {
+            if (B == 1)
+                return 1;
+            return 0;
+        }
+        int k = kthsmallest(A.left, B);
+        k = k + 1;
+        int right = kthsmallest(A.right, B);
+    }
+}
 ```
 <a name="ques-182"></a>
 **2-Sum Binary Tree** [Back](#trees) <br>
@@ -4683,6 +5133,72 @@ public class  Solution {
 <a name="ques-183"></a>
 **BST Iterator** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+
+public class Solution {
+
+    TreeNode node = null;
+    ArrayDeque<TreeNode> parents = null;
+    
+    public Solution(TreeNode root) {
+        node = root;
+        parents = new ArrayDeque<>();
+        while (node != null && node.left != null) {
+            parents.push(node);
+            node = node.left;
+        }
+    }
+
+    /** @return whether we have a next smallest number */
+    public boolean hasNext() {
+        // if (node.right == null) {
+        //     if (parents.size() > 0) {
+        //         if (parents.peek().val > node.val) {
+        //             return true;
+        //         }
+        //     }
+        //     return false;
+        // }
+        if (node != null)
+            return true;
+        return false;
+    }
+
+    /** @return the next smallest number */
+    public int next() {
+        // System.out.println("NEXT : " + node.val);
+        int res = -1;
+        if (node != null) {
+            res = node.val;
+            if (node.right != null) {
+                node = node.right;
+                while (node.left != null) {
+                    parents.push(node);
+                    node = node.left;
+                }
+            } else if (parents.size() > 0 && parents.peek().val > node.val) {
+                node = parents.pop();
+            } else {
+                node = null;
+            }
+        }
+        return res;
+    }
+}
+
+/**
+ * Your Solution will be called like this:
+ * Solution i = new Solution(root);
+ * while (i.hasNext()) System.out.print(i.next());
+ */
 ```
 <a name="ques-184"></a>
 **Recover Binary Search Tree** [Back](#trees) <br>
@@ -4691,46 +5207,470 @@ public class  Solution {
 <a name="ques-185"></a>
 **Invert the Binary Tree** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public TreeNode invertTree(TreeNode A) {
+        invert(A.left, A.right);
+        return A;
+    }
+    
+    public void invert(TreeNode left, TreeNode right) {
+        if (left == null || right == null) {
+            return;
+        }
+        int temp = left.val;
+        left.val = right.val;
+        right.val = temp;
+        invert(left.left, right.right);
+        invert(left.right, right.left);
+    }
+}
 ```
 <a name="ques-186"></a>
 **ZigZag Level Order Traversal BT** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public ArrayList<ArrayList<Integer>> zigzagLevelOrder(TreeNode A) {
+        ArrayDeque<TreeNode> queue = new ArrayDeque<>();
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        queue.addFirst(A);
+        boolean lookFirst = true;
+        while (queue.size() > 0) {
+            int level = queue.size();
+            ArrayList<Integer> temp = new ArrayList<>();
+            for (int index=0; index < level; index++) {
+                TreeNode node = null;
+                if (lookFirst == true) {
+                    node = queue.pop();
+                    if (node.left != null)
+                        queue.offer(node.left);
+                    if (node.right != null)
+                        queue.offer(node.right);
+                } else {
+                    node = queue.removeLast();
+                    if (node.right != null)
+                        queue.push(node.right);
+                    if (node.left != null)
+                        queue.push(node.left);
+                }
+                temp.add(node.val);
+            }
+            res.add(temp);
+            lookFirst = !lookFirst;
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-187"></a>
 **Min Depth of Binary Tree** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public int minDepth(TreeNode A) {
+        if (A == null)
+            return 0;
+        if (A.left == null && A.right == null)
+            return 1;
+        if (A.left == null)
+            return 1 + minDepth(A.right);
+        if (A.right == null)
+            return 1 + minDepth(A.left);
+        return 1 + Math.min(minDepth(A.left), minDepth(A.right));
+    }
+}
 ```
 <a name="ques-188"></a>
 **Path Sum** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public int hasPathSum(TreeNode a, int b) {
+        if (a == null)
+            return 0;
+        if (a.val == b && (a.left == null && a.right == null))
+            return 1;
+        else if (hasPathSum(a.left, b - a.val) == 1
+                || hasPathSum(a.right, b - a.val) == 1) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+}
 ```
 <a name="ques-189"></a>
 **Sum Root to Leaf Numbers** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public int sumNumbers(TreeNode A) {
+        ArrayList<Integer> res = new ArrayList<>();
+        sumAllPaths(A, 0, res);
+        int sum = 0;
+        for (Integer val : res) {
+            // System.out.println("SUM : "+ val);
+            sum = sum + val;
+        }
+        return sum % 1003;
+    }
+    
+    public void sumAllPaths(TreeNode node, int num, ArrayList<Integer> res) {
+        if (node == null)
+            return;
+        if (node.left == null && node.right == null) {
+            res.add((10*num + node.val)%1003);
+            return;
+        }
+        if (node.left != null)
+            sumAllPaths(node.left, (10 * num + node.val)%1003, res);
+        if (node.right != null)
+            sumAllPaths(node.right, (10 * num + node.val)%1003, res);
+    }
+}
 ```
 <a name="ques-190"></a>
 **Root to Leaf Paths With Sum** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    
+    public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
+        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        if(root == null)
+            return null;
+        // temp.add(root.val);
+        pathSum(root, sum, result, temp);
+        return result;
+    }
+    
+    public void pathSum(TreeNode node, int sum, ArrayList<ArrayList<Integer>> result, ArrayList<Integer> temp) {
+        if (node == null)
+            return;
+        int currentVal = node.val;
+        temp.add(currentVal);
+        if (node.left == null && node.right == null) {
+            if (sum - currentVal == 0) {
+                result.add(new ArrayList<Integer>(temp));
+            }
+        }
+        pathSum(node.left, sum - node.val, result, temp);
+        pathSum(node.right, sum - node.val, result, temp);
+        temp.remove(temp.size() - 1);
+    }
+}
 ```
 <a name="ques-191"></a>
 **Populate Next Right Pointers Tree** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree with next pointer.
+ * public class TreeLinkNode {
+ *     int val;
+ *     TreeLinkNode left, right, next;
+ *     TreeLinkNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public void connect(TreeLinkNode root) {
+        TreeLinkNode curr = root;
+        ArrayDeque<TreeLinkNode> queue = new ArrayDeque<>();
+        queue.offer(curr);
+        while (queue.size() > 0) {
+            int level = queue.size();
+            System.out.println("LEVEL : " + level);
+            for (int index=0; index < level; index++) {
+                TreeLinkNode top = queue.remove();
+                System.out.println("Dequeued element : " + top.val);
+                if (queue.size() > 0) {
+                    System.out.println("Poining " + top.val + " to " + queue.peek().val);
+                    top.next = queue.peek();
+                }
+                if (top.left != null)
+                    queue.offer(top.left);
+                if (top.right != null)
+                    queue.offer(top.right);
+            }
+        }
+    }
+}
 ```
 <a name="ques-192"></a>
 **Least Common Ancestor** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) {
+ *      val = x;
+ *      left=null;
+ *      right=null;
+ *     }
+ * }
+ */
+public class Solution {
+    public int lca(TreeNode A, int B, int C) {
+        int res = recurse(A, B, C);
+        if (res == Integer.MAX_VALUE && B == C) {
+            return B;
+        } else if (res == Integer.MAX_VALUE || res == Integer.MIN_VALUE) {
+            return -1;
+        }
+        return res;
+    }
+    
+    private int recurse(TreeNode A, int B, int C) {
+        // if non-important leaf node, skip it
+        if (A == null || (A.left == null && A.right == null && A.val != B && A.val != C)) {
+            return Integer.MIN_VALUE;
+        }
+        int left = recurse(A.left, B, C);
+        int right = recurse(A.right, B, C);
+        if (left == Integer.MAX_VALUE && right == Integer.MAX_VALUE) {
+            return A.val;
+        } else if (A.val == B || A.val == C) {
+            if (left == Integer.MAX_VALUE || right == Integer.MAX_VALUE) {
+                return A.val;
+            } else {
+                return Integer.MAX_VALUE;
+            }
+        } else if (left == Integer.MAX_VALUE || right == Integer.MAX_VALUE) {
+            return Integer.MAX_VALUE;
+        } else {
+            return Math.max(left, right);
+        }
+    }
+}
 ```
 <a name="ques-193"></a>
 **Shortest Unique Prefix** [Back](#trees) <br>
 ```java
+public class Solution {
+    
+    class TrieNode {
+        int num;
+        boolean isEnd;
+        TrieNode[] next;
+        public TrieNode() {
+            this.next = new TrieNode[26];
+            this.num = 0;
+            this.isEnd = false;
+        }
+    }
+    
+    class Trie {
+        TrieNode head;
+        
+        public Trie() {
+            this.head = new TrieNode();
+        }
+        
+        public void addWord(String s) {
+            char[] arr = s.toCharArray();
+            TrieNode curr = head;
+            for (int index=0; index < arr.length; index++) {
+                int pos = (int)arr[index] - (int)'a';
+                if (curr.next[pos] == null) {
+                    // System.out.println("Adding node for " + arr[index]);
+                    curr.next[pos] = new TrieNode();
+                }
+                curr.next[pos].num++;
+                curr = curr.next[pos];
+            }
+            curr.isEnd = true;
+        }
+        
+        public String findPrefix(String a) {
+            char[] arr = a.toCharArray();
+            TrieNode curr = head;
+            StringBuilder prefix = new StringBuilder();
+            for (int index=0; index < arr.length; index++) {
+                int pos = (int)arr[index] - (int)'a';
+                prefix.append(arr[index]);
+                if (curr.next[pos] == null) {
+                    // System.out.println("PREFIX : " + prefix);
+                    return prefix.toString();
+                }
+                if (curr.next[pos].num == 1) {
+                    return prefix.toString();
+                }
+                curr = curr.next[pos];
+            }
+            return prefix.toString();
+        }
+    }
+    
+    public ArrayList<String> prefix(ArrayList<String> A) {
+        Trie trie = new Trie();
+        for (String s : A) {
+            trie.addWord(s);
+        }
+        ArrayList<String> res = new ArrayList<>();
+        for (String s : A) {
+            String prefix = trie.findPrefix(s);
+            res.add(prefix);
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-194"></a>
 **Flatten Binary Tree to Linked List** [Back](#trees) <br>
 ```java
+/**
+ * Definition for binary tree
+ * class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public TreeNode flatten(TreeNode a) {
+        if (a.left == null && a.right == null) {
+            return a;
+        }
+        if (a.left != null) {
+            if (a.right != null) {
+                TreeNode temp = a.left;
+                a.left = a.right;
+                a.right = temp;
+            } else {
+                a.right = a.left;
+                a.left = null;
+            }
+        }
+        TreeNode leftNode = null, rightNode = null;
+        if (a.left != null)
+            leftNode = flatten(a.left);
+        if (a.right != null)
+            rightNode = flatten(a.right);
+        
+        if (rightNode == null) {
+            a.right = leftNode;
+        } else if (leftNode == null) {
+            a.right = rightNode;
+        } else {
+            a.right = rightNode;
+            while (rightNode.right != null) {
+                rightNode = rightNode.right;
+            }
+            rightNode.right = leftNode;
+        }
+        a.left = null;
+        return a;
+    }
+}
 ```
 <a name="ques-195"></a>
 **Order of People Heights** [Back](#trees) <br>
 ```java
+public class Solution {
+    public ArrayList<Integer> order(ArrayList<Integer> A, ArrayList<Integer> B) {
+        TreeMap<Integer, Integer> sort = new TreeMap<>();
+        for (int index=0; index < A.size(); index++) {
+            sort.put(A.get(index), B.get(index));
+        }
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int index=0; index < A.size(); index++) {
+            res.add(null);
+        }
+        for (Integer height : sort.keySet()) {
+            int numTaller = sort.get(height);
+            // System.out.println("Finding pos for " + height + " with " + numTaller + " taller in front");
+            for (int index=0; index < res.size(); index++) {
+                if (numTaller == 0 && res.get(index) == null) {
+                    // System.out.println("Fixing " + height + " at " + index);
+                    res.set(index, height);
+                    break;
+                } else if (res.get(index) != null && res.get(index) <= height) {
+                    continue;
+                } else if (res.get(index) == null || res.get(index) > height) {
+                    numTaller--;
+                }
+            }
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-196"></a>
 **** [Back](#trees) <br>
