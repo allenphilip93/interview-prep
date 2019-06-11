@@ -241,20 +241,20 @@
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Colorful Number](https://www.interviewbit.com/problems/colorful-number/)      | [Java](#ques-145)  | _O(n*n)_         | _O(n)_          | Easy         |   |
-|2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/)      | [Java](#ques-146)  | _O(n)_         | _O(n)_          | Easy         |  3 conditions - element 0, sum 0 or sum repeated |
+|1| [Colorful Number](https://www.interviewbit.com/problems/colorful-number/) A number can be broken into different contiguous sub-subsequence parts. Suppose, a number 3245 can be broken into parts like 3 2 4 5 32 24 45 324 245. And this number is a COLORFUL number, since product of every digit of a contiguous subsequence is different     | [Java](#ques-145)  | _O(n*n)_         | _O(n)_          | Easy         |   |
+|2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/) Find the largest continuous sequence in a array which sums to zero.     | [Java](#ques-146)  | _O(n)_         | _O(n)_          | Easy         |  3 conditions - element 0, sum 0 or sum repeated |
 |3| [2 Sum](https://www.interviewbit.com/problems/2-sum/)      | [Java](#ques-147)  | _O(n)_         | _O(1)_          | Easy         |   |
 |4| [4 Sum](https://www.interviewbit.com/problems/4-sum/)      | [Java](#ques-148)  | _O(n*n+nlogn)_         | _O(n)_          | Medium         |  Either use n^3 solution using 2 pointers and hashSet for unique sets or or use customised sorting plus hashSet |
 |5| [Valid Sudoku](https://www.interviewbit.com/problems/valid-sudoku/)      | [Java](#ques-149)  | _O(n*n)_         | _O(n*n)_          | Medium         |  check row, col and box, keep different maps |
-|6| [Diffk II](https://www.interviewbit.com/problems/diffk-ii/)      | [Java](#ques-150)  | _O(n)_         | _O(n)_          | Easy         |   |
-|7| [Anagrams](https://www.interviewbit.com/problems/anagrams/)      | [Java](#ques-151)  | _O(n*m)_ , where m = average length of string       | _O(n)_          | Medium         |  Good Concept |
-|8| [Equal](https://www.interviewbit.com/problems/equal/)      | [Java](#ques-152)  | _O(n*n)_        | _O(n)_          | Medium         |  |
-|9| [Copy List](https://www.interviewbit.com/problems/copy-list/)      | [Java](#ques-153)  | _O(n)_        | _O(n)_          | Medium         |   |
-|10| [Longest Substring Without Repeat](https://www.interviewbit.com/problems/longest-substring-without-repeat/)      | [Java](#ques-154)  | _O(n)_        | _O(n)_          | Medium         |  |
-|11| [Window String](https://www.interviewbit.com/problems/window-string/)      | [Java](#ques-155)  | _O(n)_        | _O(n)_          | Medium         | Use 2 pointers and map to keep count of characters included - plus and minus   |
+|6| [Diffk II](https://www.interviewbit.com/problems/diffk-ii/) Given an array A of integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.     | [Java](#ques-150)  | _O(n)_         | _O(n)_          | Easy         |   |
+|7| [Anagrams](https://www.interviewbit.com/problems/anagrams/) Given an array of strings, return all groups of strings that are anagrams. Represent a group by a list of integers representing the index in the original list. Look at the sample case for clarification.     | [Java](#ques-151)  | _O(n*m)_ , where m = average length of string       | _O(n)_          | Medium         |  Good Concept |
+|8| [Equal](https://www.interviewbit.com/problems/equal/) Given an array A of integers, find the index of values that satisfy A + B = C + D, where A,B,C & D are integers values in the array.     | [Java](#ques-152)  | _O(n*n)_        | _O(n)_          | Medium         |  |
+|9| [Copy List](https://www.interviewbit.com/problems/copy-list/) A linked list is given such that each node contains an additional random pointer which could point to any node in the list or NULL. Return a deep copy of the list.     | [Java](#ques-153)  | _O(n)_        | _O(n)_          | Medium         |   |
+|10| [Longest Substring Without Repeat](https://www.interviewbit.com/problems/longest-substring-without-repeat/) Given a string, find the length of the longest substring without repeating characters.     | [Java](#ques-154)  | _O(n)_        | _O(n)_          | Medium         |  |
+|11| [Window String](https://www.interviewbit.com/problems/window-string/) Given a string S and a string T, find the minimum window in S which will contain all the characters in T in linear time complexity. Note that when the count of a character C in T is N, then the count of C in minimum window in S should be at least N.     | [Java](#ques-155)  | _O(n)_        | _O(n)_          | Medium         | Use 2 pointers and map to keep count of characters included - plus and minus   |
 |12| [Fraction](https://www.interviewbit.com/problems/fraction/)      | [Java](#ques-156)  | _O(n)_        | _O(n)_          | Medium         |   |
-|13| [Points on the Straight Line](https://www.interviewbit.com/problems/points-on-the-straight-line/)      | [Java](#ques-157)  | _O(n*n)_        | _O(n)_          | Medium         | Slope should be same, Consider first point as start and rest as end and create map and repeat; Keep edge cases like which slopes are valid and others keep in diff variables   |
-|14| [Substring Concatenation](https://www.interviewbit.com/problems/substring-concatenation/)      | [Java](#ques-158)  | _O(n*n)_        | _O(n)_          | Medium         | Brute force but just using hashmap for string match   |
+|13| [Points on the Straight Line](https://www.interviewbit.com/problems/points-on-the-straight-line/) Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.     | [Java](#ques-157)  | _O(n*n)_        | _O(n)_          | Medium         | Slope should be same, Consider first point as start and rest as end and create map and repeat; Keep edge cases like which slopes are valid and others keep in diff variables   |
+|14| [Substring Concatenation](https://www.interviewbit.com/problems/substring-concatenation/) You are given a string, S, and a list of words, L, that are all of the same length. Find all starting indices of substring(s) in S that is a concatenation of each word in L exactly once and without any intervening characters.     | [Java](#ques-158)  | _O(n*n)_        | _O(n)_          | Medium         | Brute force but just using hashmap for string match   |
 
 
 <a name="heaps"></a>
@@ -3795,18 +3795,174 @@ public class Solution {
 <a name="ques-145"></a>
 **Colorful Number** [Back](#hashing) <br>
 ```java
+public class Solution {
+    public int colorful(int A) {
+        String B=A+"";
+        
+        HashMap<Integer,String> map= new HashMap<Integer,String>();
+        for(int i=1;i<=B.length();i++)
+        {
+            for(int j=0;j<B.length()-i+1;j++)
+            {
+                boolean value=check(map,B.substring(j,j+i));
+                if(value==false)
+                    return 0;
+            }
+        }
+        
+        return 1;
+    }
+    
+    public boolean check(HashMap<Integer,String> map, String A)
+    {
+        int prod=1;
+        for(int i=0;i<A.length();i++)
+            prod*=A.charAt(i)-'0';
+        
+        if(map.containsKey(prod))
+            return false;
+        
+        map.put(prod,A);
+        return true;
+    }
+}
 ```
 <a name="ques-146"></a>
 **Largest Continuous Sequence Zero Sum** [Back](#hashing) <br>
 ```java
+public class Solution {
+    public ArrayList<Integer> lszero(ArrayList<Integer> A) {
+        ArrayList<Integer> sumList = new ArrayList<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        
+        map.put(0,-1);
+        
+        int start = -1;
+        int end = -1;
+        int sum = 0;
+        int maxLen = -1;
+        
+        for (int i=0;i<A.size();i++) {
+            sum += A.get(i);
+            if (map.containsKey(sum)) {
+                if (maxLen < (i - map.get(sum))) {
+                    start = map.get(sum) + 1;
+                    end = i;
+                    maxLen = i - map.get(sum);
+                }
+            }
+            else {
+                map.put(sum, i);
+            }
+        }
+        
+        if(start >= 0 && end >= 0) {
+            for(int i = start; i <= end; i++) {
+                result.add(A.get(i));
+            }
+        }
+        
+        return result;
+    }
+}
 ```
 <a name="ques-147"></a>
 **2 Sum** [Back](#hashing) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public ArrayList<Integer> twoSum(final List<Integer> A, int B) {
+        ArrayList<Integer> res = new ArrayList<>();
+        HashMap<Integer, Integer> count = new HashMap<>();
+        for (int index=0; index < A.size(); index++) {
+            int val = A.get(index);
+            if (count.containsKey(val)) {
+                continue;
+            } else {
+                count.put(val, index);
+            }
+        }
+        for (int index=0; index < A.size(); index++) {
+            int req = B - A.get(index);
+            if (count.containsKey(req)) {
+                int pos = count.get(req);
+                if (pos < index) {
+                    res.add(pos+1);
+                    res.add(index+1);
+                    return res;
+                }
+            }
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-148"></a>
 **4 Sum** [Back](#hashing) <br>
 ```java
+public class Solution {
+    class Pair {
+        int x;
+        int y;
+        public Pair (int x, int y) {
+            this.x =x;
+            this.y =y;
+        }
+    }
+    public ArrayList<ArrayList<Integer>> fourSum(ArrayList<Integer> A, int B) {
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        HashMap<Integer, ArrayList<Pair>> map = new HashMap<>();
+        for (int i=0; i < A.size(); i++) {
+            for (int j=i+1; j < A.size(); j++) {
+                int sum = A.get(i) + A.get(j);
+                Pair pair = new Pair(i, j);
+                if (map.containsKey(sum)){
+                    map.get(sum).add(pair);
+                } else {
+                    ArrayList<Pair> temp = new ArrayList<>();
+                    temp.add(pair);
+                    map.put(sum, temp);
+                }
+            }
+        }
+        for (int i=0; i < A.size(); i++) {
+            for (int j=i+1; j < A.size(); j++) {
+                int req = B - A.get(i) - A.get(j);
+                if (map.containsKey(req)) {
+                    for (Pair pair : map.get(req)) {
+                        if (pair.x != i && pair.x != j && pair.y != i && pair.y != j) {
+                            ArrayList<Integer> temp = new ArrayList<>();
+                            temp.add(A.get(i));
+                            temp.add(A.get(j));
+                            temp.add(A.get(pair.x));
+                            temp.add(A.get(pair.y));
+                            Collections.sort(temp);
+                            if (!res.contains(temp))
+                                res.add(temp);
+                        }
+                    }
+                }
+            }
+        }
+        Collections.sort(res, new LexicographicalSort());
+        return res;
+    }
+    class LexicographicalSort implements Comparator<ArrayList<Integer>> {
+        public int compare(ArrayList<Integer> l1, ArrayList<Integer> l2) {
+            for (int index=0; index < l1.size(); index++) {
+                if (l1.get(index) < l2.get(index)) {
+                    return -1;
+                } else if (l1.get(index) > l2.get(index)) {
+                    return 1;
+                } else {
+                    continue;
+                }
+            }
+            return 1;
+        }
+    }
+}
 ```
 <a name="ques-149"></a>
 **Valid Sudoku** [Back](#hashing) <br>
@@ -3815,27 +3971,257 @@ public class Solution {
 <a name="ques-150"></a>
 **Diffk II** [Back](#hashing) <br>
 ```java
+public class Solution {
+	public int diffPossible(final List<Integer> a, int b) {
+	    HashSet<Integer> visited = new HashSet<Integer>();
+	    for (Integer number : a) {
+	        if (visited.contains(number + b) || visited.contains(number - b)) return 1;
+	        visited.add(number);
+	    }
+	    return 0;
+	}
+}
 ```
 <a name="ques-151"></a>
 **Anagrams** [Back](#hashing) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public ArrayList<ArrayList<Integer>> anagrams(final List<String> A) {
+        Map<String, Integer> wordMap = new HashMap<>();
+        ArrayList<ArrayList<Integer>> res = new ArrayList<>();
+        int num=1;
+        for (String anagram : A) {
+            char[] arr = anagram.toCharArray();
+            Arrays.sort(arr);
+            String sorted = String.valueOf(arr);
+            if (wordMap.containsKey(sorted)) {
+                int index = wordMap.get(sorted);
+                ArrayList<Integer> ans = res.get(index);
+                ans.add(num);
+            } else {
+                ArrayList<Integer> ans = new ArrayList<>();
+                ans.add(num);
+                res.add(ans);
+                wordMap.put(sorted, res.size()-1);
+            }
+            num++;
+        }
+        return res;
+    }
+}
 ```
 <a name="ques-152"></a>
 **Equal** [Back](#hashing) <br>
 ```java
+public class Solution {
+    public ArrayList<Integer> equal(ArrayList<Integer> A) {
+        Map<Integer, ArrayList<Integer>> map = new HashMap<>();
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        
+        for (int i=0;i<A.size();i++) {
+            for (int j=i+1;j<A.size();j++) {
+                int sum = A.get(i) + A.get(j);
+                if (map.containsKey(sum) && map.get(sum).size() == 2) {
+                    int C1 = i;
+                    int D1 = j;                    
+                    int A1 = map.get(sum).get(0);
+                    int B1 = map.get(sum).get(1);
+                    
+                    if (A1 < B1 && C1 < D1 && A1 < C1 && B1 != D1 && B1 != C1) {
+                        ArrayList<Integer> temp = new ArrayList<>();
+                        temp.add(A1);
+                        temp.add(B1);
+                        temp.add(C1);
+                        temp.add(D1);
+                        
+                        ans.add(temp);
+                        ArrayList<Integer> t = new ArrayList<>();
+                        map.put(sum, t);
+                    }
+                }
+                else if (!map.containsKey(sum)) {
+                    ArrayList<Integer> temp = new ArrayList<>();
+                    temp.add(i);
+                    temp.add(j);
+                    
+                    map.put(sum, temp);
+                }
+            }
+            
+            Collections.sort(ans, new Sort());
+        }
+   
+        return ans.get(0);
+    }
+    
+    class Sort implements Comparator<ArrayList<Integer>> {
+
+	    @Override
+	    public int compare(ArrayList<Integer> o1, ArrayList<Integer> o2) {
+	        int c = o1.get(0).compareTo(o2.get(0));
+	        if (c == 0) {
+	            c = o1.get(1).compareTo(o2.get(1));
+	        }
+	        if (c == 0) {
+	            c = o1.get(2).compareTo(o2.get(2));
+	        }
+	        if (c == 0) {
+	            c = o1.get(3).compareTo(o2.get(3));
+	        }
+	        
+	        return c;
+	    }    
+	}
+}
+
 ```
 <a name="ques-153"></a>
 **Copy List** [Back](#hashing) <br>
 ```java
+/**
+ * Definition for singly-linked list with a random pointer.
+ * class RandomListNode {
+ *     int label;
+ *     RandomListNode next, random;
+ *     RandomListNode(int x) { this.label = x; }
+ * };
+ */
+public class Solution {
+    public RandomListNode copyRandomList(RandomListNode head) {
+        RandomListNode curr = head, clonehead = null, clone = null;
+        Map<Integer, RandomListNode> map = new HashMap<>();
+        while (curr != null) {
+            RandomListNode temp = new RandomListNode(curr.label);
+            map.put(curr.label, temp);
+            if (clone == null) {
+                clone = temp;
+                clonehead = temp;
+            } else {
+                clone.next = temp;
+                clone = clone.next;
+            }
+            curr = curr.next;
+        }
+        curr = head;
+        clone = clonehead;
+        while (curr != null) {
+            if (curr.random != null) {
+                int random = curr.random.label;
+                // System.out.println("Searching for " + random);
+                if (map.containsKey(random)) {
+                    clone.random = map.get(random);
+                }
+            }
+            clone = clone.next;
+            curr = curr.next;
+        }
+        // print(clonehead);
+        return clonehead;
+    }
+    
+    private void print(RandomListNode node) {
+        String s = "HEAD => ";
+        while (node != null) {
+            s = s + node.label + " => " ;
+            node = node.next;
+        }
+        s = s + "END";
+        System.out.println(s);
+    }
+}
 ```
 <a name="ques-154"></a>
 **Longest Substring Without Repeat** [Back](#hashing) <br>
 ```java
+public class Solution {
+    public int lengthOfLongestSubstring(String A) {
+        Set<Character> set = new LinkedHashSet<>();
+        Set<Character> res = new LinkedHashSet<>();
+        char[] arr = A.toCharArray();
+        int start=0, startOpt=0, end=0, max = 0;
+        while (end < arr.length) {
+            if (!set.contains(arr[end])) {
+                set.add(arr[end]);
+                if (max < set.size()) {
+                    res = new LinkedHashSet<>(set);
+                }
+                max = Math.max(max, set.size());
+            } else {
+                Iterator<Character> iter = set.iterator();
+                while (iter.hasNext()) {
+                    if (iter.next() == arr[end]) {
+                        break;
+                    }
+                    iter.remove();
+                    start++;
+                }
+                iter.remove();
+                set.add(arr[end]);
+            }
+            end++;
+        }
+        // System.out.println("RESULT : " + res);
+        // System.out.println("START : " + startOpt + "RESULT : " + A.substring(startOpt, max));
+        return max;
+    }
+}
 ```
 
 <a name="ques-155"></a>
 **Window String** [Back](#hashing) <br>
 ```java
+public class Solution {
+    public String minWindow(String s, String t) {
+        String result = "";
+        HashMap<Character, Integer> target = new HashMap<>();
+        for(int i = 0;  i < t.length(); i++) {
+            if(target.containsKey(t.charAt(i))){
+                target.put(t.charAt(i), target.get(t.charAt(i)) + 1);
+            }
+            else {
+                target.put(t.charAt(i), 1);
+            }
+        }
+        
+        HashMap<Character, Integer> map = new HashMap<>();
+        int left = 0;
+        int minLen = s.length() + 1;
+        
+        int count = 0;
+        for(int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if(target.containsKey(c)) {
+                if(map.containsKey(c)) {
+                    if(map.get(c) < target.get(c)) {
+                        count++;
+                    }
+                    map.put(c, map.get(c) + 1);                    
+                }
+                else {
+                    map.put(c, 1);
+                    count++;
+                }
+            }
+            
+            if(count == t.length()) {
+                char sc = s.charAt(left);
+                while(!map.containsKey(sc) || map.get(sc) > target.get(sc)) {
+                    if(map.containsKey(sc) && map.get(sc) > target.get(sc)) {
+                        map.put(sc, map.get(sc) - 1);                        
+                    }
+                    left++;
+                    sc = s.charAt(left);
+                }
+                if(i - left + 1 < minLen) {
+                    result = s.substring(left, i+1);
+                    minLen = i - left + 1;
+                }
+            }
+        }
+        return result;
+    }
+}
 ```
 <a name="ques-156"></a>
 **Fraction** [Back](#hashing) <br>
@@ -3844,10 +4230,109 @@ public class Solution {
 <a name="ques-157"></a>
 **Points on the Straight Line** [Back](#hashing) <br>
 ```java
+public class Solution {
+    public int maxPoints(ArrayList<Integer> a, ArrayList<Integer> b) {
+        int maxPoints = 0;
+        HashMap<Double, Integer> map = new HashMap<Double, Integer>();
+        if(a.size() != b.size() || a.size() == 0 || a == null || b.size() == 0 || b == null)
+            return maxPoints;
+        if(a.size() == 1 && b.size() == 1)
+            return 1;
+        for(int i = 0; i < a.size(); i++){
+            int duplicate = 1;
+            int vertical = 0;
+            int xi = a.get(i);
+            int yi = b.get(i);
+            for(int j = i+1; j < a.size(); j++){
+                int xj = a.get(j);
+                int yj = b.get(j);
+                if(xi == xj){
+                    if(yi == yj){
+                        duplicate++;
+                    }else{
+                        vertical++;
+                    }
+                }
+                else{
+                    double slope = 0.0;
+                    if(yj - yi == 0)
+                        slope = 0.0;
+                    else if(xj - xi == 0)
+                        slope = Double.MAX_VALUE;
+                    else
+                        slope = (double)(yj - yi) / (double)(xj - xi);
+                    
+                    // System.out.println("Slope : " + slope);
+                    if(map.containsKey(slope))
+                        map.put(slope, map.get(slope) + 1);
+                    else 
+                        map.put(slope, 1);
+                }
+            }
+            
+            for(int sl : map.values())
+                if(maxPoints < sl + duplicate)
+                maxPoints = sl + duplicate;
+            
+            maxPoints = Math.max(vertical + duplicate, maxPoints);
+            map.clear();
+        }
+        return maxPoints;
+    }
+}
 ```
 <a name="ques-158"></a>
 **Substring Concatenation** [Back](#hashing) <br>
 ```java
+import java.math.BigInteger;
+
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public ArrayList<Integer> findSubstring(String A, final List<String> B) {
+        int maxW = 0, total = 0;
+        ArrayList<Integer> res = new ArrayList<>();
+        Map<String, Integer> map = new HashMap<>();
+        for (String s : B) {
+            maxW = Math.max(maxW, s.length());
+            total = total + s.length();
+            if (map.containsKey(s)) {
+                map.put(s, map.get(s)+1);
+            } else {
+                map.put(s, 1);
+            }
+        }
+        Map<String, Integer> tempMap = new HashMap<>(map);
+        boolean found = false;
+        for (int start=0; start < A.length(); start++) {
+            int top = start;
+            for (int index=start; index < A.length(); index++) {
+                String s = A.substring(top, index+1);
+                if (start == 2)
+                    System.out.println("START : " + start + " TOP : " + top + " INDEX : " + index + " STR : "+ s);
+                if (tempMap.containsKey(s)) {
+                    found = true;
+                    top = index+1;
+                    tempMap.put(s, tempMap.get(s)-1);
+                    if (tempMap.get(s) == 0) {
+                        tempMap.remove(s);
+                    }
+                    if (tempMap.size() == 0) {
+                        System.out.println("====================");
+                        System.out.println("INDEX : " + index + " STR : "+ s);
+                        res.add(index-total+1);
+                    }
+                } else if (s.length() == maxW) {
+                    found = false;
+                    tempMap.clear();
+                    tempMap = new HashMap<>(map);
+                    break;
+                }
+            }
+        }
+        System.out.println("END!");
+        return res;
+    }
+}
 ```
 
 ### Heaps
