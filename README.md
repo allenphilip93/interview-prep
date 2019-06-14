@@ -22,6 +22,7 @@
 * High Level Design
 
 <a name="array"></a>
+
 ## Arrays
 
 
@@ -30,33 +31,33 @@
 |1| [Spiral Array](https://www.interviewbit.com/problems/spiral-order-matrix-i/)      | [Approach](#array-approach) | [Java](#ques-1)  |
 |2| [Min Steps](https://www.interviewbit.com/problems/min-steps-in-infinite-grid/) You are in an infinite 2D grid where you can move in any of the 8 directions. You are given a sequence of points and  **the order in which you need to cover the points**. Give the minimum number of steps in which you can achieve it. You start from the first point.     | [Approach](#array-approach) | [Java](#ques-2)  |
 |3| [Add One to Number](https://www.interviewbit.com/problems/add-one-to-number/) Given a non-negative number represented as an array of digits, add 1 to the number ( increment the number represented by the digits ). The digits are stored such that the most significant digit is at the head of the list.     | [Approach](#array-approach) | [Java](#ques-3)  |
-|4| [Max Sum Contiguous Subarray](https://www.interviewbit.com/problems/max-sum-contiguous-subarray/)      | [Approach](#array-approach) | [Java](#ques-4)  |
-|5| [Maximum Absolute Difference](https://www.interviewbit.com/problems/maximum-absolute-difference/)      | [Approach](#array-approach) | [Java](#ques-5)  |
-|6| [Repeat and Missing Number Array](https://www.interviewbit.com/problems/repeat-and-missing-number-array/)      | [Approach](#array-approach) | [Java](#ques-6)  |
-|7| [Flip](https://www.interviewbit.com/problems/flip/)      | [Approach](#array-approach) | [Java](#ques-7)  |
+|4| [Max Sum Contiguous Subarray](https://www.interviewbit.com/problems/max-sum-contiguous-subarray/) Find the contiguous subarray within an array (containing at least one number) which has the largest sum. | [Approach](#array-approach) | [Java](#ques-4)  |
+|5| [Maximum Absolute Difference](https://www.interviewbit.com/problems/maximum-absolute-difference/) You are given an array of N integers, A1, A2 ,…, AN. Return maximum value of f(i, j) for all 1 ≤ i, j ≤ N.f(i, j) is defined as abs(A[i] - A[j]) + abs(i - j) | [Approach](#array-approach) | [Java](#ques-5)  |
+|6| [Repeat and Missing Number Array](https://www.interviewbit.com/problems/repeat-and-missing-number-array/) You are given a read only array of n integers from 1 to n. Each integer appears exactly once except A which appears twice and B which is missing. Return A and B | [Approach](#array-approach) | [Java](#ques-6)  |
+|7| [Flip](https://www.interviewbit.com/problems/flip/) Given a binary string (i.e. with characters 0 and 1) S consisting of characters S1, S2, …, SN. In a single operation, you can choose two indices L and R such that 1 ≤ L ≤ R ≤ N and flip the characters SL, SL+1, …, SR. By flipping, we mean change character 0 to 1 and vice-versa. Your aim is to perform ATMOST one operation such that in final string number of 1s is maximised. If you don’t want to perform the operation, return an empty array. Else, return an array consisting of two elements denoting L and R. | [Approach](#array-approach) | [Java](#ques-7)  |
 |7| [Max Non Negative SubArray](https://www.interviewbit.com/problems/max-non-negative-subarray/) Find out the maximum sub-array of non negative numbers from an array. The sub-array should be continuous. That is, a sub-array created by choosing the second and fourth element and skipping the third element is invalid. Maximum sub-array is defined in terms of the sum of the elements in the sub-array. Sub-array A is greater than sub-array B if sum(A) > sum(B).     | [Approach](#array-approach) | [Java](#ques-8)  |
 |8| [Spiral Order Matrix II](https://www.interviewbit.com/problems/spiral-order-matrix-ii/) Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.     | [Approach](#array-approach) | [Java](#ques-9)  |
 |9| [Pascal Triangle](https://www.interviewbit.com/problems/pascal-triangle/) Given numRows, generate the first numRows of Pascal’s triangle. Pascal’s triangle : To generate A[C] in row R, sum up A’[C] and A’[C-1] from previous row R - 1.     | [Approach](#array-approach) | [Java](#ques-10)  |
-|10| [Kth Row of Pascal's Triangle](https://www.interviewbit.com/problems/kth-row-of-pascals-triangle/)      | [Approach](#array-approach) | [Java](#ques-11)  |
-|11| [Anti Diagonals](https://www.interviewbit.com/problems/anti-diagonals/)      | [Approach](#array-approach) | [Java](#ques-12)  |
+|10| [Kth Row of Pascal's Triangle](https://www.interviewbit.com/problems/kth-row-of-pascals-triangle/) Print the kth row of pascal's triangle | [Approach](#array-approach) | [Java](#ques-11)  |
+|11| [Anti Diagonals](https://www.interviewbit.com/problems/anti-diagonals/) Give a N*N square matrix, return an array of its anti-diagonals. Basically diagonal traversal of a matrix. | [Approach](#array-approach) | [Java](#ques-12)  |
 |12| [Noble Integer](https://www.interviewbit.com/problems/noble-integer/) Given an integer array, find if an integer p exists in the array such that the number of integers greater than p in the array equals to p. If such an integer is found return 1 else return -1.     | [Approach](#array-approach) | [Java](#ques-13)  |
-|13| [Triplets with Sum between given range](https://www.interviewbit.com/problems/triplets-with-sum-between-given-range/)      | [Approach](#array-approach) | [Java](#ques-14)  |
+|13| [Triplets with Sum between given range](https://www.interviewbit.com/problems/triplets-with-sum-between-given-range/) Given an array of real numbers greater than zero in form of strings. Find if there exists a triplet (a,b,c) such that 1 < a+b+c < 2. Solve in O(n). | [Approach](#array-approach) | [Java](#ques-14)  |
 |14| [Largest Number](https://www.interviewbit.com/problems/largest-number/) Given a list of non negative integers, arrange them such that they form the largest number.     | [Approach](#array-approach) | [Java](#ques-15)  |
 |15| [Wave Array](https://www.interviewbit.com/problems/wave-array/) Given an array of integers, sort the array into a wave like array and return it, In other words, arrange the elements into a sequence such that a1 >= a2 <= a3 >= a4 <= a5.....     | [Approach](#array-approach) | [Java](#ques-16)  |
 |16| [Hotel Bookings Possible](https://www.interviewbit.com/problems/hotel-bookings-possible/)      | [Approach](#array-approach) | [Java](#ques-17)  |
 |17| [Find Duplicate in Array](https://www.interviewbit.com/problems/find-duplicate-in-array/) Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.    | [Approach](#array-approach) | [Java](#ques-18)  |
 |18| [Max Distance](https://www.interviewbit.com/problems/max-distance/) Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j]. If there is no solution possible, return -1.     | [Approach](#array-approach) | [Java](#ques-19)  |
-|19| [Min Unsorted Subarray](https://www.interviewbit.com/problems/maximum-unsorted-subarray/)      | [Approach](#array-approach) | [Java](#ques-20)  |
-|20| [Maximum Consecutive Gap](https://www.interviewbit.com/problems/maximum-consecutive-gap/)      | [Approach](#array-approach) | [Java](#ques-21)  |
+|19| [Min Unsorted Subarray](https://www.interviewbit.com/problems/maximum-unsorted-subarray/) You are given an array (zero indexed) of N non-negative integers, A0, A1 ,…, AN-1. Find the minimum sub array Al, Al+1 ,…, Ar so if we sort(in ascending order) that sub array, then the whole array should get sorted. | [Approach](#array-approach) | [Java](#ques-20)  |
+|20| [Maximum Consecutive Gap](https://www.interviewbit.com/problems/maximum-consecutive-gap/) Given an unsorted array, find the maximum difference between the successive elements in its sorted form. Solve in O(n). | [Approach](#array-approach) | [Java](#ques-21)  |
 |21| [Rotate Matrix](https://www.interviewbit.com/problems/rotate-matrix/)      | [Approach](#array-approach) | [Java](#ques-22)  |
 |22| [MAXSPPROD](https://www.interviewbit.com/problems/maxspprod/) You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following: LeftSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](i>j). If multiple A[j]’s are present in multiple positions, the LeftSpecialValue is the maximum value of j. RightSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](j>i). If multiple A[j]s are present in multiple positions, the RightSpecialValue is the minimum value of j. Write a program to find the maximum special product of any integer in the array.     | [Approach](#array-approach) | [Java](#ques-23)  |
-|23| [Next Permutation](https://www.interviewbit.com/problems/next-permutation/)      | [Approach](#array-approach) | [Java](#ques-24)  |
-|24| [Find Permutation](https://www.interviewbit.com/problems/find-permutation/)      | [Approach](#array-approach) | [Java](#ques-25)  |
+|23| [Next Permutation](https://www.interviewbit.com/problems/next-permutation/) Find the next permutation in lexicographic fashion. If not available return first form. | [Approach](#array-approach) | [Java](#ques-24)  |
+|24| [Find Permutation](https://www.interviewbit.com/problems/find-permutation/) Given a positive integer n and a string s consisting only of letters D or I, you have to find any permutation of first n positive integer that satisfy the given input string. D means the next number is smaller, while I means the next number is greater. | [Approach](#array-approach) | [Java](#ques-25)  |
 |25| [Set Matrix Zeros](https://www.interviewbit.com/problems/set-matrix-zeros/) Given an m x n matrix of 0s and 1s, if an element is 0, set its entire row and column to 0. Do it in place.     | [Approach](#array-approach) | [Java](#ques-26)  |
-|26| [First Missing Integer](https://www.interviewbit.com/problems/first-missing-integer/)      | [Approach](#array-approach) | [Java](#ques-27)  |
+|26| [First Missing Integer](https://www.interviewbit.com/problems/first-missing-integer/) Given an unsorted integer array, find the first missing positive integer. Do it in O(n) time and O(1) space. | [Approach](#array-approach) | [Java](#ques-27)  |
 |27| [Merge Overlapping Intervals](https://www.interviewbit.com/problems/merge-overlapping-intervals/)      | [Approach](#array-approach) | [Java](#ques-28)  |
 |28| [Merge Intervals](https://www.interviewbit.com/problems/merge-intervals/) Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).     | [Approach](#array-approach) | [Java](#ques-29)  |
-|29| [N/3 Repeat Number](https://www.interviewbit.com/problems/n3-repeat-number/)      | [Approach](#array-approach) | [Java](#ques-30)  |
+|29| [N/3 Repeat Number](https://www.interviewbit.com/problems/n3-repeat-number/) You’re given a read only array of n integers. Find out if any integer occurs more than n/3 times in the array in linear time and constant additional space. | [Approach](#array-approach) | [Java](#ques-30)  |
 
 <a name="maths"></a>
 ## Math
@@ -324,38 +325,39 @@
 
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Spiral Array](#array)     | [Java](#ques-1)  | _O(n*m)_         | _O(1)_          | Easy         |  |
-|2| [Min Steps](#array)     | [Java](#ques-2)  | _O(n)_         | _O(1)_          | Easy         |  |
-|3| [Add One to Number](#array)     | [Java](#ques-3)  | _O(n)_         | _O(1)_          | Easy         |  |
-|4| [Max Sum Contiguous Subarray](#array)     | [Java](#ques-4)  | _O(n)_         | _O(1)_          | Medium         | Kadane's Algo :- previous MSS should be positive for optimal subarray|
-|5| [Maximum Absolute Difference](#array)     | [Java](#ques-5)  | _O(n)_         | _O(1)_          | Medium         | Carefully look the given exp and how it can be written down|
-|6| [Repeat and Missing Number Array](#array)     | [Java](#ques-6)  | _O(n)_         | _O(1)_          | Medium         | Look for overflows and equations|
-|7| [Flip](#array)     | [Java](#ques-7)  | _O(n)_         | _O(1)_          | Medium         | |
-|7| [Max Non Negative SubArray](#array)     | [Java](#ques-8)  | _O(n)_         | _O(1)_          | Easy         | Check for overflows and tie constraints properly|
-|8| [Spiral Order Matrix II](#array)     | [Java](#ques-9)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
-|9| [Pascal Triangle](#array)     | [Java](#ques-10)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
-|10| [Kth Row of Pascal's Triangle](#array)     | [Java](#ques-11)  | _O(n*n)_         | _O(n)_          | Easy         | Think in terms of if previous calculated list is needed or not |
-|11| [Anti Diagonals](#array)     | [Java](#ques-12)  | _O(n)_         | _O(1)_          | Easy         |  |
-|12| [Noble Integer](#array)     | [Java](#ques-13)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
-|13| [Triplets with Sum between given range](#array)     | [Java](#ques-14)  | _O(n)_         | _O(1)_          | Medium         | |
-|14| [Largest Number](#array)     | [Java](#ques-15)  | _O(n)_         | _O(n)_          | Medium         | Comparator |
-|15| [Wave Array](#array)     | [Java](#ques-16)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
-|16| [Hotel Bookings Possible](#array)     | [Java](#ques-17)  | _O(nlogn)_         | _O(1)_          | Medium         |  
-|17| [Find Duplicate in Array](#array)     | [Java](#ques-18)  | _O(n)_         | _O(1)_          | Easy         |  |
-|18| [Max Distance](#array)     | [Java](#ques-19)  | _O(n)_         | _O(n)_          | Medium         |  
-|19| [Min Unsorted Subarray](#array)     | [Java](#ques-20)  | _O(n)_         | _O(n)_          | Medium         |  
+|1| [Spiral Array](#array)     | [Java](#ques-1)  | _O(n*m)_         | _O(1)_          | Easy         | Think of the array defined by leftmost coordinates and right most coordinates. And each spiral is merely slicing off one of the row/col and updating the bounding coordinates while ensuring they are in valid state. |
+|2| [Min Steps](#array)     | [Java](#ques-2)  | _O(n)_         | _O(1)_          | Easy         | Consider two points on a 2D plane, (1,1) and (4,3). For us to go from one point to the other, x has to be incremented by 3 and y has to be incremented by 2. In one turn we can increment or decrement both the coordinates by 1. Hence the number of moves is Max(2, 3). |
+|3| [Add One to Number](#array)     | [Java](#ques-3)  | _O(n)_         | _O(1)_          | Easy         | Can be done in-place by going to units place and adding 1. Now just have a variable to maintain carry and check across the length of the array. |
+|4| [Max Sum Contiguous Subarray](#array)     | [Java](#ques-4)  | _O(n)_         | _O(1)_          | Medium         | Kadane's Algo : If we know the max sum including the prev index, we can figure out the max sum for the curr index. Max sum including curr would mean curr will the end of the sequence or the start of a new sequence. So we need to maximize across for all element and build this subproblem. |
+| 5    | [Maximum Absolute Difference](#array)     | [Java](#ques-5)  | _O(n)_         | _O(1)_          | Medium         | To simplify the problem consider only abs(A[i] - A[j]). Say I have an array, the max abs diff would be the diff between the max elem and the min elem. Now that we have the indices diff as well, the max values would be A[i] - A[j] +/- (i-j) where A[i] is max elem and A[j] is min element. we can rewrite now as A[i] +/- i - A[j]-/+j is the optimal. Just maximize the two cases |
+|6| [Repeat and Missing Number Array](#array)     | [Java](#ques-6)  | _O(n)_         | _O(1)_          | Medium         | Try to get two equations to solve for A & B. One we can get from using the sums. The other we can get by product of the elements but that might lead to overflows. So we can use sum of squares instead to get the second equation. |
+|7| [Flip](#array)    | [Java](#ques-7)  | _O(n)_         | _O(1)_          | Medium         | Can be cleverly viewed as a longest subarray sum problem where 0s would be +1 and 1s would be -1. |
+|7| [Max Non Negative SubArray](#array)     | [Java](#ques-8)  | _O(n)_         | _O(1)_          | Easy         | Basically just sum up positive subarrays and check for overflows and tie constraints properly. |
+|8| [Spiral Order Matrix II](#array)     | [Java](#ques-9)  | _O(n*n)_         | _O(n*n)_          | Easy         | Same as the spiral order problem, just set the values at the respective indices. |
+|9| [Pascal Triangle](#array)     | [Java](#ques-10)  | _O(n*n)_         | _O(n*n)_          | Easy         | Just use the formula for generating the pascal's triangle. |
+|10| [Kth Row of Pascal's Triangle](#array)     | [Java](#ques-11)  | _O(n*n)_         | _O(n)_          | Easy         | Think in terms of if previous calculated list is needed or not. Use this identity C(n,k+1) = C(n,k) * (n-k) / (k+1) to calculate in O(n) instead. |
+|11| [Anti Diagonals](#array)     | [Java](#ques-12)  | _O(n)_         | _O(1)_          | Easy         | Think about what is the equation of the diagonals of an array. It's of the form i + j = k, and by basically controlling this we can get all the diagonals. |
+|12| [Noble Integer](#array)     | [Java](#ques-13)  | _O(nlogn)_         | _O(1)_          | Easy         | Think sorting. Then as we traverse the array and based on the index we can tell how any elements are greater than that. |
+|13| [Triplets with Sum between given range](#array)     | [Java](#ques-14)  | _O(n)_         | _O(1)_          | Medium         | Start with the first triplet. If sum is more than 2 then we need to evict largest, if sum is less than 1 we need to evict smallest. Put cases on how the new element can be used or not. |
+|14| [Largest Number](#array)     | [Java](#ques-15)  | _O(nlogn)_     | _O(n)_          | Medium         | Think comparing numbers. Between 19 & 5, which should be before. Between 20 & 29 which should be before. Between 98 & 9 which should be before. Build a comparator which incorporates these rules. |
+|15| [Wave Array](#array)     | [Java](#ques-16)  | _O(nlogn)_         | _O(1)_          | Easy         | Simple approach is to sort the array and then swap adjacent element. Alternatively traverse through even positions and swap left and right if criteria is not met. |
+|16| [Hotel Bookings Possible](#array)     | [Java](#ques-17)  | _O(nlogn)_         | _O(1)_          | Medium         |Think sorting and finding the maximum overlapping bookings.|
+|17| [Find Duplicate in Array](#array)     | [Java](#ques-18)  | _O(n)_         | _O(1)_          | Easy         | Many possible approaches. Sorting is way to go. We can use extra memory and solve. We can use sum of elements and diff to get the answer. We can also do XOR to get the element as well. We can use counting sort as well. Good question to broadly see the approaches. |
+|18| [Max Distance](#array)     | [Java](#ques-19)  | _O(n)_         | _O(n)_          | Medium         |Think what is the maximum j-i possible. Now if we need to update i or j, what are the information we need to know? Can we precompute them? If we know the max of left subarrays and min of right subarrays, will it make our life easier?|
+|19| [Min Unsorted Subarray](#array)     | [Java](#ques-20)  | _O(n)_         | _O(n)_          | Medium         |Assume that **Al**, …, **Ar** is the minimum-unsorted-subarray which is to be sorted, then min(**Al**, …, **Ar**) >= max(**A0**, …, **Al-1**) and max(**Al**, …, **Ar**) <= min(**Ar+1**, …, **AN-1**). Nice and elegant solution emerges.|
 |20| [Maximum Consecutive Gap](#array)     | [Java](#ques-21)  | _O(n)_         | _O(n)_          | Medium         |  PigeonHole Sorting using bucket method|
-|21| [Rotate Matrix](#array)     | [Java](#ques-22)  | _O(n*n)_         | _O(1)_          | Medium         |  Good Question|
-|22| [MAXSPPROD](#array)     | [Java](#ques-23)  | _O(n)_         | _O(n)_          | Medium         |  Good Question|
-|23| [Next Permutation](#array)     | [Java](#ques-24)  | _O(nlogn)_(only if already highest perm, else O(n + logn))         | _O(1)_          | Medium         |  Good Question, Analyse diff examples, |
-|24| [Find Permutation](#array)     | [Java](#ques-25)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, |
-|25| [Set Matrix Zeros](#array)     | [Java](#ques-26)  | _O(n*m)_         | _O(1)_          | Medium         |  Good Question|
-|26| [First Missing Integer](#array)     | [Java](#ques-27)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, |
-|27| [Merge Overlapping Intervals](#array)     | [Java](#ques-28)  | _O(nlogn)_         | _O(1)_          | Medium         |  Good Question, |
-|28| [Merge Intervals](#array)     | [Java](#ques-29)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Good Edge Cases|
-|29| [N/3 Repeat Number](#array)     | [Java](#ques-30)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Moore's Voting Algo|
+|21| [Rotate Matrix](#array)     | [Java](#ques-22)  | _O(n*n)_         | _O(1)_          | Medium         | Think about what happens when we rotate. The column becomes the row and the row value changes as well. Build equations for the same and iterate. |
+|22| [MAXSPPROD](#array)     | [Java](#ques-23)  | _O(n)_         | _O(n)_          | Medium         | Think what are the values that we need to precompute. We need to maintain the left special value and right special value for all the digits. Now we need to populate the same and can be done easily in O(n) using a stack or deque. |
+|23| [Next Permutation](#array)     | [Java](#ques-24)  | _O(n)_       | _O(1)_          | Medium         | Permutations are generated in lexicographic fashion. First find the largest k that satisfies *a*[*k*] < *a*[*k* + 1]. Now find the largest index *l* greater than k such that *a*[*k*] < *a*[*l*]. Swap the two and reverse the sequence from *a*[*k* + 1] up to and including the final element *a*[*n*]. |
+|24| [Find Permutation](#array)     | [Java](#ques-25)  | _O(n)_         | _O(1)_          | Medium         | Think what is min and max numbers we can add. And if its increasing what is the min value i can add and if its decreasing what is the max value i can add. We can just maintain the two values and increment or decrement as per requirement. |
+|25| [Set Matrix Zeros](#array)     | [Java](#ques-26)  | _O(n*m)_         | _O(1)_          | Medium         | Instead of using an additional array to maintain set rows and columns why not use one of the row/col itself. Use the first row and col to maintain if the ith col/row is set or not. |
+|26| [First Missing Integer](#array)     | [Java](#ques-27)  | _O(n)_         | _O(1)_          | Medium         | Notice that we can mutate the input array when placing constraints on space like the set matrix problem. Use the indices of array to represent the indices and use it to mark whether the integer is present or not. Nice solution. |
+|27| [Merge Overlapping Intervals](#array)     | [Java](#ques-28)  | _O(nlogn)_         | _O(1)_        | Medium         | Multiple approaches can be taken. We can first sort by start times and iterate and look for overlapping intervals and merge them. Or we can use a large array if there are finite number of periods and we can use that to build the merged intervals in O(n) |
+|28| [Merge Intervals](#array)     | [Java](#ques-29)  | _O(n)_         | _O(n)_         | Medium         | Again we can use either of the two approaches, using a heap and sorting the intervals and handling cases of overlap and gaps or we can use an array to maintain intervals and merge them. |
+|29| [N/3 Repeat Number](#array)     | [Java](#ques-30)  | _O(n)_         | _O(1)_          | Medium         | We know the Moore's Voting algo for finding the majority element in an array (stream counting). We can extend the same to N/3 or N/k by identifying the top k candidates and verifying them in O(nk). |
 
 <a name="maths-approach"></a>
+
 ## Math
 
 
@@ -376,7 +378,7 @@
 |13| [GCD](#maths)     | [Java](#ques-43)  | _O(log(min a,b))_         | _O(1)_          | Easy         | Eucledian Algo, Good Question|
 |14| [Trailing Zeroes](#maths5)_         | _O(1)_          | Easy         | Good Question|
 |15| [Sorted Permutation Rank](#maths)     | [Java](#ques-45)  | _O(A^2)_         | _O(1)_          | Medium         | Good Question, Consider usage of factorial in case of modulo|
-|16| [Largest Coprime Divisor](#maths)     | [Java](#ques-46)  | _O(A^2)_         | _O(1)_          | Medium         | 
+|16| [Largest Coprime Divisor](#maths)     | [Java](#ques-46)  | _O(A^2)_         | _O(1)_          | Medium         |
 |17| [Sorted Permutation Rank with Repeats](#maths)     | [Java](#ques-47)  | _O(A^2)_         | _O(1)_          | Medium         | Multiplicative Inverse Modulo(use long in case of modulo) |
 |18| [ReArrange Array](#maths)     | [Java](#ques-48)  | _O(A)_         | _O(1)_          | Medium         | Encoding 2 values in one |
 |19| [Grid Unique Paths](#maths)     | [Java](#ques-49)  | _O(min(row,col))_         | _O(1)_          | Easy         | DP or Combinatorial |
@@ -413,22 +415,22 @@
 |4| [Minimum Characters required to make a String Palindromic](#strings)     | [Java](#ques-66)  | _O(n)_         | _O(1)_          | Easy         |   |
 |5| [Longest Palindromic Substring](#strings)     | [Java](#ques-67)  | _O(n*n)_         | _O(1)_          | Medium         |  1 length is always palindrome |
 |6| [StrStr](#strings)     | [Java](#ques-68)  | _O(n)_         | _O(m)_          | Medium         |  KMP Algo |
-|7| [Compare Version Numbers](#strings)     | [Java](#ques-69)  | _O(n)_         | _O(n)_          | Medium         |  
-|8| [Atoi](#strings)     | [Java](#ques-70)  | _O(n)_         | _O(1)_          | Easy         |  
+|7| [Compare Version Numbers](#strings)     | [Java](#ques-69)  | _O(n)_         | _O(n)_          | Medium         |
+|8| [Atoi](#strings)     | [Java](#ques-70)  | _O(n)_         | _O(1)_          | Easy         |
 |9| [Length of Last Word](#strings)     | [Java](#ques-71)  | _O(n)_         | _O(1)_          | Easy         |  |
 |10| [Reverse the String](#strings)     | [Java](#ques-72)  | _O(n)_         | _O(n)_          | Easy         | Ask if split function can be used|
 |11| [Valid Number](#strings)     | [Java](#ques-73)  | _O(n)_         | _O(1)_          | Easy         | Lots of corner cases|
 |12| [Valid Ip Addresses](#strings)     | [Java](#ques-74)  | _O(n)_         | _O(1)_          | Easy         | Placing 3 dots|
-|13| [Roman To Integer](#strings)     | [Java](#ques-75)  | _O(n)_         | _O(1)_          | Easy         | 
+|13| [Roman To Integer](#strings)     | [Java](#ques-75)  | _O(n)_         | _O(1)_          | Easy         |
 |14| [Integer To Roman](#strings)     | [Java](#ques-76)  | _O(n)_         | _O(1)_          | Easy         | Ask if you can have diff arrays to store value|
 |15| [Add Binary Strings](#strings)     | [Java](#ques-77)  | _O(n)_         | _O(1)_          | Easy         | Shorter Solution|
 |16| [Power of 2](#strings)     | [Java](#ques-78)  | _O(logn)_         | _O(1)_          | Easy         | Use of CompareTo function|
-|17| [Multiply Strings](#strings)     | [Java](#ques-79)  | _O(n*m)_         | _O(1)_          | Easy         | 
+|17| [Multiply Strings](#strings)     | [Java](#ques-79)  | _O(n*m)_         | _O(1)_          | Easy         |
 |18| [Justified Text](#strings)     | [Java](#ques-80)  | _O(n*n)_         | _O(n)_          | HARD         | Used Greedy Approach|
-|19| [ZigZag String](#strings)     | [Java](#ques-81)  | _O(n)_         | _O(1)_          | Medium         | 
-|20| [Pretty Json](#strings)     | [Java](#ques-82)  | _O(n)_         | _O(1)_          | Medium         | 
+|19| [ZigZag String](#strings)     | [Java](#ques-81)  | _O(n)_         | _O(1)_          | Medium         |
+|20| [Pretty Json](#strings)     | [Java](#ques-82)  | _O(n)_         | _O(1)_          | Medium         |
 |21| [Stringoholics](#strings)     | [Java](#ques-83)  | _O(n*m, n*maxNum)_         | _O(n+m)_ n is input array length, m is average size of each string          | HARD         | Covers many concepts - KMP, LCM|
-|22| [Amazing Substring](#strings) You are given a string S, and you have to find all the amazing substrings of S. Amazing Substring is one that starts with a vowel (a, e, i, o, u, A, E, I, O, U).     | [Java](#ques-84)  | _O(n)_         | _O(1)_          | Medium         | 
+|22| [Amazing Substring](#strings) You are given a string S, and you have to find all the amazing substrings of S. Amazing Substring is one that starts with a vowel (a, e, i, o, u, A, E, I, O, U).     | [Java](#ques-84)  | _O(n)_         | _O(1)_          | Medium         |
 
 <a name="bitmanipulation-approach"></a>
 ## BitManipulation
@@ -458,7 +460,7 @@
 |6| [Remove Element from Array](#twopointers)     | [Java](#ques-97)  | _O(n)_         | _O(1)_          | Easy         |   |
 |7| [Sort by Color](#twopointers)     | [Java](#ques-98)  | _O(n)_         | _O(1)_          | Easy         |   |
 |8| [Diffk](#twopointers)     | [Java](#ques-99)  | _O(n)_         | _O(1)_          | Easy         |  Start both pointers from 0 and not from opp. extreme ends|
-|9| [3 Sum](#twopointers)     | [Java](#ques-100)  | _O(n^2 + nlogn)_         | _O(1)_          | Easy         |  
+|9| [3 Sum](#twopointers)     | [Java](#ques-100)  | _O(n^2 + nlogn)_         | _O(1)_          | Easy         |
 |10| [3 Sum Zero](#twopointers)     | [Java](#ques-101)  | _O(n^2 + nlogn)_         | _O(1)_          | Medium         |  Handle Duplicates|
 |11| [Max Continuous Series of 1s](#twopointers)     | [Java](#ques-102)  | _O(n)_         | _O(1)_          | Medium         |  Keeping window size having zeroes <= B|
 |12| [Array 3 Pointers](#twopointers)     | [Java](#ques-103)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Abs diff can be minimized either decreasing max element or increasing min element   |
@@ -617,6 +619,7 @@
 ### Arrays
 <a name="ques-1"></a>
 **Spiral Array Matrix** [Back](#array) <br>
+
 ```java
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -660,6 +663,7 @@ public class Solution {
 ```
 <a name="ques-2"></a>
 **Min Steps in Infinite Grid** [Back](#arrays) <br>
+
 ```java
 public class MinStepsInfiniteGrid {
     // X and Y co-ordinates of the points in order.
@@ -675,6 +679,7 @@ public class MinStepsInfiniteGrid {
 ```
 <a name="ques-3"></a>
 **Add one to number** [Back](#arrays) <br>
+
 ```java
 public class Solution {
     public ArrayList<Integer> plusOne(ArrayList<Integer> A) {
@@ -734,14 +739,62 @@ public class MaxSubArray {
 <a name="ques-5"></a>
 **Maximum Absolute Difference** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public int maxArr(ArrayList<Integer> arr) {
+        int max1 = Integer.MIN_VALUE;
+        int max2 = Integer.MIN_VALUE;
+        int min1 = Integer.MAX_VALUE;
+        int min2 = Integer.MAX_VALUE;
+        
+        for (int i=0;i<arr.size();i++) {
+            max1 = Math.max(max1, arr.get(i) + i);
+            min1 = Math.min(min1, arr.get(i) + i);
+            max2 = Math.max(max2, arr.get(i) - i);
+            min2 = Math.min(min2, arr.get(i) - i);
+        }
+        
+        return Math.max(max1 - min1, max2 - min2);
+    }
+}
 ```
 <a name="ques-6"></a>
 **Repeat and Missing Number Array** [Back](#arrays) <br>
 ```java
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public ArrayList<Integer> repeatedNumber(final List<Integer> a) {
+        
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        int n = a.size();
+        
+        long sumOfNum = (((long) n) * ((long) n + 1)) / 2;
+        long sumOfSq = (((long) n) * ((long) n + 1) * ((long) 2*n + 1)) / 6;
+    
+        for (int i=0; i < n; i++) {
+            sumOfNum -= (long) a.get(i);
+        }
+ 
+        for (int i=0; i < n; i++) {
+            sumOfSq -= (long) a.get(i) * (long) a.get(i);
+        }
+        
+        long sumNum = sumOfSq/sumOfNum;
+        
+        int missing = (int) (sumNum + sumOfNum)/2;
+        int repeated = (int) (sumNum - missing);
+        
+        res.add(repeated);
+        res.add(missing);
+        
+        return res;
+    }
+}
 ```
 <a name="ques-7"></a>
 **Flip** [Back](#arrays) <br>
+
 ```java
+
 ```
 <a name="ques-8"></a>
 **Max Non Negative SubArray** [Back](#arrays) <br>
@@ -820,6 +873,7 @@ public class Solution {
 ```
 <a name="ques-10"></a>
 **Pascal Triangle** [Back](#arrays) <br>
+
 ```java
 public class Solution {
     public ArrayList<ArrayList<Integer>> solve(int A) {
@@ -841,10 +895,37 @@ public class Solution {
 <a name="ques-11"></a>
 **Kth Row of Pascal's Triangle** [Back](#arrays) <br>
 ```java
+
 ```
 <a name="ques-12"></a>
 **Anti Diagonals** [Back](#arrays) <br>
 ```java
+public class Solution {
+    public ArrayList<ArrayList<Integer>> diagonal(ArrayList<ArrayList<Integer>> A) {
+        Map<Integer, ArrayList<Integer>> map = new HashMap<>();
+
+        for (int i=0; i<A.size(); i++) {
+            for (int j=0; j<A.get(i).size(); j++) {
+                ArrayList<Integer> arrayList;
+                if (map.containsKey(i+j)) {
+                    arrayList = map.get(i+j);
+                }
+                else {
+                    arrayList = new ArrayList<>();
+                }
+
+                arrayList.add(A.get(i).get(j));
+                map.put(i+j, arrayList);
+            }
+        }
+        
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        for (int key : map.keySet()) {
+            ans.add(map.get(key));
+        }
+        return ans;
+    }
+}
 ```
 <a name="ques-13"></a>
 **Noble Integer** [Back](#arrays) <br>
@@ -872,6 +953,57 @@ public class Solution {
 <a name="ques-14"></a>
 **Triplets with Sum between given range** [Back](#arrays) <br>
 ```java
+public class TripletsSum {
+
+    public int solve(ArrayList<String> A) {
+
+        if(A.size()<3){
+            return 0;
+        }
+
+        double a = Double.valueOf(A.get(0));
+        double b = Double.valueOf(A.get(1));
+        double c = Double.valueOf(A.get(2));
+
+        for(int i=3;i<A.size();i++){
+            if(a+b+c>1 && a+b+c<2){
+                return 1;
+            }
+
+            double t = Double.valueOf(A.get(i));
+
+            if(a+b+c >=2){
+                if(a>b && a > c){
+                    a = t;
+                }
+                else if(b > c && b > a){
+                    b = t;
+                }
+                else{
+                    c = t;
+                }
+            }
+            else{
+                if(a<b && a < c){
+                    a = t;
+                }
+                else if(b < c && b < a){
+                    b = t;
+                }
+                else{
+                    c = t;
+                }
+            }
+        }
+
+        if(a+b+c>1 && a+b+c<2){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+}
 ```
 <a name="ques-15"></a>
 **Largest Number** [Back](#arrays) <br>
@@ -926,13 +1058,33 @@ public class Solution {
 	    return a;
 	}	
 }
+
+// Alternative O(n) solution
+void sortInWave(int arr[], int n) 
+{ 
+    // Traverse all even elements 
+    for (int i = 0; i < n; i+=2) 
+    { 
+        // If current even element is smaller 
+        // than previous 
+        if (i>0 && arr[i-1] > arr[i] ) 
+            swap(arr, i-1, i); 
+
+        // If current even element is smaller 
+        // than next 
+        if (i<n-1 && arr[i] < arr[i+1] ) 
+            swap(arr, i, i + 1); 
+    } 
+} 
 ```
 <a name="ques-17"></a>
 **Hotel Bookings Possible** [Back](#arrays) <br>
 ```java
+
 ```
 <a name="ques-18"></a>
 **Find Duplicate in Array** [Back](#arrays) <br>
+
 ```java
 public class Solution {
     // DO NOT MODIFY THE LIST
@@ -951,6 +1103,7 @@ public class Solution {
 ```
 <a name="ques-19"></a>
 **Max Distance** [Back](#arrays) <br>
+
 ```java
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
@@ -986,14 +1139,43 @@ public class Solution {
 ```
 <a name="ques-20"></a>
 **Min Unsorted Subarray** [Back](#arrays) <br>
+
 ```java
+public class Solution {
+    public ArrayList<Integer> subUnsort(ArrayList<Integer> A) {
+        int n = A.size();
+        int[] mins = new int[n];
+        int[] maxs = new int[n];
+        maxs[0] = A.get(0);
+        for(int i = 1; i < n; i++) {
+            maxs[i] = Math.max(A.get(i), maxs[i-1]);
+        }
+        mins[n-1] = A.get(n-1);
+        for(int i = n - 2; i >= 0; i--) {
+            mins[i] = Math.min(A.get(i), mins[i+1]);
+        }
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        int start = 0;
+        while (start < n && mins[start] == A.get(start)) start++;
+        int end = n - 1;
+        while (end >= 0 && maxs[end] == A.get(end)) end--;
+        if(start == n) result.add(new Integer(-1));
+        else {
+            result.add(new Integer(start));
+            result.add(new Integer(end));
+        }
+        return result;
+    }
+}
 ```
 <a name="ques-21"></a>
 **Maximum Consecutive Gap** [Back](#arrays) <br>
 ```java
+
 ```
 <a name="ques-22"></a>
 **Rotate Matrix** [Back](#arrays) <br>
+
 ```java
 public class Solution {
     public void rotate(ArrayList<ArrayList<Integer>> a) {
@@ -1067,44 +1249,130 @@ public class Solution {
 <a name="ques-24"></a>
 **Next Permutation** [Back](#arrays) <br>
 ```java
+public class NextPermutation{
+    public static void nextPermutation(ArrayList<Integer> A) {
+        int n = A.size();
+        int k = -1;
+        int l = 0;
+        
+        for(int i = 0; i < n-1; i++){
+            if(A.get(i) < A.get(i+1))
+                k = i;
+        }
+        
+        if(k == -1){
+            // Just reverse no need to sort
+            Collections.sort(A);
+            return;
+        }
+        
+        for(int i = k+1; i < n; i++){
+            if(A.get(i) > A.get(k)){
+                l = i;
+            }
+        }
+        int temp = A.get(l);
+        A.set(l, A.get(k));
+        A.set(k, temp);
+        int j = k + 1;
+        int last = n-1;
+        while(j <= last){
+           temp = A.get(j);
+            A.set(j, A.get(last));
+            A.set(last, temp);
+            j++;
+            last--;
+        }
+        
+        for(int i = 0; i < A.size(); i++)
+            System.out.print(A.get(i) + " ");
+    }
+}
 ```
 <a name="ques-25"></a>
 **Find Permutation** [Back](#arrays) <br>
 ```java
+public class FindPerm {
+    public ArrayList<Integer> findPerm(final String A, int B) {
+
+        ArrayList<Integer> r = new ArrayList<>();
+        int low = 1, high = B;
+
+        for(int i=0;i<B-1;i++){
+            if(A.charAt(i) == 'I'){
+                r.add(low);
+                low++;
+            }
+            else{
+                r.add(high);
+                high--;
+            }
+        }
+        r.add(low);
+        return r;
+    }
+}
 ```
 <a name="ques-26"></a>
 **Set Matrix Zeros** [Back](#arrays) <br>
+
 ```java
 public class Solution {
-    public void setZeroes(ArrayList<ArrayList<Integer>> a) {
-        Set<Integer> row = new HashSet<>();
-        Set<Integer> col = new HashSet<>();
+	public void setZeroes(ArrayList<ArrayList<Integer>> matrix) {
+	    boolean firstRow = false;
+        boolean firstCol = false;
         
-        for (int i=0; i < a.size(); i++) {
-            for (int j=0; j < a.get(i).size(); j++) {
-                if (a.get(i).get(j) == 0) {
-                    row.add(i);
-                    col.add(j);
+        for (int i=0;i<matrix.size();i++) {
+            if (matrix.get(i).get(0) == 0) {
+                firstCol = true;
+                break;
+            }
+        }
+        
+        for (int i=0;i<matrix.get(0).size();i++) {
+            if (matrix.get(0).get(i) == 0) {
+                firstRow = true;
+                break;
+            }
+        }
+        
+	    for (int i=0;i<matrix.size();i++) {
+            for (int j=0;j<matrix.get(0).size();j++) {
+                if (matrix.get(i).get(j) == 0) {
+                    matrix.get(i).set(0, 0);
+                    matrix.get(0).set(j, 0);
                 }
             }
         }
         
-        for (int i=0; i < a.size(); i++) {
-            for (int j=0; j < a.get(i).size(); j++) {
-                if (row.contains(i) || col.contains(j)) {
-                    a.get(i).set(j, 0);
+        for(int i=1; i<matrix.size(); i++){
+            for(int j=1; j<matrix.get(i).size(); j++){
+                if(matrix.get(i).get(0) == 0 || matrix.get(0).get(j) == 0){
+                   matrix.get(i).set(j, 0);
                 }
             }
         }
-    }
+        
+        if(firstCol){
+            for(int i=0; i<matrix.size(); i++)
+                matrix.get(i).set(0,0);
+        }
+ 
+        if(firstRow){
+            for(int i=0; i<matrix.get(0).size(); i++)
+                matrix.get(0).set(i, 0);
+        }
+	}
 }
 ```
 <a name="ques-27"></a>
 **First Missing Integer** [Back](#arrays) <br>
 ```java
+
 ```
 <a name="ques-28"></a>
 **Merge Overlapping Intervals** [Back](#arrays) <br>
+
 ```java
 /**
  * Definition for an interval.
@@ -1204,24 +1472,80 @@ public class Solution {
 <a name="ques-30"></a>
 **N/3 Repeat Number** [Back](#arrays) <br>
 ```java
+public class Solution {
+	// DO NOT MODIFY THE LIST
+	public int repeatedNumber(final List<Integer> a) {
+	    int n = a.size();
+	    
+	    if (n == 0) return -1;
+	    if (n == 1) return a.get(0);
+	    int check = n/3;
+	    
+	    int c1=a.get(0), c2=a.get(1), c1Count=0, c2Count=0;
+	    for (int num : a) {
+	        if (c1 == num) {
+	            c1Count++;
+	        }
+	        else if (c2 == num) {
+	            c2Count++;
+	        }
+	        else if (c1Count == 0) {
+	            c1 = num;
+	        }
+	        else if (c2Count == 0) {
+	            c2 = num;
+	        }
+	        else {
+	            c1Count--;
+	            c2Count--;
+	        }
+	    }
+	    
+	    c1Count = 0;
+	    c2Count = 0;
+	    
+	    for(int num : a) {
+	        if (num == c1) {
+	            c1Count++;
+	        }
+	        else if (num == c2) {
+	            c2Count++;
+	        }
+	    }
+	    
+	    if (c1Count > check) {
+	        return c1;
+	    }
+	    else if (c2Count > check) {
+	        return c2;
+	    }
+	    else {
+	        return -1;
+	    }
+	}
+}
 ```
 
 ### Math
 <a name="ques-31"></a>
 **All Factors** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-32"></a>
 **Binary Representation** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-33"></a>
 **Prime** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-34"></a>
 **Verify Prime** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-35"></a>
 **Prime Sum** [Back](#maths) <br>
@@ -1252,10 +1576,12 @@ public class Solution {
 <a name="ques-36"></a>
 **Sum of pairwise Hamming Distance** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-37"></a>
 **FizzBuzz** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-38"></a>
 **Power Of Two Integers** [Back](#maths) <br>
@@ -1368,6 +1694,7 @@ public class Solution {
 <a name="ques-44"></a>
 **Trailing Zeroes** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-45"></a>
 **Sorted Permutation Rank** [Back](#maths) <br>
@@ -1413,10 +1740,12 @@ public class Solution {
 <a name="ques-46"></a>
 **Largest Coprime Divisor** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-47"></a>
 **Sorted Permutation Rank with Repeats** [Back](#maths) <br>
 ```java
+
 ```
 <a name="ques-48"></a>
 **ReArrange Array** [Back](#maths) <br>
@@ -1531,14 +1860,17 @@ public class Solution {
 <a name="ques-52"></a>
 **Count Element Occurence** [Back](#binarysearch) <br>
 ```java
+
 ```
 <a name="ques-53"></a>
 **Rotated Array** [Back](#binarysearch) <br>
 ```java
+
 ```
 <a name="ques-54"></a>
 **Matrix Median** [Back](#binarysearch) <br>
 ```java
+
 ```
 <a name="ques-55"></a>
 **Matrix Search** [Back](#binarysearch) <br>
@@ -1570,6 +1902,7 @@ public class Solution {
 <a name="ques-56"></a>
 **Sorted Insert Position** [Back](#binarysearch) <br>
 ```java
+
 ```
 <a name="ques-57"></a>
 **Implement Power Function** [Back](#binarysearch) <br>
@@ -1639,6 +1972,7 @@ public class Solution {
 <a name="ques-59"></a>
 **Search for a Range** [Back](#binarysearch) <br>
 ```java
+
 ```
 <a name="ques-60"></a>
 **Painter's Partition Problem** [Back](#binarysearch) <br>
@@ -1676,6 +2010,7 @@ public class Solution {
 <a name="ques-61"></a>
 **Allocate Books** [Back](#binarysearch) <br>
 ```java
+
 ```
 <a name="ques-62"></a>
 **Median of Array** [Back](#binarysearch) <br>
@@ -1895,6 +2230,7 @@ public class Solution {
 <a name="ques-69"></a>
 **Compare Version Numbers** [Back](#strings) <br>
 ```java
+
 ```
 <a name="ques-70"></a>
 **Atoi** [Back](#strings) <br>
@@ -1993,10 +2329,12 @@ public class Solution {
 <a name="ques-73"></a>
 **Valid Number** [Back](#strings) <br>
 ```java
+
 ```
 <a name="ques-74"></a>
 **Valid Ip Addresses** [Back](#strings) <br>
 ```java
+
 ```
 <a name="ques-75"></a>
 **Roman To Integer** [Back](#strings) <br>
@@ -2027,10 +2365,12 @@ public class Solution {
 <a name="ques-76"></a>
 **Integer To Roman** [Back](#strings) <br>
 ```java
+
 ```
 <a name="ques-77"></a>
 **Add Binary Strings** [Back](#strings) <br>
 ```java
+
 ```
 <a name="ques-78"></a>
 **Power of 2** [Back](#strings) <br>
@@ -2068,6 +2408,7 @@ public class Solution {
 <a name="ques-79"></a>
 **Multiply Strings** [Back](#strings) <br>
 ```java
+
 ```
 <a name="ques-80"></a>
 **Justified Text** [Back](#strings) <br>
@@ -2139,10 +2480,12 @@ public class Solution {
 <a name="ques-81"></a>
 **ZigZag String** [Back](#strings) <br>
 ```java
+
 ```
 <a name="ques-82"></a>
 **Pretty Json** [Back](#strings) <br>
 ```java
+
 ```
 <a name="ques-83"></a>
 **Stringoholics** [Back](#strings) <br>
@@ -2743,6 +3086,7 @@ public class Solution {
 <a name="ques-102"></a>
 **Max Continuous Series of 1s** [Back](#twopointers) <br>
 ```java
+
 ```
 <a name="ques-103"></a>
 **Array 3 Pointers** [Back](#twopointers) <br>
@@ -2782,6 +3126,7 @@ public class Solution {
 <a name="ques-104"></a>
 **Counting Triangles** [Back](#twopointers) <br>
 ```java
+
 ```
 <a name="ques-105"></a>
 **Container With Most Water** [Back](#twopointers) <br>
@@ -2808,10 +3153,12 @@ public class Solution {
 <a name="ques-106"></a>
 **Intersection of Linked Lists** [Back](#linkedlist) <br>
 ```java
+
 ```
 <a name="ques-107"></a>
 **Reverse Linked List** [Back](#linkedlist) <br>
 ```java
+
 ```
 <a name="ques-108"></a>
 **Palindrome List** [Back](#linkedlist) <br>
@@ -2914,6 +3261,7 @@ public class Solution {
 <a name="ques-110"></a>
 **Remove Duplicates from Sorted List 2** [Back](#linkedlist) <br>
 ```java
+
 ```
 <a name="ques-111"></a>
 **Merge Two Sorted Lists** [Back](#linkedlist) <br>
@@ -3094,18 +3442,22 @@ public class Solution {
 <a name="ques-115"></a>
 **Reorder List** [Back](#linkedlist) <br>
 ```java
+
 ```
 <a name="ques-116"></a>
 **Swap List Nodes in pairs** [Back](#linkedlist) <br>
 ```java
+
 ```
 <a name="ques-117"></a>
 **K reverse linked list** [Back](#linkedlist) <br>
 ```java
+
 ```
 <a name="ques-118"></a>
 **Add Two Numbers as Lists** [Back](#linkedlist) <br>
 ```java
+
 ```
 <a name="ques-119"></a>
 **List Cycle** [Back](#linkedlist) <br>
@@ -3687,10 +4039,12 @@ public class Solution {
 <a name="ques-131"></a>
 **ReverseLinkedList** [Back](#backtracking) <br>
 ```java
+
 ```
 <a name="ques-132"></a>
 **Modular Expression** [Back](#backtracking) <br>
 ```java
+
 ```
 <a name="ques-133"></a>
 **Subset** [Back](#backtracking) <br>
@@ -4009,6 +4363,7 @@ public class Solution {
 <a name="ques-143"></a>
 **Kth Permutation Sequence** [Back](#backtracking) <br>
 ```java
+
 ```
 <a name="ques-144"></a>
 **NQueens** [Back](#backtracking) <br>
@@ -4265,6 +4620,7 @@ public class Solution {
 <a name="ques-149"></a>
 **Valid Sudoku** [Back](#hashing) <br>
 ```java
+
 ```
 <a name="ques-150"></a>
 **Diffk II** [Back](#hashing) <br>
@@ -4524,6 +4880,7 @@ public class Solution {
 <a name="ques-156"></a>
 **Fraction** [Back](#hashing) <br>
 ```java
+
 ```
 <a name="ques-157"></a>
 **Points on the Straight Line** [Back](#hashing) <br>
@@ -4637,6 +4994,7 @@ public class Solution {
 <a name="ques-159"></a>
 **N max pair combinations** [Back](#heaps) <br>
 ```java
+
 ```
 <a name="ques-160"></a>
 **Magician and Chocolates** [Back](#heaps) <br>
@@ -4909,18 +5267,22 @@ public class  Solution {
 <a name="ques-165"></a>
 **Valid Binary Search Tree** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-166"></a>
 **Next Greater Number BST** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-167"></a>
 **Max Depth of Binary Tree** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-168"></a>
 **Vertical Order traversal of Binary Tree** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-169"></a>
 **Inorder Traversal** [Back](#trees) <br>
@@ -5224,6 +5586,7 @@ public class Solution {
 <a name="ques-177"></a>
 **Inorder Traversal of Cartesian Tree** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-178"></a>
 **Sorted Array To Balanced BST** [Back](#trees) <br>
@@ -5427,6 +5790,7 @@ public class Solution {
 <a name="ques-182"></a>
 **2-Sum Binary Tree** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-183"></a>
 **BST Iterator** [Back](#trees) <br>
@@ -5501,6 +5865,7 @@ public class Solution {
 <a name="ques-184"></a>
 **Recover Binary Search Tree** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-185"></a>
 **Invert the Binary Tree** [Back](#trees) <br>
@@ -5973,169 +6338,211 @@ public class Solution {
 <a name="ques-196"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-197"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-198"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-199"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-200"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-201"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-202"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-203"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-204"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-205"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-206"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-207"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-208"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-209"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-210"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-211"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-212"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-213"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-214"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-215"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-216"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-217"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-218"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-219"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-220"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-221"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-222"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-223"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-224"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-225"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-226"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-227"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-228"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-229"></a>
 **** [Back](#trees) <br>
 ```java
+
 ```
 <a name="ques-230"></a>
 **** [Back](#questions) <br>
 ```java
+
 ```
 <a name="ques-231"></a>
 **** [Back](#questions) <br>
 ```java
+
 ```
 <a name="ques-232"></a>
 **** [Back](#questions) <br>
 ```java
+
 ```
 <a name="ques-233"></a>
 **** [Back](#questions) <br>
 ```java
+
 ```
 <a name="ques-234"></a>
 **** [Back](#questions) <br>
 ```java
+
 ```
 <a name="ques-235"></a>
 **** [Back](#questions) <br>
 ```java
+
 ```
 <a name="ques-236"></a>
 **** [Back](#questions) <br>
 ```java
+
 ```
 <a name="ques-237"></a>
 **** [Back](#questions) <br>
 ```java
+
 ```
 
