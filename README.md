@@ -25,294 +25,592 @@
 ## Arrays
 
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Spiral Array](https://www.interviewbit.com/problems/spiral-order-matrix-i/)      | [Java](#ques-1)  | _O(n*m)_         | _O(1)_          | Easy         |  |
-|2| [Min Steps](https://www.interviewbit.com/problems/min-steps-in-infinite-grid/) You are in an infinite 2D grid where you can move in any of the 8 directions. You are given a sequence of points and  **the order in which you need to cover the points**. Give the minimum number of steps in which you can achieve it. You start from the first point.     | [Java](#ques-2)  | _O(n)_         | _O(1)_          | Easy         |  |
-|3| [Add One to Number](https://www.interviewbit.com/problems/add-one-to-number/) Given a non-negative number represented as an array of digits, add 1 to the number ( increment the number represented by the digits ). The digits are stored such that the most significant digit is at the head of the list.     | [Java](#ques-3)  | _O(n)_         | _O(1)_          | Easy         |  |
-|4| [Max Sum Contiguous Subarray](https://www.interviewbit.com/problems/max-sum-contiguous-subarray/)      | [Java](#ques-4)  | _O(n)_         | _O(1)_          | Medium         | Kadane's Algo :- previous MSS should be positive for optimal subarray|
-|5| [Maximum Absolute Difference](https://www.interviewbit.com/problems/maximum-absolute-difference/)      | [Java](#ques-5)  | _O(n)_         | _O(1)_          | Medium         | Carefully look the given exp and how it can be written down|
-|6| [Repeat and Missing Number Array](https://www.interviewbit.com/problems/repeat-and-missing-number-array/)      | [Java](#ques-6)  | _O(n)_         | _O(1)_          | Medium         | Look for overflows and equations|
-|7| [Flip](https://www.interviewbit.com/problems/flip/)      | [Java](#ques-7)  | _O(n)_         | _O(1)_          | Medium         | |
-|7| [Max Non Negative SubArray](https://www.interviewbit.com/problems/max-non-negative-subarray/) Find out the maximum sub-array of non negative numbers from an array. The sub-array should be continuous. That is, a sub-array created by choosing the second and fourth element and skipping the third element is invalid. Maximum sub-array is defined in terms of the sum of the elements in the sub-array. Sub-array A is greater than sub-array B if sum(A) > sum(B).     | [Java](#ques-8)  | _O(n)_         | _O(1)_          | Easy         | Check for overflows and tie constraints properly|
-|8| [Spiral Order Matrix II](https://www.interviewbit.com/problems/spiral-order-matrix-ii/) Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.     | [Java](#ques-9)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
-|9| [Pascal Triangle](https://www.interviewbit.com/problems/pascal-triangle/) Given numRows, generate the first numRows of Pascal’s triangle. Pascal’s triangle : To generate A[C] in row R, sum up A’[C] and A’[C-1] from previous row R - 1.     | [Java](#ques-10)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
-|10| [Kth Row of Pascal's Triangle](https://www.interviewbit.com/problems/kth-row-of-pascals-triangle/)      | [Java](#ques-11)  | _O(n*n)_         | _O(n)_          | Easy         | Think in terms of if previous calculated list is needed or not |
-|11| [Anti Diagonals](https://www.interviewbit.com/problems/anti-diagonals/)      | [Java](#ques-12)  | _O(n)_         | _O(1)_          | Easy         |  |
-|12| [Noble Integer](https://www.interviewbit.com/problems/noble-integer/) Given an integer array, find if an integer p exists in the array such that the number of integers greater than p in the array equals to p. If such an integer is found return 1 else return -1.     | [Java](#ques-13)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
-|13| [Triplets with Sum between given range](https://www.interviewbit.com/problems/triplets-with-sum-between-given-range/)      | [Java](#ques-14)  | _O(n)_         | _O(1)_          | Medium         | |
-|14| [Largest Number](https://www.interviewbit.com/problems/largest-number/) Given a list of non negative integers, arrange them such that they form the largest number.     | [Java](#ques-15)  | _O(n)_         | _O(n)_          | Medium         | Comparator |
-|15| [Wave Array](https://www.interviewbit.com/problems/wave-array/) Given an array of integers, sort the array into a wave like array and return it, In other words, arrange the elements into a sequence such that a1 >= a2 <= a3 >= a4 <= a5.....     | [Java](#ques-16)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
-|16| [Hotel Bookings Possible](https://www.interviewbit.com/problems/hotel-bookings-possible/)      | [Java](#ques-17)  | _O(nlogn)_         | _O(1)_          | Medium         |  
-|17| [Find Duplicate in Array](https://www.interviewbit.com/problems/find-duplicate-in-array/) Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.    | [Java](#ques-18)  | _O(n)_         | _O(1)_          | Easy         |  |
-|18| [Max Distance](https://www.interviewbit.com/problems/max-distance/) Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j]. If there is no solution possible, return -1.     | [Java](#ques-19)  | _O(n)_         | _O(n)_          | Medium         |  
-|19| [Min Unsorted Subarray](https://www.interviewbit.com/problems/maximum-unsorted-subarray/)      | [Java](#ques-20)  | _O(n)_         | _O(n)_          | Medium         |  
-|20| [Maximum Consecutive Gap](https://www.interviewbit.com/problems/maximum-consecutive-gap/)      | [Java](#ques-21)  | _O(n)_         | _O(n)_          | Medium         |  PigeonHole Sorting using bucket method|
-|21| [Rotate Matrix](https://www.interviewbit.com/problems/rotate-matrix/)      | [Java](#ques-22)  | _O(n*n)_         | _O(1)_          | Medium         |  Good Question|
-|22| [MAXSPPROD](https://www.interviewbit.com/problems/maxspprod/) You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following: LeftSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](i>j). If multiple A[j]’s are present in multiple positions, the LeftSpecialValue is the maximum value of j. RightSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](j>i). If multiple A[j]s are present in multiple positions, the RightSpecialValue is the minimum value of j. Write a program to find the maximum special product of any integer in the array.     | [Java](#ques-23)  | _O(n)_         | _O(n)_          | Medium         |  Good Question|
-|23| [Next Permutation](https://www.interviewbit.com/problems/next-permutation/)      | [Java](#ques-24)  | _O(nlogn)_(only if already highest perm, else O(n + logn))         | _O(1)_          | Medium         |  Good Question, Analyse diff examples, 
-|24| [Find Permutation](https://www.interviewbit.com/problems/find-permutation/)      | [Java](#ques-25)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, 
-|25| [Set Matrix Zeros](https://www.interviewbit.com/problems/set-matrix-zeros/) Given an m x n matrix of 0s and 1s, if an element is 0, set its entire row and column to 0. Do it in place.     | [Java](#ques-26)  | _O(n*m)_         | _O(1)_          | Medium         |  Good Question|
-|26| [First Missing Integer](https://www.interviewbit.com/problems/first-missing-integer/)      | [Java](#ques-27)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, 
-|27| [Merge Overlapping Intervals](https://www.interviewbit.com/problems/merge-overlapping-intervals/)      | [Java](#ques-28)  | _O(nlogn)_         | _O(1)_          | Medium         |  Good Question, 
-|28| [Merge Intervals](https://www.interviewbit.com/problems/merge-intervals/) Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).     | [Java](#ques-29)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Good Edge Cases|
-|29| [N/3 Repeat Number](https://www.interviewbit.com/problems/n3-repeat-number/)      | [Java](#ques-30)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Moore's Voting Algo|
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Spiral Array](https://www.interviewbit.com/problems/spiral-order-matrix-i/)      | [Approach](#array-approach) | [Java](#ques-1)  |
+|2| [Min Steps](https://www.interviewbit.com/problems/min-steps-in-infinite-grid/) You are in an infinite 2D grid where you can move in any of the 8 directions. You are given a sequence of points and  **the order in which you need to cover the points**. Give the minimum number of steps in which you can achieve it. You start from the first point.     | [Approach](#array-approach) | [Java](#ques-2)  |
+|3| [Add One to Number](https://www.interviewbit.com/problems/add-one-to-number/) Given a non-negative number represented as an array of digits, add 1 to the number ( increment the number represented by the digits ). The digits are stored such that the most significant digit is at the head of the list.     | [Approach](#array-approach) | [Java](#ques-3)  |
+|4| [Max Sum Contiguous Subarray](https://www.interviewbit.com/problems/max-sum-contiguous-subarray/)      | [Approach](#array-approach) | [Java](#ques-4)  |
+|5| [Maximum Absolute Difference](https://www.interviewbit.com/problems/maximum-absolute-difference/)      | [Approach](#array-approach) | [Java](#ques-5)  |
+|6| [Repeat and Missing Number Array](https://www.interviewbit.com/problems/repeat-and-missing-number-array/)      | [Approach](#array-approach) | [Java](#ques-6)  |
+|7| [Flip](https://www.interviewbit.com/problems/flip/)      | [Approach](#array-approach) | [Java](#ques-7)  |
+|7| [Max Non Negative SubArray](https://www.interviewbit.com/problems/max-non-negative-subarray/) Find out the maximum sub-array of non negative numbers from an array. The sub-array should be continuous. That is, a sub-array created by choosing the second and fourth element and skipping the third element is invalid. Maximum sub-array is defined in terms of the sum of the elements in the sub-array. Sub-array A is greater than sub-array B if sum(A) > sum(B).     | [Approach](#array-approach) | [Java](#ques-8)  |
+|8| [Spiral Order Matrix II](https://www.interviewbit.com/problems/spiral-order-matrix-ii/) Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.     | [Approach](#array-approach) | [Java](#ques-9)  |
+|9| [Pascal Triangle](https://www.interviewbit.com/problems/pascal-triangle/) Given numRows, generate the first numRows of Pascal’s triangle. Pascal’s triangle : To generate A[C] in row R, sum up A’[C] and A’[C-1] from previous row R - 1.     | [Approach](#array-approach) | [Java](#ques-10)  |
+|10| [Kth Row of Pascal's Triangle](https://www.interviewbit.com/problems/kth-row-of-pascals-triangle/)      | [Approach](#array-approach) | [Java](#ques-11)  |
+|11| [Anti Diagonals](https://www.interviewbit.com/problems/anti-diagonals/)      | [Approach](#array-approach) | [Java](#ques-12)  |
+|12| [Noble Integer](https://www.interviewbit.com/problems/noble-integer/) Given an integer array, find if an integer p exists in the array such that the number of integers greater than p in the array equals to p. If such an integer is found return 1 else return -1.     | [Approach](#array-approach) | [Java](#ques-13)  |
+|13| [Triplets with Sum between given range](https://www.interviewbit.com/problems/triplets-with-sum-between-given-range/)      | [Approach](#array-approach) | [Java](#ques-14)  |
+|14| [Largest Number](https://www.interviewbit.com/problems/largest-number/) Given a list of non negative integers, arrange them such that they form the largest number.     | [Approach](#array-approach) | [Java](#ques-15)  |
+|15| [Wave Array](https://www.interviewbit.com/problems/wave-array/) Given an array of integers, sort the array into a wave like array and return it, In other words, arrange the elements into a sequence such that a1 >= a2 <= a3 >= a4 <= a5.....     | [Approach](#array-approach) | [Java](#ques-16)  |
+|16| [Hotel Bookings Possible](https://www.interviewbit.com/problems/hotel-bookings-possible/)      | [Approach](#array-approach) | [Java](#ques-17)  |
+|17| [Find Duplicate in Array](https://www.interviewbit.com/problems/find-duplicate-in-array/) Given a read only array of n + 1 integers between 1 and n, find one number that repeats in linear time using less than O(n) space and traversing the stream sequentially O(1) times.    | [Approach](#array-approach) | [Java](#ques-18)  |
+|18| [Max Distance](https://www.interviewbit.com/problems/max-distance/) Given an array A of integers, find the maximum of j - i subjected to the constraint of A[i] <= A[j]. If there is no solution possible, return -1.     | [Approach](#array-approach) | [Java](#ques-19)  |
+|19| [Min Unsorted Subarray](https://www.interviewbit.com/problems/maximum-unsorted-subarray/)      | [Approach](#array-approach) | [Java](#ques-20)  |
+|20| [Maximum Consecutive Gap](https://www.interviewbit.com/problems/maximum-consecutive-gap/)      | [Approach](#array-approach) | [Java](#ques-21)  |
+|21| [Rotate Matrix](https://www.interviewbit.com/problems/rotate-matrix/)      | [Approach](#array-approach) | [Java](#ques-22)  |
+|22| [MAXSPPROD](https://www.interviewbit.com/problems/maxspprod/) You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following: LeftSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](i>j). If multiple A[j]’s are present in multiple positions, the LeftSpecialValue is the maximum value of j. RightSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i](j>i). If multiple A[j]s are present in multiple positions, the RightSpecialValue is the minimum value of j. Write a program to find the maximum special product of any integer in the array.     | [Approach](#array-approach) | [Java](#ques-23)  |
+|23| [Next Permutation](https://www.interviewbit.com/problems/next-permutation/)      | [Approach](#array-approach) | [Java](#ques-24)  |
+|24| [Find Permutation](https://www.interviewbit.com/problems/find-permutation/)      | [Approach](#array-approach) | [Java](#ques-25)  |
+|25| [Set Matrix Zeros](https://www.interviewbit.com/problems/set-matrix-zeros/) Given an m x n matrix of 0s and 1s, if an element is 0, set its entire row and column to 0. Do it in place.     | [Approach](#array-approach) | [Java](#ques-26)  |
+|26| [First Missing Integer](https://www.interviewbit.com/problems/first-missing-integer/)      | [Approach](#array-approach) | [Java](#ques-27)  |
+|27| [Merge Overlapping Intervals](https://www.interviewbit.com/problems/merge-overlapping-intervals/)      | [Approach](#array-approach) | [Java](#ques-28)  |
+|28| [Merge Intervals](https://www.interviewbit.com/problems/merge-intervals/) Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).     | [Approach](#array-approach) | [Java](#ques-29)  |
+|29| [N/3 Repeat Number](https://www.interviewbit.com/problems/n3-repeat-number/)      | [Approach](#array-approach) | [Java](#ques-30)  |
 
 <a name="maths"></a>
 ## Math
 
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [All Factors](https://www.interviewbit.com/problems/all-factors/)      | [Java](#ques-31)  | _O(sqrt(n))_         | _O(1)_          | Easy         | Keep notice of edge cases - like i^2 = A |
-|2| [Binary Representation](https://www.interviewbit.com/problems/binary-representation/)      | [Java](#ques-32)  | _O(log(n))_         | _O(1)_          | Easy         |  |
-|3| [Prime](https://www.interviewbit.com/problems/prime-numbers/)      | [Java](#ques-33)  | _O(sqrt(N)loglog(n))_         | _O(1)_          | Easy         | Sieve of Eratosthenes |
-|4| [Verify Prime](https://www.interviewbit.com/problems/verify-prime/)      | [Java](#ques-34)  | _O(sqrt(N))_         | _O(1)_          | Easy         |  |
-|5| [Prime Sum](https://www.interviewbit.com/problems/prime-sum/) Given an even number ( greater than 2 ), return two prime numbers whose sum will be equal to given number.     | [Java](#ques-35)  | _O(sqrt(N)loglog(n) + N)_         | _O(1)_          | Easy         |  |
-|6| [Sum of pairwise Hamming Distance](https://www.interviewbit.com/problems/sum-of-pairwise-hamming-distance/)      | [Java](#ques-36)  | _O(N)_         | _O(1)_          | Medium         | Good idea on how to use mod for large test cases, and good solution |
-|7| [FizzBuzz](https://www.interviewbit.com/problems/fizzbuzz/)      | [Java](#ques-37)  | _O(N)_         | _O(1)_          | Easy         |  |
-|8| [Power Of Two Integers](https://www.interviewbit.com/problems/power-of-two-integers/) Given a positive integer which fits in a 32 bit signed integer, find if it can be expressed as A^P where P > 1 and A > 0. A and P both should be integers.     | [Java](#ques-38)  | _O(sqrt(N)*log(N))_         | _O(1)_          | Easy         | Think easy solution |
-|9| [Excel Column Number](https://www.interviewbit.com/problems/excel-column-number/) Given a column title as appears in an Excel sheet, return its corresponding column number.     | [Java](#ques-39)  | _O(N)_         | _O(1)_          | Easy         | |
-|10| [Excel Column Title](https://www.interviewbit.com/problems/excel-column-title/) Given a positive integer, return its corresponding column title as appear in an Excel sheet.     | [Java](#ques-40)  | _O(logn)_         | _O(1)_          | Easy         | Good Question|
-|11| [Palindrome Integer](https://www.interviewbit.com/problems/palindrome-integer/) Determine whether an integer is a palindrome. Do this without extra space.     | [Java](#ques-41)  | _O(number of digits)_         | _O(1)_          | Easy         | |
-|12| [Reverse Integer](https://www.interviewbit.com/problems/reverse-integer/)      | [Java](#ques-42)  | _O(number of digits)_         | _O(1)_          | Easy         | |
-|13| [GCD](https://www.interviewbit.com/problems/greatest-common-divisor/)      | [Java](#ques-43)  | _O(log(min a,b))_         | _O(1)_          | Easy         | Eucledian Algo, Good Question|
-|14| [Trailing Zeroes](https://www.interviewbit.com/problems/trailing-zeros-in-factorial/)      | [Java](#ques-44)  | _O((A)^1/5)_         | _O(1)_          | Easy         | Good Question|
-|15| [Sorted Permutation Rank](https://www.interviewbit.com/problems/sorted-permutation-rank/) Given a string, find the rank of the string amongst its permutations sorted lexicographically. Assume that no characters are repeated.     | [Java](#ques-45)  | _O(A^2)_         | _O(1)_          | Medium         | Good Question, Consider usage of factorial in case of modulo|
-|16| [Largest Coprime Divisor](https://www.interviewbit.com/problems/largest-coprime-divisor/)      | [Java](#ques-46)  | _O(A^2)_         | _O(1)_          | Medium         | 
-|17| [Sorted Permutation Rank with Repeats](https://www.interviewbit.com/problems/sorted-permutation-rank-with-repeats/)      | [Java](#ques-47)  | _O(A^2)_         | _O(1)_          | Medium         | Multiplicative Inverse Modulo(use long in case of modulo) |
-|18| [ReArrange Array](https://www.interviewbit.com/problems/rearrange-array/) Rearrange a given array so that Arr[i] becomes Arr[Arr[i]] with O(1) extra space.     | [Java](#ques-48)  | _O(A)_         | _O(1)_          | Medium         | Encoding 2 values in one |
-|19| [Grid Unique Paths](https://www.interviewbit.com/problems/grid-unique-paths/) A robot is located at the top-left corner of an A x B grid. The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below). How many possible unique paths are there?     | [Java](#ques-49)  | _O(min(row,col))_         | _O(1)_          | Easy         | DP or Combinatorial |
-|20| [Numbers of length N and value less than K](https://www.interviewbit.com/problems/numbers-of-length-n-and-value-less-than-k/) Given a set of digits (A) in sorted order, find how many numbers of length B are possible whose value is less than number C.     | [Java](#ques-50)  | _O(B)_         | _O(1)_          | Medium         | |
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [All Factors](https://www.interviewbit.com/problems/all-factors/)      | [Approach](#maths-approach) | [Java](#ques-31)  |
+|2| [Binary Representation](https://www.interviewbit.com/problems/binary-representation/)      | [Approach](#maths-approach) | [Java](#ques-32)  |
+|3| [Prime](https://www.interviewbit.com/problems/prime-numbers/)      | [Approach](#maths-approach) | [Java](#ques-33)  |
+|4| [Verify Prime](https://www.interviewbit.com/problems/verify-prime/)      | [Approach](#maths-approach) | [Java](#ques-34)  |
+|5| [Prime Sum](https://www.interviewbit.com/problems/prime-sum/) Given an even number ( greater than 2 ), return two prime numbers whose sum will be equal to given number.     | [Approach](#maths-approach) | [Java](#ques-35)  |
+|6| [Sum of pairwise Hamming Distance](https://www.interviewbit.com/problems/sum-of-pairwise-hamming-distance/)      | [Approach](#maths-approach) | [Java](#ques-36)  |
+|7| [FizzBuzz](https://www.interviewbit.com/problems/fizzbuzz/)      | [Approach](#maths-approach) | [Java](#ques-37)  |
+|8| [Power Of Two Integers](https://www.interviewbit.com/problems/power-of-two-integers/) Given a positive integer which fits in a 32 bit signed integer, find if it can be expressed as A^P where P > 1 and A > 0. A and P both should be integers.     | [Approach](#maths-approach) | [Java](#ques-38)  |
+|9| [Excel Column Number](https://www.interviewbit.com/problems/excel-column-number/) Given a column title as appears in an Excel sheet, return its corresponding column number.     | [Approach](#maths-approach) | [Java](#ques-39)  |
+|10| [Excel Column Title](https://www.interviewbit.com/problems/excel-column-title/) Given a positive integer, return its corresponding column title as appear in an Excel sheet.     | [Approach](#maths-approach) | [Java](#ques-40)  |
+|11| [Palindrome Integer](https://www.interviewbit.com/problems/palindrome-integer/) Determine whether an integer is a palindrome. Do this without extra space.     | [Approach](#maths-approach) | [Java](#ques-41)  |
+|12| [Reverse Integer](https://www.interviewbit.com/problems/reverse-integer/)      | [Approach](#maths-approach) | [Java](#ques-42)  |
+|13| [GCD](https://www.interviewbit.com/problems/greatest-common-divisor/)      | [Approach](#maths-approach) | [Java](#ques-43)  |
+|14| [Trailing Zeroes](https://www.interviewbit.com/problems/trailing-zeros-in-factorial/)      | [Approach](#maths-approach) | [Java](#ques-44)  |
+|15| [Sorted Permutation Rank](https://www.interviewbit.com/problems/sorted-permutation-rank/) Given a string, find the rank of the string amongst its permutations sorted lexicographically. Assume that no characters are repeated.     | [Approach](#maths-approach) | [Java](#ques-45)  |
+|16| [Largest Coprime Divisor](https://www.interviewbit.com/problems/largest-coprime-divisor/)      | [Approach](#maths-approach) | [Java](#ques-46)  |
+|17| [Sorted Permutation Rank with Repeats](https://www.interviewbit.com/problems/sorted-permutation-rank-with-repeats/)      | [Approach](#maths-approach) | [Java](#ques-47)  |
+|18| [ReArrange Array](https://www.interviewbit.com/problems/rearrange-array/) Rearrange a given array so that Arr[i] becomes Arr[Arr[i]] with O(1) extra space.     | [Approach](#maths-approach) | [Java](#ques-48)  |
+|19| [Grid Unique Paths](https://www.interviewbit.com/problems/grid-unique-paths/) A robot is located at the top-left corner of an A x B grid. The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below). How many possible unique paths are there?     | [Approach](#maths-approach) | [Java](#ques-49)  |
+|20| [Numbers of length N and value less than K](https://www.interviewbit.com/problems/numbers-of-length-n-and-value-less-than-k/) Given a set of digits (A) in sorted order, find how many numbers of length B are possible whose value is less than number C.     | [Approach](#maths-approach) | [Java](#ques-50)  |
 
 <a name="binarysearch"></a>
 ## Binary Search
 
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [SQRT](https://www.interviewbit.com/problems/square-root-of-integer/) Implement int sqrt(int x). Compute and return the square root of x. If x is not a perfect square, return floor(sqrt(x))     | [Java](#ques-51)  | _O(log(n))_         | _O(1)_          | Easy         | Keep check for out of range in case of Multiplication else use division  |
-|2| [Count Element Occurence](https://www.interviewbit.com/problems/count-element-occurence/)      | [Java](#ques-52)  | _O(log(n))_         | _O(1)_          | Easy         |   |
-|3| [Rotated Array](https://www.interviewbit.com/problems/rotated-array/) Suppose a sorted array is rotated at some pivot unknown to you beforehand. You are given a target value to search. If found in the array, return its index, otherwise return -1.     | [Java](#ques-53)  | _O(log(n))_         | _O(1)_          | Easy         |  |
-|4| [Matrix Median](https://www.interviewbit.com/problems/matrix-median/)      | [Java](#ques-54)  | _O(log(2^32)*r*log(c))_ = O(32 * r * log(c))         | _O(1)_          | Medium         |  |
-|5| [Matrix Search](https://www.interviewbit.com/problems/matrix-search/) Write an efficient algorithm that searches for a value in an m x n matrix.     | [Java](#ques-55)  | _O(log(rc))_ = O(log(r) + log(c))         | _O(1)_          | Easy         |  |
-|6| [Sorted Insert Position](https://www.interviewbit.com/problems/sorted-insert-position/)      | [Java](#ques-56)  | _O(log(n))_          | _O(1)_          | Easy         |   |
-|7| [Implement Power Function](https://www.interviewbit.com/problems/implement-power-function/) Implement pow(x, n) % d. In other words, given x, n and d, find (x^n % d)     | [Java](#ques-57)  | _O(log(power))_          | _O(1)_          | Easy         |  Handle Negative value carefully, |
-|8| [Rotated Sorted Array Search](https://www.interviewbit.com/problems/rotated-sorted-array-search/)      | [Java](#ques-58)  | _O(log(n))_          | _O(1)_          | Easy         |   |
-|9| [Search for a Range](https://www.interviewbit.com/problems/search-for-a-range/)      | [Java](#ques-59)  | _O(log(n))_          | _O(1)_          | Easy         |   |
-|10| [Painter's Partition Problem](https://www.interviewbit.com/problems/painters-partition-problem/) You have to paint N boards of length {A0, A1, A2, A3 … AN-1}. There are K painters available and you are also given how much time a painter takes to paint 1 unit of board. You have to get this job done as soon as possible under the constraints that any painter will only paint contiguous sections of board.     | [Java](#ques-60)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Example to use BS in monotonic functions   |
-|11| [Allocate Books](https://www.interviewbit.com/problems/allocate-books/)      | [Java](#ques-61)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Example to use BS in monotonic functions   |
-|12| [Median of Array](https://www.interviewbit.com/problems/median-of-array/) There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays ( The median of the array formed by merging both the arrays ).The overall run time complexity should be O(log (m+n)).     | [Java](#ques-62)  | _O(log(m+n))_          | _O(1)_          | Hard         |   |
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [SQRT](https://www.interviewbit.com/problems/square-root-of-integer/) Implement int sqrt(int x). Compute and return the square root of x. If x is not a perfect square, return floor(sqrt(x))     | [Approach](#binarysearch-approach) | [Java](#ques-51)  |
+|2| [Count Element Occurence](https://www.interviewbit.com/problems/count-element-occurence/)      | [Approach](#binarysearch-approach) | [Java](#ques-52)  |
+|3| [Rotated Array](https://www.interviewbit.com/problems/rotated-array/) Suppose a sorted array is rotated at some pivot unknown to you beforehand. You are given a target value to search. If found in the array, return its index, otherwise return -1.     | [Approach](#binarysearch-approach) | [Java](#ques-53)  |
+|4| [Matrix Median](https://www.interviewbit.com/problems/matrix-median/)      | [Approach](#binarysearch-approach) | [Java](#ques-54)  |
+|5| [Matrix Search](https://www.interviewbit.com/problems/matrix-search/) Write an efficient algorithm that searches for a value in an m x n matrix.     | [Approach](#binarysearch-approach) | [Java](#ques-55)  |
+|6| [Sorted Insert Position](https://www.interviewbit.com/problems/sorted-insert-position/)      | [Approach](#binarysearch-approach) | [Java](#ques-56)  |
+|7| [Implement Power Function](https://www.interviewbit.com/problems/implement-power-function/) Implement pow(x, n) % d. In other words, given x, n and d, find (x^n % d)     | [Approach](#binarysearch-approach) | [Java](#ques-57)  |
+|8| [Rotated Sorted Array Search](https://www.interviewbit.com/problems/rotated-sorted-array-search/)      | [Approach](#binarysearch-approach) | [Java](#ques-58)  |
+|9| [Search for a Range](https://www.interviewbit.com/problems/search-for-a-range/)      | [Approach](#binarysearch-approach) | [Java](#ques-59)  |
+|10| [Painter's Partition Problem](https://www.interviewbit.com/problems/painters-partition-problem/) You have to paint N boards of length {A0, A1, A2, A3 … AN-1}. There are K painters available and you are also given how much time a painter takes to paint 1 unit of board. You have to get this job done as soon as possible under the constraints that any painter will only paint contiguous sections of board.     | [Approach](#binarysearch-approach) | [Java](#ques-60)  |
+|11| [Allocate Books](https://www.interviewbit.com/problems/allocate-books/)      | [Approach](#binarysearch-approach) | [Java](#ques-61)  |
+|12| [Median of Array](https://www.interviewbit.com/problems/median-of-array/) There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays ( The median of the array formed by merging both the arrays ).The overall run time complexity should be O(log (m+n)).     | [Approach](#binarysearch-approach) | [Java](#ques-62)  |
 
 <a name="strings"></a>
 ## String
 
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Palindrome String](https://www.interviewbit.com/problems/palindrome-string/) Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.     | [Java](#ques-63)  | _O(n)_         | _O(1)_          | Easy         |   |
-|2| [Longest Common Prefix](https://www.interviewbit.com/problems/longest-common-prefix/) Write a function to find the longest common prefix string amongst an array of strings. Longest common prefix for a pair of strings S1 and S2 is the longest string S which is the prefix of both S1 and S2.     | [Java](#ques-64)  | _O(n*min(String Length))_         | _O(1)_          | Easy         |   |
-|3| [Count And Say](https://www.interviewbit.com/problems/count-and-say/) The count-and-say sequence is the sequence of integers beginning as follows: 1, 11, 21, 1211, 111221, ...     | [Java](#ques-65)  | _O(n*max(String Length))_         | _O(1)_          | Easy         |   |
-|4| [Minimum Characters required to make a String Palindromic](https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/)      | [Java](#ques-66)  | _O(n)_         | _O(1)_          | Easy         |   |
-|5| [Longest Palindromic Substring](https://www.interviewbit.com/problems/longest-palindromic-substring/)      | [Java](#ques-67)  | _O(n*n)_         | _O(1)_          | Medium         |  1 length is always palindrome |
-|6| [StrStr](https://www.interviewbit.com/problems/implement-strstr/) Locate a substring ( needle ) in a string ( haystack )     | [Java](#ques-68)  | _O(n)_         | _O(m)_          | Medium         |  KMP Algo |
-|7| [Compare Version Numbers](https://www.interviewbit.com/problems/compare-version-numbers/)      | [Java](#ques-69)  | _O(n)_         | _O(n)_          | Medium         |  
-|8| [Atoi](https://www.interviewbit.com/problems/atoi/) Implement atoi to convert a string to an integer.     | [Java](#ques-70)  | _O(n)_         | _O(1)_          | Easy         |  
-|9| [Length of Last Word](https://www.interviewbit.com/problems/length-of-last-word/)      | [Java](#ques-71)  | _O(n)_         | _O(1)_          | Easy         |  |
-|10| [Reverse the String](https://www.interviewbit.com/problems/reverse-the-string/)      | [Java](#ques-72)  | _O(n)_         | _O(n)_          | Easy         | Ask if split function can be used|
-|11| [Valid Number](https://www.interviewbit.com/problems/valid-number/)      | [Java](#ques-73)  | _O(n)_         | _O(1)_          | Easy         | Lots of corner cases|
-|12| [Valid Ip Addresses](https://www.interviewbit.com/problems/valid-ip-addresses/)      | [Java](#ques-74)  | _O(n)_         | _O(1)_          | Easy         | Placing 3 dots|
-|13| [Roman To Integer](https://www.interviewbit.com/problems/roman-to-integer/)      | [Java](#ques-75)  | _O(n)_         | _O(1)_          | Easy         | 
-|14| [Integer To Roman](https://www.interviewbit.com/problems/integer-to-roman/)      | [Java](#ques-76)  | _O(n)_         | _O(1)_          | Easy         | Ask if you can have diff arrays to store value|
-|15| [Add Binary Strings](https://www.interviewbit.com/problems/add-binary-strings/)      | [Java](#ques-77)  | _O(n)_         | _O(1)_          | Easy         | Shorter Solution|
-|16| [Power of 2](https://www.interviewbit.com/problems/power-of-2/)      | [Java](#ques-78)  | _O(logn)_         | _O(1)_          | Easy         | Use of CompareTo function|
-|17| [Multiply Strings](https://www.interviewbit.com/problems/multiply-strings/)      | [Java](#ques-79)  | _O(n*m)_         | _O(1)_          | Easy         | 
-|18| [Justified Text](https://www.interviewbit.com/problems/justified-text/)      | [Java](#ques-80)  | _O(n*n)_         | _O(n)_          | HARD         | Used Greedy Approach|
-|19| [ZigZag String](https://www.interviewbit.com/problems/zigzag-string/)      | [Java](#ques-81)  | _O(n)_         | _O(1)_          | Medium         | 
-|20| [Pretty Json](https://www.interviewbit.com/problems/pretty-json/)      | [Java](#ques-82)  | _O(n)_         | _O(1)_          | Medium         | 
-|21| [Stringoholics](https://www.interviewbit.com/problems/stringoholics/)      | [Java](#ques-83)  | _O(n*m, n*maxNum)_         | _O(n+m)_ n is input array length, m is average size of each string          | HARD         | Covers many concepts - KMP, LCM|
-|22| [Amazing Substring]() You are given a string S, and you have to find all the amazing substrings of S. Amazing Substring is one that starts with a vowel (a, e, i, o, u, A, E, I, O, U).     | [Java](#ques-84)  | _O(n)_         | _O(1)_          | Medium         | 
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Palindrome String](https://www.interviewbit.com/problems/palindrome-string/) Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.     | [Approach](#strings-approach) | [Java](#ques-63)  |
+|2| [Longest Common Prefix](https://www.interviewbit.com/problems/longest-common-prefix/) Write a function to find the longest common prefix string amongst an array of strings. Longest common prefix for a pair of strings S1 and S2 is the longest string S which is the prefix of both S1 and S2.     | [Approach](#strings-approach) | [Java](#ques-64)  |
+|3| [Count And Say](https://www.interviewbit.com/problems/count-and-say/) The count-and-say sequence is the sequence of integers beginning as follows: 1, 11, 21, 1211, 111221, ...     | [Approach](#strings-approach) | [Java](#ques-65)  |
+|4| [Minimum Characters required to make a String Palindromic](https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/)      | [Approach](#strings-approach) | [Java](#ques-66)  |
+|5| [Longest Palindromic Substring](https://www.interviewbit.com/problems/longest-palindromic-substring/)      | [Approach](#strings-approach) | [Java](#ques-67)  |
+|6| [StrStr](https://www.interviewbit.com/problems/implement-strstr/) Locate a substring ( needle ) in a string ( haystack )     | [Approach](#strings-approach) | [Java](#ques-68)  |
+|7| [Compare Version Numbers](https://www.interviewbit.com/problems/compare-version-numbers/)      | [Approach](#strings-approach) | [Java](#ques-69)  |
+|8| [Atoi](https://www.interviewbit.com/problems/atoi/) Implement atoi to convert a string to an integer.     | [Approach](#strings-approach) | [Java](#ques-70)  |
+|9| [Length of Last Word](https://www.interviewbit.com/problems/length-of-last-word/)      | [Approach](#strings-approach) | [Java](#ques-71)  |
+|10| [Reverse the String](https://www.interviewbit.com/problems/reverse-the-string/)      | [Approach](#strings-approach) | [Java](#ques-72)  |
+|11| [Valid Number](https://www.interviewbit.com/problems/valid-number/)      | [Approach](#strings-approach) | [Java](#ques-73)  |
+|12| [Valid Ip Addresses](https://www.interviewbit.com/problems/valid-ip-addresses/)      | [Approach](#strings-approach) | [Java](#ques-74)  |
+|13| [Roman To Integer](https://www.interviewbit.com/problems/roman-to-integer/)      | [Approach](#strings-approach) | [Java](#ques-75)  |
+|14| [Integer To Roman](https://www.interviewbit.com/problems/integer-to-roman/)      | [Approach](#strings-approach) | [Java](#ques-76)  |
+|15| [Add Binary Strings](https://www.interviewbit.com/problems/add-binary-strings/)      | [Approach](#strings-approach) | [Java](#ques-77)  |
+|16| [Power of 2](https://www.interviewbit.com/problems/power-of-2/)      | [Approach](#strings-approach) | [Java](#ques-78)  |
+|17| [Multiply Strings](https://www.interviewbit.com/problems/multiply-strings/)      | [Approach](#strings-approach) | [Java](#ques-79)  |
+|18| [Justified Text](https://www.interviewbit.com/problems/justified-text/)      | [Approach](#strings-approach) | [Java](#ques-80)  |
+|19| [ZigZag String](https://www.interviewbit.com/problems/zigzag-string/)      | [Approach](#strings-approach) | [Java](#ques-81)  |
+|20| [Pretty Json](https://www.interviewbit.com/problems/pretty-json/)      | [Approach](#strings-approach) | [Java](#ques-82)  |
+|21| [Stringoholics](https://www.interviewbit.com/problems/stringoholics/)      | [Approach](#strings-approach) | [Java](#ques-83)  |
+|22| [Amazing Substring]() You are given a string S, and you have to find all the amazing substrings of S. Amazing Substring is one that starts with a vowel (a, e, i, o, u, A, E, I, O, U).     | [Approach](#strings-approach) | [Java](#ques-84)  |
 
 <a name="bitmanipulation"></a>
 ## BitManipulation
 
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Min XOR Value](https://www.interviewbit.com/problems/min-xor-value/)      | [Java](#ques-85)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
-|2| [Single Number](https://www.interviewbit.com/problems/single-number/)      | [Java](#ques-86)  | _O(n)_         | _O(1)_          | Easy         |  |
-|3| [Number of 1 Bits](https://www.interviewbit.com/problems/number-of-1-bits/)      | [Java](#ques-87)  | _O(1)_         | _O(1)_          | Easy         | 2nd Solution with bits trick |
-|4| [Reverse Bits](https://www.interviewbit.com/problems/reverse-bits/)      | [Java](#ques-88)  | _O(1)_         | _O(1)_          | Easy         | 2nd Solution |
-|5| [Single Number II](https://www.interviewbit.com/problems/single-number-ii/) Given an array of integers, every element appears thrice except for one which occurs once.     | [Java](#ques-89)  | _O(n)_         | _O(1)_          | Medium         | 3x+1 |
-|6| [Divide Integers](https://www.interviewbit.com/problems/divide-integers/)      | [Java](#ques-90)  | _O(log(dividend))_         | _O(1)_          | Medium         | 1 approach is to subtract divisor, but takes O(dividend) time |
-|7| [Different Bits Sum Pairwise](https://www.interviewbit.com/problems/different-bits-sum-pairwise/) We define f(X, Y) as number of different corresponding bits in binary representation of X and Y. For example, f(2, 7) = 2, since binary representation of 2 and 7 are 010 and 111, respectively. The first and the third bit differ, so f(2, 7) = 2. You are given an array of N positive integers, A1, A2 ,…, AN. Find sum of f(Ai, Aj) for all pairs (i, j) such that 1 ≤ i, j ≤ N.     | [Java](#ques-91)  | _O(n)_         | _O(1)_          | Medium         | |
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Min XOR Value](https://www.interviewbit.com/problems/min-xor-value/)      | [Approach](#bitmanipulation-approach) | [Java](#ques-85)  |
+|2| [Single Number](https://www.interviewbit.com/problems/single-number/)      | [Approach](#bitmanipulation-approach) | [Java](#ques-86)  |
+|3| [Number of 1 Bits](https://www.interviewbit.com/problems/number-of-1-bits/)      | [Approach](#bitmanipulation-approach) | [Java](#ques-87)  |
+|4| [Reverse Bits](https://www.interviewbit.com/problems/reverse-bits/)      | [Approach](#bitmanipulation-approach) | [Java](#ques-88)  |
+|5| [Single Number II](https://www.interviewbit.com/problems/single-number-ii/) Given an array of integers, every element appears thrice except for one which occurs once.     | [Approach](#bitmanipulation-approach) | [Java](#ques-89)  |
+|6| [Divide Integers](https://www.interviewbit.com/problems/divide-integers/)      | [Approach](#bitmanipulation-approach) | [Java](#ques-90)  |
+|7| [Different Bits Sum Pairwise](https://www.interviewbit.com/problems/different-bits-sum-pairwise/) We define f(X, Y) as number of different corresponding bits in binary representation of X and Y. For example, f(2, 7) = 2, since binary representation of 2 and 7 are 010 and 111, respectively. The first and the third bit differ, so f(2, 7) = 2. You are given an array of N positive integers, A1, A2 ,…, AN. Find sum of f(Ai, Aj) for all pairs (i, j) such that 1 ≤ i, j ≤ N.     | [Approach](#bitmanipulation-approach) | [Java](#ques-91)  |
 
 <a name="twopointers"></a>
 ## TwoPointers
 
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Merge Two Sorted Lists II](https://www.interviewbit.com/problems/merge-two-sorted-lists-ii/)      | [Java](#ques-92)  | _O(n+m)_         | _O(1)_          | Easy         |   |
-|2| [Intersection Of Sorted Arrays](https://www.interviewbit.com/problems/intersection-of-sorted-arrays/) Find the intersection of two sorted arrays OR in other words, Given 2 sorted arrays, find all the elements which occur in both the arrays.     | [Java](#ques-93)  | _O(n+m)_         | _O(1)_          | Easy         |   |
-|3| [Minimize the absolute difference](https://www.interviewbit.com/problems/minimize-the-absolute-difference/) Given three sorted arrays A, B and C of not necessarily same sizes. Minimize | max(a,b,c) - min(a,b,c) |.     | [Java](#ques-94)  | _O(maxArrayLength)_         | _O(1)_          | Easy         | Abs diff can be minimized either decreasing max element or increasing min element  |
-|4| [Remove Duplicates from Sorted Array](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array/)      | [Java](#ques-95)  | _O(n)_         | _O(1)_          | Easy         | Removing Element increases complexity, just set elements with 2nd pointer  |
-|5| [Remove Duplicates from Sorted Array 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array-ii/) Given a sorted array, remove the duplicates in place such that each element can appear atmost twice and return the new length.     | [Java](#ques-96)  | _O(n)_         | _O(1)_          | Easy         |  |
-|6| [Remove Element from Array](https://www.interviewbit.com/problems/remove-element-from-array/)      | [Java](#ques-97)  | _O(n)_         | _O(1)_          | Easy         |   |
-|7| [Sort by Color](https://www.interviewbit.com/problems/sort-by-color/)      | [Java](#ques-98)  | _O(n)_         | _O(1)_          | Easy         |   |
-|8| [Diffk](https://www.interviewbit.com/problems/diffk/) Given an array ‘A’ of sorted integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.     | [Java](#ques-99)  | _O(n)_         | _O(1)_          | Easy         |  Start both pointers from 0 and not from opp. extreme ends|
-|9| [3 Sum](https://www.interviewbit.com/problems/3-sum/)      | [Java](#ques-100)  | _O(n^2 + nlogn)_         | _O(1)_          | Easy         |  
-|10| [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)      | [Java](#ques-101)  | _O(n^2 + nlogn)_         | _O(1)_          | Medium         |  Handle Duplicates|
-|11| [Max Continuous Series of 1s](https://www.interviewbit.com/problems/max-continuous-series-of-1s/)      | [Java](#ques-102)  | _O(n)_         | _O(1)_          | Medium         |  Keeping window size having zeroes <= B|
-|12| [Array 3 Pointers](https://www.interviewbit.com/problems/array-3-pointers/) You are given 3 arrays A, B and C. All 3 of the arrays are sorted. Find i, j, k such that : max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i])) is minimized. Return the minimum max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i]))     | [Java](#ques-103)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Abs diff can be minimized either decreasing max element or increasing min element   |
-|13| [Counting Triangles](https://www.interviewbit.com/problems/counting-triangles/)      | [Java](#ques-104)  | _O(n^2)_         | _O(1)_          | Medium         | A+B) > C by sorting the array   |
-|14| [Container With Most Water](https://www.interviewbit.com/problems/container-with-most-water/) Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). 'n' vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.     | [Java](#ques-105)  | _O(n)_         | _O(1)_          | Medium         |   |
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Merge Two Sorted Lists II](https://www.interviewbit.com/problems/merge-two-sorted-lists-ii/)      | [Approach](#twopointers-approach) | [Java](#ques-92)  |
+|2| [Intersection Of Sorted Arrays](https://www.interviewbit.com/problems/intersection-of-sorted-arrays/) Find the intersection of two sorted arrays OR in other words, Given 2 sorted arrays, find all the elements which occur in both the arrays.     | [Approach](#twopointers-approach) | [Java](#ques-93)  |
+|3| [Minimize the absolute difference](https://www.interviewbit.com/problems/minimize-the-absolute-difference/) Given three sorted arrays A, B and C of not necessarily same sizes. Minimize Abs(max(a,b,c) - min(a,b,c)).     | [Approach](#twopointers-approach) | [Java](#ques-94)  |
+|4| [Remove Duplicates from Sorted Array](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array/)      | [Approach](#twopointers-approach) | [Java](#ques-95)  |
+|5| [Remove Duplicates from Sorted Array 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-array-ii/) Given a sorted array, remove the duplicates in place such that each element can appear atmost twice and return the new length.     | [Approach](#twopointers-approach) | [Java](#ques-96)  |
+|6| [Remove Element from Array](https://www.interviewbit.com/problems/remove-element-from-array/)      | [Approach](#twopointers-approach) | [Java](#ques-97)  |
+|7| [Sort by Color](https://www.interviewbit.com/problems/sort-by-color/)      | [Approach](#twopointers-approach) | [Java](#ques-98)  |
+|8| [Diffk](https://www.interviewbit.com/problems/diffk/) Given an array ‘A’ of sorted integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.     | [Approach](#twopointers-approach) | [Java](#ques-99)  |
+|9| [3 Sum](https://www.interviewbit.com/problems/3-sum/)      | [Approach](#twopointers-approach) | [Java](#ques-100)  |
+|10| [3 Sum Zero](https://www.interviewbit.com/problems/3-sum-zero/)      | [Approach](#twopointers-approach) | [Java](#ques-101)  |
+|11| [Max Continuous Series of 1s](https://www.interviewbit.com/problems/max-continuous-series-of-1s/)      | [Approach](#twopointers-approach) | [Java](#ques-102)  |
+|12| [Array 3 Pointers](https://www.interviewbit.com/problems/array-3-pointers/) You are given 3 arrays A, B and C. All 3 of the arrays are sorted. Find i, j, k such that : max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i])) is minimized. Return the minimum max(abs(A[i] - B[j]), abs(B[j] - C[k]), abs(C[k] - A[i]))     | [Approach](#twopointers-approach) | [Java](#ques-103)  |
+|13| [Counting Triangles](https://www.interviewbit.com/problems/counting-triangles/)      | [Approach](#twopointers-approach) | [Java](#ques-104)  |
+|14| [Container With Most Water](https://www.interviewbit.com/problems/container-with-most-water/) Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). 'n' vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.     | [Approach](#twopointers-approach) | [Java](#ques-105)  |
 
 <a name="linkedlist"></a>
 ## LinkedList
 
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Intersection of Linked Lists](https://www.interviewbit.com/problems/intersection-of-linked-lists/)      | [Java](#ques-106)  | _O(n+m)_         | _O(1)_          | Easy         |   |
-|2| [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/)      | [Java](#ques-107)  | _O(n)_         | _O(1)_          | Easy         |   |
-|3| [Palindrome List](https://www.interviewbit.com/problems/palindrome-list/)      | [Java](#ques-108)  | _O(n)_         | _O(n)_          | Easy         |  Use Stack or reverse half linked list |
-|4| [Remove Duplicates from Sorted List](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list/)      | [Java](#ques-109)  | _O(n)_         | _O(1)_          | Easy         |   |
-|5| [Remove Duplicates from Sorted List 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list-ii/)      | [Java](#ques-110)  | _O(n)_         | _O(1)_          | Easy         |   |
-|6| [Merge Two Sorted Lists](https://www.interviewbit.com/problems/merge-two-sorted-lists/)      | [Java](#ques-111)  | _O(n)_         | _O(1)_          | Easy         |   |
-|7| [Remove Nth Node from List End](https://www.interviewbit.com/problems/remove-nth-node-from-list-end/)      | [Java](#ques-112)  | _O(n)_         | _O(1)_          | Easy         |   |
-|8| [Rotate List](https://www.interviewbit.com/problems/rotate-list/)      | [Java](#ques-113)  | _O(n)_         | _O(1)_          | Easy         |   |
-|9| [Reverse Lists 2](https://www.interviewbit.com/problems/reverse-link-list-ii/) Reverse a linked list from position m to n. Do it in-place and in one-pass.     | [Java](#ques-114)  | _O(n)_         | _O(1)_          | Easy         |  |
-|10| [Reorder List](https://www.interviewbit.com/problems/reorder-list/)      | [Java](#ques-115)  | _O(n)_         | _O(1)_          | Medium         |  Reverse Half and merge alternate |
-|11| [Swap List Nodes in pairs](https://www.interviewbit.com/problems/swap-list-nodes-in-pairs/)      | [Java](#ques-116)  | _O(n)_         | _O(1)_          | Medium         |   |
-|12| [K reverse linked list](https://www.interviewbit.com/problems/k-reverse-linked-list/)      | [Java](#ques-117)  | _O(n)_         | _O(1)_          | Medium         |   |
-|13| [Add Two Numbers as Lists](https://www.interviewbit.com/problems/add-two-numbers-as-lists/)      | [Java](#ques-118)  | _O(n)_         | _O(1)_          | Easy         |   |
-|14| [List Cycle](https://www.interviewbit.com/problems/list-cycle/) Find the cycle in the linkedlist if it exists.     | [Java](#ques-119)  | _O(n)_         | _O(1)_          | Medium         |  |
-|15| [Partition List](https://www.interviewbit.com/problems/partition-list/) Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.     | [Java](#ques-120)  | _O(n)_         | _O(1)_          | Easy         |   |
-|16| [Sort List](https://www.interviewbit.com/problems/sort-list/) Merge sort     | [Java](#ques-121)  | _O(nlogn)_         | _O(1)_          | Medium         |   |
-|17| [Insertion Sort List](https://www.interviewbit.com/problems/insertion-sort-list/) Insertion sort     | [Java](#ques-122)  | _O(n^2)_         | _O(1)_          | Medium         |   |
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Intersection of Linked Lists](https://www.interviewbit.com/problems/intersection-of-linked-lists/)      | [Approach](#linkedlist-approach) | [Java](#ques-106)  |
+|2| [Reverse Linked List](https://www.interviewbit.com/problems/reverse-linked-list/)      | [Approach](#linkedlist-approach) | [Java](#ques-107)  |
+|3| [Palindrome List](https://www.interviewbit.com/problems/palindrome-list/)      | [Approach](#linkedlist-approach) | [Java](#ques-108)  |
+|4| [Remove Duplicates from Sorted List](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list/)      | [Approach](#linkedlist-approach) | [Java](#ques-109)  |
+|5| [Remove Duplicates from Sorted List 2](https://www.interviewbit.com/problems/remove-duplicates-from-sorted-list-ii/)      | [Approach](#linkedlist-approach) | [Java](#ques-110)  |
+|6| [Merge Two Sorted Lists](https://www.interviewbit.com/problems/merge-two-sorted-lists/)      | [Approach](#linkedlist-approach) | [Java](#ques-111)  |
+|7| [Remove Nth Node from List End](https://www.interviewbit.com/problems/remove-nth-node-from-list-end/)      | [Approach](#linkedlist-approach) | [Java](#ques-112)  |
+|8| [Rotate List](https://www.interviewbit.com/problems/rotate-list/)      | [Approach](#linkedlist-approach) | [Java](#ques-113)  |
+|9| [Reverse Lists 2](https://www.interviewbit.com/problems/reverse-link-list-ii/) Reverse a linked list from position m to n. Do it in-place and in one-pass.     | [Approach](#linkedlist-approach) | [Java](#ques-114)  |
+|10| [Reorder List](https://www.interviewbit.com/problems/reorder-list/)      | [Approach](#linkedlist-approach) | [Java](#ques-115)  |
+|11| [Swap List Nodes in pairs](https://www.interviewbit.com/problems/swap-list-nodes-in-pairs/)      | [Approach](#linkedlist-approach) | [Java](#ques-116)  |
+|12| [K reverse linked list](https://www.interviewbit.com/problems/k-reverse-linked-list/)      | [Approach](#linkedlist-approach) | [Java](#ques-117)  |
+|13| [Add Two Numbers as Lists](https://www.interviewbit.com/problems/add-two-numbers-as-lists/)      | [Approach](#linkedlist-approach) | [Java](#ques-118)  |
+|14| [List Cycle](https://www.interviewbit.com/problems/list-cycle/) Find the cycle in the linkedlist if it exists.     | [Approach](#linkedlist-approach) | [Java](#ques-119)  |
+|15| [Partition List](https://www.interviewbit.com/problems/partition-list/) Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.     | [Approach](#linkedlist-approach) | [Java](#ques-120)  |
+|16| [Sort List](https://www.interviewbit.com/problems/sort-list/) Merge sort     | [Approach](#linkedlist-approach) | [Java](#ques-121)  |
+|17| [Insertion Sort List](https://www.interviewbit.com/problems/insertion-sort-list/) Insertion sort     | [Approach](#linkedlist-approach) | [Java](#ques-122)  |
 
 <a name="stack"></a>
 ## Stack
 
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Simplify Directory Path](https://www.interviewbit.com/problems/simplify-directory-path/)      | [Java](#ques-123)  | _O(n)_         | _O(n)_          | Easy         |   |
-|2| [Redundant Braces](https://www.interviewbit.com/problems/redundant-braces/)      | [Java](#ques-124)  | _O(n)_         | _O(n)_          | Easy         |   |
-|3| [Nearest Smaller Element](https://www.interviewbit.com/problems/nearest-smaller-element/)      | [Java](#ques-125)  | _O(n)_         | _O(n)_          | Easy         |   |
-|4| [Evaluate Expression](https://www.interviewbit.com/problems/evaluate-expression/)      | [Java](#ques-126)  | _O(n)_         | _O(n)_          | Easy         |   |
-|5| [Min Stack](https://www.interviewbit.com/problems/min-stack/)      | [Java](#ques-127)  | _O(1)_         | _O(1)_          | Easy         |  Doing Min in O(1) space is good one|
-|6| [Largest Rectangle in Histogram](https://www.interviewbit.com/problems/largest-rectangle-in-histogram/)      | [Java](#ques-128)  | _O(n)_         | _O(n)_          | Medium         |  Do read brute force and think in terms of stack|
-|7| [Rain Water Trapped](https://www.interviewbit.com/problems/rain-water-trapped/)      | [Java](#ques-129)  | _O(n)_         | _O(n)_          | Medium         |  |
-
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Simplify Directory Path](https://www.interviewbit.com/problems/simplify-directory-path/)      | [Approach](#stack-approach) | [Java](#ques-123)  |
+|2| [Redundant Braces](https://www.interviewbit.com/problems/redundant-braces/)      | [Approach](#stack-approach) | [Java](#ques-124)  |
+|3| [Nearest Smaller Element](https://www.interviewbit.com/problems/nearest-smaller-element/)      | [Approach](#stack-approach) | [Java](#ques-125)  |
+|4| [Evaluate Expression](https://www.interviewbit.com/problems/evaluate-expression/)      | [Approach](#stack-approach) | [Java](#ques-126)  |
+|5| [Min Stack](https://www.interviewbit.com/problems/min-stack/)      | [Approach](#stack-approach) | [Java](#ques-127)  |
+|6| [Largest Rectangle in Histogram](https://www.interviewbit.com/problems/largest-rectangle-in-histogram/)      | [Approach](#stack-approach) | [Java](#ques-128)  |
+|7| [Rain Water Trapped](https://www.interviewbit.com/problems/rain-water-trapped/)      | [Approach](#stack-approach) | [Java](#ques-129)  |
 
 <a name="queue"></a>
 ## Queue
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Sliding Window Maximum](https://www.interviewbit.com/problems/sliding-window-maximum/)      | [Java](#ques-130)  | _O(n)_         | _O(n)_          | Medium         |  Finding Min is reverse of current logic|
 
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Sliding Window Maximum](https://www.interviewbit.com/problems/sliding-window-maximum/)      | [Approach](#queue-approach) | [Java](#ques-130)  |
 
 <a name="backtracking"></a>
 ## Backtracking
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [ReverseLinkedList](https://www.interviewbit.com/problems/reverse-link-list-recursion/)      | [Java](#ques-131)  | _O(n)_         | _O(n)_          | Easy         |  |
-|2| [Modular Expression](https://www.interviewbit.com/problems/modular-expression/)      | [Java](#ques-132)  | _O(log(power))_         | _O(1)_          | Easy         |  Modular Exponentiation |
-|3| [Subset](https://www.interviewbit.com/problems/subset/) Given a set of distinct integers, S, return all possible subsets in lexicographically sorted order.     | [Java](#ques-133)  | _O(2^n)_         | _O(n)_          | Easy         |  Backtracking general algo |
-|4| [Combinations](https://www.interviewbit.com/problems/combinations/) Given two integers n and k, return all possible combinations of k numbers out of 1 2 3 ... n. Make sure the combinations are sorted.     | [Java](#ques-134)  | _O(nCk)_         | _O(n)_          | Easy         |  Backtracking general algo |
-|5| [Combination Sum](https://www.interviewbit.com/problems/combination-sum/) Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. The same repeated number may be chosen from C unlimited number of times.     | [Java](#ques-135)  | _O(2^n)_         | _O(targetSum)_          | Easy         |  Backtracking general algo, Use Map for checking duplicates |
-|6| [Combination Sum 2](https://www.interviewbit.com/problems/combination-sum-ii/) Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.     | [Java](#ques-136)  | _O(2^n)_         | _O(targetSum)_          | Easy         |   |
-|7| [SubSets 2](https://www.interviewbit.com/problems/subsets-ii/) Given a collection of integers that might contain duplicates, S, return all possible subsets in lexicographically sorted fashion.     | [Java](#ques-137)  | _O(2^n)_         | _O(n)_          | Easy         |  Either use hashmap or skip continuous elements in recursion function |
-|8| [Letter Phone](https://www.interviewbit.com/problems/letter-phone/) Given a digit string, return all possible letter combinations that the number could represent.     | [Java](#ques-138)  | _O(3^n)_         | _O(n)_          | Easy         |   |
-|9| [Palindrome Partitioning](https://www.interviewbit.com/problems/palindrome-partitioning/) Given a string s, partition s such that every string of the partition is a palindrome. Return all possible palindrome partitioning of s.     | [Java](#ques-139)  | _O(2^n)_         | _O(n)_          | Easy         |  can maintain 2-D array to keep true/false whether start-end is palindrome or not (DP) |
-|10| [Generate all Parentheses II](https://www.interviewbit.com/problems/generate-all-parentheses-ii/) Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses of length 2*n.     | [Java](#ques-140)  | _O(2^n)_         | _O(2n)_          | Easy         |   |
-|11| [Permutations](https://www.interviewbit.com/problems/permutations/) Given a collection of numbers, return all possible permutations.     | [Java](#ques-141)  | _O(n!)_         | _O(n)_          | Medium         | Either use visited array or remove integer from input array then add back while backtracking  |
-|12| [Gray Code](https://www.interviewbit.com/problems/gray-code/) The gray code is a binary numeral system where two successive values differ in only one bit. Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.     | [Java](#ques-142)  | _O(2^n)_         | _O(n)_          | Medium         | Other Solution of using reverse of (N-1) and prefixing 1 is good  |
-|13| [Kth Permutation Sequence](https://www.interviewbit.com/problems/kth-permutation-sequence/)      | [Java](#ques-143)  | _O(nk)_         | _O(n)_          | Medium         | Use Maths plus recursion, first digit = k/(n-1)!+1  |
-|14| [NQueens](https://www.interviewbit.com/problems/nqueens/) The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.     | [Java](#ques-144)  | _O(n*n)_         | _O(n)_          | Medium         |  |
 
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [ReverseLinkedList](https://www.interviewbit.com/problems/reverse-link-list-recursion/)      | [Approach](#backtracking-approach) | [Java](#ques-131)  |
+|2| [Modular Expression](https://www.interviewbit.com/problems/modular-expression/)      | [Approach](#backtracking-approach) | [Java](#ques-132)  |
+|3| [Subset](https://www.interviewbit.com/problems/subset/) Given a set of distinct integers, S, return all possible subsets in lexicographically sorted order.     | [Approach](#backtracking-approach) | [Java](#ques-133)  |
+|4| [Combinations](https://www.interviewbit.com/problems/combinations/) Given two integers n and k, return all possible combinations of k numbers out of 1 2 3 ... n. Make sure the combinations are sorted.     | [Approach](#backtracking-approach) | [Java](#ques-134)  |
+|5| [Combination Sum](https://www.interviewbit.com/problems/combination-sum/) Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. The same repeated number may be chosen from C unlimited number of times.     | [Approach](#backtracking-approach) | [Java](#ques-135)  |
+|6| [Combination Sum 2](https://www.interviewbit.com/problems/combination-sum-ii/) Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.     | [Approach](#backtracking-approach) | [Java](#ques-136)  |
+|7| [SubSets 2](https://www.interviewbit.com/problems/subsets-ii/) Given a collection of integers that might contain duplicates, S, return all possible subsets in lexicographically sorted fashion.     | [Approach](#backtracking-approach) | [Java](#ques-137)  |
+|8| [Letter Phone](https://www.interviewbit.com/problems/letter-phone/) Given a digit string, return all possible letter combinations that the number could represent.     | [Approach](#backtracking-approach) | [Java](#ques-138)  |
+|9| [Palindrome Partitioning](https://www.interviewbit.com/problems/palindrome-partitioning/) Given a string s, partition s such that every string of the partition is a palindrome. Return all possible palindrome partitioning of s.     | [Approach](#backtracking-approach) | [Java](#ques-139)  |
+|10| [Generate all Parentheses II](https://www.interviewbit.com/problems/generate-all-parentheses-ii/) Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses of length 2*n.     | [Approach](#backtracking-approach) | [Java](#ques-140)  |
+|11| [Permutations](https://www.interviewbit.com/problems/permutations/) Given a collection of numbers, return all possible permutations.     | [Approach](#backtracking-approach) | [Java](#ques-141)  |
+|12| [Gray Code](https://www.interviewbit.com/problems/gray-code/) The gray code is a binary numeral system where two successive values differ in only one bit. Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.     | [Approach](#backtracking-approach) | [Java](#ques-142)  |
+|13| [Kth Permutation Sequence](https://www.interviewbit.com/problems/kth-permutation-sequence/)      | [Approach](#backtracking-approach) | [Java](#ques-143)  |
+|14| [NQueens](https://www.interviewbit.com/problems/nqueens/) The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.     | [Approach](#backtracking-approach) | [Java](#ques-144)  |
 
 <a name="hashing"></a>
 ## Hashing
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Colorful Number](https://www.interviewbit.com/problems/colorful-number/) A number can be broken into different contiguous sub-subsequence parts. Suppose, a number 3245 can be broken into parts like 3 2 4 5 32 24 45 324 245. And this number is a COLORFUL number, since product of every digit of a contiguous subsequence is different     | [Java](#ques-145)  | _O(n*n)_         | _O(n)_          | Easy         |   |
-|2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/) Find the largest continuous sequence in a array which sums to zero.     | [Java](#ques-146)  | _O(n)_         | _O(n)_          | Easy         |  3 conditions - element 0, sum 0 or sum repeated |
-|3| [2 Sum](https://www.interviewbit.com/problems/2-sum/)      | [Java](#ques-147)  | _O(n)_         | _O(1)_          | Easy         |   |
-|4| [4 Sum](https://www.interviewbit.com/problems/4-sum/)      | [Java](#ques-148)  | _O(n*n+nlogn)_         | _O(n)_          | Medium         |  Either use n^3 solution using 2 pointers and hashSet for unique sets or or use customised sorting plus hashSet |
-|5| [Valid Sudoku](https://www.interviewbit.com/problems/valid-sudoku/)      | [Java](#ques-149)  | _O(n*n)_         | _O(n*n)_          | Medium         |  check row, col and box, keep different maps |
-|6| [Diffk II](https://www.interviewbit.com/problems/diffk-ii/) Given an array A of integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.     | [Java](#ques-150)  | _O(n)_         | _O(n)_          | Easy         |   |
-|7| [Anagrams](https://www.interviewbit.com/problems/anagrams/) Given an array of strings, return all groups of strings that are anagrams. Represent a group by a list of integers representing the index in the original list. Look at the sample case for clarification.     | [Java](#ques-151)  | _O(n*m)_ , where m = average length of string       | _O(n)_          | Medium         |  Good Concept |
-|8| [Equal](https://www.interviewbit.com/problems/equal/) Given an array A of integers, find the index of values that satisfy A + B = C + D, where A,B,C & D are integers values in the array.     | [Java](#ques-152)  | _O(n*n)_        | _O(n)_          | Medium         |  |
-|9| [Copy List](https://www.interviewbit.com/problems/copy-list/) A linked list is given such that each node contains an additional random pointer which could point to any node in the list or NULL. Return a deep copy of the list.     | [Java](#ques-153)  | _O(n)_        | _O(n)_          | Medium         |   |
-|10| [Longest Substring Without Repeat](https://www.interviewbit.com/problems/longest-substring-without-repeat/) Given a string, find the length of the longest substring without repeating characters.     | [Java](#ques-154)  | _O(n)_        | _O(n)_          | Medium         |  |
-|11| [Window String](https://www.interviewbit.com/problems/window-string/) Given a string S and a string T, find the minimum window in S which will contain all the characters in T in linear time complexity. Note that when the count of a character C in T is N, then the count of C in minimum window in S should be at least N.     | [Java](#ques-155)  | _O(n)_        | _O(n)_          | Medium         | Use 2 pointers and map to keep count of characters included - plus and minus   |
-|12| [Fraction](https://www.interviewbit.com/problems/fraction/)      | [Java](#ques-156)  | _O(n)_        | _O(n)_          | Medium         |   |
-|13| [Points on the Straight Line](https://www.interviewbit.com/problems/points-on-the-straight-line/) Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.     | [Java](#ques-157)  | _O(n*n)_        | _O(n)_          | Medium         | Slope should be same, Consider first point as start and rest as end and create map and repeat; Keep edge cases like which slopes are valid and others keep in diff variables   |
-|14| [Substring Concatenation](https://www.interviewbit.com/problems/substring-concatenation/) You are given a string, S, and a list of words, L, that are all of the same length. Find all starting indices of substring(s) in S that is a concatenation of each word in L exactly once and without any intervening characters.     | [Java](#ques-158)  | _O(n*n)_        | _O(n)_          | Medium         | Brute force but just using hashmap for string match   |
 
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Colorful Number](https://www.interviewbit.com/problems/colorful-number/) A number can be broken into different contiguous sub-subsequence parts. Suppose, a number 3245 can be broken into parts like 3 2 4 5 32 24 45 324 245. And this number is a COLORFUL number, since product of every digit of a contiguous subsequence is different     | [Approach](#hashing-approach) | [Java](#ques-145)  |
+|2| [Largest Continuous Sequence Zero Sum](https://www.interviewbit.com/problems/largest-continuous-sequence-zero-sum/) Find the largest continuous sequence in a array which sums to zero.     | [Approach](#hashing-approach) | [Java](#ques-146)  |
+|3| [2 Sum](https://www.interviewbit.com/problems/2-sum/)      | [Approach](#hashing-approach) | [Java](#ques-147)  |
+|4| [4 Sum](https://www.interviewbit.com/problems/4-sum/)      | [Approach](#hashing-approach) | [Java](#ques-148)  |
+|5| [Valid Sudoku](https://www.interviewbit.com/problems/valid-sudoku/)      | [Approach](#hashing-approach) | [Java](#ques-149)  |
+|6| [Diffk II](https://www.interviewbit.com/problems/diffk-ii/) Given an array A of integers and another non negative integer k, find if there exists 2 indices i and j such that A[i] - A[j] = k, i != j.     | [Approach](#hashing-approach) | [Java](#ques-150)  |
+|7| [Anagrams](https://www.interviewbit.com/problems/anagrams/) Given an array of strings, return all groups of strings that are anagrams. Represent a group by a list of integers representing the index in the original list. Look at the sample case for clarification.     | [Approach](#hashing-approach) | [Java](#ques-151)  |
+|8| [Equal](https://www.interviewbit.com/problems/equal/) Given an array A of integers, find the index of values that satisfy A + B = C + D, where A,B,C & D are integers values in the array.     | [Approach](#hashing-approach) | [Java](#ques-152)  |
+|9| [Copy List](https://www.interviewbit.com/problems/copy-list/) A linked list is given such that each node contains an additional random pointer which could point to any node in the list or NULL. Return a deep copy of the list.     | [Approach](#hashing-approach) | [Java](#ques-153)  |
+|10| [Longest Substring Without Repeat](https://www.interviewbit.com/problems/longest-substring-without-repeat/) Given a string, find the length of the longest substring without repeating characters.     | [Approach](#hashing-approach) | [Java](#ques-154)  |
+|11| [Window String](https://www.interviewbit.com/problems/window-string/) Given a string S and a string T, find the minimum window in S which will contain all the characters in T in linear time complexity. Note that when the count of a character C in T is N, then the count of C in minimum window in S should be at least N.     | [Approach](#hashing-approach) | [Java](#ques-155)  |
+|12| [Fraction](https://www.interviewbit.com/problems/fraction/)      | [Approach](#hashing-approach) | [Java](#ques-156)  |
+|13| [Points on the Straight Line](https://www.interviewbit.com/problems/points-on-the-straight-line/) Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.     | [Approach](#hashing-approach) | [Java](#ques-157)  |
+|14| [Substring Concatenation](https://www.interviewbit.com/problems/substring-concatenation/) You are given a string, S, and a list of words, L, that are all of the same length. Find all starting indices of substring(s) in S that is a concatenation of each word in L exactly once and without any intervening characters.     | [Approach](#hashing-approach) | [Java](#ques-158)  |
 
 <a name="heaps"></a>
 ## Heaps
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [N max pair combinations](https://www.interviewbit.com/problems/n-max-pair-combinations/)      | [Java](#ques-159)  | _O(nlogn)_         | _O(n)_          | Medium         |  Create a min heap and loop through n^2 pairs  |
-|2| [Magician and Chocolates](https://www.interviewbit.com/problems/magician-and-chocolates/) Given N bags, each bag contains Ai chocolates. There is a kid and a magician. In one unit of time, kid chooses a random bag i, eats Ai chocolates, then the magician fills the ith bag with floor(Ai/2) chocolates. Given Ai for 1 <= i <= N, find the maximum number of chocolates kid can eat in K units of time.     | [Java](#ques-160)  | _O(klogn)_         | _O(n)_          | Easy         |    |
-|3| [Merge K Sorted Lists](https://www.interviewbit.com/problems/merge-k-sorted-lists/) Merge k sorted linked lists and return it as one sorted list.     | [Java](#ques-161)  | _O(Nlogk)_, where k = initial lists and N = total sum of nodes from all lists         | _O(k)_          | Medium         |    |
 
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [N max pair combinations](https://www.interviewbit.com/problems/n-max-pair-combinations/)      | [Approach](#heaps-approach) | [Java](#ques-159)  |
+|2| [Magician and Chocolates](https://www.interviewbit.com/problems/magician-and-chocolates/) Given N bags, each bag contains Ai chocolates. There is a kid and a magician. In one unit of time, kid chooses a random bag i, eats Ai chocolates, then the magician fills the ith bag with floor(Ai/2) chocolates. Given Ai for 1 <= i <= N, find the maximum number of chocolates kid can eat in K units of time.     | [Approach](#heaps-approach) | [Java](#ques-160)  |
+|3| [Merge K Sorted Lists](https://www.interviewbit.com/problems/merge-k-sorted-lists/) Merge k sorted linked lists and return it as one sorted list.     | [Approach](#heaps-approach) | [Java](#ques-161)  |
 
 <a name="hashmaps"></a>
 ## HashMap
 
-|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
-|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Distinct Numbers in Window](https://www.interviewbit.com/problems/distinct-numbers-in-window/) You are given an array of N integers, A1, A2 ,…, AN and an integer K. Return the of count of distinct numbers in all windows of size K. Formally, return an array of size N-K+1 where i’th element in this array contains number of distinct elements in sequence Ai, Ai+1 ,…, Ai+k-1.     | [Java](#ques-162)  | _O(n)_         | _O(n)_          | Easy         |    |
-|2| [LRU](https://www.interviewbit.com/problems/lru-cache/)      | [Java](#ques-163)  | _O(1)_ for get and O(n) for set         | _O(n)_          | Easy         |    |
-|3| [Ways to form Max Heap](https://www.interviewbit.com/problems/ways-to-form-max-heap/)      | [Java](#ques-164)  | _O(log2n^2)_          | _O(log2n)_          | Hard         |  T(n) = n-1Cl*T(l)*T(r), where r = n-1-l  |
 
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Distinct Numbers in Window](https://www.interviewbit.com/problems/distinct-numbers-in-window/) You are given an array of N integers, A1, A2 ,…, AN and an integer K. Return the of count of distinct numbers in all windows of size K. Formally, return an array of size N-K+1 where i’th element in this array contains number of distinct elements in sequence Ai, Ai+1 ,…, Ai+k-1.     | [Approach](#hashmaps-approach) | [Java](#ques-162)  |
+|2| [LRU](https://www.interviewbit.com/problems/lru-cache/)      | [Approach](#hashmaps-approach) | [Java](#ques-163)  |
+|3| [Ways to form Max Heap](https://www.interviewbit.com/problems/ways-to-form-max-heap/)      | [Approach](#hashmaps-approach) | [Java](#ques-164)  |
 
 <a name="trees"></a>
 ## Trees
 
+
+|  Id  | Problem           |  Approach     |  Solution       |
+|-----|---------------- | --------------- | ---------------- |
+|1| [Valid Binary Search Tree](https://www.interviewbit.com/problems/valid-binary-search-tree/)      | [Approach](#trees-approach) | [Java](#ques-165)  |
+|2| [Next Greater Number BST](https://www.interviewbit.com/problems/next-greater-number-bst/)      | [Approach](#trees-approach) | [Java](#ques-166)  |
+|3| [Max Depth of Binary Tree](https://www.interviewbit.com/problems/max-depth-of-binary-tree/)      | [Approach](#trees-approach) | [Java](#ques-167)  |
+|4| [Vertical Order traversal of Binary Tree](https://www.interviewbit.com/problems/vertical-order-traversal-of-binary-tree/)      | [Approach](#trees-approach) | [Java](#ques-168)  |
+|5| [Inorder Traversal](https://www.interviewbit.com/problems/inorder-traversal/)      | [Approach](#trees-approach) | [Java](#ques-169)  |
+|6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Approach](#trees-approach) | [Java](#ques-170)  |
+|6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Approach](#trees-approach) | [Java](#ques-171)  |
+|7| [PostOrder Traversal](https://www.interviewbit.com/problems/postorder-traversal/)      | [Approach](#trees-approach) | [Java](#ques-172)  |
+|8| [Hotel Reviews](https://www.interviewbit.com/problems/hotel-reviews/) Given a set of reviews provided by the customers for different hotels and a string containing “Good Words”, you need to sort the reviews in descending order according to their “Goodness Value” (Higher goodness value first). We define the “Goodness Value” of a string as the number of “Good Words” in that string.     | [Approach](#trees-approach) | [Java](#ques-173)  |
+|9| [Balanced Binary Tree](https://www.interviewbit.com/problems/balanced-binary-tree/) Given two binary trees, write a function to check if they are equal or not. Two binary trees are considered equal if they are structurally identical and the nodes have the same value.     | [Approach](#trees-approach) | [Java](#ques-174)  |
+|10| [Identical Binary Trees](https://www.interviewbit.com/problems/identical-binary-trees/)      | [Approach](#trees-approach) | [Java](#ques-175)  |
+|11| [Symmetric Binary Tree](https://www.interviewbit.com/problems/symmetric-binary-tree/) Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).     | [Approach](#trees-approach) | [Java](#ques-176)  |
+|12| [Inorder Traversal of Cartesian Tree](https://www.interviewbit.com/problems/inorder-traversal-of-cartesian-tree/)      | [Approach](#trees-approach) | [Java](#ques-177)  |
+|13| [Sorted Array To Balanced BST](https://www.interviewbit.com/problems/sorted-array-to-balanced-bst/)      | [Approach](#trees-approach) | [Java](#ques-178)  |
+|14| [Binary Tree From Inorder And Postorder](https://www.interviewbit.com/problems/binary-tree-from-inorder-and-postorder/)      | [Approach](#trees-approach) | [Java](#ques-179)  |
+|15| [Construct Binary Tree From Inorder And Preorder](https://www.interviewbit.com/problems/construct-binary-tree-from-inorder-and-preorder/)      | [Approach](#trees-approach) | [Java](#ques-180)  |
+|16| [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/) Given a binary search tree, write a function to find the kth smallest element in the tree.     | [Approach](#trees-approach) | [Java](#ques-181)  |
+|17| [2-Sum Binary Tree](https://www.interviewbit.com/problems/2sum-binary-tree/)      | [Approach](#trees-approach) | [Java](#ques-182)  |
+|18| [BST Iterator](https://www.interviewbit.com/problems/bst-iterator/) Implement an iterator over a binary search tree (BST) with next() and hasnext() functions. Your iterator will be initialized with the root node of a BST.     | [Approach](#trees-approach) | [Java](#ques-183)  |
+|19| [Recover Binary Search Tree](https://www.interviewbit.com/problems/recover-binary-search-tree/)      | [Approach](#trees-approach) | [Java](#ques-184)  |
+|20| [Invert the Binary Tree](https://www.interviewbit.com/problems/invert-the-binary-tree/)      | [Approach](#trees-approach) | [Java](#ques-185)  |
+|21| [ZigZag Level Order Traversal BT](https://www.interviewbit.com/problems/zigzag-level-order-traversal-bt/)      | [Approach](#trees-approach) | [Java](#ques-186)  |
+|22| [Min Depth of Binary Tree](https://www.interviewbit.com/problems/min-depth-of-binary-tree/)      | [Approach](#trees-approach) | [Java](#ques-187)  |
+|23| [Path Sum](https://www.interviewbit.com/problems/path-sum/) Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.     | [Approach](#trees-approach) | [Java](#ques-188)  |
+|24| [Sum Root to Leaf Numbers](https://www.interviewbit.com/problems/sum-root-to-leaf-numbers/) Represent numbers as paths from root to all leaves and sum them all up.     | [Approach](#trees-approach) | [Java](#ques-189)  |
+|25| [Root to Leaf Paths With Sum](https://www.interviewbit.com/problems/root-to-leaf-paths-with-sum/)      | [Approach](#trees-approach) | [Java](#ques-190)  |
+|26| [Populate Next Right Pointers Tree](https://www.interviewbit.com/problems/populate-next-right-pointers-tree/)      | [Approach](#trees-approach) | [Java](#ques-191)  |
+|27| [Least Common Ancestor](https://www.interviewbit.com/problems/least-common-ancestor/) Find the lowest common ancestor in an unordered binary tree given two values in the tree.     | [Approach](#trees-approach) | [Java](#ques-192)  |
+|28| [Shortest Unique Prefix](https://www.interviewbit.com/problems/shortest-unique-prefix/) Find shortest unique prefix to represent each word in the list.     | [Approach](#trees-approach) | [Java](#ques-193)  |
+|29| [Flatten Binary Tree to Linked List](https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/) Given a binary tree, flatten it to a linked list (right skewed binary tree) in-place.     | [Approach](#trees-approach) | [Java](#ques-194)  |
+|30| [Order of People Heights](https://www.interviewbit.com/problems/order-of-people-heights/) You are given the following : A positive number N, Heights : A list of heights of N persons standing in a queue, Infronts : A list of numbers corresponding to each person (P) that gives the number of persons who are taller than P and standing in front of P. You need to return list of actual order of persons’s height     | [Approach](#trees-approach) | [Java](#ques-195)  |
+
+
+
+# Appraoch
+
+<a name="array-approach"></a>
+## Arrays
+
+
 |  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
-|1| [Valid Binary Search Tree](https://www.interviewbit.com/problems/valid-binary-search-tree/)      | [Java](#ques-165)  | _O(n)_         | _O(log2n)_          | Easy         |    |
-|2| [Next Greater Number BST](https://www.interviewbit.com/problems/next-greater-number-bst/)      | [Java](#ques-166)  | _O(logn)_         | _O(1)_          | Easy         |  Good Question plus also know inorder using 1 stack  |
-|3| [Max Depth of Binary Tree](https://www.interviewbit.com/problems/max-depth-of-binary-tree/)      | [Java](#ques-167)  | _O(n)_         | _O(n)_          | Easy         |    |
-|4| [Vertical Order traversal of Binary Tree](https://www.interviewbit.com/problems/vertical-order-traversal-of-binary-tree/)      | [Java](#ques-168)  | _O(n)_         | _O(n)_          | Easy         |    |
-|5| [Inorder Traversal](https://www.interviewbit.com/problems/inorder-traversal/)      | [Java](#ques-169)  | _O(n)_         | _O(n)_          | Easy         |   |
-|6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-170)  | _O(n)_         | _O(n)_          | Easy         |   |
-|6| [PreOrder Traversal](https://www.interviewbit.com/problems/preorder-traversal/)      | [Java](#ques-171)  | _O(n)_         | _O(n)_          | Easy         |   |
-|7| [PostOrder Traversal](https://www.interviewbit.com/problems/postorder-traversal/)      | [Java](#ques-172)  | _O(n)_         | _O(n)_          | Medium         |  Using 2 stacks is easy  |
-|8| [Hotel Reviews](https://www.interviewbit.com/problems/hotel-reviews/) Given a set of reviews provided by the customers for different hotels and a string containing “Good Words”, you need to sort the reviews in descending order according to their “Goodness Value” (Higher goodness value first). We define the “Goodness Value” of a string as the number of “Good Words” in that string.     | [Java](#ques-173)  | _O(Sum of all input strings length)_         | _O(n)_          | Medium         |  Use tries or Hashset   |
-|9| [Balanced Binary Tree](https://www.interviewbit.com/problems/balanced-binary-tree/) Given two binary trees, write a function to check if they are equal or not. Two binary trees are considered equal if they are structurally identical and the nodes have the same value.     | [Java](#ques-174)  | _O(n)_         | _O(n)_          | Easy         |     |
-|10| [Identical Binary Trees](https://www.interviewbit.com/problems/identical-binary-trees/)      | [Java](#ques-175)  | _O(n)_         | _O(n)_          | Easy         |     |
-|11| [Symmetric Binary Tree](https://www.interviewbit.com/problems/symmetric-binary-tree/) Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).     | [Java](#ques-176)  | _O(n)_         | _O(n)_          | Easy         |     |
-|12| [Inorder Traversal of Cartesian Tree](https://www.interviewbit.com/problems/inorder-traversal-of-cartesian-tree/)      | [Java](#ques-177)  | _O(n)_         | _O(n)_          | Easy         |     |
-|13| [Sorted Array To Balanced BST](https://www.interviewbit.com/problems/sorted-array-to-balanced-bst/)      | [Java](#ques-178)  | _O(n)_         | _O(n)_          | Easy         |     |
-|14| [Binary Tree From Inorder And Postorder](https://www.interviewbit.com/problems/binary-tree-from-inorder-and-postorder/)      | [Java](#ques-179)  | _O(n)_         | _O(n)_          | Easy         |    |
-|15| [Construct Binary Tree From Inorder And Preorder](https://www.interviewbit.com/problems/construct-binary-tree-from-inorder-and-preorder/)      | [Java](#ques-180)  | _O(n)_         | _O(n)_          | Easy         |     |
-|16| [Kth Smallest Element In Tree](https://www.interviewbit.com/problems/kth-smallest-element-in-tree/) Given a binary search tree, write a function to find the kth smallest element in the tree.     | [Java](#ques-181)  | _O(n)_         | _O(n)_          | Easy         |  Can be done without extra space as well   |
-|17| [2-Sum Binary Tree](https://www.interviewbit.com/problems/2sum-binary-tree/)      | [Java](#ques-182)  | _O(n)_         | _O(logn)_          | Medium         |  Can be done in O(n) space with sorted array   |
-|18| [BST Iterator](https://www.interviewbit.com/problems/bst-iterator/) Implement an iterator over a binary search tree (BST) with next() and hasnext() functions. Your iterator will be initialized with the root node of a BST.     | [Java](#ques-183)  | _O(1)_         | _O(logn)_          | Easy         |  Can be done in O(n) space with array   |
-|19| [Recover Binary Search Tree](https://www.interviewbit.com/problems/recover-binary-search-tree/)      | [Java](#ques-184)  | _O(n)_         | _O(1)_          | Medium         |   Morris Algo - attaching current to inorder predecessor, Can be done in O(n) space with array, rest concept is same  |
-|20| [Invert the Binary Tree](https://www.interviewbit.com/problems/invert-the-binary-tree/)      | [Java](#ques-185)  | _O(n)_         | _O(n)_          | Easy         |   |
-|21| [ZigZag Level Order Traversal BT](https://www.interviewbit.com/problems/zigzag-level-order-traversal-bt/)      | [Java](#ques-186)  | _O(n)_         | _O(n)_          | Easy         |  Can be solved using 2 stacks or queue  |
-|22| [Min Depth of Binary Tree](https://www.interviewbit.com/problems/min-depth-of-binary-tree/)      | [Java](#ques-187)  | _O(n)_         | _O(n)_          | Easy         |    |
-|23| [Path Sum](https://www.interviewbit.com/problems/path-sum/) Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.     | [Java](#ques-188)  | _O(n)_         | _O(n)_          | Easy         |    |
-|24| [Sum Root to Leaf Numbers](https://www.interviewbit.com/problems/sum-root-to-leaf-numbers/) Represent numbers as paths from root to all leaves and sum them all up.     | [Java](#ques-189)  | _O(n)_         | _O(n)_          | Medium         |  mod can be used even before number is formed |
-|25| [Root to Leaf Paths With Sum](https://www.interviewbit.com/problems/root-to-leaf-paths-with-sum/)      | [Java](#ques-190)  | _O(n)_         | _O(n)_          | Medium         |  |
-|26| [Populate Next Right Pointers Tree](https://www.interviewbit.com/problems/populate-next-right-pointers-tree/)      | [Java](#ques-191)  | _O(n)_         | _O(1)_          | Medium         |  If Space was not constant then using queue is very easy |
-|27| [Least Common Ancestor](https://www.interviewbit.com/problems/least-common-ancestor/) Find the lowest common ancestor in an unordered binary tree given two values in the tree.     | [Java](#ques-192)  | _O(n)_         | _O(n)_          | Medium         |  |
-|28| [Shortest Unique Prefix](https://www.interviewbit.com/problems/shortest-unique-prefix/) Find shortest unique prefix to represent each word in the list.     | [Java](#ques-193)  | _O(n*m)_         | _O(total unique characters)_          | Medium         |  either use count of unique flag at each node, update the child's property and not current node |
-|29| [Flatten Binary Tree to Linked List](https://www.interviewbit.com/problems/flatten-binary-tree-to-linked-list/) Given a binary tree, flatten it to a linked list (right skewed binary tree) in-place.     | [Java](#ques-194)  | _O(n)_         | _O(1)_          | Medium         |  Can be solved using stack or recursion |
-|30| [Order of People Heights](https://www.interviewbit.com/problems/order-of-people-heights/) You are given the following : A positive number N, Heights : A list of heights of N persons standing in a queue, Infronts : A list of numbers corresponding to each person (P) that gives the number of persons who are taller than P and standing in front of P. You need to return list of actual order of persons’s height     | [Java](#ques-195)  | _O(nlogn)_         | _O(n)_          | Medium         |  Solve it like a puzzle, good question |
+|1| [Spiral Array](#array)     | [Java](#ques-1)  | _O(n*m)_         | _O(1)_          | Easy         |  |
+|2| [Min Steps](#array)     | [Java](#ques-2)  | _O(n)_         | _O(1)_          | Easy         |  |
+|3| [Add One to Number](#array)     | [Java](#ques-3)  | _O(n)_         | _O(1)_          | Easy         |  |
+|4| [Max Sum Contiguous Subarray](#array)     | [Java](#ques-4)  | _O(n)_         | _O(1)_          | Medium         | Kadane's Algo :- previous MSS should be positive for optimal subarray|
+|5| [Maximum Absolute Difference](#array)     | [Java](#ques-5)  | _O(n)_         | _O(1)_          | Medium         | Carefully look the given exp and how it can be written down|
+|6| [Repeat and Missing Number Array](#array)     | [Java](#ques-6)  | _O(n)_         | _O(1)_          | Medium         | Look for overflows and equations|
+|7| [Flip](#array)     | [Java](#ques-7)  | _O(n)_         | _O(1)_          | Medium         | |
+|7| [Max Non Negative SubArray](#array)     | [Java](#ques-8)  | _O(n)_         | _O(1)_          | Easy         | Check for overflows and tie constraints properly|
+|8| [Spiral Order Matrix II](#array)     | [Java](#ques-9)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
+|9| [Pascal Triangle](#array)     | [Java](#ques-10)  | _O(n*n)_         | _O(n*n)_          | Easy         | |
+|10| [Kth Row of Pascal's Triangle](#array)     | [Java](#ques-11)  | _O(n*n)_         | _O(n)_          | Easy         | Think in terms of if previous calculated list is needed or not |
+|11| [Anti Diagonals](#array)     | [Java](#ques-12)  | _O(n)_         | _O(1)_          | Easy         |  |
+|12| [Noble Integer](#array)     | [Java](#ques-13)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
+|13| [Triplets with Sum between given range](#array)     | [Java](#ques-14)  | _O(n)_         | _O(1)_          | Medium         | |
+|14| [Largest Number](#array)     | [Java](#ques-15)  | _O(n)_         | _O(n)_          | Medium         | Comparator |
+|15| [Wave Array](#array)     | [Java](#ques-16)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
+|16| [Hotel Bookings Possible](#array)     | [Java](#ques-17)  | _O(nlogn)_         | _O(1)_          | Medium         |  
+|17| [Find Duplicate in Array](#array)     | [Java](#ques-18)  | _O(n)_         | _O(1)_          | Easy         |  |
+|18| [Max Distance](#array)     | [Java](#ques-19)  | _O(n)_         | _O(n)_          | Medium         |  
+|19| [Min Unsorted Subarray](#array)     | [Java](#ques-20)  | _O(n)_         | _O(n)_          | Medium         |  
+|20| [Maximum Consecutive Gap](#array)     | [Java](#ques-21)  | _O(n)_         | _O(n)_          | Medium         |  PigeonHole Sorting using bucket method|
+|21| [Rotate Matrix](#array)     | [Java](#ques-22)  | _O(n*n)_         | _O(1)_          | Medium         |  Good Question|
+|22| [MAXSPPROD](#array)     | [Java](#ques-23)  | _O(n)_         | _O(n)_          | Medium         |  Good Question|
+|23| [Next Permutation](#array)     | [Java](#ques-24)  | _O(nlogn)_(only if already highest perm, else O(n + logn))         | _O(1)_          | Medium         |  Good Question, Analyse diff examples, |
+|24| [Find Permutation](#array)     | [Java](#ques-25)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, |
+|25| [Set Matrix Zeros](#array)     | [Java](#ques-26)  | _O(n*m)_         | _O(1)_          | Medium         |  Good Question|
+|26| [First Missing Integer](#array)     | [Java](#ques-27)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, |
+|27| [Merge Overlapping Intervals](#array)     | [Java](#ques-28)  | _O(nlogn)_         | _O(1)_          | Medium         |  Good Question, |
+|28| [Merge Intervals](#array)     | [Java](#ques-29)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Good Edge Cases|
+|29| [N/3 Repeat Number](#array)     | [Java](#ques-30)  | _O(n)_         | _O(1)_          | Medium         |  Good Question, Moore's Voting Algo|
+
+<a name="maths-approach"></a>
+## Math
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [All Factors](#maths)     | [Java](#ques-31)  | _O(sqrt(n))_         | _O(1)_          | Easy         | Keep notice of edge cases - like i^2 = A |
+|2| [Binary Representation](#maths)     | [Java](#ques-32)  | _O(log(n))_         | _O(1)_          | Easy         |  |
+|3| [Prime](#maths)     | [Java](#ques-33)  | _O(sqrt(N)loglog(n))_         | _O(1)_          | Easy         | Sieve of Eratosthenes |
+|4| [Verify Prime](#maths)     | [Java](#ques-34)  | _O(sqrt(N))_         | _O(1)_          | Easy         |  |
+|5| [Prime Sum](#maths)     | [Java](#ques-35)  | _O(sqrt(N)loglog(n) + N)_         | _O(1)_          | Easy         |  |
+|6| [Sum of pairwise Hamming Distance](#maths)     | [Java](#ques-36)  | _O(N)_         | _O(1)_          | Medium         | Good idea on how to use mod for large test cases, and good solution |
+|7| [FizzBuzz](#maths)     | [Java](#ques-37)  | _O(N)_         | _O(1)_          | Easy         |  |
+|8| [Power Of Two Integers](#maths)     | [Java](#ques-38)  | _O(sqrt(N)*log(N))_         | _O(1)_          | Easy         | Think easy solution |
+|9| [Excel Column Number](#maths)     | [Java](#ques-39)  | _O(N)_         | _O(1)_          | Easy         | |
+|10| [Excel Column Title](#maths)     | [Java](#ques-40)  | _O(logn)_         | _O(1)_          | Easy         | Good Question|
+|11| [Palindrome Integer](#maths)     | [Java](#ques-41)  | _O(number of digits)_         | _O(1)_          | Easy         | |
+|12| [Reverse Integer](#maths)     | [Java](#ques-42)  | _O(number of digits)_         | _O(1)_          | Easy         | |
+|13| [GCD](#maths)     | [Java](#ques-43)  | _O(log(min a,b))_         | _O(1)_          | Easy         | Eucledian Algo, Good Question|
+|14| [Trailing Zeroes](#maths5)_         | _O(1)_          | Easy         | Good Question|
+|15| [Sorted Permutation Rank](#maths)     | [Java](#ques-45)  | _O(A^2)_         | _O(1)_          | Medium         | Good Question, Consider usage of factorial in case of modulo|
+|16| [Largest Coprime Divisor](#maths)     | [Java](#ques-46)  | _O(A^2)_         | _O(1)_          | Medium         | 
+|17| [Sorted Permutation Rank with Repeats](#maths)     | [Java](#ques-47)  | _O(A^2)_         | _O(1)_          | Medium         | Multiplicative Inverse Modulo(use long in case of modulo) |
+|18| [ReArrange Array](#maths)     | [Java](#ques-48)  | _O(A)_         | _O(1)_          | Medium         | Encoding 2 values in one |
+|19| [Grid Unique Paths](#maths)     | [Java](#ques-49)  | _O(min(row,col))_         | _O(1)_          | Easy         | DP or Combinatorial |
+|20| [Numbers of length N and value less than K](#maths)     | [Java](#ques-50)  | _O(B)_         | _O(1)_          | Medium         | |
+
+<a name="binarysearch-approach"></a>
+## Binary Search
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [SQRT](#binarysearch)     | [Java](#ques-51)  | _O(log(n))_         | _O(1)_          | Easy         | Keep check for out of range in case of Multiplication else use division  |
+|2| [Count Element Occurence](#binarysearch)     | [Java](#ques-52)  | _O(log(n))_         | _O(1)_          | Easy         |   |
+|3| [Rotated Array](#binarysearch)     | [Java](#ques-53)  | _O(log(n))_         | _O(1)_          | Easy         |  |
+|4| [Matrix Median](#binarysearch)     | [Java](#ques-54)  | _O(log(2^32)*r*log(c))_ = O(32 * r * log(c))         | _O(1)_          | Medium         |  |
+|5| [Matrix Search](#binarysearch)     | [Java](#ques-55)  | _O(log(rc))_ = O(log(r) + log(c))         | _O(1)_          | Easy         |  |
+|6| [Sorted Insert Position](#binarysearch)     | [Java](#ques-56)  | _O(log(n))_          | _O(1)_          | Easy         |   |
+|7| [Implement Power Function](#binarysearch)     | [Java](#ques-57)  | _O(log(power))_          | _O(1)_          | Easy         |  Handle Negative value carefully, |
+|8| [Rotated Sorted Array Search](#binarysearch)     | [Java](#ques-58)  | _O(log(n))_          | _O(1)_          | Easy         |   |
+|9| [Search for a Range](#binarysearch)     | [Java](#ques-59)  | _O(log(n))_          | _O(1)_          | Easy         |   |
+|10| [Painter's Partition Problem](#binarysearch)     | [Java](#ques-60)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Example to use BS in monotonic functions   |
+|11| [Allocate Books](#binarysearch)     | [Java](#ques-61)  | _O(Nlog(sum(array)))_          | _O(1)_          | Medium         | Example to use BS in monotonic functions   |
+|12| [Median of Array](#binarysearch)     | [Java](#ques-62)  | _O(log(m+n))_          | _O(1)_          | Hard         |   |
+
+<a name="strings-approach"></a>
+## String
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Palindrome String](#strings)     | [Java](#ques-63)  | _O(n)_         | _O(1)_          | Easy         |   |
+|2| [Longest Common Prefix](#strings)     | [Java](#ques-64)  | _O(n*min(String Length))_         | _O(1)_          | Easy         |   |
+|3| [Count And Say](#strings)     | [Java](#ques-65)  | _O(n*max(String Length))_         | _O(1)_          | Easy         |   |
+|4| [Minimum Characters required to make a String Palindromic](#strings)     | [Java](#ques-66)  | _O(n)_         | _O(1)_          | Easy         |   |
+|5| [Longest Palindromic Substring](#strings)     | [Java](#ques-67)  | _O(n*n)_         | _O(1)_          | Medium         |  1 length is always palindrome |
+|6| [StrStr](#strings)     | [Java](#ques-68)  | _O(n)_         | _O(m)_          | Medium         |  KMP Algo |
+|7| [Compare Version Numbers](#strings)     | [Java](#ques-69)  | _O(n)_         | _O(n)_          | Medium         |  
+|8| [Atoi](#strings)     | [Java](#ques-70)  | _O(n)_         | _O(1)_          | Easy         |  
+|9| [Length of Last Word](#strings)     | [Java](#ques-71)  | _O(n)_         | _O(1)_          | Easy         |  |
+|10| [Reverse the String](#strings)     | [Java](#ques-72)  | _O(n)_         | _O(n)_          | Easy         | Ask if split function can be used|
+|11| [Valid Number](#strings)     | [Java](#ques-73)  | _O(n)_         | _O(1)_          | Easy         | Lots of corner cases|
+|12| [Valid Ip Addresses](#strings)     | [Java](#ques-74)  | _O(n)_         | _O(1)_          | Easy         | Placing 3 dots|
+|13| [Roman To Integer](#strings)     | [Java](#ques-75)  | _O(n)_         | _O(1)_          | Easy         | 
+|14| [Integer To Roman](#strings)     | [Java](#ques-76)  | _O(n)_         | _O(1)_          | Easy         | Ask if you can have diff arrays to store value|
+|15| [Add Binary Strings](#strings)     | [Java](#ques-77)  | _O(n)_         | _O(1)_          | Easy         | Shorter Solution|
+|16| [Power of 2](#strings)     | [Java](#ques-78)  | _O(logn)_         | _O(1)_          | Easy         | Use of CompareTo function|
+|17| [Multiply Strings](#strings)     | [Java](#ques-79)  | _O(n*m)_         | _O(1)_          | Easy         | 
+|18| [Justified Text](#strings)     | [Java](#ques-80)  | _O(n*n)_         | _O(n)_          | HARD         | Used Greedy Approach|
+|19| [ZigZag String](#strings)     | [Java](#ques-81)  | _O(n)_         | _O(1)_          | Medium         | 
+|20| [Pretty Json](#strings)     | [Java](#ques-82)  | _O(n)_         | _O(1)_          | Medium         | 
+|21| [Stringoholics](#strings)     | [Java](#ques-83)  | _O(n*m, n*maxNum)_         | _O(n+m)_ n is input array length, m is average size of each string          | HARD         | Covers many concepts - KMP, LCM|
+|22| [Amazing Substring](#strings) You are given a string S, and you have to find all the amazing substrings of S. Amazing Substring is one that starts with a vowel (a, e, i, o, u, A, E, I, O, U).     | [Java](#ques-84)  | _O(n)_         | _O(1)_          | Medium         | 
+
+<a name="bitmanipulation-approach"></a>
+## BitManipulation
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Min XOR Value](#bitmanipulation)     | [Java](#ques-85)  | _O(nlogn)_         | _O(1)_          | Easy         |  |
+|2| [Single Number](#bitmanipulation)     | [Java](#ques-86)  | _O(n)_         | _O(1)_          | Easy         |  |
+|3| [Number of 1 Bits](#bitmanipulation)     | [Java](#ques-87)  | _O(1)_         | _O(1)_          | Easy         | 2nd Solution with bits trick |
+|4| [Reverse Bits](#bitmanipulation)     | [Java](#ques-88)  | _O(1)_         | _O(1)_          | Easy         | 2nd Solution |
+|5| [Single Number II](#bitmanipulation)     | [Java](#ques-89)  | _O(n)_         | _O(1)_          | Medium         | 3x+1 |
+|6| [Divide Integers](#bitmanipulation)     | [Java](#ques-90)  | _O(log(dividend))_         | _O(1)_          | Medium         | 1 approach is to subtract divisor, but takes O(dividend) time |
+|7| [Different Bits Sum Pairwise](#bitmanipulation)     | [Java](#ques-91)  | _O(n)_         | _O(1)_          | Medium         | |
+
+<a name="twopointers-approach"></a>
+## TwoPointers
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Merge Two Sorted Lists II](#twopointers)     | [Java](#ques-92)  | _O(n+m)_         | _O(1)_          | Easy         |   |
+|2| [Intersection Of Sorted Arrays](#twopointers)     | [Java](#ques-93)  | _O(n+m)_         | _O(1)_          | Easy         |   |
+|3| [Minimize the absolute difference](#twopointers)     | [Java](#ques-94)  | _O(maxArrayLength)_         | _O(1)_          | Easy         | Abs diff can be minimized either decreasing max element or increasing min element  |
+|4| [Remove Duplicates from Sorted Array](#twopointers)     | [Java](#ques-95)  | _O(n)_         | _O(1)_          | Easy         | Removing Element increases complexity, just set elements with 2nd pointer  |
+|5| [Remove Duplicates from Sorted Array 2](#twopointers)     | [Java](#ques-96)  | _O(n)_         | _O(1)_          | Easy         |  |
+|6| [Remove Element from Array](#twopointers)     | [Java](#ques-97)  | _O(n)_         | _O(1)_          | Easy         |   |
+|7| [Sort by Color](#twopointers)     | [Java](#ques-98)  | _O(n)_         | _O(1)_          | Easy         |   |
+|8| [Diffk](#twopointers)     | [Java](#ques-99)  | _O(n)_         | _O(1)_          | Easy         |  Start both pointers from 0 and not from opp. extreme ends|
+|9| [3 Sum](#twopointers)     | [Java](#ques-100)  | _O(n^2 + nlogn)_         | _O(1)_          | Easy         |  
+|10| [3 Sum Zero](#twopointers)     | [Java](#ques-101)  | _O(n^2 + nlogn)_         | _O(1)_          | Medium         |  Handle Duplicates|
+|11| [Max Continuous Series of 1s](#twopointers)     | [Java](#ques-102)  | _O(n)_         | _O(1)_          | Medium         |  Keeping window size having zeroes <= B|
+|12| [Array 3 Pointers](#twopointers)     | [Java](#ques-103)  | _O(maxArrayLength)_         | _O(1)_          | Medium         | Abs diff can be minimized either decreasing max element or increasing min element   |
+|13| [Counting Triangles](#twopointers)     | [Java](#ques-104)  | _O(n^2)_         | _O(1)_          | Medium         | A+B) > C by sorting the array   |
+|14| [Container With Most Water](#twopointers)     | [Java](#ques-105)  | _O(n)_         | _O(1)_          | Medium         |   |
+
+<a name="linkedlist-approach"></a>
+## LinkedList
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Intersection of Linked Lists](#linkedlist)     | [Java](#ques-106)  | _O(n+m)_         | _O(1)_          | Easy         |   |
+|2| [Reverse Linked List](#linkedlist)     | [Java](#ques-107)  | _O(n)_         | _O(1)_          | Easy         |   |
+|3| [Palindrome List](#linkedlist)     | [Java](#ques-108)  | _O(n)_         | _O(n)_          | Easy         |  Use Stack or reverse half linked list |
+|4| [Remove Duplicates from Sorted List](#linkedlist)     | [Java](#ques-109)  | _O(n)_         | _O(1)_          | Easy         |   |
+|5| [Remove Duplicates from Sorted List 2](#linkedlist)     | [Java](#ques-110)  | _O(n)_         | _O(1)_          | Easy         |   |
+|6| [Merge Two Sorted Lists](#linkedlist)     | [Java](#ques-111)  | _O(n)_         | _O(1)_          | Easy         |   |
+|7| [Remove Nth Node from List End](#linkedlist)     | [Java](#ques-112)  | _O(n)_         | _O(1)_          | Easy         |   |
+|8| [Rotate List](#linkedlist)     | [Java](#ques-113)  | _O(n)_         | _O(1)_          | Easy         |   |
+|9| [Reverse Lists 2](#linkedlist)     | [Java](#ques-114)  | _O(n)_         | _O(1)_          | Easy         |  |
+|10| [Reorder List](#linkedlist)     | [Java](#ques-115)  | _O(n)_         | _O(1)_          | Medium         |  Reverse Half and merge alternate |
+|11| [Swap List Nodes in pairs](#linkedlist)     | [Java](#ques-116)  | _O(n)_         | _O(1)_          | Medium         |   |
+|12| [K reverse linked list](#linkedlist)     | [Java](#ques-117)  | _O(n)_         | _O(1)_          | Medium         |   |
+|13| [Add Two Numbers as Lists](#linkedlist)     | [Java](#ques-118)  | _O(n)_         | _O(1)_          | Easy         |   |
+|14| [List Cycle](#linkedlist)     | [Java](#ques-119)  | _O(n)_         | _O(1)_          | Medium         |  |
+|15| [Partition List](#linkedlist)     | [Java](#ques-120)  | _O(n)_         | _O(1)_          | Easy         |   |
+|16| [Sort List](#linkedlist)     | [Java](#ques-121)  | _O(nlogn)_         | _O(1)_          | Medium         |   |
+|17| [Insertion Sort List](#linkedlist)     | [Java](#ques-122)  | _O(n^2)_         | _O(1)_          | Medium         |   |
+
+<a name="stack-approach"></a>
+## Stack
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Simplify Directory Path](#stack)     | [Java](#ques-123)  | _O(n)_         | _O(n)_          | Easy         |   |
+|2| [Redundant Braces](#stack)     | [Java](#ques-124)  | _O(n)_         | _O(n)_          | Easy         |   |
+|3| [Nearest Smaller Element](#stack)     | [Java](#ques-125)  | _O(n)_         | _O(n)_          | Easy         |   |
+|4| [Evaluate Expression](#stack)     | [Java](#ques-126)  | _O(n)_         | _O(n)_          | Easy         |   |
+|5| [Min Stack](#stack)     | [Java](#ques-127)  | _O(1)_         | _O(1)_          | Easy         |  Doing Min in O(1) space is good one|
+|6| [Largest Rectangle in Histogram](#stack)     | [Java](#ques-128)  | _O(n)_         | _O(n)_          | Medium         |  Do read brute force and think in terms of stack|
+|7| [Rain Water Trapped](#stack)     | [Java](#ques-129)  | _O(n)_         | _O(n)_          | Medium         |  |
+
+<a name="queue-approach"></a>
+## Queue
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Sliding Window Maximum](#queue)     | [Java](#ques-130)  | _O(n)_         | _O(n)_          | Medium         |  Finding Min is reverse of current logic|
+
+<a name="backtracking-approach"></a>
+## Backtracking
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [ReverseLinkedList](#backtracking)     | [Java](#ques-131)  | _O(n)_         | _O(n)_          | Easy         |  |
+|2| [Modular Expression](#backtracking)     | [Java](#ques-132)  | _O(log(power))_         | _O(1)_          | Easy         |  Modular Exponentiation |
+|3| [Subset](#backtracking)     | [Java](#ques-133)  | _O(2^n)_         | _O(n)_          | Easy         |  Backtracking general algo |
+|4| [Combinations](#backtracking)     | [Java](#ques-134)  | _O(nCk)_         | _O(n)_          | Easy         |  Backtracking general algo |
+|5| [Combination Sum](#backtracking)     | [Java](#ques-135)  | _O(2^n)_         | _O(targetSum)_          | Easy         |  Backtracking general algo, Use Map for checking duplicates |
+|6| [Combination Sum 2](#backtracking)     | [Java](#ques-136)  | _O(2^n)_         | _O(targetSum)_          | Easy         |   |
+|7| [SubSets 2](#backtracking)     | [Java](#ques-137)  | _O(2^n)_         | _O(n)_          | Easy         |  Either use hashmap or skip continuous elements in recursion function |
+|8| [Letter Phone](#backtracking)     | [Java](#ques-138)  | _O(3^n)_         | _O(n)_          | Easy         |   |
+|9| [Palindrome Partitioning](#backtracking)     | [Java](#ques-139)  | _O(2^n)_         | _O(n)_          | Easy         |  can maintain 2-D array to keep true/false whether start-end is palindrome or not (DP) |
+|10| [Generate all Parentheses II](#backtracking)     | [Java](#ques-140)  | _O(2^n)_         | _O(2n)_          | Easy         |   |
+|11| [Permutations](#backtracking)     | [Java](#ques-141)  | _O(n!)_         | _O(n)_          | Medium         | Either use visited array or remove integer from input array then add back while backtracking  |
+|12| [Gray Code](#backtracking)     | [Java](#ques-142)  | _O(2^n)_         | _O(n)_          | Medium         | Other Solution of using reverse of (N-1) and prefixing 1 is good  |
+|13| [Kth Permutation Sequence](#backtracking)     | [Java](#ques-143)  | _O(nk)_         | _O(n)_          | Medium         | Use Maths plus recursion, first digit = k/(n-1)!+1  |
+|14| [NQueens](#backtracking)     | [Java](#ques-144)  | _O(n*n)_         | _O(n)_          | Medium         |  |
+
+<a name="hashing-approach"></a>
+## Hashing
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Colorful Number](#hashing)     | [Java](#ques-145)  | _O(n*n)_         | _O(n)_          | Easy         |   |
+|2| [Largest Continuous Sequence Zero Sum](#hashing)     | [Java](#ques-146)  | _O(n)_         | _O(n)_          | Easy         |  3 conditions - element 0, sum 0 or sum repeated |
+|3| [2 Sum](#hashing)     | [Java](#ques-147)  | _O(n)_         | _O(1)_          | Easy         |   |
+|4| [4 Sum](#hashing)     | [Java](#ques-148)  | _O(n*n+nlogn)_         | _O(n)_          | Medium         |  Either use n^3 solution using 2 pointers and hashSet for unique sets or or use customised sorting plus hashSet |
+|5| [Valid Sudoku](#hashing)     | [Java](#ques-149)  | _O(n*n)_         | _O(n*n)_          | Medium         |  check row, col and box, keep different maps |
+|6| [Diffk II](#hashing)     | [Java](#ques-150)  | _O(n)_         | _O(n)_          | Easy         |   |
+|7| [Anagrams](#hashing)     | [Java](#ques-151)  | _O(n*m)_ , where m = average length of string       | _O(n)_          | Medium         |  Good Concept |
+|8| [Equal](#hashing)     | [Java](#ques-152)  | _O(n*n)_        | _O(n)_          | Medium         |  |
+|9| [Copy List](#hashing)     | [Java](#ques-153)  | _O(n)_        | _O(n)_          | Medium         |   |
+|10| [Longest Substring Without Repeat](#hashing)     | [Java](#ques-154)  | _O(n)_        | _O(n)_          | Medium         |  |
+|11| [Window String](#hashing)     | [Java](#ques-155)  | _O(n)_        | _O(n)_          | Medium         | Use 2 pointers and map to keep count of characters included - plus and minus   |
+|12| [Fraction](#hashing)     | [Java](#ques-156)  | _O(n)_        | _O(n)_          | Medium         |   |
+|13| [Points on the Straight Line](#hashing)     | [Java](#ques-157)  | _O(n*n)_        | _O(n)_          | Medium         | Slope should be same, Consider first point as start and rest as end and create map and repeat; Keep edge cases like which slopes are valid and others keep in diff variables   |
+|14| [Substring Concatenation](#hashing)     | [Java](#ques-158)  | _O(n*n)_        | _O(n)_          | Medium         | Brute force but just using hashmap for string match   |
+
+<a name="heaps-approach"></a>
+## Heaps
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [N max pair combinations](#heaps)     | [Java](#ques-159)  | _O(nlogn)_         | _O(n)_          | Medium         |  Create a min heap and loop through n^2 pairs  |
+|2| [Magician and Chocolates](#heaps)     | [Java](#ques-160)  | _O(klogn)_         | _O(n)_          | Easy         |    |
+|3| [Merge K Sorted Lists](#heaps)     | [Java](#ques-161)  | _O(Nlogk)_, where k = initial lists and N = total sum of nodes from all lists         | _O(k)_          | Medium         |    |
+
+<a name="hashmaps-approach"></a>
+## HashMap
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Distinct Numbers in Window](#hashmaps)     | [Java](#ques-162)  | _O(n)_         | _O(n)_          | Easy         |    |
+|2| [LRU](#hashmaps)     | [Java](#ques-163)  | _O(1)_ for get and O(n) for set         | _O(n)_          | Easy         |    |
+|3| [Ways to form Max Heap](#hashmaps)     | [Java](#ques-164)  | _O(log2n^2)_          | _O(log2n)_          | Hard         |  T(n) = n-1Cl*T(l)*T(r), where r = n-1-l  |
+
+<a name="trees-approach"></a>
+## Trees
+
+
+|  Id  | Problem           |  Solution       |  Time           | Space           | Difficulty    | Note|
+|-----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------|
+|1| [Valid Binary Search Tree](#trees)     | [Java](#ques-165)  | _O(n)_         | _O(log2n)_          | Easy         |    |
+|2| [Next Greater Number BST](#trees)     | [Java](#ques-166)  | _O(logn)_         | _O(1)_          | Easy         |  Good Question plus also know inorder using 1 stack  |
+|3| [Max Depth of Binary Tree](#trees)     | [Java](#ques-167)  | _O(n)_         | _O(n)_          | Easy         |    |
+|4| [Vertical Order traversal of Binary Tree](#trees)     | [Java](#ques-168)  | _O(n)_         | _O(n)_          | Easy         |    |
+|5| [Inorder Traversal](#trees)     | [Java](#ques-169)  | _O(n)_         | _O(n)_          | Easy         |   |
+|6| [PreOrder Traversal](#trees)     | [Java](#ques-170)  | _O(n)_         | _O(n)_          | Easy         |   |
+|6| [PreOrder Traversal](#trees)     | [Java](#ques-171)  | _O(n)_         | _O(n)_          | Easy         |   |
+|7| [PostOrder Traversal](#trees)     | [Java](#ques-172)  | _O(n)_         | _O(n)_          | Medium         |  Using 2 stacks is easy  |
+|8| [Hotel Reviews](#trees)     | [Java](#ques-173)  | _O(Sum of all input strings length)_         | _O(n)_          | Medium         |  Use tries or Hashset   |
+|9| [Balanced Binary Tree](#trees)     | [Java](#ques-174)  | _O(n)_         | _O(n)_          | Easy         |     |
+|10| [Identical Binary Trees](#trees)     | [Java](#ques-175)  | _O(n)_         | _O(n)_          | Easy         |     |
+|11| [Symmetric Binary Tree](#trees)     | [Java](#ques-176)  | _O(n)_         | _O(n)_          | Easy         |     |
+|12| [Inorder Traversal of Cartesian Tree](#trees)     | [Java](#ques-177)  | _O(n)_         | _O(n)_          | Easy         |     |
+|13| [Sorted Array To Balanced BST](#trees)     | [Java](#ques-178)  | _O(n)_         | _O(n)_          | Easy         |     |
+|14| [Binary Tree From Inorder And Postorder](#trees)     | [Java](#ques-179)  | _O(n)_         | _O(n)_          | Easy         |    |
+|15| [Construct Binary Tree From Inorder And Preorder](#trees)     | [Java](#ques-180)  | _O(n)_         | _O(n)_          | Easy         |     |
+|16| [Kth Smallest Element In Tree](#trees)     | [Java](#ques-181)  | _O(n)_         | _O(n)_          | Easy         |  Can be done without extra space as well   |
+|17| [2-Sum Binary Tree](#trees)     | [Java](#ques-182)  | _O(n)_         | _O(logn)_          | Medium         |  Can be done in O(n) space with sorted array   |
+|18| [BST Iterator](#trees)     | [Java](#ques-183)  | _O(1)_         | _O(logn)_          | Easy         |  Can be done in O(n) space with array   |
+|19| [Recover Binary Search Tree](#trees)     | [Java](#ques-184)  | _O(n)_         | _O(1)_          | Medium         |   Morris Algo - attaching current to inorder predecessor, Can be done in O(n) space with array, rest concept is same  |
+|20| [Invert the Binary Tree](#trees)     | [Java](#ques-185)  | _O(n)_         | _O(n)_          | Easy         |   |
+|21| [ZigZag Level Order Traversal BT](#trees)     | [Java](#ques-186)  | _O(n)_         | _O(n)_          | Easy         |  Can be solved using 2 stacks or queue  |
+|22| [Min Depth of Binary Tree](#trees)     | [Java](#ques-187)  | _O(n)_         | _O(n)_          | Easy         |    |
+|23| [Path Sum](#trees)     | [Java](#ques-188)  | _O(n)_         | _O(n)_          | Easy         |    |
+|24| [Sum Root to Leaf Numbers](#trees)     | [Java](#ques-189)  | _O(n)_         | _O(n)_          | Medium         |  mod can be used even before number is formed |
+|25| [Root to Leaf Paths With Sum](#trees)     | [Java](#ques-190)  | _O(n)_         | _O(n)_          | Medium         |  |
+|26| [Populate Next Right Pointers Tree](#trees)     | [Java](#ques-191)  | _O(n)_         | _O(1)_          | Medium         |  If Space was not constant then using queue is very easy |
+|27| [Least Common Ancestor](#trees)     | [Java](#ques-192)  | _O(n)_         | _O(n)_          | Medium         |  |
+|28| [Shortest Unique Prefix](#trees)     | [Java](#ques-193)  | _O(n*m)_         | _O(total unique characters)_          | Medium         |  either use count of unique flag at each node, update the child's property and not current node |
+|29| [Flatten Binary Tree to Linked List](#trees)     | [Java](#ques-194)  | _O(n)_         | _O(1)_          | Medium         |  Can be solved using stack or recursion |
+|30| [Order of People Heights](#trees)     | [Java](#ques-195)  | _O(nlogn)_         | _O(n)_          | Medium         |  Solve it like a puzzle, good question |
+
 
 
 ## Solutions

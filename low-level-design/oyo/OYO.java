@@ -49,7 +49,7 @@ class Hotel {
   
     int hotelId; 
     String hotelName; 
-    Adress adress; 
+    Address address; 
   
     // hotel contains the list of rooms 
     List<Room> rooms; 

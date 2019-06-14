@@ -35,13 +35,18 @@ class User {
     String sex; 
 } 
   
+// Movie instances will be shared across
 class Movie { 
-  
     int movieId; 
-    int theaterId; 
     MovieType movieType; 
     MovieStatus movieStatus; 
-} 
+}
+
+// Show instances are create on a movie in a theatre basis
+class Show {
+    int movieId;
+    List<Time> showTimings;
+}
   
 class Theater { 
   
@@ -49,15 +54,24 @@ class Theater {
     String theaterName; 
     Adress adress; 
   
-    List<Movie> movies; 
+    List<Movie> movies;
+    List<Screen> screens;
     float rating; 
 } 
+
+// Screens are created uniquely to theatres
+class Screen {
+    String name;
+    int screenId;
+
+    List<Show> shows;
+}
   
 class Booking { 
     int bookingId; 
     int userId; 
     int movieId; 
-    List<Movie> bookedSeats; 
+    List<Integer> bookedSeats; 
     int amount; 
     PaymentStatus status_of_payment; 
     Date booked_date; 
@@ -65,7 +79,6 @@ class Booking {
 } 
   
 class Address { 
-  
     String city; 
     String pinCode; 
     String state; 
