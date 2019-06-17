@@ -195,7 +195,7 @@ A composition is a specialized form of Aggregation. It is also called "death" re
 
 ### Type Promotion
 
-![](.\img\java-type-promotion.png)
+![](\img\java-type-promotion.png)
 
 
 
@@ -212,7 +212,7 @@ A composition is a specialized form of Aggregation. It is also called "death" re
 
 ### UML Cheatsheet
 
-![](.\img\umlcheatsheet.jpg)
+![](\img\umlcheatsheet.jpg)
 
 In Object-oriented programming, one object is related to other to use functionality and service provided by that object. This relationship between two objects is known as the *association* in  object oriented general software design and depicted by an arrow in Unified Modelling language or UML.
 
@@ -256,6 +256,18 @@ i.e. private is more restricted then default and default is more restricted than
 * **Invoking overridden method from sub-class** using super()
 * **Overriding and constructor :** We can not override constructor as parent and child class can never have constructor with same name(Constructor name must always be same as Class name).
 
+### Static
+
+##### When to use static methods?
+
+One rule-of-thumb: ask yourself "does it make sense to call this method, even if no Obj has been constructed yet?" If so, it should definitely be static.
+
+So in a class `Car` you might have a method `double convertMpgToKpl(double mpg)` which would be static, because one might want to know what 35mpg converts to, even if nobody has ever built a Car. But `void setMileage(double mpg)` (which sets the efficiency of one particular Car) can't be static since it's inconceivable to call the method before any Car has been constructed.
+
+(Btw, the converse isn't always true: you might sometimes have a method which involves two `Car`objects, and still want it to be static. E.g. `Car theMoreEfficientOf( Car c1, Car c2 )`. Although this could be converted to a non-static version, some would argue that since there isn't a "privileged" choice of which Car is more important, you shouldn't force a caller to choose one Car as the object you'll invoke the method on. This situation accounts for a fairly small fraction of all static methods, though.)
+
+Also ensure in a multithreaded environment, there is no contention for static methods since a class level lock would be needed.
+
 ### Interfaces vs Abstract Classes
 
 When to use Abstract:
@@ -273,6 +285,33 @@ When to use Interface:
 
 * Establish relation between unrelated classes (cloneable, serilazable etc.,)
 * Define basic contracts that are common across implementations
+
+Interface variables are static because Java interfaces cannot be instantiated in their own right; the value of the variable must be assigned in a static context in which no instance exists. The final modifier ensures the value assigned to the interface variable is a true constant that cannot be re-assigned by program code.
+
+### Outer Class
+
+Why can a class not be defined as protected?
+
+Protected class member (method or variable) is just like package-private (default visibility), except that it also can be accessed from subclasses.
+Since there's no such concept as 'subpackage' or 'package-inheritance' in Java, declaring class protected or package-private would be the same thing.
+
+You can declare nested and inner classes as protected or private, though.
+
+### Inner Class
+
+Outer class variables in java are accessible because of lexical scope.
+
+**What is a lexical scope?**
+
+The scope defined in order in which code is authored. Lets say your class structure is as follows
+
+```java
+OuterMost  
+   --Inner  
+     --InnerMost
+```
+
+Then the inner most class will be able to access variables from inner as well outer most.
 
 ### Anonymous Class
 
@@ -375,7 +414,7 @@ We have few methods through which java threads can communicate with each other. 
   `notifyAll()` wakes up all the threads that called wait() on the same object. The highest priority thread will run first.  
 * `Thread.sleep()` goes to sleep until some other interrupts it and doesn't release the lock on the monitor.
 
-![](.\img\Executors.png)
+![](\img\Executors.png)
 
 #### Producer Consumer Example
 
@@ -488,13 +527,21 @@ public class Threadexample {
 
 
 
+**Deadlock** – Occurs when two competing processes are waiting for each other to finish, allowing neither to finish.
+
+**Starvation** – Occurs when a process never gains accesses to resources, never allowing the program to finish.
+
+**Race Conditions** – Occurs when processes that must occur in a particular order occur out of order due to multiple threading. More specifically, this is discussing a *data race*, please avoid arguments such as [this one](http://www.reddit.com/r/cpp/comments/24swao/producerconsumer_problem_c11_solution/).
+
+**Livelock** – Occurs when two threads are dependent on each other signals and are both threads respond to each others signals. If this is the case, the threads can cause a loop similar to something between a deadlock and starvation.
+
 ### JVM & Garbage Collection
 
-![](.\img\JVM-Architecture.png)
+![](\img\JVM-Architecture.png)
 
-![](.\img\jvm memory.png)
+![](\img\jvm memory.png)
 
-![](.\img\virtual-memory.jpg)
+![](\img\virtual-memory.jpg)
 
 ### Things to Remember
 
@@ -694,11 +741,11 @@ Java message service enables loosely coupled communication between two or more s
 
 * Point-to-Point Messaging Domain
 
-  ![](.\img\jms-pointToPoint.gif)
+  ![](\img\jms-pointToPoint.gif)
 
 * Publish/Subscribe Messaging Domain
 
-  ![](.\img\jms-publishSubscribe.gif)
+  ![](\img\jms-publishSubscribe.gif)
 
 
 
@@ -706,7 +753,7 @@ Java message service enables loosely coupled communication between two or more s
 
 Message Sender object is created by a session and used for sending messages to a destination queue. It implements the MessageProducer interface. 
 
-![](.\img\jms-programmingModel.gif)
+![](\img\jms-programmingModel.gif)
 
 ```java
 public class MessageSender {
@@ -877,17 +924,17 @@ public class MapMessageListener implements MessageListener {
 
 ### Sorting
 
-![](.\img\comparision_of_sorting_algorithms.png)
+![](\img\comparision_of_sorting_algorithms.png)
 
 ### Maps
 
-![](.\img\HashMap vs TreeMap vs LinkedHashMap.png)
+![](\img\HashMap vs TreeMap vs LinkedHashMap.png)
 
 
 
 ### Blocking Queue
 
-![](.\img\blockingqueue.png)
+![](\img\blockingqueue.png)
 
 ### Points to remember
 
@@ -902,39 +949,232 @@ public class MapMessageListener implements MessageListener {
 
 ### JAR vs WAR vs EAR
 
-Jar: Contains Java Class Files
+#### JAR
 
-War: Contain web technology related files
+A JAR file encapsulates one or more Java classes, a manifest, and a descriptor. JAR files are the lowest level of archive. JAR files are used in J2EE for packaging EJBs and client-side Java Applications.
 
-Ear: contains all type of files
+#### WAR
 
-### Web Application
+A WAR (Web Archive) is a module that gets loaded into a Web container of a Java Application Server. A Java Application Server has two containers (runtime environments) – one is a Web container and the other is a EJB container.
 
-Contains only web related technologies like JSP’s, Servlets, html, css, js
+The Web container hosts Web applications based on JSP or the Servlets API – designed specifically for web request handling – so more of a request/response style of distributed computing. A Web container requires the Web module to be packaged as a WAR file – that is a special JAR file with a web.xml file in the WEB-INF folder.
 
-### Enterprise Application
+#### EAR
 
-Contains all related J2EE technologies 
+Enterprise applications may consist of one or more modules that can either be Web modules (packaged as a WAR file) or EJB modules (packaged as a JAR file) or both of them. Enterprise applications are packaged as EAR files – these are special JAR files containing an application.xml file in the META-INF folder.
 
-### Web Server
+Basically EAR files are a superset containing WAR files and JAR files. Java Application Servers allow deployment of standalone web modules in a WAR file, though internally they create EAR files as a wrapper around WAR files. Standalone web containers such as Tomcat and Jetty do not support EAR files – these are not full fledged Application servers. Web applications in these containers are to be deployed as WAR files only.
+
+In application servers – EAR files contain configurations such as application security role mapping, EJB reference mapping and context root url mapping of web modules.
+
+### Web Server (Tomcat) vs Application Server (Weblogic)
 
 Server used to deploy applications. Ex: Tomcat
 
-### Application Server
+* **Application Server** supports **distributed transaction and EJB**. While Web Server only supports Servlets and JSP.
 
-Server used to deploy Enterprise applications Ex: Web logic
+* Application Server can contain web server in them. most of App server e.g. JBoss or WAS has Servlet and JSP container.
+
+*  Though its not limited to Application Server but they used to provide services like **Connection pooling**, **Transaction management**, messaging, clustering, load balancing and persistence. Now Apache tomcat also provides connection pooling.
+
+* In terms of l*ogical difference between web server and application server*. web server is supposed to provide http protocol level service while application server provides support to web service and expose business level service e.g. EJB.
+
+* Application server are more heavy than web server in terms of resource utilization.
 
 ### Building Tools
 
-Manifest, Gradle, ANT
+#### ANT
 
-### SOAP vs REST vs RPC
+**Apache Ant (“Another Neat Tool”) is a Java library used for automating build processes for Java applications**. Additionally, Ant can be used for building non-Java applications. Ant build files are written in XML, and by convention, they’re called *build.xml*.
+
+Different phases of a build process are called “targets”.
+
+Here is an example of a *build.xml* file for a simple Java project with the *HelloWorld* main class:
+
+```xml
+`<``project``>``    ``<``target` `name``=``"clean"``>``        ``<``delete` `dir``=``"classes"` `/>``    ``</``target``>` `    ``<``target` `name``=``"compile"` `depends``=``"clean"``>``        ``<``mkdir` `dir``=``"classes"` `/>``        ``<``javac` `srcdir``=``"src"` `destdir``=``"classes"` `/>``    ``</``target``>` `    ``<``target` `name``=``"jar"` `depends``=``"compile"``>``        ``<``mkdir` `dir``=``"jar"` `/>``        ``<``jar` `destfile``=``"jar/HelloWorld.jar"` `basedir``=``"classes"``>``            ``<``manifest``>``                ``<``attribute` `name``=``"Main-Class"``                  ``value``=``"antExample.HelloWorld"` `/>``            ``</``manifest``>``        ``</``jar``>``    ``</``target``>` `    ``<``target` `name``=``"run"` `depends``=``"jar"``>``        ``<``java` `jar``=``"jar/HelloWorld.jar"` `fork``=``"true"` `/>``    ``</``target``>``</``project``>`
+```
+
+This build file defines four targets: *clean*, *compile*, *jar* and *run*. For example, we can compile the code by running:
+
+```
+`ant compile`
+```
+
+This will trigger target *clean* first which will delete the “classes” directory. After that, target *compile* will recreate the directory and compile src folder into it.
+
+**The main benefit of Ant is its flexibility. Ant doesn’t impose any coding conventions or project structures.** Consequently, this means that Ant requires developers to write all the commands by themselves, which sometimes leads to huge XML build files which are hard to maintain.
+
+
+
+#### Maven
+
+[Apache Maven](https://maven.apache.org/) is a dependency management and a build automation tool, primarily used for Java applications. **Maven continues to use XML files just like Ant but in a much more manageable way.** The name of the game here is convention over configuration.
+
+While Ant gives the flexibility and requires everything to be written from scratch, **Maven relies on conventions and provides predefined commands (goals).**
+
+Simply put, Maven allows us to focus on what our build should do, and gives us the framework to do it. Another positive aspect of Maven was that it provided built-in support for dependency management.
+
+Maven’s configuration file, containing build and dependency management instructions, is by convention called *pom.xml*. Additionally, Maven also prescribes strict project structure, while Ant provides flexibility there as well.
+
+Here’s an example of a *pom.xml* file for the same simple Java project with the *HelloWorld* main class from before:
+
+```xml
+`<``project` `xmlns``=``"http://maven.apache.org/POM/4.0.0"``  ``xmlns:xsi``=``"http://www.w3.org/2001/XMLSchema-instance"``    ``xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 ``      ``http://maven.apache.org/xsd/maven-4.0.0.xsd">``    ``<``modelVersion``>4.0.0</``modelVersion``>``    ``<``groupId``>baeldung</``groupId``>``    ``<``artifactId``>mavenExample</``artifactId``>``    ``<``version``>0.0.1-SNAPSHOT</``version``>``    ``<``description``>Maven example</``description``>` `    ``<``dependencies``>``        ``<``dependency``>``            ``<``groupId``>junit</``groupId``>``            ``<``artifactId``>junit</``artifactId``>``            ``<``version``>4.12</``version``>``            ``<``scope``>test</``scope``>``        ``</``dependency``>``    ``</``dependencies``>``</``project``>`
+```
+
+However, now the project structure has been standardized as well and conforms to the Maven conventions:
+
+```
+`+---src``|   +---main``|   |   +---java``|   |   |   \---com``|   |   |       \---baeldung``|   |   |           \---maven``|   |   |                   HelloWorld.java``|   |   |                   ``|   |   \---resources``|   \---test``|       +---java``|       \---resources`
+```
+
+As opposed to Ant, there is no need to define each of the phases in the build process manually. Instead, we can simply call Maven’s built-in commands.
+
+For example, we can compile the code by running:
+
+```
+`mvn compile`
+```
+
+At its core, as noted on official pages, **Maven can be considered a plugin execution framework, since all work is done by plugins.** Maven supports a wide range of [available plugins](https://maven.apache.org/plugins/), and each of them can be additionally configured.
+
+
+
+#### Gradle
+
+[Gradle](https://gradle.org/) is a dependency management and a build automation tool which **was built upon the concepts of Ant and Maven.**
+
+One of the first things we can note about Gradle is that it’s not using XML files, unlike Ant or Maven.
+
+Over time, developers became more and more interested in having and working with a domain specific language – which, simply put, would allow them to solve problems in a specific domain using a language tailored for that particular domain.
+
+This was adopted by Gradle, which is using a DSL based on [Groovy](http://groovy-lang.org/). **This led to smaller configuration files with less clutter since the language was specifically designed to solve specific domain problems.** Gradle’s configuration file is by convention called *build.gradle.*
+
+Here is an example of a *build.gradle* file for the same simple Java project with the *HelloWorld* main class from before:
+
+```groovy
+`apply plugin: ``'java'` `repositories {``    ``mavenCentral()``}` `jar {``    ``baseName = ``'gradleExample'``    ``version = ``'0.0.1-SNAPSHOT'``}` `dependencies {``    ``compile ``'junit:junit:4.12'``}`
+```
+
+We can compile the code by running:
+
+```
+`gradle classes`
+```
+
+At its core, Gradle intentionally provides very little functionality. **Plugins add all useful features.** In our example, we were using *java* plugin which allows us to compile Java code and other valuable features.
+
+**Gradle gave its build steps name “tasks”, as opposed to Ant’s “targets” or Maven’s “phases”.**
+
+
+
+### XML-RPC vs SOAP vs REST 
+
+#### XML-RPC
+
+> XML-RPC is “…a spec (*http://www.xmlrpc.com/spec* ) and a set of implementations that allow software running on disparate operating systems, running in different environments to make procedure calls over the Internet. It’s remote procedure calling using HTTP as the transport and XML as the encoding. XML-RPC is designed to be as simple as possible, while allowing complex data structures to be transmitted, processed and returned.” - xmlrpc.com
+
+##### XML-RPC’s Goals
+
+XML-RPC is very humble in its goals. It doesn’t set out to be the solution to every problem. Instead it seeks to be a simple and effective means to request and receive information.
+
+> “We wanted a clean, extensible format that’s very simple. It should be possible for an HTML coder to be able to look at a file containing an XML-RPC procedure call, understand what it’s doing, and be able to modify it and have it work on the first or second try… We also wanted it to be an easy to implement protocol that could quickly be adapted to run in other environments or on other operating systems.” - xmlrpc.com
+
+
+
+#### SOAP
+
+> “SOAP is a lightweight protocol for exchange of information in a decentralized, distributed environment. It is an XML based protocol that consists of three parts: an envelope that defines a framework for describing what is in a message and how to process it, a set of encoding rules for expressing instances of application-defined datatypes, and a convention for representing remote procedure calls and responses.” - the SOAP spec.
+
+SOAP tries to pick up where XML-RPC left off by implementing user defined data types, the ability to specify the recipient, message specific processing control, and other features.
+
+
+
+#### SOAP vs REST
+
+|                      | SOAP                                                         | REST                                                         |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Meaning              | Simple Object Access Protocol                                | Representational State Transfer                              |
+| **Design**           | **Standardized protocol with pre-defined rules to follow.**  | **Architectural style with loose guidelines and recommendations.** |
+| Approach             | Function-driven (data available as services, e.g.: “getUser”) | Data-driven (data available as resources, e.g. “user”).      |
+| **Statefulness**     | **Stateless by default, but it’s possible to make a SOAP API stateful.** | **Stateless (no server-side sessions).**                     |
+| Caching              | API calls cannot be cached.                                  | API calls can be cached.                                     |
+| **Security**         | **WS-Security with SSL support. Built-in ACID compliance.**  | **Supports HTTPS and SSL.**                                  |
+| Performance          | Requires more bandwidth and computing power.                 | Requires fewer resources.                                    |
+| **Message format**   | **Only XML.**                                                | **Plain text, HTML, XML, JSON, YAML, and others.**           |
+| Transfer protocol(s) | HTTP, SMTP, UDP, and others.                                 | Only HTTP                                                    |
+| **Recommended for**  | **Enterprise apps, high-security apps, distributed environment, financial services, payment gateways, telecommunication services.** | **Public APIs for web services, mobile services, social networks.** |
+| Advantages           | High security, standardized, extensibility.                  | Scalability, better performance, browser-friendliness, flexibility. |
+| **Disadvantages**    | **Poorer performance, more complexity, less flexibility.**   | **Less security, not suitable for distributed environments.** |
+
+
+
+### HTTP Methods
+
+```
+GET
+```
+
+The `GET` method requests a representation of the specified resource. Requests using `GET`should only retrieve data.
+
+```
+HEAD
+```
+
+The `HEAD` method asks for a response identical to that of a `GET` request, but without the response body.
+
+```
+POST
+```
+
+The `POST` method is used to submit an entity to the specified resource, often causing a change in state or side effects on the server.
+
+```
+PUT
+```
+
+The `PUT` method replaces all current representations of the target resource with the request payload.
+
+```
+DELETE
+```
+
+The `DELETE` method deletes the specified resource.
+
+```
+CONNECT
+```
+
+The `CONNECT` method establishes a tunnel to the server identified by the target resource.
+
+```
+OPTIONS
+```
+
+The `OPTIONS` method is used to describe the communication options for the target resource.
+
+```
+TRACE
+```
+
+The `TRACE` method performs a message loop-back test along the path to the target resource.
+
+```
+PATCH
+```
+
+The `PATCH` method is used to apply partial modifications to a resource.
+
+
+
+### Response Codes
+
+![status-code.png (1224Ã1710)](https://www.steveschoger.com/status-code-poster/img/status-code.png)
 
 
 
 ## SQL vs NoSQL
-
-
 
 | RDBMS                                                        | NoSQL                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -946,7 +1186,20 @@ Manifest, Gradle, ANT
 |                                                              | Event capture and processing                                 |
 |                                                              | Online stores with complex intelligence engines              |
 
+![https://4.bp.blogspot.com/-_HsHikmChBI/VmQGJjLKgyI/AAAAAAAAEPw/JaLnV0bsbEo/s1600/sql%2Bjoins%2Bguide%2Band%2Bsyntax.jpg](https://4.bp.blogspot.com/-_HsHikmChBI/VmQGJjLKgyI/AAAAAAAAEPw/JaLnV0bsbEo/s1600/sql%2Bjoins%2Bguide%2Band%2Bsyntax.jpg)
+
+**SQL join: where clause vs. on clause ?**
+
+* Does not matter for inner joins
+
+* Matters for outer joins
+
+a. WHERE clause: **After** joining. Records will be filtered after join has taken place.
+
+b. ON clause - **Before** joining. Records (from right table) will be filtered before joining. This may end up as null in the result (since OUTER join).
+
 
 
 ## OSI Model
 
+![](.\img\OSI-layer-model.gif)
