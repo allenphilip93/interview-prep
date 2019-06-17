@@ -195,7 +195,7 @@ A composition is a specialized form of Aggregation. It is also called "death" re
 
 ### Type Promotion
 
-![](\img\java-type-promotion.png)
+![java-type-promotion.png (600Ã450)](https://raw.githubusercontent.com/allenphilip93/interview-prep/master/img/java-type-promotion.png)
 
 
 
@@ -212,7 +212,7 @@ A composition is a specialized form of Aggregation. It is also called "death" re
 
 ### UML Cheatsheet
 
-![](\img\umlcheatsheet.jpg)
+![umlcheatsheet.jpg](https://github.com/allenphilip93/interview-prep/blob/master/img/umlcheatsheet.jpg?raw=true)
 
 In Object-oriented programming, one object is related to other to use functionality and service provided by that object. This relationship between two objects is known as the *association* in  object oriented general software design and depicted by an arrow in Unified Modelling language or UML.
 
@@ -414,7 +414,7 @@ We have few methods through which java threads can communicate with each other. 
   `notifyAll()` wakes up all the threads that called wait() on the same object. The highest priority thread will run first.  
 * `Thread.sleep()` goes to sleep until some other interrupts it and doesn't release the lock on the monitor.
 
-![](\img\Executors.png)
+![Executors.png](https://github.com/allenphilip93/interview-prep/blob/master/img/Executors.png?raw=true)
 
 #### Producer Consumer Example
 
@@ -537,11 +537,11 @@ public class Threadexample {
 
 ### JVM & Garbage Collection
 
-![](\img\JVM-Architecture.png)
+![JVM-Architecture.png](https://github.com/allenphilip93/interview-prep/blob/master/img/JVM-Architecture.png?raw=true)
 
-![](\img\jvm memory.png)
+![jvm memory.png](https://github.com/allenphilip93/interview-prep/blob/master/img/jvm%20memory.png?raw=true)
 
-![](\img\virtual-memory.jpg)
+![virtual-memory.jpg](https://github.com/allenphilip93/interview-prep/blob/master/img/virtual-memory.jpg?raw=true)
 
 ### Things to Remember
 
@@ -741,11 +741,11 @@ Java message service enables loosely coupled communication between two or more s
 
 * Point-to-Point Messaging Domain
 
-  ![](\img\jms-pointToPoint.gif)
+  ![jms-pointToPoint.gif](https://github.com/allenphilip93/interview-prep/blob/master/img/jms-pointToPoint.gif?raw=true)
 
 * Publish/Subscribe Messaging Domain
 
-  ![](\img\jms-publishSubscribe.gif)
+  ![jms-publishSubscribe.gif](https://github.com/allenphilip93/interview-prep/blob/master/img/jms-publishSubscribe.gif?raw=true)
 
 
 
@@ -753,7 +753,7 @@ Java message service enables loosely coupled communication between two or more s
 
 Message Sender object is created by a session and used for sending messages to a destination queue. It implements the MessageProducer interface. 
 
-![](\img\jms-programmingModel.gif)
+![jms-programmingModel.gif](https://github.com/allenphilip93/interview-prep/blob/master/img/jms-programmingModel.gif?raw=true)
 
 ```java
 public class MessageSender {
@@ -924,17 +924,19 @@ public class MapMessageListener implements MessageListener {
 
 ### Sorting
 
-![](\img\comparision_of_sorting_algorithms.png)
+![comparision_of_sorting_algorithms.png](https://github.com/allenphilip93/interview-prep/blob/master/img/comparision_of_sorting_algorithms.png?raw=true)
 
 ### Maps
 
-![](\img\HashMap vs TreeMap vs LinkedHashMap.png)
+![HashMap vs TreeMap vs LinkedHashMap.png](https://github.com/allenphilip93/interview-prep/blob/master/img/HashMap%20vs%20TreeMap%20vs%20LinkedHashMap.png?raw=true)
 
 
 
 ### Blocking Queue
 
-![](\img\blockingqueue.png)
+![blockingqueue.png](https://github.com/allenphilip93/interview-prep/blob/master/img/blockingqueue.png?raw=true)
+
+![LinkedList vs Matrix for Graphs.jpg](https://github.com/allenphilip93/interview-prep/blob/master/img/LinkedList%20vs%20Matrix%20for%20Graphs.jpg?raw=true)
 
 ### Points to remember
 
@@ -1202,4 +1204,4 @@ b. ON clause - **Before** joining. Records (from right table) will be filtered b
 
 ## OSI Model
 
-![](.\img\OSI-layer-model.gif)
+![OSI-layer-model.gif](https://github.com/allenphilip93/interview-prep/blob/master/img/OSI-layer-model.gif?raw=true)
