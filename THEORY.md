@@ -195,7 +195,7 @@ A composition is a specialized form of Aggregation. It is also called "death" re
 
 ### Type Promotion
 
-![](C:\codebase\github\interview-prep\img\java-type-promotion.png)
+![](.\img\java-type-promotion.png)
 
 
 
@@ -212,7 +212,7 @@ A composition is a specialized form of Aggregation. It is also called "death" re
 
 ### UML Cheatsheet
 
-![](C:\codebase\github\interview-prep\img\umlcheatsheet.jpg)
+![](.\img\umlcheatsheet.jpg)
 
 In Object-oriented programming, one object is related to other to use functionality and service provided by that object. This relationship between two objects is known as the *association* in  object oriented general software design and depicted by an arrow in Unified Modelling language or UML.
 
@@ -375,7 +375,7 @@ We have few methods through which java threads can communicate with each other. 
   `notifyAll()` wakes up all the threads that called wait() on the same object. The highest priority thread will run first.  
 * `Thread.sleep()` goes to sleep until some other interrupts it and doesn't release the lock on the monitor.
 
-![](C:\codebase\github\interview-prep\img\Executors.png)
+![](.\img\Executors.png)
 
 #### Producer Consumer Example
 
@@ -490,11 +490,11 @@ public class Threadexample {
 
 ### JVM & Garbage Collection
 
-![](C:\codebase\github\interview-prep\img\JVM-Architecture.png)
+![](.\img\JVM-Architecture.png)
 
-![](C:\codebase\github\interview-prep\img\jvm memory.png)
+![](.\img\jvm memory.png)
 
-![](C:\codebase\github\interview-prep\img\virtual-memory.jpg)
+![](.\img\virtual-memory.jpg)
 
 ### Things to Remember
 
@@ -694,11 +694,11 @@ Java message service enables loosely coupled communication between two or more s
 
 * Point-to-Point Messaging Domain
 
-  ![](C:\codebase\github\interview-prep\img\jms-pointToPoint.gif)
+  ![](.\img\jms-pointToPoint.gif)
 
 * Publish/Subscribe Messaging Domain
 
-  ![](C:\codebase\github\interview-prep\img\jms-publishSubscribe.gif)
+  ![](.\img\jms-publishSubscribe.gif)
 
 
 
@@ -706,7 +706,7 @@ Java message service enables loosely coupled communication between two or more s
 
 Message Sender object is created by a session and used for sending messages to a destination queue. It implements the MessageProducer interface. 
 
-![](C:\codebase\github\interview-prep\img\jms-programmingModel.gif)
+![](.\img\jms-programmingModel.gif)
 
 ```java
 public class MessageSender {
@@ -877,17 +877,17 @@ public class MapMessageListener implements MessageListener {
 
 ### Sorting
 
-![](C:\codebase\github\interview-prep\img\comparision_of_sorting_algorithms.png)
+![](.\img\comparision_of_sorting_algorithms.png)
 
 ### Maps
 
-![](C:\codebase\github\interview-prep\img\HashMap vs TreeMap vs LinkedHashMap.png)
+![](.\img\HashMap vs TreeMap vs LinkedHashMap.png)
 
 
 
 ### Blocking Queue
 
-![](C:\codebase\github\interview-prep\img\blockingqueue.png)
+![](.\img\blockingqueue.png)
 
 ### Points to remember
 
